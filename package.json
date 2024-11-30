@@ -4,7 +4,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "origin-ui:docs:serve": "nx run origin-ui:serve"
+    "origin-ui:docs:serve": "nx run origin-ui:serve",
+    "origin-ui:docs:build": "nx run origin-ui:build",
+    "components:build": "nx run components:build"
   },
   "dependencies": {
     "@angular/animations": "~18.2.0",

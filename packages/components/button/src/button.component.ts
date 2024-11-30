@@ -1,6 +1,6 @@
 import { cva, type VariantProps } from "class-variance-authority";
-import {Component, computed, input, InputSignal} from "@angular/core";
-import {cn} from "../../utils";
+import {Component, computed, input} from "@angular/core";
+import {cn} from "@origin-ui/components/utils";
 
 
 const buttonVariants = cva(
