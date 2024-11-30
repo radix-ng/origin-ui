@@ -11,6 +11,21 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
   </head>
   <body class="bg-background font-sans antialiased">
+    <script>
+      (function () {
+        try {
+          const theme = localStorage.getItem('theme');
+          const isDarkMode = theme === 'dark' || (theme === null && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (isDarkMode) {
+            document.body.classList.add('dark');
+          } else {
+            document.body.classList.remove('dark');
+          }
+        } catch (e) {
+          console.error('Error initializing theme:', e);
+        }
+      })();
+    </script>
     <app-root></app-root>
   </body>
 </html>

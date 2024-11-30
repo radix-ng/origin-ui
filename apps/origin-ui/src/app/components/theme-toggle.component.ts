@@ -1,4 +1,4 @@
-import {Component, computed, signal} from "@angular/core";
+import {Component, computed, signal, effect} from "@angular/core";
 import {NgIf} from "@angular/common";
 
 @Component({
@@ -58,17 +58,45 @@ import {NgIf} from "@angular/common";
   `
 })
 export class AppThemeToggleComponent {
-  readonly theme = signal<'light' | 'dark'>('light');
+  readonly theme = signal<'light' | 'dark'>(this.getInitialTheme());
 
   readonly isLightTheme = computed(() => this.theme() === 'light');
 
-  toggleTheme() {
-    this.theme.set(this.theme() === 'dark' ? 'light' : 'dark');
+  constructor() {
+    if (this.isBrowser()) {
+      effect(() => {
+        const currentTheme = this.theme();
+        localStorage.setItem('theme', currentTheme);
 
-    if (this.theme() === 'dark') {
-      document.body.classList.add('dark');
-    } else {
-      document.body.classList.remove('dark');
+        if (currentTheme === 'dark') {
+          document.body.classList.add('dark');
+        } else {
+          document.body.classList.remove('dark');
+        }
+      });
     }
+  }
+
+  toggleTheme() {
+    if (this.isBrowser()) {
+      this.theme.set(this.theme() === 'dark' ? 'light' : 'dark');
+    }
+  }
+
+  private getInitialTheme(): 'light' | 'dark' {
+    if (this.isBrowser()) {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'light' || savedTheme === 'dark') {
+        return savedTheme;
+      }
+
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    return 'light'; // Default theme for server-side rendering
+  }
+
+  private isBrowser(): boolean {
+    return typeof window !== 'undefined' && typeof localStorage !== 'undefined';
   }
 }
