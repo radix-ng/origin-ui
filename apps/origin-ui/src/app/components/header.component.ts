@@ -1,10 +1,11 @@
 import {Component} from "@angular/core";
 import {AppThemeToggleComponent} from "./theme-toggle.component";
+import {GithubButtonComponent} from "./github-button.component";
 
 @Component({
   selector: 'app-component-header',
   standalone: true,
-  imports: [AppThemeToggleComponent],
+  imports: [AppThemeToggleComponent, GithubButtonComponent],
   template: `
     <header>
       <div class="px-4 sm:px-6">
@@ -21,6 +22,7 @@ import {AppThemeToggleComponent} from "./theme-toggle.component";
             </svg>
           </a>
           <div class="flex items-center gap-2">
+            <app-github-button />
             <app-components-theme-toggle />
           </div>
         </div>
