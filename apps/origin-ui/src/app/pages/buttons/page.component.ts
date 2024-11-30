@@ -11,7 +11,7 @@ import {DemoComponent} from "../../components/demo-component";
       <div class="px-4 sm:px-6">
         <div class="mx-auto w-full max-w-6xl">
           <app-components-page-header title="Button">
-            A growing collection of 10 button components built with Angular and
+            A growing collection of {{ files.length }} button components built with Angular and
             TailwindCSS.
           </app-components-page-header>
 
