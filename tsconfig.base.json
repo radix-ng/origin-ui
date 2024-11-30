@@ -23,6 +23,9 @@
       "@origin-ui/components/button": [
         "packages/components/button/index.ts"
       ],
+      "@origin-ui/components/toggle": [
+        "packages/components/toggle/index.ts"
+      ],
       "@origin-ui/components/utils": [
         "packages/components/utils/index.ts"
       ]

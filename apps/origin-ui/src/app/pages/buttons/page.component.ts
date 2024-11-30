@@ -37,6 +37,7 @@ export default class PageButtonsComponent {
     "button-02",
     "button-03",
     "button-04",
-    "button-05"
+    "button-05",
+    "button-24"
   ];
 }
