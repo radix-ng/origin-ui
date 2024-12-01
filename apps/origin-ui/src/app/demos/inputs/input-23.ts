@@ -1,14 +1,15 @@
 import {Component} from "@angular/core";
 import {OriInputComponent} from "@origin-ui/components/input";
 import {LucideAngularModule, Eye, EyeOff} from "lucide-angular";
+import {OriLabelComponent} from "@origin-ui/components/label";
 
 @Component({
   selector: "demo-input-23",
   standalone:true,
-  imports: [OriInputComponent, LucideAngularModule],
+  imports: [OriInputComponent, OriLabelComponent, LucideAngularModule],
   template: `
     <div class="space-y-2">
-      <label for="input-23">Show/hide password input</label>
+      <ori-label [htmlFor]="'input-23'">Show/hide password input</ori-label>
       <div class="relative">
         <ori-input [id]="'input-23'"
                    class="contents pe-9"

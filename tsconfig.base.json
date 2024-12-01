@@ -26,6 +26,9 @@
       "@origin-ui/components/input": [
         "packages/components/input/index.ts"
       ],
+      "@origin-ui/components/label": [
+        "packages/components/label/index.ts"
+      ],
       "@origin-ui/components/toggle": [
         "packages/components/toggle/index.ts"
       ],

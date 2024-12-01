@@ -1,13 +1,14 @@
 import {Component} from "@angular/core";
 import {OriInputComponent} from "@origin-ui/components/input";
+import {OriLabelComponent} from "@origin-ui/components/label";
 
 @Component({
   selector: "demo-input-01",
   standalone:true,
-  imports: [OriInputComponent],
+  imports: [OriInputComponent, OriLabelComponent],
   template: `
     <div class="space-y-2">
-      <label for="input-01">Simple input</label>
+      <ori-label [htmlFor]="'input-01'">Simple input</ori-label>
       <ori-input [id]="'input-01'" placeholder="Email" type="email" class="block"/>
     </div>
   `
