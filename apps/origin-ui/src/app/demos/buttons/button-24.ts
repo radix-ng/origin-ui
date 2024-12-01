@@ -8,11 +8,10 @@ import {LucideAngularModule, Bookmark} from "lucide-angular";
   imports: [OriToggleComponent, LucideAngularModule],
   template: `
         <ori-toggle
-          class="group size-9 p-0 hover:bg-indigo-50 hover:text-indigo-500 data-[state=on]:bg-indigo-50 data-[state=on]:text-indigo-500"
+          className="group size-9 p-0 hover:bg-indigo-50 hover:text-indigo-500 data-[state=on]:bg-indigo-50 data-[state=on]:text-indigo-500"
           aria-label="Bookmark this"
           [pressed]="bookmarked()"
-          (onPressedChange)="toggleBookmark()"
-            >
+          (onPressedChange)="toggleBookmark()">
           <lucide-angular [img]="BookmarkIcon" size="16" strokeWidth="2" aria-hidden="true" />
         </ori-toggle>
     `

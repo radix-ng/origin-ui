@@ -48,7 +48,7 @@ type OriToggleVariant = NonNullable<ToggleProps['variant']>;
   `
 })
 export class OriToggleComponent {
-  readonly class = input<string>();
+  readonly className = input<string>();
 
   readonly variant = input<OriToggleVariant>('default');
 
@@ -59,7 +59,7 @@ export class OriToggleComponent {
   readonly onPressedChange = output<boolean>();
 
   protected computedClass = computed(() =>
-    cn(toggleVariants({ variant: this.variant(), size: this.size(), class: this.class() }))
+    cn(toggleVariants({ variant: this.variant(), size: this.size(), class: this.className() }))
   );
 
   handlePressedChange(isPressed: boolean): void {
