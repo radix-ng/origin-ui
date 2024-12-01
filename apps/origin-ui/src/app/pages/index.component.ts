@@ -41,6 +41,15 @@ import {LucideAngularModule, ArrowRight} from "lucide-angular";
               <ul class="flex flex-col gap-2">
                 <li>
                   <a
+                    href="/inputs"
+                    class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 outline-offset-2 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring/70 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
+                  >
+                    <span class="truncate">Input and Textarea</span>
+                    <lucide-angular [img]="ArrowRightIcon" size="16" class="-mr-1 ml-2 shrink-0 opacity-60"></lucide-angular>
+                  </a>
+                </li>
+                <li>
+                  <a
                     href="/buttons"
                     class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 outline-offset-2 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring/70 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
                   >

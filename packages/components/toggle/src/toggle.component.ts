@@ -40,6 +40,7 @@ type OriToggleVariant = NonNullable<ToggleProps['variant']>;
   imports: [RdxToggleDirective],
   template: `
     <button [class]="computedClass()" rdxToggle
+            type="button"
             [pressed]="pressed()"
             (onPressedChange)="handlePressedChange($event)">
       <ng-content></ng-content>
