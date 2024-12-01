@@ -93,7 +93,7 @@ export class AppThemeToggleComponent {
       return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
 
-    return 'light'; // Default theme for server-side rendering
+    return 'light';
   }
 
   private isBrowser(): boolean {

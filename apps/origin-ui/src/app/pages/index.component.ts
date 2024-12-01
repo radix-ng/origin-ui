@@ -1,11 +1,16 @@
 import {Component} from "@angular/core";
 import {LucideAngularModule, ArrowRight} from "lucide-angular";
+import {IllustrationComponent} from "../components/illustration.component";
 
 @Component({
   selector: 'app-page-index',
   standalone: true,
-  imports: [LucideAngularModule],
+  imports: [LucideAngularModule, IllustrationComponent],
+  host: {
+    class: 'contents'
+  },
   template: `
+    <app-illustration />
     <main>
       <div class="px-4 sm:px-6">
         <div class="mx-auto w-full max-w-3xl">
@@ -64,7 +69,6 @@ import {LucideAngularModule, ArrowRight} from "lucide-angular";
         </div>
       </div>
     </main>
-
   `
 })
 export default class PageIndexComponent {
