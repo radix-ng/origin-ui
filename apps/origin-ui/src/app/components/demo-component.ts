@@ -1,27 +1,34 @@
 import {Component, inject, Input, OnInit, ViewChild, ViewContainerRef} from '@angular/core';
 import {HttpClient, } from '@angular/common/http';
+import {firstValueFrom} from "rxjs";
+import {CopyButtonComponent} from "./copy-button.component";
 
 @Component({
   selector: 'app-demo-component',
   standalone: true,
-  imports: [],
+  imports: [CopyButtonComponent],
   template: `
-    <div [class]="computedClass">
       <ng-container #container></ng-container>
-    </div>
-  `
+
+      <app-demo-copy-button [componentSource]="sourceCode"/>
+  `,
+  host: {
+    '[class]': 'computedClass'
+  }
 })
 export class DemoComponent implements OnInit {
+
+  private readonly http = inject(HttpClient);
+
   @Input() directory!: string;
   @Input() componentName!: string;
   @Input() className: string = '';
-
-  private readonly http = inject(HttpClient);
 
   @ViewChild('container', { read: ViewContainerRef, static: true })
   private container!: ViewContainerRef;
 
   computedClass: string = '';
+  sourceCode: string | null = null;
 
   async ngOnInit() {
     this.computedClass = `group/item relative ${this.className}`;
@@ -34,5 +41,16 @@ export class DemoComponent implements OnInit {
     }
 
     this.container.createComponent(ComponentModule);
+
+    try {
+      this.sourceCode = await this.fetchSourceCode();
+    } catch (error) {
+      console.error('Error fetching source code:', error);
+    }
+  }
+
+  private async fetchSourceCode(): Promise<string> {
+    const filePath = `/demos/${this.directory}/${this.componentName}.ts`;
+    return firstValueFrom(this.http.get(filePath, { responseType: 'text' }));
   }
 }

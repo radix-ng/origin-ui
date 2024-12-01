@@ -19,6 +19,11 @@
           {
             "glob": "**/*",
             "input": "apps/origin-ui/public"
+          },
+          {
+            "glob": "**/*.ts",
+            "input": "apps/origin-ui/src/app/demos",
+            "output": "/demos"
           }
         ],
         "styles": ["apps/origin-ui/src/styles.css"],
