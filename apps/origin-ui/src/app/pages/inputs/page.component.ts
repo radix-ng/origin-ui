@@ -36,6 +36,8 @@ export default class PageInputsComponent {
     // "input-04",
     // "input-05",
     "input-08",
+    "input-14",
+    "input-20",
     "input-23"
     // "input-24"
   ];
