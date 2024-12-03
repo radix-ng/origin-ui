@@ -1,0 +1,16 @@
+import {Component} from "@angular/core";
+import {OriSlider} from "@origin-ui/components/slider";
+import {OriLabel} from "@origin-ui/components/label";
+
+@Component({
+    selector: "demo-slider-11",
+    standalone: true,
+    imports: [OriSlider, OriLabel],
+    template: `
+        <div class="flex flex-col gap-4">
+            <ori-label>Dual range slider</ori-label>
+            <ori-slider [defaultValue]="[25, 75]" [step]="10" aria-label="Dual range slider" />
+        </div>
+    `
+})
+export default class Slider11Component {}

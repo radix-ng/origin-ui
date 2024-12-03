@@ -18,8 +18,11 @@ import {RdxSliderModule} from "@radix-ng/primitives/slider";
                 <rdx-slider-range
                     class="absolute bg-primary data-[orientation=horizontal]:h-full data-[orientation=vertical]:w-full"/>
             </rdx-slider-track>
-            <rdx-slider-thumb
-                class="block h-5 w-5 rounded-full border-2 border-primary bg-background transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-ring/40 data-[disabled]:cursor-not-allowed"/>
+
+            @for (item of defaultValue; track item) {
+                <rdx-slider-thumb
+                    class="block h-5 w-5 rounded-full border-2 border-primary bg-background transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-ring/40 data-[disabled]:cursor-not-allowed"/>
+            }
         </rdx-slider>
     `
 })

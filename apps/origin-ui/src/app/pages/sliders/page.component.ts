@@ -37,5 +37,6 @@ export default class PageSlidersComponent {
         "slider-05",
         "slider-06",
         "slider-07",
+        "slider-11",
     ];
 }
