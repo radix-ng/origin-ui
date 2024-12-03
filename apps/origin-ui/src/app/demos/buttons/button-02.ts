@@ -1,10 +1,10 @@
 import {Component} from "@angular/core";
-import {OriButtonComponent} from "@origin-ui/components/button";
+import {OriButton} from "@origin-ui/components/button";
 
 @Component({
     selector: "demo-button-02",
     standalone:true,
-    imports: [OriButtonComponent],
+    imports: [OriButton],
     template: `
         <ori-button disabled>Button</ori-button>
     `

@@ -1,11 +1,11 @@
 import {Component} from "@angular/core";
-import {OriButtonComponent} from "@origin-ui/components/button";
+import {OriButton} from "@origin-ui/components/button";
 import {LucideAngularModule, Archive} from "lucide-angular";
 
 @Component({
     selector: "demo-button-04",
     standalone:true,
-    imports: [OriButtonComponent, LucideAngularModule],
+    imports: [OriButton, LucideAngularModule],
     template: `
         <ori-button>
           <lucide-angular [img]="ArchiveIcon" class="icon-wrapper" size="16" strokeWidth="2" aria-hidden="true" />

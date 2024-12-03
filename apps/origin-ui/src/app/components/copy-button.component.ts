@@ -1,11 +1,11 @@
 import {Component, Input, input, signal} from "@angular/core";
-import {OriButtonComponent} from "@origin-ui/components/button";
+import {OriButton} from "@origin-ui/components/button";
 import {NgClass} from "@angular/common";
 
 @Component({
   selector: 'app-demo-copy-button',
   standalone: true,
-  imports: [OriButtonComponent, NgClass],
+  imports: [OriButton, NgClass],
   template: `
     <div
       class="absolute right-2 top-2 transition-opacity"

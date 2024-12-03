@@ -46,7 +46,7 @@ type OriButtonVariant = NonNullable<ButtonProps['variant']>;
             <ng-content></ng-content>
         </button>`
 })
-class OriButtonComponent {
+class OriButton {
     readonly class = input<string>();
 
     readonly disabled = input<boolean | ''>(false);
@@ -60,4 +60,4 @@ class OriButtonComponent {
     );
 }
 
-export {buttonVariants, OriButtonComponent, OriButtonSize, OriButtonVariant};
+export {buttonVariants, OriButton, OriButtonSize, OriButtonVariant};

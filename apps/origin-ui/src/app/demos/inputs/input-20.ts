@@ -1,12 +1,12 @@
 import {Component} from "@angular/core";
-import {OriInputComponent} from "@origin-ui/components/input";
+import {OriInput} from "@origin-ui/components/input";
 import {LucideAngularModule, Download} from "lucide-angular";
-import {OriLabelComponent} from "@origin-ui/components/label";
+import {OriLabel} from "@origin-ui/components/label";
 
 @Component({
   selector: "demo-input-20",
   standalone:true,
-  imports: [OriInputComponent, OriLabelComponent, LucideAngularModule],
+  imports: [OriInput, OriLabel, LucideAngularModule],
   template: `
     <div class="space-y-2">
       <ori-label [htmlFor]="'input-20'">Input with end icon button</ori-label>

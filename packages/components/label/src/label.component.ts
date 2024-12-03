@@ -20,7 +20,7 @@ const labelVariants = cva('text-sm font-medium leading-4 text-foreground peer-di
     </label>
   `
 })
-export class OriLabelComponent {
+export class OriLabel {
     readonly className = input<ClassValue>('');
 
     readonly htmlFor = input<string>('');

@@ -5,6 +5,11 @@ import {RdxSliderModule} from "@radix-ng/primitives/slider";
     selector: "ori-slider",
     standalone: true,
     imports: [RdxSliderModule],
+    styles: `
+        :host {
+
+        }
+    `,
     template: `
         <rdx-slider [modelValue]="defaultValue" [step]="step"
                     className="relative flex w-full touch-none select-none items-center data-[orientation=vertical]:h-full data-[orientation=vertical]:w-auto data-[orientation=vertical]:flex-col data-[disabled]:opacity-50">

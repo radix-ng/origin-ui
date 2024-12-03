@@ -18,7 +18,7 @@ import {Component, computed, input, output} from "@angular/core";
     />
   `
 })
-export class OriInputComponent {
+export class OriInput {
 
     readonly id = input<string>('');
     readonly type = input<string>('text');

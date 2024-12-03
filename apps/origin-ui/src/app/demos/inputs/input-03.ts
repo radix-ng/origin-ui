@@ -1,11 +1,11 @@
 import {Component} from "@angular/core";
-import {OriInputComponent} from "@origin-ui/components/input";
-import {OriLabelComponent} from "@origin-ui/components/label";
+import {OriInput} from "@origin-ui/components/input";
+import {OriLabel} from "@origin-ui/components/label";
 
 @Component({
   selector: "demo-input-03",
   standalone:true,
-  imports: [OriInputComponent, OriLabelComponent],
+  imports: [OriInput, OriLabel],
   template: `
     <div class="space-y-2">
       <ori-label [htmlFor]="'input-03'">Input with helper text</ori-label>
