@@ -13,4 +13,8 @@ export const appRoutes: Route[] = [
     path: 'inputs',
     loadComponent: () => import('./pages/inputs/page.component')
   },
+  {
+    path: 'sliders',
+    loadComponent: () => import('./pages/sliders/page.component')
+  },
 ];

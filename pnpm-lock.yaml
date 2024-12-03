@@ -36,8 +36,8 @@ dependencies:
     specifier: ~18.2.0
     version: 18.2.12(@angular/common@18.2.13)(@angular/core@18.2.13)
   '@radix-ng/primitives':
-    specifier: ^0.17.0
-    version: 0.17.0(@angular/cdk@18.2.14)(@angular/core@18.2.13)
+    specifier: ^0.18.1
+    version: 0.18.1(@angular/cdk@18.2.14)(@angular/core@18.2.13)
   class-variance-authority:
     specifier: ^0.7.1
     version: 0.7.1
@@ -5806,8 +5806,8 @@ packages:
     dev: true
     optional: true
 
-  /@radix-ng/primitives@0.17.0(@angular/cdk@18.2.14)(@angular/core@18.2.13):
-    resolution: {integrity: sha512-Br6u9i7bgxNJyIF0ybxPImcwUSTNqVWEWq93UehosLqigN0o9IzdR2x64cZtftUjpj4u7fSZpKgmr8UeDxsY8Q==}
+  /@radix-ng/primitives@0.18.1(@angular/cdk@18.2.14)(@angular/core@18.2.13):
+    resolution: {integrity: sha512-pQzYHrOsTsjgKn5FGwGJ/tpRcWxO5L25+oub/mJtWAV8awttxcAD2LOkOVDOk2bVk7GQl19Z1Cs13ncUrN7JrQ==}
     peerDependencies:
       '@angular/cdk': ^18.0.0
       '@angular/core': ^18.0.0
@@ -6846,7 +6846,7 @@ packages:
     peerDependencies:
       vite: ^3.0.0 || ^4.0.0 || ^5.0.0
     dependencies:
-      vite: 5.4.6(@types/node@18.16.9)(less@4.2.0)(sass@1.77.6)(stylus@0.64.0)(terser@5.31.6)
+      vite: 5.4.6(@types/node@18.16.9)(less@4.1.3)(stylus@0.64.0)
     dev: true
 
   /@webassemblyjs/ast@1.14.1:
