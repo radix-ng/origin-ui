@@ -11,7 +11,7 @@ import {RdxSliderModule} from "@radix-ng/primitives/slider";
         }
     `,
     template: `
-        <rdx-slider [modelValue]="defaultValue" [step]="step"
+        <rdx-slider [modelValue]="defaultValue" [step]="step" [min]="min" [max]="max"
                     className="relative flex w-full touch-none select-none items-center data-[orientation=vertical]:h-full data-[orientation=vertical]:w-auto data-[orientation=vertical]:flex-col data-[disabled]:opacity-50">
             <rdx-slider-track
                 class="relative grow overflow-hidden rounded-full bg-secondary data-[orientation=horizontal]:h-2 data-[orientation=vertical]:h-full data-[orientation=horizontal]:w-full data-[orientation=vertical]:w-2">
@@ -25,6 +25,10 @@ import {RdxSliderModule} from "@radix-ng/primitives/slider";
 })
 export class OriSlider {
     @Input() defaultValue: number[] = [];
+
+    @Input() min: number = 0;
+
+    @Input() max: number = 100;
 
     @Input() step: number = 1;
 }

@@ -33,6 +33,9 @@ export default class PageSlidersComponent {
     files = [
         "slider-01",
         "slider-03",
-        "slider-04"
+        "slider-04",
+        "slider-05",
+        "slider-06",
+        "slider-07",
     ];
 }
