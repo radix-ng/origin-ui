@@ -21,4 +21,8 @@ export const appRoutes: Route[] = [
         path: 'sliders',
         loadComponent: () => import('./pages/sliders/page.component')
     },
+    {
+        path: 'easings',
+        loadComponent: () => import('./pages/easings/page.component')
+    },
 ];
