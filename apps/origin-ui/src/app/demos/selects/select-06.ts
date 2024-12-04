@@ -11,7 +11,7 @@ import {OriSelectNative} from "@origin-ui/components/select-native";
           <ori-label [htmlFor]="'select-06'">Select with error (native)</ori-label>
           <ori-select-native
               [id]="'select-06'"
-              className="mt-2 border-destructive/80 text-destructive focus-visible:border-destructive/80 focus-visible:ring-destructive/20"
+              className="border-destructive/80 text-destructive focus-visible:border-destructive/80 focus-visible:ring-destructive/20"
           >
               <option value="s1">React</option>
               <option value="s2">Next.js</option>
