@@ -32,6 +32,8 @@ import {DemoComponent} from "../../components/demo-component";
 export default class PageSlidersComponent {
     files = [
         "select-01",
-        "select-06"
+        "select-06",
+        "select-11",
+        "select-13",
     ];
 }
