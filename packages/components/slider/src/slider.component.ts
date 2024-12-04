@@ -1,6 +1,8 @@
 import {Component, EventEmitter, Input, Output} from "@angular/core";
 import {RdxSliderModule} from "@radix-ng/primitives/slider";
 
+type Orientation = "horizontal" | "vertical";
+
 @Component({
     selector: "ori-slider",
     standalone: true,
@@ -12,6 +14,7 @@ import {RdxSliderModule} from "@radix-ng/primitives/slider";
     `,
     template: `
         <rdx-slider [modelValue]="defaultValue" [step]="step" [min]="min" [max]="max"
+                    [orientation]="orientation"
                     (valueChange)="handlerValueChange($event)"
                     className="relative flex w-full touch-none select-none items-center data-[orientation=vertical]:h-full data-[orientation=vertical]:w-auto data-[orientation=vertical]:flex-col data-[disabled]:opacity-50">
             <rdx-slider-track
@@ -35,6 +38,8 @@ export class OriSlider {
     @Input() max: number = 100;
 
     @Input() step: number = 1;
+
+    @Input() orientation: Orientation = 'horizontal';
 
     @Output() onValueChange: EventEmitter<any> = new EventEmitter();
 

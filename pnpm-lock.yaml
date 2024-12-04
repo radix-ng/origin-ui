@@ -36,8 +36,8 @@ dependencies:
     specifier: ~18.2.0
     version: 18.2.12(@angular/common@18.2.13)(@angular/core@18.2.13)
   '@radix-ng/primitives':
-    specifier: ^0.18.1
-    version: 0.18.1(@angular/cdk@18.2.14)(@angular/core@18.2.13)
+    specifier: ^0.18.2
+    version: 0.18.2(@angular/cdk@18.2.14)(@angular/core@18.2.13)
   class-variance-authority:
     specifier: ^0.7.1
     version: 0.7.1
@@ -5806,8 +5806,8 @@ packages:
     dev: true
     optional: true
 
-  /@radix-ng/primitives@0.18.1(@angular/cdk@18.2.14)(@angular/core@18.2.13):
-    resolution: {integrity: sha512-pQzYHrOsTsjgKn5FGwGJ/tpRcWxO5L25+oub/mJtWAV8awttxcAD2LOkOVDOk2bVk7GQl19Z1Cs13ncUrN7JrQ==}
+  /@radix-ng/primitives@0.18.2(@angular/cdk@18.2.14)(@angular/core@18.2.13):
+    resolution: {integrity: sha512-0mgD3078R5B7OCu9KpP8WZQXpmbNBYHmphfXFoWAynnmrH9qdaRV44GlPhtSFCn7Ao9wfdYtUU7cWU0MrLlMYg==}
     peerDependencies:
       '@angular/cdk': ^18.0.0
       '@angular/core': ^18.0.0
