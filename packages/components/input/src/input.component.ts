@@ -3,20 +3,24 @@ import {Component, computed, input, output} from "@angular/core";
 @Component({
     selector: 'ori-input',
     standalone: true,
+    host: {
+        // set to null on host element
+        '[attr.id]': 'null'
+    },
     template: `
-    <input
-      [id]="id()"
-      [type]="type()"
-      [class]="computedClass()"
-      [attr.placeholder]="placeholder()"
-      [attr.disabled]="disabled() === true || disabled() === '' ? true : null"
-      [attr.required]="required() === true || required() === '' ? true : null"
-      [value]="value()"
-      (input)="handleInput($event)"
-      (focus)="onFocus()"
-      (blur)="onBlur()"
-    />
-  `
+        <input
+            [id]="id()"
+            [type]="type()"
+            [class]="computedClass()"
+            [attr.placeholder]="placeholder()"
+            [attr.disabled]="disabled() === true || disabled() === '' ? true : null"
+            [attr.required]="required() === true || required() === '' ? true : null"
+            [value]="value()"
+            (input)="handleInput($event)"
+            (focus)="onFocus()"
+            (blur)="onBlur()"
+        />
+    `
 })
 export class OriInput {
 
