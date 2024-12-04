@@ -43,7 +43,7 @@ type OriButtonVariant = NonNullable<ButtonProps['variant']>;
     template: `
         <button [class]="computedClass()"
                 [attr.disabled]="disabled() === true || disabled() === '' ? true : null">
-            <ng-content></ng-content>
+            <ng-content />
         </button>`
 })
 class OriButton {
