@@ -1,12 +1,14 @@
 import {Component, EventEmitter, Input, Output} from "@angular/core";
 import {RdxSliderModule} from "@radix-ng/primitives/slider";
+import {RdxTooltipRootDirective, RdxTooltipTriggerDirective} from "@radix-ng/primitives/tooltip";
+import {OriTooltip} from "@origin-ui/components/tooltip";
 
 type Orientation = "horizontal" | "vertical";
 
 @Component({
     selector: "ori-slider",
     standalone: true,
-    imports: [RdxSliderModule],
+    imports: [RdxSliderModule, RdxTooltipRootDirective, RdxTooltipTriggerDirective, OriTooltip],
     styles: `
         :host {
 
@@ -24,8 +26,14 @@ type Orientation = "horizontal" | "vertical";
             </rdx-slider-track>
 
             @for (item of defaultValue; track $index) {
-                <rdx-slider-thumb
-                    class="block h-5 w-5 rounded-full border-2 border-primary bg-background transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-ring/40 data-[disabled]:cursor-not-allowed"/>
+
+                <ng-container #tooltipRoot="rdxTooltipRoot" rdxTooltipRoot>
+                    <button #triggerElement rdxTooltipTrigger>
+                        <rdx-slider-thumb
+                            class="block h-5 w-5 rounded-full border-2 border-primary bg-background transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-ring/40 data-[disabled]:cursor-not-allowed"/>
+                    </button>
+                    <ori-tooltip-content className="px-2 py-1 text-xs" />
+                </ng-container>
             }
         </rdx-slider>
     `
