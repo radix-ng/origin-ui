@@ -1,7 +1,7 @@
 import {Component} from "@angular/core";
 import {AppPageHeaderComponent} from "../../components/page-header.component";
 import {OriLabel} from "@origin-ui/components/label";
-import {defaultConfig, EasingSvgComponent} from "./easing-svg.component";
+import {defaultConfig, Easing, EasingSvgComponent} from "./easing-svg.component";
 import {AnimatedSquareComponent} from "./animated-square.component";
 
 @Component({
@@ -55,25 +55,16 @@ import {AnimatedSquareComponent} from "./animated-square.component";
 
                                     <div class="flex w-full grow flex-col items-start justify-center px-8">
                                         <div class="mb-4 flex w-full justify-center">
-<!--                                            <app-easing-svg [easing]="{name: 'ease-in', points: []}"/>-->
+                                            <app-easing-svg
+                                                [easing]="item"
+                                                [duration]="1"
+                                                [pauseDuration]="1"
+                                                [animationType]="'translate'"
+                                            />
                                             <app-animated-square
                                                 [easing]="item"
                                                 [duration]="duration"
                                                 [pauseDuration]="pauseDuration" [animationType]="'translate'"/>
-
-<!--                                            <app-animated-square-->
-<!--                                                [easing]="{ name: 'ease', points: [0.25, 0.1, 0.25, 1] }"-->
-<!--                                                [duration]="2"-->
-<!--                                                [animationType]="'translate'"-->
-<!--                                                [pauseDuration]="1"-->
-<!--                                            ></app-animated-square>-->
-
-<!--                                            <app-animated-square-->
-<!--                                                [easing]="{name: 'ease',  points: [0.42, 0, 1, 1] }"-->
-<!--                                                [duration]="3"-->
-<!--                                                [animationType]="'scale'"-->
-<!--                                                [pauseDuration]="0.5"-->
-<!--                                            ></app-animated-square>-->
                                         </div>
                                     </div>
                                 </div>
@@ -84,16 +75,17 @@ import {AnimatedSquareComponent} from "./animated-square.component";
                                     <strong class="block text-sm font-medium text-foreground">Note</strong>
                                 </p>
                                 <p class="text-sm leading-relaxed text-muted-foreground">
-                                    We use class names with arbitrary properties like{{" "}}
+                                    We use class names with arbitrary properties like{{ " " }}
                                     <code class="font-mono text-[13px] text-foreground">
                                         &#91;transition-timing-function:cubic-bezier(...)&#93;
-                                    </code>{{" "}}
-                                    instead of{{" "}}
+                                    </code>{{ " " }}
+                                    instead of{{ " " }}
                                     <code class="font-mono text-[13px] text-foreground">
                                         ease-&#91;cubic-bezier(...)&#93;
-                                    </code>{{" "}}
-                                    as recommended in the Tailwind CSS documentation, because the latter won&lsquo;t work
-                                    with the tailwindcss-animate plugin. See{{" "}}
+                                    </code>{{ " " }}
+                                    as recommended in the Tailwind CSS documentation, because the latter won&lsquo;t
+                                    work
+                                    with the tailwindcss-animate plugin. See{{ " " }}
                                     <a
                                         href="https://github.com/jamiebuilds/tailwindcss-animate/pull/46"
                                         class="underline hover:no-underline"
@@ -101,7 +93,7 @@ import {AnimatedSquareComponent} from "./animated-square.component";
                                         rel="noopener noreferrer"
                                     >
                                         this GitHub issue
-                                    </a>{{" "}}
+                                    </a>{{ " " }}
                                     for technical details.
                                 </p>
                             </div>
@@ -116,7 +108,7 @@ import {AnimatedSquareComponent} from "./animated-square.component";
 })
 export default class PageEasingsComponent {
 
-    easings = [
+    easings: Easing[] = [
         {
             name: "linear",
             points: [0, 0, 1, 1],

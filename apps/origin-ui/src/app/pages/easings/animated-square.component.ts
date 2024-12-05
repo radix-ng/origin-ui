@@ -1,4 +1,4 @@
-import {Component, computed, effect, Input, signal, ViewEncapsulation} from "@angular/core";
+import {Component, computed, Input, ViewEncapsulation} from "@angular/core";
 import {NgClass, NgStyle} from "@angular/common";
 
 export interface Easing {
