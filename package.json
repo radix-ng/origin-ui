@@ -19,6 +19,7 @@
         "@angular/platform-server": "~18.2.0",
         "@angular/router": "~18.2.0",
         "@angular/ssr": "~18.2.0",
+        "@angular/cdk": "~18.2.14",
         "@radix-ng/primitives": "^0.18.2",
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
