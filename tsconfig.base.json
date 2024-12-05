@@ -23,6 +23,9 @@
             "@origin-ui/components/button": [
                 "packages/components/button/index.ts"
             ],
+            "@origin-ui/components/checkbox": [
+                "packages/components/checkbox/index.ts"
+            ],
             "@origin-ui/components/input": [
                 "packages/components/input/index.ts"
             ],
