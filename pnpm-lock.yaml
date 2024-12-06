@@ -38,6 +38,12 @@ dependencies:
   '@angular/ssr':
     specifier: ~18.2.0
     version: 18.2.12(@angular/common@18.2.13)(@angular/core@18.2.13)
+  '@fontsource-variable/inter':
+    specifier: ^5.1.0
+    version: 5.1.0
+  '@fontsource/jetbrains-mono':
+    specifier: ^5.1.1
+    version: 5.1.1
   '@radix-ng/primitives':
     specifier: ^0.18.2
     version: 0.18.2(@angular/cdk@18.2.14)(@angular/core@18.2.13)
@@ -4112,6 +4118,14 @@ packages:
     dependencies:
       levn: 0.4.1
     dev: true
+
+  /@fontsource-variable/inter@5.1.0:
+    resolution: {integrity: sha512-Wj2dUGP0vUpxRGQTXQTCNJO+aLcFcQm+gUPXfj/aS877bQkEPBPv9JvZJpwdm2vzelt8NTZ+ausKlBCJjh2XIg==}
+    dev: false
+
+  /@fontsource/jetbrains-mono@5.1.1:
+    resolution: {integrity: sha512-5rwvmdQQpXev4LlBX1P+7h2dguu6iwW/9Npjde4+DEq+HgpVJI/7QY8DI1NVVFdvLtXZNP+vO2L/5BQED6FUhA==}
+    dev: false
 
   /@humanfs/core@0.19.1:
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}

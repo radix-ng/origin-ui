@@ -1,4 +1,5 @@
 const { createGlobPatternsForDependencies } = require('@nx/angular/tailwind');
+const defaultTheme = require('tailwindcss/defaultTheme');
 const { join } = require('path');
 
 /** @type {import('tailwindcss').Config} */
@@ -10,8 +11,8 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['var(--font-sans)'],
-                mono: ['var(--font-mono)']
+                mono: ['JetBrains Mono', ...defaultTheme.fontFamily.mono],
+                sans: ['Inter Variable', ...defaultTheme.fontFamily.sans]
             },
             borderRadius: {
                 lg: 'var(--radius)',

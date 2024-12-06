@@ -2,11 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+/* inter-latin-wght-normal */
+@font-face {
+    font-family: 'Inter Variable';
+    font-style: normal;
+    font-display: auto;
+    font-weight: 100 900;
+    src: url(@fontsource-variable/inter/files/inter-latin-wght-normal.woff2)
+    format('woff2-variations');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304,
+    U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF,
+    U+FFFD;
+}
+
+/* jetbrains-mono-latin-400-normal */
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-display: auto;
+    font-weight: 400;
+    src:
+        url(@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2) format('woff2'),
+        url(@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff) format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304,
+    U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF,
+    U+FFFD;
+}
+
 @layer base {
     :root {
-        --font-sans: 'Inter', sans-serif;
-        --font-mono: 'JetBrains Mono', monospace;
-
         --background: 0 0% 100%;
         --foreground: 240 10% 3.9%;
         --card: 0 0% 100%;
@@ -49,6 +73,25 @@
         --input: 240 3.7% 15.9%;
         --ring: 240 3.8% 46.1%;
     }
+
+    ::-webkit-scrollbar {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+
+    ::-webkit-scrollbar-track {
+        --tw-bg-opacity: 1 !important;
+        background-color: hsl(var(--muted) / var(--tw-bg-opacity)) !important;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: calc(var(--radius) - 4px);
+        background-color: hsl(var(--muted-foreground) / 0.3) !important;
+    }
+
+    ::-webkit-scrollbar-corner {
+        background-color: hsl(var(--muted-foreground) / 0.3) !important;
+    }
 }
 
 @layer base {
@@ -57,5 +100,17 @@
     }
     body {
         @apply bg-background text-foreground;
+    }
+}
+
+@layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
     }
 }
