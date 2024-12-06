@@ -9,7 +9,7 @@
 - Built with Angular and TailwindCSS
 - RadixNG and Angular CDK
 
-**Demo** → [origin-ui-six.vercel.app/](https://origin-ui-six.vercel.app/)
+**Demo** → [origin-ng.com/](https://origin-ng.com/)
 
 ## Contributing
 
