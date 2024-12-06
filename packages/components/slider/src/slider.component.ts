@@ -1,5 +1,5 @@
 import { Component, EventEmitter, inject, Input, NgZone, OnDestroy, Output, signal } from '@angular/core';
-import { OriTooltip } from '@origin-ui/components/tooltip';
+import { OriTooltip, OriTooltipContent } from '@origin-ui/components/tooltip';
 import { RdxSliderModule } from '@radix-ng/primitives/slider';
 import { RdxTooltipModule } from '@radix-ng/primitives/tooltip';
 
@@ -8,7 +8,7 @@ type Orientation = 'horizontal' | 'vertical';
 @Component({
     selector: 'ori-slider',
     standalone: true,
-    imports: [RdxSliderModule, RdxTooltipModule, OriTooltip],
+    imports: [RdxSliderModule, RdxTooltipModule, OriTooltipContent, OriTooltip],
     styles: `
         :host {
         }
@@ -33,7 +33,7 @@ type Orientation = 'horizontal' | 'vertical';
 
             @for (item of defaultValue; track $index) {
                 @if (showTooltip) {
-                    <ng-container [open]="showTooltipState()" rdxTooltipRoot>
+                    <ori-tooltip [open]="showTooltipState()">
                         <rdx-slider-thumb
                             class="border-primary bg-background focus-visible:outline-ring/40 block h-5 w-5 rounded-full border-2 transition-colors focus-visible:outline focus-visible:outline-[3px] data-[disabled]:cursor-not-allowed"
                             (pointerdown)="handlePointerDown()"
@@ -43,7 +43,7 @@ type Orientation = 'horizontal' | 'vertical';
                         <ng-template [sideOffset]="4" rdxTooltipContent>
                             <ori-tooltip-content className="px-2 py-1 text-xs">// TODO</ori-tooltip-content>
                         </ng-template>
-                    </ng-container>
+                    </ori-tooltip>
                 } @else {
                     <rdx-slider-thumb
                         class="border-primary bg-background focus-visible:outline-ring/40 block h-5 w-5 rounded-full border-2 transition-colors focus-visible:outline focus-visible:outline-[3px] data-[disabled]:cursor-not-allowed"

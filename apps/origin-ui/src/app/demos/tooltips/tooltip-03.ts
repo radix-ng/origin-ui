@@ -1,18 +1,20 @@
 import { Component } from '@angular/core';
 import { OriButton } from '@origin-ui/components/button';
-import { OriTooltip } from '@origin-ui/components/tooltip';
-import {
-    RdxTooltipContentDirective,
-    RdxTooltipRootDirective,
-    RdxTooltipTriggerDirective
-} from '@radix-ng/primitives/tooltip';
+import { OriTooltip, OriTooltipContent } from '@origin-ui/components/tooltip';
+import { RdxTooltipContentDirective, RdxTooltipTriggerDirective } from '@radix-ng/primitives/tooltip';
 
 @Component({
     selector: 'demo-tooltip-03',
     standalone: true,
-    imports: [OriTooltip, OriButton, RdxTooltipRootDirective, RdxTooltipContentDirective, RdxTooltipTriggerDirective],
+    imports: [
+        OriTooltipContent,
+        OriButton,
+        RdxTooltipContentDirective,
+        RdxTooltipTriggerDirective,
+        OriTooltip
+    ],
     template: `
-        <ng-container [delayDuration]="0" rdxTooltipRoot>
+        <ori-tooltip [delayDuration]="0">
             <ori-button variant="outline" size="sm" rdxTooltipTrigger>W/ arrow</ori-button>
 
             <ng-template [sideOffset]="10" rdxTooltipContent>
@@ -20,7 +22,7 @@ import {
                     This tooltip has an arrow
                 </ori-tooltip-content>
             </ng-template>
-        </ng-container>
+        </ori-tooltip>
     `
 })
 export default class Tooltip03Component {}

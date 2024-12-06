@@ -1,6 +1,10 @@
 import { Component, computed, input, Input } from '@angular/core';
 import { cn } from '@origin-ui/components/utils';
-import { RdxTooltipContentAttributesDirective, RdxTooltipModule } from '@radix-ng/primitives/tooltip';
+import {
+    RdxTooltipContentAttributesDirective,
+    RdxTooltipModule,
+    RdxTooltipRootDirective
+} from '@radix-ng/primitives/tooltip';
 import { cva } from 'class-variance-authority';
 import { ClassValue } from 'clsx';
 
@@ -23,10 +27,20 @@ const variants = cva(
         }
     `
 })
-export class OriTooltip {
+export class OriTooltipContent {
     readonly className = input<ClassValue>('');
 
     @Input() showArrow: boolean = false;
 
     protected computedClass = computed(() => cn(variants(), this.className()));
 }
+
+@Component({
+    selector: 'ori-tooltip',
+    standalone: true,
+    hostDirectives: [{ directive: RdxTooltipRootDirective, inputs: ['delayDuration', 'open'] }],
+    template: `
+        <ng-content />
+    `
+})
+export class OriTooltip {}
