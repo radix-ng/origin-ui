@@ -1,4 +1,4 @@
-import {Component, computed, input, output} from "@angular/core";
+import { Component, computed, input, output } from '@angular/core';
 
 @Component({
     selector: 'ori-input',
@@ -16,16 +16,15 @@ import {Component, computed, input, output} from "@angular/core";
             [attr.disabled]="disabled() === true || disabled() === '' ? true : null"
             [attr.required]="required() === true || required() === '' ? true : null"
             [value]="value()"
+            [min]="min()"
+            [max]="max()"
             (input)="handleInput($event)"
             (focus)="onFocus()"
             (blur)="onBlur()"
-            [min]="min()"
-            [max]="max()"
         />
     `
 })
 export class OriInput {
-
     readonly id = input<string>('');
     readonly type = input<string>('text');
     readonly placeholder = input<string>('');
@@ -47,8 +46,8 @@ export class OriInput {
             this.type() === 'search'
                 ? '[&::-webkit-search-cancel-button]:appearance-none [&::-webkit-search-decoration]:appearance-none [&::-webkit-search-results-button]:appearance-none [&::-webkit-search-results-decoration]:appearance-none'
                 : this.type() === 'file'
-                    ? 'p-0 pr-3 italic text-muted-foreground/70 file:me-3 file:h-full file:border-0 file:border-r file:border-solid file:border-input file:bg-transparent file:px-3 file:text-sm file:font-medium file:not-italic file:text-foreground'
-                    : '';
+                  ? 'p-0 pr-3 italic text-muted-foreground/70 file:me-3 file:h-full file:border-0 file:border-r file:border-solid file:border-input file:bg-transparent file:px-3 file:text-sm file:font-medium file:not-italic file:text-foreground'
+                  : '';
 
         return `${baseClass} ${typeClass} ${this.className()}`.trim();
     });

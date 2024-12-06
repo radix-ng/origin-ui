@@ -1,49 +1,52 @@
-import {Component, EventEmitter, inject, Input, NgZone, OnDestroy, Output, signal} from "@angular/core";
-import {RdxSliderModule} from "@radix-ng/primitives/slider";
-import {RdxTooltipModule} from "@radix-ng/primitives/tooltip";
-import {OriTooltip} from "@origin-ui/components/tooltip";
+import { Component, EventEmitter, inject, Input, NgZone, OnDestroy, Output, signal } from '@angular/core';
+import { OriTooltip } from '@origin-ui/components/tooltip';
+import { RdxSliderModule } from '@radix-ng/primitives/slider';
+import { RdxTooltipModule } from '@radix-ng/primitives/tooltip';
 
-type Orientation = "horizontal" | "vertical";
+type Orientation = 'horizontal' | 'vertical';
 
 @Component({
-    selector: "ori-slider",
+    selector: 'ori-slider',
     standalone: true,
     imports: [RdxSliderModule, RdxTooltipModule, OriTooltip],
     styles: `
         :host {
-
         }
     `,
     template: `
-        <rdx-slider [modelValue]="defaultValue" [step]="step" [min]="min" [max]="max"
-                    [orientation]="orientation"
-                    (valueChange)="handlerValueChange($event)"
-                    className="relative flex w-full touch-none select-none items-center data-[orientation=vertical]:h-full data-[orientation=vertical]:w-auto data-[orientation=vertical]:flex-col data-[disabled]:opacity-50">
+        <rdx-slider
+            [modelValue]="defaultValue"
+            [step]="step"
+            [min]="min"
+            [max]="max"
+            [orientation]="orientation"
+            (valueChange)="handlerValueChange($event)"
+            className="relative flex w-full touch-none select-none items-center data-[orientation=vertical]:h-full data-[orientation=vertical]:w-auto data-[orientation=vertical]:flex-col data-[disabled]:opacity-50"
+        >
             <rdx-slider-track
-                class="relative grow overflow-hidden rounded-full bg-secondary data-[orientation=horizontal]:h-2 data-[orientation=vertical]:h-full data-[orientation=horizontal]:w-full data-[orientation=vertical]:w-2">
+                class="bg-secondary relative grow overflow-hidden rounded-full data-[orientation=horizontal]:h-2 data-[orientation=vertical]:h-full data-[orientation=horizontal]:w-full data-[orientation=vertical]:w-2"
+            >
                 <rdx-slider-range
-                    class="absolute bg-primary data-[orientation=horizontal]:h-full data-[orientation=vertical]:w-full"/>
+                    class="bg-primary absolute data-[orientation=horizontal]:h-full data-[orientation=vertical]:w-full"
+                />
             </rdx-slider-track>
 
             @for (item of defaultValue; track $index) {
-
-                @if(showTooltip) {
-                    <ng-container rdxTooltipRoot [open]="showTooltipState()">
+                @if (showTooltip) {
+                    <ng-container [open]="showTooltipState()" rdxTooltipRoot>
                         <rdx-slider-thumb
-                            rdxTooltipTrigger
+                            class="border-primary bg-background focus-visible:outline-ring/40 block h-5 w-5 rounded-full border-2 transition-colors focus-visible:outline focus-visible:outline-[3px] data-[disabled]:cursor-not-allowed"
                             (pointerdown)="handlePointerDown()"
-                            class="block h-5 w-5 rounded-full border-2 border-primary bg-background transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-ring/40 data-[disabled]:cursor-not-allowed"
+                            rdxTooltipTrigger
                         />
 
                         <ng-template [sideOffset]="4" rdxTooltipContent>
-                            <ori-tooltip-content className="px-2 py-1 text-xs">
-                                // TODO
-                            </ori-tooltip-content>
+                            <ori-tooltip-content className="px-2 py-1 text-xs">// TODO</ori-tooltip-content>
                         </ng-template>
                     </ng-container>
                 } @else {
                     <rdx-slider-thumb
-                        class="block h-5 w-5 rounded-full border-2 border-primary bg-background transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-ring/40 data-[disabled]:cursor-not-allowed"
+                        class="border-primary bg-background focus-visible:outline-ring/40 block h-5 w-5 rounded-full border-2 transition-colors focus-visible:outline focus-visible:outline-[3px] data-[disabled]:cursor-not-allowed"
                     />
                 }
             }

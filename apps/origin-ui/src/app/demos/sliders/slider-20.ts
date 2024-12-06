@@ -1,11 +1,11 @@
-import {Component, computed, signal} from "@angular/core";
-import {OriSlider} from "@origin-ui/components/slider";
-import {OriLabel} from "@origin-ui/components/label";
-import {OriButton} from "@origin-ui/components/button";
-import {LucideAngularModule, Minus, Plus} from "lucide-angular";
+import { Component, computed, signal } from '@angular/core';
+import { OriButton } from '@origin-ui/components/button';
+import { OriLabel } from '@origin-ui/components/label';
+import { OriSlider } from '@origin-ui/components/slider';
+import { LucideAngularModule, Minus, Plus } from 'lucide-angular';
 
 @Component({
-    selector: "demo-slider-20",
+    selector: 'demo-slider-20',
     standalone: true,
     imports: [OriSlider, OriLabel, OriButton, LucideAngularModule],
     template: `
@@ -14,31 +14,33 @@ import {LucideAngularModule, Minus, Plus} from "lucide-angular";
             <div class="flex items-center gap-4">
                 <div>
                     <ori-button
+                        class="size-8"
+                        [disabled]="isDecreaseDisabled()"
+                        (click)="decreaseValue()"
                         variant="outline"
                         size="icon"
-                        class="size-8"
                         aria-label="Decrease value"
-                        (click)="decreaseValue()"
-                        [disabled]="isDecreaseDisabled()"
                     >
                         <lucide-angular [img]="MinusIcon" size="16" strokeWidth="2" aria-hidden="true" />
                     </ori-button>
                 </div>
-                <ori-slider class="flex-grow"
-                            [defaultValue]="value()"
-                            [min]="minValue"
-                            [max]="maxValue"
-                            [step]="steps"
-                            (onValueChange)="onValueChange($event)"
-                            aria-label="Dual range slider" />
+                <ori-slider
+                    class="flex-grow"
+                    [defaultValue]="value()"
+                    [min]="minValue"
+                    [max]="maxValue"
+                    [step]="steps"
+                    (onValueChange)="onValueChange($event)"
+                    aria-label="Dual range slider"
+                />
                 <div>
                     <ori-button
+                        class="size-8"
+                        [disabled]="isIncreaseDisabled()"
+                        (click)="increaseValue()"
                         variant="outline"
                         size="icon"
-                        class="size-8"
                         aria-label="Increase value"
-                        (click)="increaseValue()"
-                        [disabled]="isIncreaseDisabled()"
                     >
                         <lucide-angular [img]="PlusIcon" size="16" strokeWidth="2" aria-hidden="true" />
                     </ori-button>

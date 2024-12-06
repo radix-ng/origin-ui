@@ -1,5 +1,4 @@
-import {Component, computed, ViewEncapsulation} from '@angular/core';
-import {input} from '@angular/core';
+import { Component, computed, input, ViewEncapsulation } from '@angular/core';
 
 export interface Easing {
     name: string;
@@ -23,68 +22,59 @@ export const defaultConfig = {
     encapsulation: ViewEncapsulation.None,
     template: `
         <svg
+            class="w-full"
             [attr.width]="config().width"
             [attr.height]="config().height"
             [attr.viewBox]="'0 0 ' + config().width + ' ' + config().height"
             [style]="svgStyle()"
-            class="w-full"
         >
             <!-- Grid -->
             <rect
+                class="stroke-muted-foreground/20 fill-none"
                 [attr.x]="config().padding"
                 [attr.y]="config().padding"
                 [attr.width]="config().plotSize"
                 [attr.height]="config().plotSize"
-                class="fill-none stroke-muted-foreground/20"
                 strokeWidth="1"
             ></rect>
 
             <!-- Diagonal line -->
             <line
+                class="stroke-muted-foreground/20"
                 [attr.x1]="config().padding"
                 [attr.y1]="config().height - config().padding"
                 [attr.x2]="config().width - config().padding"
                 [attr.y2]="config().padding"
-                class="stroke-muted-foreground/20"
                 strokeWidth="1"
             ></line>
 
             <!-- Bezier curve -->
-            <path
-                [attr.d]="bezierPath()"
-                fill="none"
-                class="stroke-muted-foreground"
-                strokeWidth="2"
-            ></path>
+            <path class="stroke-muted-foreground" [attr.d]="bezierPath()" fill="none" strokeWidth="2"></path>
 
             <!-- Start point -->
             <circle
+                class="fill-muted-foreground"
                 [attr.cx]="config().padding"
                 [attr.cy]="config().height - config().padding"
                 r="4"
-                class="fill-muted-foreground"
             ></circle>
 
             <!-- End point -->
             <circle
+                class="fill-muted-foreground"
                 [attr.cx]="config().width - config().padding"
                 [attr.cy]="config().padding"
                 r="4"
-                class="fill-muted-foreground"
             ></circle>
 
             <!-- Animated circle -->
-            <g
-                class="animated-circle"
-                [attr.key]="key()"
-                [style]="animationStyle()"
-            >
+            <g class="animated-circle" [attr.key]="key()" [style]="animationStyle()">
                 <circle
+                    class="fill-primary"
                     [attr.cx]="config().padding"
                     [attr.cy]="config().height - config().padding"
-                    r="4"
-                    class="fill-primary"
                     [style]="circleAnimationStyle()"
+                    r="4"
                 ></circle>
             </g>
         </svg>
@@ -112,8 +102,9 @@ export const defaultConfig = {
             .animated-circle circle {
                 animation-fill-mode: forwards;
             }
-        `,
-    ],
+        `
+
+    ]
 })
 export class EasingSvgComponent {
     easing = input.required<Easing>();
@@ -125,7 +116,7 @@ export class EasingSvgComponent {
     key = computed(() => `${this.duration()}-${this.pauseDuration()}-${this.animationType()}`);
 
     svgStyle = computed(() => ({
-        '--plot-size': `${this.config().plotSize}px`,
+        '--plot-size': `${this.config().plotSize}px`
     }));
 
     animationStyle = computed(() => {
@@ -140,7 +131,7 @@ export class EasingSvgComponent {
             animationTimingFunction: `cubic-bezier(${this.easing().points.join(',')})`,
             animationIterationCount: 'infinite',
             animationFillMode: 'forwards',
-            animationDelay: '0s',
+            animationDelay: '0s'
         } as Record<string, string>;
     });
 
@@ -150,7 +141,7 @@ export class EasingSvgComponent {
         animationTimingFunction: 'linear',
         animationIterationCount: '1',
         animationFillMode: 'forwards',
-        animationDelay: '0s',
+        animationDelay: '0s'
     }));
 
     bezierPath = computed(() => {

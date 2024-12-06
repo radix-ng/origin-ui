@@ -1,9 +1,9 @@
-import {Component} from "@angular/core";
-import {OriSlider} from "@origin-ui/components/slider";
-import {OriLabel} from "@origin-ui/components/label";
+import { Component } from '@angular/core';
+import { OriLabel } from '@origin-ui/components/label';
+import { OriSlider } from '@origin-ui/components/slider';
 
 @Component({
-    selector: "demo-slider-11",
+    selector: 'demo-slider-11',
     standalone: true,
     imports: [OriSlider, OriLabel],
     template: `

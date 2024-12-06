@@ -1,4 +1,4 @@
-import {Route} from '@angular/router';
+import { Route } from '@angular/router';
 
 export const appRoutes: Route[] = [
     {
@@ -28,5 +28,5 @@ export const appRoutes: Route[] = [
     {
         path: 'easings',
         loadComponent: () => import('./pages/easings/page.component')
-    },
+    }
 ];

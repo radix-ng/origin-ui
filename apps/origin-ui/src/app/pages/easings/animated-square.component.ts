@@ -1,5 +1,5 @@
-import {Component, computed, Input, ViewEncapsulation} from "@angular/core";
-import {NgClass, NgStyle} from "@angular/common";
+import { NgClass, NgStyle } from '@angular/common';
+import { Component, computed, Input, ViewEncapsulation } from '@angular/core';
 
 export interface Easing {
     name: string;
@@ -17,13 +17,13 @@ export type AnimationType = 'translate' | 'scale' | 'rotate';
         <div
             class="pointer-events-none flex w-full items-center"
             [ngClass]="{
-        'justify-start': animationType === 'translate',
-        'justify-center': animationType !== 'translate'
-      }"
+                'justify-start': animationType === 'translate',
+                'justify-center': animationType !== 'translate'
+            }"
             [ngStyle]="animationType === 'translate' ? animationStyle() : null"
         >
             <div
-                class="animated-square h-10 w-10 rounded-lg bg-gradient-to-tr from-primary to-primary/80 shadow-lg shadow-primary/10"
+                class="animated-square from-primary to-primary/80 shadow-primary/10 h-10 w-10 rounded-lg bg-gradient-to-tr shadow-lg"
                 [ngStyle]="animationType !== 'translate' ? animationStyle() : null"
             ></div>
         </div>
@@ -54,9 +54,9 @@ export type AnimationType = 'translate' | 'scale' | 'rotate';
                     transform: rotate(360deg);
                 }
             }
+        `
 
-        `,
-    ],
+    ]
 })
 export class AnimatedSquareComponent {
     @Input() easing!: Easing;
@@ -81,7 +81,6 @@ export class AnimatedSquareComponent {
         return this._pauseDuration;
     }
 
-
     private _pauseDuration: number = 1;
     private _duration: number = 1;
 
@@ -91,13 +90,13 @@ export class AnimatedSquareComponent {
         const baseStyle = {
             '--bezier-coordinates': this.easing.points.join(','),
             '--animation-duration': `${this.duration}s`,
-            '--total-duration': `${this.duration + this.pauseDuration}s`,
+            '--total-duration': `${this.duration + this.pauseDuration}s`
         };
 
         const animationName = {
             translate: 'translateSquare',
             scale: 'scaleSquare',
-            rotate: 'rotateSquare',
+            rotate: 'rotateSquare'
         }[this.animationType];
 
         return {
@@ -107,8 +106,7 @@ export class AnimatedSquareComponent {
             animationTimingFunction: `cubic-bezier(${this.easing.points.join(',')})`,
             animationIterationCount: 'infinite',
             animationFillMode: 'forwards',
-            animationDelay: "0s",
+            animationDelay: '0s'
         } as Record<string, string>;
     });
-
 }
