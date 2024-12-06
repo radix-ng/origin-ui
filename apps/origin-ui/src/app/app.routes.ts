@@ -26,6 +26,10 @@ export const appRoutes: Route[] = [
         loadComponent: () => import('./pages/sliders/page.component')
     },
     {
+        path: 'tooltips',
+        loadComponent: () => import('./pages/tooltips/page.component')
+    },
+    {
         path: 'easings',
         loadComponent: () => import('./pages/easings/page.component')
     }
