@@ -1,3 +1,4 @@
+import { BooleanInput } from '@angular/cdk/coercion';
 import {
     booleanAttribute,
     ChangeDetectionStrategy,
@@ -31,13 +32,15 @@ const variants = cva(
     ],
     host: {
         // set to null on host element
-        '[attr.id]': 'null'
+        '[attr.id]': 'null',
+        '[attr.data-state]': 'state'
     },
     template: `
         <button
             [class]="computedClass()"
             [checked]="checked()"
             [indeterminate]="indeterminate()"
+            [disabled]="disabled()"
             (checkedChange)="onChange($event)"
             CheckboxRoot
         >
@@ -60,7 +63,13 @@ const variants = cva(
                     </svg>
                 }
             </span>
-            <input class="cdk-visually-hidden" [id]="id()" [value]="checked.asReadonly()" CheckboxInput />
+            <input
+                class="cdk-visually-hidden"
+                [id]="id()"
+                [value]="checked.asReadonly()"
+                [disabled]="disabled()"
+                CheckboxInput
+            />
         </button>
     `,
     changeDetection: ChangeDetectionStrategy.OnPush
@@ -71,6 +80,8 @@ export class OriCheckbox {
     readonly checked = model<boolean>(false);
 
     readonly indeterminate = model(false);
+
+    readonly disabled = input<boolean, BooleanInput>(false, { transform: booleanAttribute });
 
     readonly className = input<string>();
     protected computedClass = computed(() => cn(variants({ class: this.className() })));
@@ -83,6 +94,13 @@ export class OriCheckbox {
     @Input({ transform: booleanAttribute })
     set defaultChecked(value: boolean) {
         this.checked.set(value);
+    }
+
+    get state(): string {
+        if (this.indeterminate()) {
+            return 'indeterminate';
+        }
+        return this.checked() ? 'checked' : 'unchecked';
     }
 
     protected onChange(event: boolean): void {

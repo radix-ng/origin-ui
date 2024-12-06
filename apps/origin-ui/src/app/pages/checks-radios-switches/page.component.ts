@@ -36,7 +36,8 @@ export default class PageButtonsComponent {
     checkboxFiles = [
         'checkbox-01',
         'checkbox-02',
-        'checkbox-03'
+        'checkbox-03',
+        'checkbox-04'
     ];
 
     totalComponents = this.checkboxFiles.length;
