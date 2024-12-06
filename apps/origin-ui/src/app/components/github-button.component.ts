@@ -1,5 +1,5 @@
 import { NgIf } from '@angular/common';
-import { Component, effect, signal } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
     selector: 'app-github-button',
@@ -36,12 +36,10 @@ export class GithubButtonComponent {
     stars = signal<number | null>(null);
 
     constructor() {
-        effect(() => {
-            fetch('https://api.github.com/repos/radix-ng/origin-ui')
-                .then((response) => response.json())
-                .then((data) => this.stars.set(data.stargazers_count))
-                .catch((error) => console.error('Error fetching GitHub stars:', error));
-        });
+        fetch('https://api.github.com/repos/radix-ng/origin-ui')
+            .then((response) => response.json())
+            .then((data) => this.stars.set(data.stargazers_count))
+            .catch((error) => console.error('Error fetching GitHub stars:', error));
     }
 
     formatStarCount(count: number): string {
@@ -51,6 +49,6 @@ export class GithubButtonComponent {
         if (count >= 1000) {
             return `${(count / 1000).toFixed(1)}K`;
         }
-        return count.toString();
+        return count ? count.toString() : '-';
     }
 }
