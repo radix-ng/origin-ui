@@ -23,4 +23,4 @@ import { OriRadioGroup, OriRadioGroupItem } from '@origin-ui/components/radio-gr
         </ori-radio-group>
     `
 })
-export default class Input01Component {}
+export default class Radio01Component {}

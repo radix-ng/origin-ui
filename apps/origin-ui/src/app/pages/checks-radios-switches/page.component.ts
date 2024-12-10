@@ -30,7 +30,6 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
                             <app-demo-component
                                 [directory]="radiosDir"
                                 [componentName]="componentName"
-                                className="text-center"
                             ></app-demo-component>
                         }
                     </div>
@@ -49,7 +48,13 @@ export default class PageButtonsComponent {
     ];
 
     radiosDir = 'radios';
-    radioFiles = ['radio-01'];
+    radioFiles = [
+        'radio-01',
+        'radio-02',
+        'radio-03',
+        'radio-04',
+        'radio-05'
+    ];
 
     totalComponents = this.checkboxFiles.length + this.radioFiles.length;
 }

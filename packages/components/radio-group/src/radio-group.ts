@@ -10,7 +10,12 @@ import {
     selector: 'ori-radio-group',
     standalone: true,
     hostDirectives: [
-        { directive: RdxRadioGroupDirective, inputs: ['value', 'orientation'], outputs: ['onValueChange'] }],
+        {
+            directive: RdxRadioGroupDirective,
+            inputs: ['value', 'orientation', 'disabled'],
+            outputs: ['onValueChange']
+        }
+    ],
     host: {
         '[class]': "'grid gap-1'"
     }
