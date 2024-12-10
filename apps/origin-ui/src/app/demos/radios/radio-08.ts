@@ -3,7 +3,7 @@ import { OriLabel } from '@origin-ui/components/label';
 import { OriRadioGroup, OriRadioGroupItem } from '@origin-ui/components/radio-group';
 
 @Component({
-    selector: 'demo-radio-05',
+    selector: 'demo-radio-08',
     standalone: true,
     imports: [OriLabel, OriRadioGroup, OriRadioGroupItem],
     template: `

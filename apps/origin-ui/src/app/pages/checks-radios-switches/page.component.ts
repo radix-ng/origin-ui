@@ -54,7 +54,8 @@ export default class PageButtonsComponent {
         'radio-03',
         'radio-04',
         'radio-05',
-        'radio-08'
+        'radio-08',
+        'radio-13'
     ];
 
     totalComponents = this.checkboxFiles.length + this.radioFiles.length;
