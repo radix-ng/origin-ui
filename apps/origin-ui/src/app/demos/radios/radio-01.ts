@@ -7,7 +7,7 @@ import { OriRadioGroup, OriRadioGroupItem } from '@origin-ui/components/radio-gr
     standalone: true,
     imports: [OriLabel, OriRadioGroup, OriRadioGroupItem],
     template: `
-        <ori-radio-group>
+        <ori-radio-group [value]="'r1'">
             <div class="flex items-center gap-2">
                 <ori-radio-group-item [value]="'r1'" [forId]="'radio-01-r1'" />
                 <ori-label [htmlFor]="'radio-01-r1'">Option 1</ori-label>

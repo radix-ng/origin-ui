@@ -9,9 +9,10 @@ import {
 @Directive({
     selector: 'ori-radio-group',
     standalone: true,
-    hostDirectives: [RdxRadioGroupDirective],
+    hostDirectives: [
+        { directive: RdxRadioGroupDirective, inputs: ['value', 'orientation'], outputs: ['onValueChange'] }],
     host: {
-        '[class]': "'grid gap-3'"
+        '[class]': "'grid gap-1'"
     }
 })
 export class OriRadioGroup {}
