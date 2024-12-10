@@ -13,7 +13,7 @@
                 "outputPath": "dist/apps/origin-ui",
                 "index": "apps/origin-ui/src/index.html",
                 "browser": "apps/origin-ui/src/main.ts",
-                "polyfills": ["zone.js"],
+                "polyfills": [],
                 "tsConfig": "apps/origin-ui/tsconfig.app.json",
                 "assets": [
                     {
