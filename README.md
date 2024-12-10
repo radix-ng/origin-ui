@@ -8,6 +8,7 @@
 
 - Built with Angular and TailwindCSS
 - RadixNG and Angular CDK
+- Zoneless enable!
 
 **Demo** → [origin-ng.com/](https://origin-ng.com/)
 
