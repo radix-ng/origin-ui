@@ -41,6 +41,9 @@
             "@origin-ui/components/toggle": [
                 "packages/components/toggle/index.ts"
             ],
+            "@origin-ui/components/radio-group": [
+                "packages/components/radio-group/index.ts"
+            ],
             "@origin-ui/components/tooltip": [
                 "packages/components/tooltip/index.ts"
             ],

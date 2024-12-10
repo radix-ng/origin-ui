@@ -25,6 +25,14 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
                                 className="text-center"
                             ></app-demo-component>
                         }
+
+                        @for (componentName of radioFiles; track componentName) {
+                            <app-demo-component
+                                [directory]="radiosDir"
+                                [componentName]="componentName"
+                                className="text-center"
+                            ></app-demo-component>
+                        }
                     </div>
                 </div>
             </div>
@@ -40,5 +48,8 @@ export default class PageButtonsComponent {
         'checkbox-04'
     ];
 
-    totalComponents = this.checkboxFiles.length;
+    radiosDir = 'radios';
+    radioFiles = ['radio-01'];
+
+    totalComponents = this.checkboxFiles.length + this.radioFiles.length;
 }

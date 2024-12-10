@@ -42,9 +42,9 @@ const variants = cva(
             [indeterminate]="indeterminate()"
             [disabled]="disabled()"
             (checkedChange)="onChange($event)"
-            CheckboxRoot
+            rdxCheckboxRoot
         >
-            <span class="flex items-center justify-center text-current" CheckboxIndicator>
+            <span class="flex items-center justify-center text-current" rdxCheckboxIndicator>
                 @if (indeterminate()) {
                     <svg width="9" height="9" viewBox="0 0 9 9" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -68,7 +68,7 @@ const variants = cva(
                 [id]="id()"
                 [value]="checked.asReadonly()"
                 [disabled]="disabled()"
-                CheckboxInput
+                rdxCheckboxInput
             />
         </button>
     `,
