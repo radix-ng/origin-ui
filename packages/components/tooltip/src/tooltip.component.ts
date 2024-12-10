@@ -1,8 +1,9 @@
-import { Component, computed, input, Input } from '@angular/core';
+import { Component, computed, Directive, input, Input } from '@angular/core';
 import { cn } from '@origin-ui/components/utils';
 import {
+    RdxTooltipArrowDirective,
     RdxTooltipContentAttributesDirective,
-    RdxTooltipModule,
+    RdxTooltipContentDirective,
     RdxTooltipRootDirective
 } from '@radix-ng/primitives/tooltip';
 import { cva } from 'class-variance-authority';
@@ -13,9 +14,9 @@ const variants = cva(
 );
 
 @Component({
-    selector: 'ori-tooltip-content',
+    selector: 'ori-tooltip-content-attributes',
     standalone: true,
-    imports: [RdxTooltipModule],
+    imports: [RdxTooltipArrowDirective],
     hostDirectives: [RdxTooltipContentAttributesDirective],
     host: {
         '[class]': 'computedClass()'
@@ -35,12 +36,16 @@ export class OriTooltipContent {
     protected computedClass = computed(() => cn(variants(), this.className()));
 }
 
-@Component({
+@Directive({
+    selector: 'ori-tooltip-content, [ori-tooltip-content]',
+    standalone: true,
+    hostDirectives: [{ directive: RdxTooltipContentDirective, inputs: ['sideOffset'] }]
+})
+export class OriTooltipContentDirective {}
+
+@Directive({
     selector: 'ori-tooltip',
     standalone: true,
-    hostDirectives: [{ directive: RdxTooltipRootDirective, inputs: ['delayDuration', 'open'] }],
-    template: `
-        <ng-content />
-    `
+    hostDirectives: [{ directive: RdxTooltipRootDirective, inputs: ['delayDuration', 'open'] }]
 })
 export class OriTooltip {}

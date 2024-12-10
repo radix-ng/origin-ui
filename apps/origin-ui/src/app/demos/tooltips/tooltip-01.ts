@@ -18,7 +18,9 @@ import { RdxTooltipContentDirective, RdxTooltipTriggerDirective } from '@radix-n
             <ori-button variant="outline" size="sm" rdxTooltipTrigger>Tiny</ori-button>
 
             <ng-template [sideOffset]="8" rdxTooltipContent>
-                <ori-tooltip-content className="px-2 py-1 text-xs">This is a simple tooltip</ori-tooltip-content>
+                <ori-tooltip-content-attributes className="px-2 py-1 text-xs">
+                    This is a simple tooltip
+                </ori-tooltip-content-attributes>
             </ng-template>
         </ori-tooltip>
     `
