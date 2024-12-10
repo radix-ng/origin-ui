@@ -1,4 +1,5 @@
 import { Component, Directive, input } from '@angular/core';
+import { cn } from '@origin-ui/components/utils';
 import {
     RdxRadioGroupDirective,
     RdxRadioIndicatorDirective,
@@ -31,7 +32,12 @@ export class OriRadioGroup {}
     },
     template: `
         <button
-            class="border-input focus-visible:outline-ring/70 data-[state=checked]:border-primary data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground aspect-square size-4 rounded-full border shadow-sm shadow-black/5 outline-offset-2 focus-visible:outline focus-visible:outline-2 disabled:cursor-not-allowed disabled:opacity-50"
+            [class]="
+                cn(
+                    'border-input focus-visible:outline-ring/70 data-[state=checked]:border-primary data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground aspect-square size-4 rounded-full border shadow-sm shadow-black/5 outline-offset-2 focus-visible:outline focus-visible:outline-2 disabled:cursor-not-allowed disabled:opacity-50',
+                    classRadioItem()
+                )
+            "
             [value]="value()"
             [id]="forId()"
             rdxRadioItem
@@ -46,7 +52,9 @@ export class OriRadioGroup {}
     `
 })
 export class OriRadioGroupItem {
+    readonly classRadioItem = input<string>();
     readonly value = input.required<string>();
 
     readonly forId = input<string>('');
+    protected readonly cn = cn;
 }
