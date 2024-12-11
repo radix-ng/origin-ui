@@ -38,6 +38,9 @@
             "@origin-ui/components/select-native": [
                 "packages/components/select-native/index.ts"
             ],
+            "@origin-ui/components/select": [
+                "packages/components/select/index.ts"
+            ],
             "@origin-ui/components/toggle": [
                 "packages/components/toggle/index.ts"
             ],

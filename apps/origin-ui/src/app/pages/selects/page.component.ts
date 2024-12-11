@@ -36,5 +36,6 @@ export default class PageSlidersComponent {
         'select-11',
         'select-13',
         'select-14'
+        //'select-15'
     ];
 }
