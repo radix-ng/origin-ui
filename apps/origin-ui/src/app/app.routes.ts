@@ -22,6 +22,10 @@ export const appRoutes: Route[] = [
         loadComponent: () => import('./pages/selects/page.component')
     },
     {
+        path: 'dropdowns-popovers',
+        loadComponent: () => import('./pages/dropdowns-popovers/page.component')
+    },
+    {
         path: 'sliders',
         loadComponent: () => import('./pages/sliders/page.component')
     },

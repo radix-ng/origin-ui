@@ -33,7 +33,8 @@ const variants = cva(
     host: {
         // set to null on host element
         '[attr.id]': 'null',
-        '[attr.data-state]': 'state'
+        '[attr.data-state]': 'state',
+        class: 'flex'
     },
     template: `
         <button
