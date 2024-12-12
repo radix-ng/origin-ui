@@ -34,7 +34,8 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
 export default class PageButtonsComponent {
     popoverDir = 'popovers';
     popoverFiles = [
-        'popover-01'
+        'popover-01',
+        'popover-05'
     ];
 
     totalComponents = this.popoverFiles.length;

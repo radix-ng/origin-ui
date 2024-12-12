@@ -30,7 +30,7 @@ import { ListFilter, LucideAngularModule } from 'lucide-angular';
                 <ori-button variant="outline" size="icon" rdxPopoverTrigger>
                     <lucide-angular [img]="ListFilterIcon" size="16" strokeWidth="2" aria-hidden="true" />
                 </ori-button>
-                <ng-template [side]="RdxPopoverSide.Bottom" rdxPopoverContent>
+                <ng-template [side]="RdxPopoverSide.Bottom" [sideOffset]="4" rdxPopoverContent>
                     <ori-popover-content class="w-36 p-3">
                         <div class="space-y-3">
                             <div class="text-muted-foreground text-xs font-medium">Filters</div>
