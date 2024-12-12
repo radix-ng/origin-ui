@@ -1,4 +1,4 @@
-import { Component, computed, signal } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { OriButton } from '@origin-ui/components/button';
 import { OriPopoverContent } from '@origin-ui/components/popover';
 import {
@@ -31,7 +31,7 @@ import {
                             </div>
                             <div class="flex items-center justify-between gap-2">
                                 <span class="text-muted-foreground text-xs">
-                                    {{ currentIndex() }}
+                                    {{ currentTip() + 1 }} / {{ tips.length }}
                                 </span>
                                 <button class="text-xs font-medium hover:underline" (click)="handleNavigation()">
                                     {{ currentTip() == tips.length - 1 ? 'Start over' : 'Next' }}
@@ -47,9 +47,7 @@ import {
 export default class Popover05Component {
     protected readonly RdxPopoverSide = RdxPopoverSide;
 
-    readonly currentTip = signal(0);
-
-    readonly currentIndex = computed(() => Math.floor((this.currentTip() + 1) / this.tips.length));
+    readonly currentTip = signal<number>(0);
 
     tips = [
         {
@@ -74,7 +72,4 @@ export default class Popover05Component {
             this.currentTip.set(this.currentTip() + 1);
         }
     }
-
-    protected readonly Number = Number;
-    protected readonly parseInt = parseInt;
 }
