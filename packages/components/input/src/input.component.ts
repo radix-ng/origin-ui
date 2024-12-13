@@ -15,6 +15,7 @@ import { Component, computed, input, output } from '@angular/core';
             [attr.placeholder]="placeholder()"
             [attr.disabled]="disabled() === true || disabled() === '' ? true : null"
             [attr.required]="required() === true || required() === '' ? true : null"
+            [attr.readOnly]="readOnly() === true || readOnly() === '' ? true : null"
             [value]="value()"
             [min]="min()"
             [max]="max()"
@@ -31,6 +32,7 @@ export class OriInput {
     readonly className = input<string>('');
     readonly disabled = input<boolean | ''>(false);
     readonly required = input<boolean | ''>(false);
+    readonly readOnly = input<boolean | ''>(false);
     readonly value = input<string | null>(null);
     readonly min = input<number | null>(null);
     readonly max = input<number | null>(null);

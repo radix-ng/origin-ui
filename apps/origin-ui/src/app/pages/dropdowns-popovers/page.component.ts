@@ -35,7 +35,8 @@ export default class PageButtonsComponent {
     popoverDir = 'popovers';
     popoverFiles = [
         'popover-01',
-        'popover-05'
+        'popover-05',
+        'popover-07'
     ];
 
     totalComponents = this.popoverFiles.length;
