@@ -46,8 +46,8 @@ interface CardProps {
                     }
                 </div>
                 <ori-button variant="outline" rdxPopoverTrigger>Start tour</ori-button>
-                <ng-template [side]="RdxPopoverSide.Bottom" [sideOffset]="8" rdxPopoverContent>
-                    <div class="max-w-[280px] py-3 shadow-none" oriPopoverContent>
+                <ng-template [side]="RdxPopoverSide.Left" [sideOffset]="8" rdxPopoverContent>
+                    <ori-popover-content class="max-w-[280px] py-3 shadow-none">
                         <div class="space-y-3">
                             <div class="space-y-1">
                                 <p class="text-[13px] font-medium">{{ tourSteps[currentTip()].title }}</p>
@@ -62,8 +62,8 @@ interface CardProps {
                                 </button>
                             </div>
                         </div>
-                    </div>
-                    <div class="fill-popover drop-shadow-[0_1px_0_hsl(var(--border))]" rdxPopoverArrow></div>
+                        <div class="fill-popover -my-px drop-shadow-[0_1px_0_hsl(var(--border))]" rdxPopoverArrow></div>
+                    </ori-popover-content>
                 </ng-template>
             </ng-container>
         </div>
