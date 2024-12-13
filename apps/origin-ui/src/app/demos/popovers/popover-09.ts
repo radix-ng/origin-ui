@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { OriButton } from '@origin-ui/components/button';
 import { OriPopoverContent } from '@origin-ui/components/popover';
 import {
@@ -46,10 +46,24 @@ interface CardProps {
                     }
                 </div>
                 <ori-button variant="outline" rdxPopoverTrigger>Start tour</ori-button>
-                <ng-template [side]="RdxPopoverSide.Bottom" [sideOffset]="4" rdxPopoverContent>
-                    <ori-popover-content class="max-w-[280px] py-3 shadow-none">
-                        <div rdxPopoverArrow></div>
-                    </ori-popover-content>
+                <ng-template [side]="RdxPopoverSide.Bottom" [sideOffset]="8" rdxPopoverContent>
+                    <div class="max-w-[280px] py-3 shadow-none" oriPopoverContent>
+                        <div class="space-y-3">
+                            <div class="space-y-1">
+                                <p class="text-[13px] font-medium">{{ tourSteps[currentTip()].title }}</p>
+                                <p class="text-muted-foreground text-xs">{{ tourSteps[currentTip()].description }}</p>
+                            </div>
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="text-muted-foreground text-xs">
+                                    {{ currentTip() + 1 }} / {{ tourSteps.length }}
+                                </span>
+                                <button class="text-xs font-medium hover:underline" (click)="handleNavigation()">
+                                    {{ currentTip() === tourSteps.length - 1 ? 'Start over' : 'Next' }}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fill-popover drop-shadow-[0_1px_0_hsl(var(--border))]" rdxPopoverArrow></div>
                 </ng-template>
             </ng-container>
         </div>
@@ -57,6 +71,16 @@ interface CardProps {
 })
 export default class Popover09Component {
     protected readonly RdxPopoverSide = RdxPopoverSide;
+
+    readonly currentTip = signal(0);
+
+    handleNavigation() {
+        if (this.currentTip() === this.tourSteps.length - 1) {
+            this.currentTip.set(0);
+        } else {
+            this.currentTip.set(this.currentTip() + 1);
+        }
+    }
 
     readonly tourSteps: TourStep[] = [
         {

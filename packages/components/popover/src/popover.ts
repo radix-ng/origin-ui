@@ -15,7 +15,7 @@ const variants = cva(
 );
 
 @Component({
-    selector: 'ori-popover-content',
+    selector: 'ori-popover-content, [oriPopoverContent]',
     standalone: true,
     host: {
         '[class]': 'computedClass()'
