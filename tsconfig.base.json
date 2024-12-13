@@ -20,6 +20,12 @@
         "baseUrl": ".",
         "allowSyntheticDefaultImports": true,
         "paths": {
+            "@origin-ui/components/avatar": [
+                "packages/components/avatar/index.ts"
+            ],
+            "@origin-ui/components/badge": [
+                "packages/components/badge/index.ts"
+            ],
             "@origin-ui/components/button": [
                 "packages/components/button/index.ts"
             ],

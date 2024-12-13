@@ -10,7 +10,7 @@
 - RadixNG and Angular CDK
 - Zoneless enable!
 
-**Demo** → [origin-ng.com/](https://origin-ng.com/)
+**Demo** → [originui-ng.com/](https://originui-ng.com/)
 
 ## Contributing
 

@@ -6,6 +6,10 @@ export const appRoutes: Route[] = [
         loadComponent: () => import('./pages/index.component')
     },
     {
+        path: 'avatars-badges',
+        loadComponent: () => import('./pages/avatars/page.component')
+    },
+    {
         path: 'buttons',
         loadComponent: () => import('./pages/buttons/page.component')
     },
