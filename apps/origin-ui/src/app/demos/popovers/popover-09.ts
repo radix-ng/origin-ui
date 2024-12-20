@@ -2,6 +2,7 @@ import { Component, signal } from '@angular/core';
 import { OriButton } from '@origin-ui/components/button';
 import { OriPopoverContent } from '@origin-ui/components/popover';
 import {
+    RdxPopoverAnchorDirective,
     RdxPopoverArrowDirective,
     RdxPopoverContentDirective,
     RdxPopoverRootDirective,
@@ -16,11 +17,6 @@ interface TourStep {
     description: string;
 }
 
-interface CardProps {
-    number: number;
-    isActive: boolean;
-}
-
 @Component({
     selector: 'demo-popover-09',
     standalone: true,
@@ -31,22 +27,32 @@ interface CardProps {
         RdxPopoverTriggerDirective,
         RdxPopoverContentDirective,
         LucideAngularModule,
-        RdxPopoverArrowDirective
+        RdxPopoverArrowDirective,
+        RdxPopoverAnchorDirective
     ],
     template: `
         <div class="flex flex-col gap-4">
             <ng-container rdxPopoverRoot>
                 <div class="grid grid-cols-2 place-items-center gap-4">
                     @for (item of tourSteps; track $index) {
-                        <div
-                            class="bg-secondary text-muted-foreground flex size-10 items-center justify-center rounded-lg text-sm font-medium"
-                        >
-                            {{ $index + 1 }}
-                        </div>
+                        @if (currentTip() === $index) {
+                            <div
+                                class="bg-secondary text-muted-foreground flex size-10 items-center justify-center rounded-lg text-sm font-medium"
+                                rdxPopoverAnchor
+                            >
+                                {{ $index + 1 }}
+                            </div>
+                        } @else {
+                            <div
+                                class="bg-secondary text-muted-foreground flex size-10 items-center justify-center rounded-lg text-sm font-medium"
+                            >
+                                {{ $index + 1 }}
+                            </div>
+                        }
                     }
                 </div>
                 <ori-button variant="outline" rdxPopoverTrigger>Start tour</ori-button>
-                <ng-template [side]="RdxPopoverSide.Left" [sideOffset]="8" rdxPopoverContent>
+                <ng-template [side]="currentTip() % 2 === 0 ? PopoverSide.Left : PopoverSide.Right" rdxPopoverContent>
                     <ori-popover-content class="max-w-[280px] py-3 shadow-none">
                         <div class="space-y-3">
                             <div class="space-y-1">
@@ -70,7 +76,7 @@ interface CardProps {
     `
 })
 export default class Popover09Component {
-    protected readonly RdxPopoverSide = RdxPopoverSide;
+    protected readonly PopoverSide = RdxPopoverSide;
 
     readonly currentTip = signal(0);
 
