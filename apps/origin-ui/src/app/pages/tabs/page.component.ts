@@ -37,6 +37,8 @@ export default class PageTabsComponent {
         'tab-06',
         'tab-07',
         'tab-08',
-        'tab-17'
+        'tab-17',
+        'tab-18',
+        'tab-19'
     ];
 }
