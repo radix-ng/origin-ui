@@ -34,6 +34,10 @@ export const appRoutes: Route[] = [
         loadComponent: () => import('./pages/sliders/page.component')
     },
     {
+        path: 'tabs',
+        loadComponent: () => import('./pages/tabs/page.component')
+    },
+    {
         path: 'tooltips',
         loadComponent: () => import('./pages/tooltips/page.component')
     },

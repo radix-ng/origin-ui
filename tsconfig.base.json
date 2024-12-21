@@ -59,6 +59,9 @@
             "@origin-ui/components/tooltip": [
                 "packages/components/tooltip/index.ts"
             ],
+            "@origin-ui/components/tabs": [
+                "packages/components/tabs/index.ts"
+            ],
             "@origin-ui/components/utils": [
                 "packages/components/utils/index.ts"
             ]
