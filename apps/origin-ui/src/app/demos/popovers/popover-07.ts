@@ -2,17 +2,16 @@ import { Component } from '@angular/core';
 import { OriButton } from '@origin-ui/components/button';
 import { OriInput } from '@origin-ui/components/input';
 import { OriPopoverContent } from '@origin-ui/components/popover';
+import { RdxPositionSide } from '@radix-ng/primitives/core';
 import {
     RdxPopoverContentDirective,
     RdxPopoverRootDirective,
-    RdxPopoverSide,
     RdxPopoverTriggerDirective
 } from '@radix-ng/primitives/popover';
 import { Code, Facebook, LucideAngularModule, Mail, Twitter } from 'lucide-angular';
 
 @Component({
     selector: 'demo-popover-07',
-    standalone: true,
     imports: [
         OriButton,
         OriPopoverContent,
@@ -64,7 +63,7 @@ import { Code, Facebook, LucideAngularModule, Mail, Twitter } from 'lucide-angul
     `
 })
 export default class Popover07Component {
-    protected readonly RdxPopoverSide = RdxPopoverSide;
+    protected readonly RdxPopoverSide = RdxPositionSide;
     protected readonly CodeIcon = Code;
     protected readonly TwitterIcon = Twitter;
     protected readonly FacebookIcon = Facebook;

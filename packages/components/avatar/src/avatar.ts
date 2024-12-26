@@ -24,7 +24,6 @@ export class OriAvatarComponent {
 
 @Component({
     selector: 'ori-avatar-image',
-    standalone: true,
     imports: [
         RdxAvatarImageDirective
     ],

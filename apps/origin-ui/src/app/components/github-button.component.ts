@@ -3,7 +3,6 @@ import { Component, signal } from '@angular/core';
 
 @Component({
     selector: 'app-github-button',
-    standalone: true,
     imports: [NgIf],
     template: `
         <a

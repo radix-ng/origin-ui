@@ -5,7 +5,6 @@ import { RdxTooltipContentDirective, RdxTooltipTriggerDirective } from '@radix-n
 
 @Component({
     selector: 'demo-tooltip-01',
-    standalone: true,
     imports: [
         OriTooltipContent,
         OriButton,

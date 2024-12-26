@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
 import { OriButton } from '@origin-ui/components/button';
-import { OriTooltip, OriTooltipContent, OriTooltipContentDirective } from '@origin-ui/components/tooltip';
+import { OriTooltip, OriTooltipContent } from '@origin-ui/components/tooltip';
 import { RdxTooltipContentDirective, RdxTooltipTriggerDirective } from '@radix-ng/primitives/tooltip';
 
 @Component({
     selector: 'demo-tooltip-03',
-    standalone: true,
     imports: [
         OriTooltipContent,
         OriButton,
-        OriTooltipContentDirective,
         RdxTooltipTriggerDirective,
         OriTooltip,
         RdxTooltipContentDirective

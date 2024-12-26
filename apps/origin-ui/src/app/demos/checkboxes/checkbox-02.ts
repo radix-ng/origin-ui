@@ -5,7 +5,6 @@ import { OriLabel } from '@origin-ui/components/label';
 
 @Component({
     selector: 'demo-checkbox-02',
-    standalone: true,
     imports: [OriCheckbox, OriLabel],
     template: `
         <div class="flex items-center gap-2">

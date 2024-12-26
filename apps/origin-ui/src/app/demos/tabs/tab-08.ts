@@ -5,7 +5,6 @@ import { Box, House, LucideAngularModule, PanelsTopLeft } from 'lucide-angular';
 
 @Component({
     selector: 'demo-tab-08',
-    standalone: true,
     imports: [OriTabs, OriTabsList, OriTabsTrigger, OriTabsContent, LucideAngularModule, OriBadgeComponent],
     template: `
         <ori-tabs defaultValue="tab-1">

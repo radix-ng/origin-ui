@@ -4,7 +4,6 @@ import { OriSelectNative } from '@origin-ui/components/select-native';
 
 @Component({
     selector: 'demo-select-13',
-    standalone: true,
     imports: [OriSelectNative, OriLabel],
     template: `
         <div class="group relative">

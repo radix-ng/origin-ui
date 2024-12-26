@@ -3,7 +3,6 @@ import { OriAvatarComponent, OriAvatarFallbackComponent } from '@origin-ui/compo
 
 @Component({
     selector: 'demo-avatar-02',
-    standalone: true,
     imports: [OriAvatarComponent, OriAvatarFallbackComponent],
     template: `
         <ori-avatar>

@@ -4,7 +4,6 @@ import { OriRadioGroup, OriRadioGroupItem } from '@origin-ui/components/radio-gr
 
 @Component({
     selector: 'demo-radio-04',
-    standalone: true,
     imports: [OriLabel, OriRadioGroup, OriRadioGroupItem],
     template: `
         <ori-radio-group class="gap-6" [value]="'small'">

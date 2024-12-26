@@ -1,16 +1,15 @@
 import { Component, signal } from '@angular/core';
 import { OriButton } from '@origin-ui/components/button';
 import { OriPopoverContent } from '@origin-ui/components/popover';
+import { RdxPositionSide } from '@radix-ng/primitives/core';
 import {
     RdxPopoverContentDirective,
     RdxPopoverRootDirective,
-    RdxPopoverSide,
     RdxPopoverTriggerDirective
 } from '@radix-ng/primitives/popover';
 
 @Component({
     selector: 'demo-popover-05',
-    standalone: true,
     imports: [
         OriButton,
         OriPopoverContent,
@@ -45,7 +44,7 @@ import {
     `
 })
 export default class Popover05Component {
-    protected readonly RdxPopoverSide = RdxPopoverSide;
+    protected readonly RdxPopoverSide = RdxPositionSide;
 
     readonly currentTip = signal<number>(0);
 

@@ -15,7 +15,6 @@ const variants = cva(
 
 @Component({
     selector: 'ori-tooltip-content-attributes',
-    standalone: true,
     imports: [RdxTooltipArrowDirective],
     hostDirectives: [RdxTooltipContentAttributesDirective],
     host: {

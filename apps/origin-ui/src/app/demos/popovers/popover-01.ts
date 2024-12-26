@@ -3,17 +3,16 @@ import { OriButton } from '@origin-ui/components/button';
 import { OriCheckbox } from '@origin-ui/components/checkbox';
 import { OriLabel } from '@origin-ui/components/label';
 import { OriPopoverContent } from '@origin-ui/components/popover';
+import { RdxPositionSide } from '@radix-ng/primitives/core';
 import {
     RdxPopoverContentDirective,
     RdxPopoverRootDirective,
-    RdxPopoverSide,
     RdxPopoverTriggerDirective
 } from '@radix-ng/primitives/popover';
 import { ListFilter, LucideAngularModule } from 'lucide-angular';
 
 @Component({
     selector: 'demo-popover-01',
-    standalone: true,
     imports: [
         OriButton,
         OriPopoverContent,
@@ -75,6 +74,6 @@ import { ListFilter, LucideAngularModule } from 'lucide-angular';
     `
 })
 export default class Popover01Component {
-    protected readonly RdxPopoverSide = RdxPopoverSide;
+    protected readonly RdxPopoverSide = RdxPositionSide;
     protected readonly ListFilterIcon = ListFilter;
 }

@@ -5,7 +5,6 @@ import { RdxSelectComponent, RdxSelectContentDirective } from '@radix-ng/primiti
 
 @Component({
     selector: 'demo-select-15',
-    standalone: true,
     imports: [
         OriLabel,
         RdxSelectComponent,

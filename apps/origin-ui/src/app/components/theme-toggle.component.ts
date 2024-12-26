@@ -3,7 +3,6 @@ import { Component, computed, effect, signal } from '@angular/core';
 
 @Component({
     selector: 'app-components-theme-toggle',
-    standalone: true,
     imports: [NgIf],
     template: `
         <div class="flex flex-col justify-center">

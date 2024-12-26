@@ -4,7 +4,6 @@ import { OriButton } from '@origin-ui/components/button';
 
 @Component({
     selector: 'app-demo-copy-button',
-    standalone: true,
     imports: [OriButton, NgClass],
     template: `
         <div

@@ -4,7 +4,6 @@ import { OriBadgeComponent } from '@origin-ui/components/badge';
 
 @Component({
     selector: 'demo-avatar-09',
-    standalone: true,
     imports: [OriAvatarComponent, OriAvatarFallbackComponent, OriAvatarImageComponent, OriBadgeComponent],
     template: `
         <div class="relative">

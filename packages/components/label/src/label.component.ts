@@ -10,7 +10,6 @@ const labelVariants = cva(
 
 @Component({
     selector: 'ori-label',
-    standalone: true,
     imports: [RdxLabelDirective],
     host: { class: 'flex' },
     template: `

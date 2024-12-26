@@ -5,7 +5,6 @@ import { Eye, EyeOff, LucideAngularModule } from 'lucide-angular';
 
 @Component({
     selector: 'demo-input-23',
-    standalone: true,
     imports: [OriInput, OriLabel, LucideAngularModule],
     template: `
         <div class="space-y-2">

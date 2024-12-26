@@ -1,12 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { OriButton } from '@origin-ui/components/button';
 import { OriPopoverContent } from '@origin-ui/components/popover';
+import { RdxPositionSide } from '@radix-ng/primitives/core';
 import {
     RdxPopoverAnchorDirective,
     RdxPopoverArrowDirective,
     RdxPopoverContentDirective,
     RdxPopoverRootDirective,
-    RdxPopoverSide,
     RdxPopoverTriggerDirective
 } from '@radix-ng/primitives/popover';
 import { Club, Diamond, Heart, LucideAngularModule, Spade } from 'lucide-angular';
@@ -19,7 +19,6 @@ interface TourStep {
 
 @Component({
     selector: 'demo-popover-09',
-    standalone: true,
     imports: [
         OriButton,
         OriPopoverContent,
@@ -76,7 +75,7 @@ interface TourStep {
     `
 })
 export default class Popover09Component {
-    protected readonly PopoverSide = RdxPopoverSide;
+    protected readonly PopoverSide = RdxPositionSide;
 
     readonly currentTip = signal(0);
 

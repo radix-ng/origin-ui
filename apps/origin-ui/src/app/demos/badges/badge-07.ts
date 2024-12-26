@@ -4,7 +4,6 @@ import { Check, LucideAngularModule } from 'lucide-angular';
 
 @Component({
     selector: 'demo-badge-07',
-    standalone: true,
     imports: [OriBadgeComponent, LucideAngularModule],
     template: `
         <ori-badge class="gap-1.5" variant="outline">

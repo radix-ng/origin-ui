@@ -4,7 +4,6 @@ import { Box, House, LucideAngularModule, PanelsTopLeft } from 'lucide-angular';
 
 @Component({
     selector: 'demo-tab-19',
-    standalone: true,
     imports: [OriTabs, OriTabsList, OriTabsTrigger, OriTabsContent, LucideAngularModule],
     template: `
         <ori-tabs class="flex w-full gap-2" orientation="vertical" defaultValue="tab-1">

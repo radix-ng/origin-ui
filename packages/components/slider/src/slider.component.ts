@@ -7,7 +7,6 @@ type Orientation = 'horizontal' | 'vertical';
 
 @Component({
     selector: 'ori-slider',
-    standalone: true,
     imports: [RdxSliderModule, RdxTooltipModule, OriTooltipContent, OriTooltip],
     styles: `
         :host {

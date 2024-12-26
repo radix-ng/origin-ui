@@ -4,7 +4,6 @@ import { OriRadioGroup, OriRadioGroupItem } from '@origin-ui/components/radio-gr
 
 @Component({
     selector: 'demo-radio-03',
-    standalone: true,
     imports: [OriLabel, OriRadioGroup, OriRadioGroupItem],
     template: `
         <ori-radio-group [value]="'r2'" disabled>

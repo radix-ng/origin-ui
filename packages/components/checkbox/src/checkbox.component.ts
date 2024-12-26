@@ -24,7 +24,6 @@ const variants = cva(
 
 @Component({
     selector: 'ori-checkbox',
-    standalone: true,
     imports: [
         RdxCheckboxDirective,
         RdxCheckboxIndicatorDirective,

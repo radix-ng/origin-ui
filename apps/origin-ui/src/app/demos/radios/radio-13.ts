@@ -3,7 +3,6 @@ import { OriRadioGroup, OriRadioGroupItem } from '@origin-ui/components/radio-gr
 
 @Component({
     selector: 'demo-radio-13',
-    standalone: true,
     imports: [OriRadioGroup, OriRadioGroupItem],
     template: `
         <fieldset class="space-y-4">

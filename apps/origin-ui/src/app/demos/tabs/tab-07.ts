@@ -3,7 +3,6 @@ import { OriTabs, OriTabsContent, OriTabsList, OriTabsTrigger } from '@origin-ui
 
 @Component({
     selector: 'demo-tab-07',
-    standalone: true,
     imports: [OriTabs, OriTabsList, OriTabsTrigger, OriTabsContent],
     template: `
         <ori-tabs defaultValue="tab-1">

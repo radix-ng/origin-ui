@@ -5,7 +5,6 @@ import { OriSelectNative } from '@origin-ui/components/select-native';
 
 @Component({
     selector: 'demo-select-05',
-    standalone: true,
     imports: [OriSelectNative, OriLabel, NgStyle],
     template: `
         <div class="flex flex-col gap-2" [ngStyle]="{ '--ring': '234 89% 74%' }">

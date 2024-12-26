@@ -6,7 +6,6 @@ import { OriLabel } from '@origin-ui/components/label';
 
 @Component({
     selector: 'demo-checkbox-03',
-    standalone: true,
     imports: [OriCheckbox, OriLabel, NgStyle],
     template: `
         <div

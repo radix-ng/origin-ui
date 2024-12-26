@@ -6,7 +6,6 @@ import { LucideAngularModule, Minus, Plus } from 'lucide-angular';
 
 @Component({
     selector: 'demo-slider-20',
-    standalone: true,
     imports: [OriSlider, OriLabel, OriButton, LucideAngularModule],
     template: `
         <div class="flex flex-col gap-3">

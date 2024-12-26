@@ -4,7 +4,6 @@ import { LucideAngularModule, UserRound } from 'lucide-angular';
 
 @Component({
     selector: 'demo-avatar-03',
-    standalone: true,
     imports: [OriAvatarComponent, OriAvatarFallbackComponent, LucideAngularModule],
     template: `
         <ori-avatar>

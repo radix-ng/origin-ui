@@ -4,7 +4,6 @@ import { OriSelectNative } from '@origin-ui/components/select-native';
 
 @Component({
     selector: 'demo-select-06',
-    standalone: true,
     imports: [OriSelectNative, OriLabel],
     template: `
         <div class="[&_svg]:text-destructive/80 flex flex-col gap-2">

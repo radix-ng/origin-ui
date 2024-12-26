@@ -5,7 +5,6 @@ import { CopyButtonComponent } from './copy-button.component';
 
 @Component({
     selector: 'app-demo-component',
-    standalone: true,
     imports: [CopyButtonComponent],
     template: `
         <ng-container #container></ng-container>

@@ -6,7 +6,6 @@ import { cn } from '@origin-ui/components/utils';
 
 @Component({
     selector: 'demo-slider-07',
-    standalone: true,
     imports: [OriSlider, OriLabel, NgClass],
     template: `
         <div class="flex flex-col gap-4">

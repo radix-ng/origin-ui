@@ -4,7 +4,6 @@ import { AppThemeToggleComponent } from './theme-toggle.component';
 
 @Component({
     selector: 'app-component-header',
-    standalone: true,
     imports: [AppThemeToggleComponent, GithubButtonComponent],
     template: `
         <header>

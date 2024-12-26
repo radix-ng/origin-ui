@@ -5,7 +5,6 @@ import { OriRadioGroup, OriRadioGroupItem } from '@origin-ui/components/radio-gr
 
 @Component({
     selector: 'demo-radio-02',
-    standalone: true,
     imports: [OriLabel, OriRadioGroup, OriRadioGroupItem, NgStyle],
     template: `
         <ori-radio-group [value]="'r1'" [ngStyle]="{ '--primary': '238.7 83.5% 66.7%', '--ring': '238.7 83.5% 66.7%' }">

@@ -3,7 +3,6 @@ import { OriTabs, OriTabsContent, OriTabsList, OriTabsTrigger } from '@origin-ui
 
 @Component({
     selector: 'demo-tab-18',
-    standalone: true,
     imports: [OriTabs, OriTabsList, OriTabsTrigger, OriTabsContent],
     template: `
         <ori-tabs class="flex w-full gap-2" orientation="vertical" defaultValue="tab-1">

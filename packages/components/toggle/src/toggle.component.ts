@@ -32,7 +32,6 @@ type OriToggleVariant = NonNullable<ToggleProps['variant']>;
 
 @Component({
     selector: 'ori-toggle',
-    standalone: true,
     imports: [RdxToggleDirective],
     template: `
         <button

@@ -4,7 +4,6 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
 
 @Component({
     selector: 'app-page-buttons',
-    standalone: true,
     imports: [AppPageHeaderComponent, DemoComponent],
     template: `
         <main>
@@ -18,19 +17,21 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
                     <div
                         class="[&>*]:before:bg-border/70 [&>*]:after:bg-border/70 grid max-w-6xl grid-cols-1 overflow-hidden sm:grid-cols-2 lg:grid-cols-3 [&>*]:relative [&>*]:px-1 [&>*]:py-12 [&>*]:before:absolute [&>*]:before:[block-size:100vh] [&>*]:before:[inline-size:1px] [&>*]:before:[inset-block-start:0] [&>*]:before:[inset-inline-start:-1px] [&>*]:after:absolute [&>*]:after:[block-size:1px] [&>*]:after:[inline-size:100vw] [&>*]:after:[inset-block-start:-1px] [&>*]:after:[inset-inline-start:0] sm:[&>*]:px-8 xl:[&>*]:px-12"
                     >
-                        @for (componentName of checkboxFiles; track componentName) {
-                            <app-demo-component
-                                [directory]="checkboxDir"
-                                [componentName]="componentName"
-                                className="text-center"
-                            ></app-demo-component>
-                        }
+                        @defer {
+                            @for (componentName of checkboxFiles; track componentName) {
+                                <app-demo-component
+                                    [directory]="checkboxDir"
+                                    [componentName]="componentName"
+                                    className="text-center"
+                                ></app-demo-component>
+                            }
 
-                        @for (componentName of radioFiles; track componentName) {
-                            <app-demo-component
-                                [directory]="radiosDir"
-                                [componentName]="componentName"
-                            ></app-demo-component>
+                            @for (componentName of radioFiles; track componentName) {
+                                <app-demo-component
+                                    [directory]="radiosDir"
+                                    [componentName]="componentName"
+                                ></app-demo-component>
+                            }
                         }
                     </div>
                 </div>

@@ -6,7 +6,6 @@ import { defaultConfig, Easing, EasingSvgComponent } from './easing-svg.componen
 
 @Component({
     selector: 'app-page-easings',
-    standalone: true,
     imports: [AppPageHeaderComponent, OriLabel, EasingSvgComponent, AnimatedSquareComponent],
     template: `
         <main>

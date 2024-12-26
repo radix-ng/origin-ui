@@ -10,7 +10,6 @@ export type AnimationType = 'translate' | 'scale' | 'rotate';
 
 @Component({
     selector: 'app-animated-square',
-    standalone: true,
     imports: [NgClass, NgStyle],
     encapsulation: ViewEncapsulation.None,
     template: `
@@ -55,7 +54,6 @@ export type AnimationType = 'translate' | 'scale' | 'rotate';
                 }
             }
         `
-
     ]
 })
 export class AnimatedSquareComponent {

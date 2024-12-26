@@ -25,7 +25,6 @@ export class OriRadioGroup {}
 
 @Component({
     selector: 'ori-radio-group-item',
-    standalone: true,
     imports: [RdxRadioItemDirective, RdxRadioIndicatorDirective, RdxRadioItemInputDirective],
     host: {
         '[class]': "'flex'"

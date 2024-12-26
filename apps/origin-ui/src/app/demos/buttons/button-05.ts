@@ -4,7 +4,6 @@ import { LucideAngularModule, Trash } from 'lucide-angular';
 
 @Component({
     selector: 'demo-button-04',
-    standalone: true,
     imports: [OriButton, LucideAngularModule],
     template: `
         <ori-button variant="destructive">

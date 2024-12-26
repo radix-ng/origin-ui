@@ -44,5 +44,13 @@ module.exports = [
         files: ['**/*.html'],
         // Override or add rules here
         rules: {}
+    },
+    {
+        files: [
+            '**/*.ts'
+        ],
+        rules: {
+            '@angular-eslint/prefer-standalone': 'off'
+        }
     }
 ];

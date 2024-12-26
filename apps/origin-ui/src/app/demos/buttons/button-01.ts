@@ -3,7 +3,6 @@ import { OriButton } from '@origin-ui/components/button';
 
 @Component({
     selector: 'demo-button-01',
-    standalone: true,
     imports: [OriButton],
     template: `
         <ori-button>Button</ori-button>

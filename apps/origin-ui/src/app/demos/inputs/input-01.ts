@@ -4,7 +4,6 @@ import { OriLabel } from '@origin-ui/components/label';
 
 @Component({
     selector: 'demo-input-01',
-    standalone: true,
     imports: [OriInput, OriLabel],
     template: `
         <div class="space-y-2">

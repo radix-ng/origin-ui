@@ -5,7 +5,6 @@ import { OriRadioGroup, OriRadioGroupItem } from '@origin-ui/components/radio-gr
 
 @Component({
     selector: 'demo-radio-05',
-    standalone: true,
     imports: [OriLabel, OriRadioGroup, OriRadioGroupItem, OriInput],
     template: `
         <ori-radio-group class="gap-6" [value]="selectedValue()" (onValueChange)="handleSelectedValue($event)">

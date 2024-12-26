@@ -5,7 +5,6 @@ import { ChevronDown, LucideAngularModule } from 'lucide-angular';
 
 @Component({
     selector: 'ori-select-native',
-    standalone: true,
     imports: [LucideAngularModule, NgClass],
     styles: `
         :host {

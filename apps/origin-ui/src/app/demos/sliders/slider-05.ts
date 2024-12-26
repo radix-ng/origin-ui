@@ -4,7 +4,6 @@ import { OriSlider } from '@origin-ui/components/slider';
 
 @Component({
     selector: 'demo-slider-05',
-    standalone: true,
     imports: [OriSlider, OriLabel],
     template: `
         <div class="flex flex-col gap-4">

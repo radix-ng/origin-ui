@@ -4,7 +4,6 @@ import { Bookmark, LucideAngularModule } from 'lucide-angular';
 
 @Component({
     selector: 'demo-button-04',
-    standalone: true,
     imports: [OriToggleComponent, LucideAngularModule],
     template: `
         <ori-toggle

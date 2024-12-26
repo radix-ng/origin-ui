@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import {
-    RdxSelectComponent,
     RdxSelectIconDirective,
     RdxSelectTriggerDirective,
     RdxSelectValueDirective
@@ -9,7 +8,6 @@ import { ChevronDown, LucideAngularModule } from 'lucide-angular';
 
 @Component({
     selector: 'ori-select-trigger',
-    standalone: true,
     imports: [
         RdxSelectTriggerDirective,
         LucideAngularModule,
@@ -31,7 +29,6 @@ export class OriSelectTrigger {
 
 @Component({
     selector: 'ori-select-value',
-    standalone: true,
     imports: [RdxSelectValueDirective],
     template: `
         <span rdxSelectValue placeholder="Select a fruit…"></span>
@@ -39,12 +36,11 @@ export class OriSelectTrigger {
 })
 export class OriSelectValue {}
 
-@Component({
-    selector: 'ori-select, [ori-select]',
-    standalone: true,
-    imports: [RdxSelectComponent],
-    template: `
-        <ng-content></ng-content>
-    `
-})
-export class OriSelect {}
+// @Component({
+//     selector: 'ori-select, [ori-select]',
+//     imports: [RdxSelectComponent],
+//     template: `
+//         <ng-content></ng-content>
+//     `
+// })
+// export class OriSelect {}

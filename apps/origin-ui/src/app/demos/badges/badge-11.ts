@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { badgeVariants, OriBadgeComponent } from '@origin-ui/components/badge';
+import { badgeVariants } from '@origin-ui/components/badge';
 import { OriCheckbox } from '@origin-ui/components/checkbox';
 import { OriLabel } from '@origin-ui/components/label';
 import { cn } from '@origin-ui/components/utils';
@@ -7,8 +7,7 @@ import { Check, LucideAngularModule } from 'lucide-angular';
 
 @Component({
     selector: 'demo-badge-11',
-    standalone: true,
-    imports: [OriBadgeComponent, LucideAngularModule, OriLabel, OriCheckbox],
+    imports: [LucideAngularModule, OriLabel, OriCheckbox],
     template: `
         <ori-label
             [class]="

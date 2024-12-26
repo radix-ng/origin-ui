@@ -38,29 +38,29 @@
             "@origin-ui/components/label": [
                 "packages/components/label/index.ts"
             ],
-            "@origin-ui/components/slider": [
-                "packages/components/slider/index.ts"
-            ],
-            "@origin-ui/components/select-native": [
-                "packages/components/select-native/index.ts"
-            ],
             "@origin-ui/components/popover": [
                 "packages/components/popover/index.ts"
-            ],
-            "@origin-ui/components/select": [
-                "packages/components/select/index.ts"
-            ],
-            "@origin-ui/components/toggle": [
-                "packages/components/toggle/index.ts"
             ],
             "@origin-ui/components/radio-group": [
                 "packages/components/radio-group/index.ts"
             ],
-            "@origin-ui/components/tooltip": [
-                "packages/components/tooltip/index.ts"
+            "@origin-ui/components/select": [
+                "packages/components/select/index.ts"
+            ],
+            "@origin-ui/components/select-native": [
+                "packages/components/select-native/index.ts"
+            ],
+            "@origin-ui/components/slider": [
+                "packages/components/slider/index.ts"
             ],
             "@origin-ui/components/tabs": [
                 "packages/components/tabs/index.ts"
+            ],
+            "@origin-ui/components/toggle": [
+                "packages/components/toggle/index.ts"
+            ],
+            "@origin-ui/components/tooltip": [
+                "packages/components/tooltip/index.ts"
             ],
             "@origin-ui/components/utils": [
                 "packages/components/utils/index.ts"
