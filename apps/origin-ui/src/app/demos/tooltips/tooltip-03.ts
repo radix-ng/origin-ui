@@ -16,7 +16,7 @@ import { RdxTooltipContentDirective, RdxTooltipTriggerDirective } from '@radix-n
         <ori-tooltip [delayDuration]="0">
             <ori-button variant="outline" size="sm" rdxTooltipTrigger>W/ arrow</ori-button>
 
-            <ng-template [sideOffset]="8" rdxTooltipContent>
+            <ng-template [sideOffset]="12" rdxTooltipContent>
                 <ori-tooltip-content-attributes [showArrow]="true" className="dark px-2 py-1 text-xs">
                     This tooltip has an arrow
                 </ori-tooltip-content-attributes>

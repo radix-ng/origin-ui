@@ -36,6 +36,7 @@ export default class PageInputsComponent {
     files = [
         'tooltip-01',
         'tooltip-02',
-        'tooltip-03'
+        'tooltip-03',
+        'tooltip-07'
     ];
 }
