@@ -32,7 +32,7 @@ type Orientation = 'horizontal' | 'vertical';
 
             @for (item of defaultValue; track $index) {
                 @if (showTooltip) {
-                    <ori-tooltip [open]="showTooltipState()">
+                    <ng-container [open]="showTooltipState()" oriTooltip>
                         <rdx-slider-thumb
                             class="border-primary bg-background focus-visible:outline-ring/40 block h-5 w-5 rounded-full border-2 transition-colors focus-visible:outline focus-visible:outline-[3px] data-[disabled]:cursor-not-allowed"
                             (pointerdown)="handlePointerDown()"
@@ -40,11 +40,11 @@ type Orientation = 'horizontal' | 'vertical';
                         />
 
                         <ng-template [sideOffset]="4" rdxTooltipContent>
-                            <ori-tooltip-content-attributes className="px-2 py-1 text-xs">
+                            <ori-tooltip-content-attributes class="px-2 py-1 text-xs">
                                 // TODO
                             </ori-tooltip-content-attributes>
                         </ng-template>
-                    </ori-tooltip>
+                    </ng-container>
                 } @else {
                     <rdx-slider-thumb
                         class="border-primary bg-background focus-visible:outline-ring/40 block h-5 w-5 rounded-full border-2 transition-colors focus-visible:outline focus-visible:outline-[3px] data-[disabled]:cursor-not-allowed"

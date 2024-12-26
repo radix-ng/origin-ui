@@ -13,15 +13,15 @@ import { RdxTooltipContentDirective, RdxTooltipTriggerDirective } from '@radix-n
         OriTooltip
     ],
     template: `
-        <ori-tooltip [delayDuration]="0">
+        <ng-container [delayDuration]="0" oriTooltip>
             <ori-button variant="outline" size="sm" rdxTooltipTrigger>Tiny</ori-button>
 
             <ng-template [sideOffset]="8" rdxTooltipContent>
-                <ori-tooltip-content-attributes className="px-2 py-1 text-xs">
+                <ori-tooltip-content-attributes class="px-2 py-1 text-xs">
                     This is a simple tooltip
                 </ori-tooltip-content-attributes>
             </ng-template>
-        </ori-tooltip>
+        </ng-container>
     `
 })
 export default class Tooltip01Component {}

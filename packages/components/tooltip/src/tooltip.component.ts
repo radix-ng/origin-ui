@@ -1,4 +1,5 @@
-import { Component, computed, Directive, input, Input } from '@angular/core';
+import { BooleanInput } from '@angular/cdk/coercion';
+import { booleanAttribute, Component, computed, Directive, input } from '@angular/core';
 import { cn } from '@origin-ui/components/utils';
 import {
     RdxTooltipArrowDirective,
@@ -22,17 +23,17 @@ const variants = cva(
     },
     template: `
         <ng-content />
-        @if (showArrow) {
+        @if (showArrow()) {
             <div class="fill-popover -my-px drop-shadow-[0_1px_0_hsl(var(--border))]" rdxTooltipArrow></div>
         }
     `
 })
 export class OriTooltipContent {
-    readonly className = input<ClassValue>('');
+    readonly class = input<ClassValue>();
 
-    @Input() showArrow: boolean = false;
+    readonly showArrow = input<boolean, BooleanInput>(false, { transform: booleanAttribute });
 
-    protected computedClass = computed(() => cn(variants(), this.className()));
+    protected computedClass = computed(() => cn(variants(), this.class()));
 }
 
 @Directive({
@@ -43,7 +44,7 @@ export class OriTooltipContent {
 export class OriTooltipContentDirective {}
 
 @Directive({
-    selector: 'ori-tooltip',
+    selector: 'ori-tooltip, [oriTooltip]',
     standalone: true,
     hostDirectives: [{ directive: RdxTooltipRootDirective, inputs: ['delayDuration', 'open'] }]
 })
