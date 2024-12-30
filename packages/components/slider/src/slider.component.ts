@@ -40,9 +40,7 @@ type Orientation = 'horizontal' | 'vertical';
                         />
 
                         <ng-template [sideOffset]="4" rdxTooltipContent>
-                            <ori-tooltip-content-attributes class="px-2 py-1 text-xs">
-                                // TODO
-                            </ori-tooltip-content-attributes>
+                            <ori-tooltip-content class="px-2 py-1 text-xs">// TODO</ori-tooltip-content>
                         </ng-template>
                     </ng-container>
                 } @else {

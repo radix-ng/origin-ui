@@ -22,11 +22,13 @@ module.exports = [
     {
         files: ['**/*.ts'],
         rules: {
+            '@angular-eslint/component-class-suffix': 0,
+            '@angular-eslint/directive-class-suffix': 0,
             '@angular-eslint/directive-selector': [
                 'error',
                 {
                     type: 'attribute',
-                    prefix: 'lib',
+                    prefix: 'ori',
                     style: 'camelCase'
                 }
             ],
@@ -34,7 +36,7 @@ module.exports = [
                 'error',
                 {
                     type: 'element',
-                    prefix: 'lib',
+                    prefix: 'ori',
                     style: 'kebab-case'
                 }
             ]

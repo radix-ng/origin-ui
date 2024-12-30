@@ -1,12 +1,7 @@
 import { BooleanInput } from '@angular/cdk/coercion';
 import { booleanAttribute, Component, computed, Directive, input } from '@angular/core';
 import { cn } from '@origin-ui/components/utils';
-import {
-    RdxTooltipArrowDirective,
-    RdxTooltipContentAttributesDirective,
-    RdxTooltipContentDirective,
-    RdxTooltipRootDirective
-} from '@radix-ng/primitives/tooltip';
+import { RdxTooltipArrowDirective, RdxTooltipRootDirective } from '@radix-ng/primitives/tooltip';
 import { cva } from 'class-variance-authority';
 import { ClassValue } from 'clsx';
 
@@ -15,9 +10,8 @@ const variants = cva(
 );
 
 @Component({
-    selector: 'ori-tooltip-content-attributes',
+    selector: 'ori-tooltip-content',
     imports: [RdxTooltipArrowDirective],
-    hostDirectives: [RdxTooltipContentAttributesDirective],
     host: {
         '[class]': 'computedClass()'
     },
@@ -37,15 +31,8 @@ export class OriTooltipContent {
 }
 
 @Directive({
-    selector: 'ori-tooltip-content, [ori-tooltip-content]',
-    standalone: true,
-    hostDirectives: [{ directive: RdxTooltipContentDirective, inputs: ['sideOffset'] }]
-})
-export class OriTooltipContentDirective {}
-
-@Directive({
     selector: 'ori-tooltip, [oriTooltip]',
     standalone: true,
-    hostDirectives: [{ directive: RdxTooltipRootDirective, inputs: ['delayDuration', 'open'] }]
+    hostDirectives: [{ directive: RdxTooltipRootDirective, inputs: ['openDelay', 'open'] }]
 })
 export class OriTooltip {}

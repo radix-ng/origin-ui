@@ -13,13 +13,13 @@ import { RdxTooltipContentDirective, RdxTooltipTriggerDirective } from '@radix-n
         RdxTooltipContentDirective
     ],
     template: `
-        <ng-container [delayDuration]="0" oriTooltip>
+        <ng-container [openDelay]="0" oriTooltip>
             <ori-button variant="outline" size="sm" rdxTooltipTrigger>W/ arrow</ori-button>
 
             <ng-template [sideOffset]="12" rdxTooltipContent>
-                <ori-tooltip-content-attributes class="dark px-2 py-1 text-xs" showArrow>
+                <ori-tooltip-content class="dark px-2 py-1 text-xs" showArrow>
                     This tooltip has an arrow
-                </ori-tooltip-content-attributes>
+                </ori-tooltip-content>
             </ng-template>
         </ng-container>
     `
