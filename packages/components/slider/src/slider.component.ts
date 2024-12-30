@@ -1,4 +1,14 @@
-import { Component, EventEmitter, inject, Input, NgZone, OnDestroy, Output, signal } from '@angular/core';
+import {
+    booleanAttribute,
+    Component,
+    EventEmitter,
+    inject,
+    Input,
+    NgZone,
+    OnDestroy,
+    Output,
+    signal
+} from '@angular/core';
 import { OriTooltip, OriTooltipContent } from '@origin-ui/components/tooltip';
 import { RdxSliderModule } from '@radix-ng/primitives/slider';
 import { RdxTooltipModule } from '@radix-ng/primitives/tooltip';
@@ -40,7 +50,9 @@ type Orientation = 'horizontal' | 'vertical';
                         />
 
                         <ng-template [sideOffset]="4" rdxTooltipContent>
-                            <ori-tooltip-content class="px-2 py-1 text-xs">// TODO</ori-tooltip-content>
+                            <div rdxTooltipContentAttributes>
+                                <ori-tooltip-content class="px-2 py-1 text-xs">// TODO</ori-tooltip-content>
+                            </div>
                         </ng-template>
                     </ng-container>
                 } @else {
@@ -55,15 +67,15 @@ type Orientation = 'horizontal' | 'vertical';
 export class OriSlider implements OnDestroy {
     @Input() defaultValue: number[] = [];
 
-    @Input() min: number = 0;
+    @Input() min = 0;
 
-    @Input() max: number = 100;
+    @Input() max = 100;
 
-    @Input() step: number = 1;
+    @Input() step = 1;
 
     @Input() orientation: Orientation = 'horizontal';
 
-    @Input() showTooltip: boolean = false;
+    @Input({ transform: booleanAttribute }) showTooltip = false;
 
     @Output() onValueChange: EventEmitter<any> = new EventEmitter();
 

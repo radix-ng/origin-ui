@@ -24,6 +24,7 @@ module.exports = [
         rules: {
             '@angular-eslint/component-class-suffix': 0,
             '@angular-eslint/directive-class-suffix': 0,
+            '@angular-eslint/no-output-on-prefix': 0,
             '@angular-eslint/directive-selector': [
                 'error',
                 {
