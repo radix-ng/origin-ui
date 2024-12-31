@@ -7,11 +7,13 @@ import {
     NgZone,
     OnDestroy,
     Output,
-    signal
+    signal,
+    viewChildren
 } from '@angular/core';
 import { OriTooltip, OriTooltipContent } from '@origin-ui/components/tooltip';
 import { RdxSliderModule } from '@radix-ng/primitives/slider';
-import { RdxTooltipModule } from '@radix-ng/primitives/tooltip';
+import { RdxTooltipContentDirective, RdxTooltipModule } from '@radix-ng/primitives/tooltip';
+import { asyncScheduler } from 'rxjs';
 
 type Orientation = 'horizontal' | 'vertical';
 
@@ -51,7 +53,9 @@ type Orientation = 'horizontal' | 'vertical';
 
                         <ng-template [sideOffset]="4" rdxTooltipContent>
                             <div rdxTooltipContentAttributes>
-                                <ori-tooltip-content class="px-2 py-1 text-xs">// TODO</ori-tooltip-content>
+                                <ori-tooltip-content class="px-2 py-1 text-xs">
+                                    {{ currentValue[$index] ?? defaultValue[$index] ?? min }}
+                                </ori-tooltip-content>
                             </div>
                         </ng-template>
                     </ng-container>
@@ -79,14 +83,22 @@ export class OriSlider implements OnDestroy {
 
     @Output() onValueChange: EventEmitter<any> = new EventEmitter();
 
+    protected currentValue: number[] = [];
+
     readonly showTooltipState = signal(false);
 
     private pointerUpListener = this.handlePointerUp.bind(this);
 
     private readonly ngZone = inject(NgZone);
 
-    handlerValueChange($event: any) {
-        this.onValueChange.emit($event);
+    private readonly rdxTooltipContentDirective = viewChildren(RdxTooltipContentDirective);
+
+    handlerValueChange(event: number[]) {
+        this.currentValue = [...event];
+        event.forEach((_, index) => {
+            asyncScheduler.schedule(() => this.rdxTooltipContentDirective()[index]?.updatePosition());
+        });
+        this.onValueChange.emit(event);
     }
 
     handlePointerDown() {
