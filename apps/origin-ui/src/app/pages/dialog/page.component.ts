@@ -35,7 +35,8 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
 export default class PageButtonsComponent {
     dialogDir = 'dialogs';
     dialogFiles = [
-        'dialog-04'
+        'dialog-04',
+        'dialog-05'
     ];
 
     totalComponents = this.dialogFiles.length;

@@ -26,7 +26,7 @@ export class OriDialogTriggerDirective {
 
     config = effect(() => {
         this.rdxDialogTrigger.dialogConfig = {
-            ...this.oriDialogTrigger(),
+            ...this.oriDialogConfig(),
             content: this.oriDialogTrigger(),
             backdropClass: this.backdropClass
         };

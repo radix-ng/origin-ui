@@ -11,7 +11,6 @@ const labelVariants = cva(
 @Component({
     selector: 'ori-label',
     imports: [RdxLabelDirective],
-    host: { class: 'flex' },
     template: `
         <label [class]="computedClass()" [htmlFor]="htmlFor()" rdxLabel>
             <ng-content></ng-content>
