@@ -24,15 +24,15 @@ export class OriDialogTriggerDirective {
 
     readonly oriDialogConfig = input<RdxDialogConfig<unknown>>();
 
-    config = effect(() => {
+    #config = effect(() => {
         this.rdxDialogTrigger.dialogConfig = {
             ...this.oriDialogConfig(),
             content: this.oriDialogTrigger(),
-            backdropClass: this.backdropClass
+            backdropClass: this.#backdropClass
         };
     });
 
-    private backdropClass =
+    #backdropClass =
         'fixed inset-0 z-[101] bg-black/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0'.split(
             ' '
         );

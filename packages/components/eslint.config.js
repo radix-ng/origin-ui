@@ -22,6 +22,8 @@ module.exports = [
     {
         files: ['**/*.ts'],
         rules: {
+            // for effects
+            'no-unused-private-class-members': 0,
             '@angular-eslint/component-class-suffix': 0,
             '@angular-eslint/directive-class-suffix': 0,
             '@angular-eslint/no-output-on-prefix': 0,
