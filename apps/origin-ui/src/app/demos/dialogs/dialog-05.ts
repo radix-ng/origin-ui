@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, computed, signal } from '@angular/core';
 import { OriButton } from '@origin-ui/components/button';
 import {
     OriDialogComponent,
@@ -53,13 +53,22 @@ import { CircleAlert, LucideAngularModule } from 'lucide-angular';
                 <form class="space-y-5">
                     <div class="space-y-2">
                         <ori-label class="block" htmlFor="ori-1">Project name</ori-label>
-                        <ori-input class="flex" id="ori-1" type="text" placeholder="Type Origin UI to confirm" />
+                        <ori-input
+                            class="flex"
+                            id="ori-1"
+                            [value]="inputValue()"
+                            (valueChange)="handleValueChange($event)"
+                            type="text"
+                            placeholder="Type Origin UI to confirm"
+                        />
                     </div>
                     <ori-dialog-footer>
                         <ori-button class="flex flex-1" type="button" variant="outline" rdxDialogClose>
                             Cancel
                         </ori-button>
-                        <ori-button class="flex flex-1" type="button" rdxDialogClose>Delete</ori-button>
+                        <ori-button class="flex flex-1" [disabled]="isDisabled()" type="button" rdxDialogClose>
+                            Delete
+                        </ori-button>
                     </ori-dialog-footer>
                 </form>
             </ori-dialog-content>
@@ -67,5 +76,15 @@ import { CircleAlert, LucideAngularModule } from 'lucide-angular';
     `
 })
 export default class Dialog05Component {
+    private readonly PROJECT_NAME = 'Origin UI';
+
     protected readonly CircleAlert = CircleAlert;
+
+    readonly inputValue = signal<string>('');
+
+    readonly isDisabled = computed(() => this.inputValue() !== this.PROJECT_NAME);
+
+    handleValueChange($event: string) {
+        this.inputValue.set($event);
+    }
 }
