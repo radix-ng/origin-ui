@@ -1,4 +1,4 @@
-import { Component, computed, Directive, effect, inject, input, TemplateRef } from '@angular/core';
+import { Component, computed, Directive, effect, inject, input, InputSignal, TemplateRef } from '@angular/core';
 import { cn } from '@origin-ui/components/utils';
 import {
     RdxDialogCloseDirective,
@@ -22,7 +22,7 @@ export class OriDialogTriggerDirective {
 
     readonly oriDialogTrigger = input.required<TemplateRef<void>>();
 
-    readonly oriDialogConfig = input<RdxDialogConfig<unknown>>();
+    readonly oriDialogConfig: InputSignal<RdxDialogConfig<unknown> | undefined> = input<RdxDialogConfig<unknown>>();
 
     #config = effect(() => {
         this.rdxDialogTrigger.dialogConfig = {
