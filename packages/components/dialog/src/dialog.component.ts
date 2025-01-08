@@ -1,7 +1,42 @@
-import { Component, computed, input } from '@angular/core';
+import { Component, computed, Directive, effect, inject, input, TemplateRef } from '@angular/core';
 import { cn } from '@origin-ui/components/utils';
-import { RdxDialogCloseDirective, RdxDialogContentDirective } from '@radix-ng/primitives/dialog';
+import {
+    RdxDialogCloseDirective,
+    RdxDialogConfig,
+    RdxDialogContentDirective,
+    RdxDialogTriggerDirective
+} from '@radix-ng/primitives/dialog';
 import { LucideAngularModule, X } from 'lucide-angular';
+
+@Directive({
+    selector: '[oriDialogTrigger]',
+    hostDirectives: [
+        {
+            directive: RdxDialogTriggerDirective,
+            inputs: ['rdxDialogTrigger: oriDialogTrigger']
+        }
+    ]
+})
+export class OriDialogTriggerDirective {
+    readonly rdxDialogTrigger = inject(RdxDialogTriggerDirective, { host: true });
+
+    readonly oriDialogTrigger = input.required<TemplateRef<void>>();
+
+    readonly oriDialogConfig = input<RdxDialogConfig<unknown>>();
+
+    config = effect(() => {
+        this.rdxDialogTrigger.dialogConfig = {
+            ...this.oriDialogTrigger(),
+            content: this.oriDialogTrigger(),
+            backdropClass: this.backdropClass
+        };
+    });
+
+    private backdropClass =
+        'fixed inset-0 z-[101] bg-black/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0'.split(
+            ' '
+        );
+}
 
 @Component({
     selector: 'ori-dialog-content',
@@ -102,3 +137,9 @@ export class OriDialogFooter {
         cn('flex flex-col-reverse gap-2 sm:flex-row sm:justify-end sm:gap-3', this.class())
     );
 }
+
+export const OriDialogOverlayClass = (clazz?: string) =>
+    cn(
+        'fixed inset-0 z-[101] bg-black/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0',
+        clazz
+    );

@@ -5,15 +5,16 @@ import {
     OriDialogDescription,
     OriDialogFooter,
     OriDialogHeader,
-    OriDialogTitle
+    OriDialogTitle,
+    OriDialogTriggerDirective
 } from '@origin-ui/components/dialog';
-import { RdxDialogCloseDirective, RdxDialogTriggerDirective } from '@radix-ng/primitives/dialog';
+import { RdxDialogCloseDirective } from '@radix-ng/primitives/dialog';
 
 @Component({
     selector: 'demo-dialog-04',
     imports: [
         OriDialogComponent,
-        RdxDialogTriggerDirective,
+        OriDialogTriggerDirective,
         RdxDialogCloseDirective,
         OriButton,
         OriDialogDescription,
@@ -22,7 +23,7 @@ import { RdxDialogCloseDirective, RdxDialogTriggerDirective } from '@radix-ng/pr
         OriDialogFooter
     ],
     template: `
-        <ori-button [rdxDialogTrigger]="dialog" variant="outline">Terms & Conditions</ori-button>
+        <ori-button [oriDialogTrigger]="dialog" variant="outline">Terms & Conditions</ori-button>
 
         <ng-template #dialog>
             <ori-dialog-content
@@ -158,11 +159,7 @@ export default class Dialog04Component {
 
         if (!content) return;
 
-        const scrollTop = content.scrollTop;
-        const scrollHeight = content.scrollHeight;
-        const clientHeight = content.clientHeight;
-
-        const scrollPercentage = scrollTop / (scrollHeight - clientHeight);
+        const scrollPercentage = content.scrollTop / (content.scrollHeight - content.clientHeight);
 
         if (scrollPercentage >= 0.99 && !this.hasReadToBottom) {
             this.hasReadToBottom = true;
