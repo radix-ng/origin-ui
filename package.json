@@ -26,7 +26,7 @@
         "@angular/router": "19.0.5",
         "@angular/ssr": "19.0.6",
         "@angular/cdk": "19.0.4",
-        "@radix-ng/primitives": "^0.27.0",
+        "@radix-ng/primitives": "^0.28.0",
         "@fontsource-variable/inter": "^5.1.0",
         "@fontsource/jetbrains-mono": "^5.1.1",
         "class-variance-authority": "^0.7.1",

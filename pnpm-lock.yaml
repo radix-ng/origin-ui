@@ -48,8 +48,8 @@ importers:
         specifier: ^5.1.1
         version: 5.1.1
       '@radix-ng/primitives':
-        specifier: ^0.27.0
-        version: 0.27.0(@angular/cdk@19.0.4(@angular/common@19.0.5(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))
+        specifier: ^0.28.0
+        version: 0.28.0(@angular/cdk@19.0.4(@angular/common@19.0.5(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -2365,8 +2365,8 @@ packages:
     resolution: {integrity: sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
-  '@radix-ng/primitives@0.27.0':
-    resolution: {integrity: sha512-LDiKIzIEYAGw6NXpkMrMzRHalQCMfADOiaF9TdNpWyAi7CQ7v1VBigg6QQBPrjdhZUWBgCeD02aw2EkV3dmYDQ==}
+  '@radix-ng/primitives@0.28.0':
+    resolution: {integrity: sha512-tuD2k8ojlHJuIudnE1SJ9Xis0Hb+lMVvbudJmUMwO5A3NIZFU7HkWCuqBVVyQ93PDqMENYUgnqaT3ZxetT9zrQ==}
     peerDependencies:
       '@angular/cdk': ^19.0.0
       '@angular/core': ^19.0.0
@@ -10030,7 +10030,7 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
-  '@radix-ng/primitives@0.27.0(@angular/cdk@19.0.4(@angular/common@19.0.5(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))':
+  '@radix-ng/primitives@0.28.0(@angular/cdk@19.0.4(@angular/common@19.0.5(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))':
     dependencies:
       '@angular/cdk': 19.0.4(@angular/common@19.0.5(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1)
       '@angular/core': 19.0.5(rxjs@7.8.1)(zone.js@0.15.0)

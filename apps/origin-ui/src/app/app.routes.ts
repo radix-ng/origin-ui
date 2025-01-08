@@ -14,6 +14,10 @@ export const appRoutes: Route[] = [
         loadComponent: () => import('./pages/buttons/page.component')
     },
     {
+        path: 'dialogs',
+        loadComponent: () => import('./pages/dialog/page.component')
+    },
+    {
         path: 'inputs',
         loadComponent: () => import('./pages/inputs/page.component')
     },

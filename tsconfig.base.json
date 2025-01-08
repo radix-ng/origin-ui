@@ -32,6 +32,9 @@
             "@origin-ui/components/checkbox": [
                 "packages/components/checkbox/index.ts"
             ],
+            "@origin-ui/components/dialog": [
+                "packages/components/dialog/index.ts"
+            ],
             "@origin-ui/components/input": [
                 "packages/components/input/index.ts"
             ],
