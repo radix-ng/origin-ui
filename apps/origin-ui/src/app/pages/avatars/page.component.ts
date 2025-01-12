@@ -20,17 +20,17 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
                         @defer {
                             @for (componentName of avatarFiles; track componentName) {
                                 <app-demo-component
+                                    class="flex items-center justify-center"
                                     [directory]="avatarDir"
                                     [componentName]="componentName"
-                                    className="flex items-center justify-center"
                                 ></app-demo-component>
                             }
 
                             @for (componentName of badgeFiles; track componentName) {
                                 <app-demo-component
+                                    class="flex items-center justify-center"
                                     [directory]="badgeDir"
                                     [componentName]="componentName"
-                                    className="flex items-center justify-center"
                                 ></app-demo-component>
                             }
                         }

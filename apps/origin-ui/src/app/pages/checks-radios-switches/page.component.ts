@@ -20,9 +20,9 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
                         @defer {
                             @for (componentName of checkboxFiles; track componentName) {
                                 <app-demo-component
+                                    class="text-center"
                                     [directory]="checkboxDir"
                                     [componentName]="componentName"
-                                    className="text-center"
                                 ></app-demo-component>
                             }
 

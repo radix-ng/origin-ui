@@ -1,29 +1,21 @@
-import { NgClass } from '@angular/common';
-import { Component, Input, signal } from '@angular/core';
+import { Component, input, signal } from '@angular/core';
 import { OriButton } from '@origin-ui/components/button';
+import { cn } from '@origin-ui/components/utils';
 
 @Component({
     selector: 'app-demo-copy-button',
-    imports: [OriButton, NgClass],
+    imports: [OriButton],
     template: `
-        <div
-            class="absolute right-2 top-2 transition-opacity"
-            [ngClass]="{
-                'lg:opacity-0 lg:group-focus-within/item:opacity-100 lg:group-hover/item:opacity-100': !copied()
-            }"
-        >
+        <div [class]="cn('dark absolute right-2 top-2', className())">
             <ori-button
-                class="text-muted-foreground/80 hover:text-foreground hover:bg-transparent disabled:opacity-100"
+                class="text-muted-foreground hover:text-foreground transition-none hover:bg-transparent disabled:opacity-100"
                 [attr.aria-label]="copied() ? 'Copied' : 'Copy component source'"
                 [disabled]="copied()"
                 (click)="handleCopy()"
                 variant="ghost"
                 size="icon"
             >
-                <div
-                    class="transition-all"
-                    [ngClass]="{ 'scale-100 opacity-100': copied(), 'scale-0 opacity-0': !copied() }"
-                >
+                <div [class]="cn('transition-all', copied() ? 'scale-100 opacity-100' : 'scale-0 opacity-0')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" aria-hidden="true">
                         <path
                             fill="#10B981"
@@ -32,10 +24,7 @@ import { OriButton } from '@origin-ui/components/button';
                     </svg>
                 </div>
 
-                <div
-                    class="absolute transition-all"
-                    [ngClass]="{ 'scale-0 opacity-0': copied(), 'scale-100 opacity-100': !copied() }"
-                >
+                <div [class]="cn('absolute transition-all', copied() ? 'scale-0 opacity-0' : 'scale-100 opacity-100')">
                     <svg
                         class="fill-current"
                         xmlns="http://www.w3.org/2000/svg"
@@ -55,23 +44,25 @@ import { OriButton } from '@origin-ui/components/button';
     styles: ``
 })
 export class CopyButtonComponent {
-    @Input() componentSource: string | null = null;
+    readonly componentSource = input<string>('');
 
-    copied = signal(false);
+    readonly className = input<string>();
+
+    readonly copied = signal(false);
+
+    protected readonly cn = cn;
 
     handleCopy() {
-        if (this.componentSource) {
-            navigator.clipboard.writeText(this.componentSource).then(
-                () => {
-                    this.copied.set(true);
-                    setTimeout(() => this.copied.set(false), 1500);
+        navigator.clipboard.writeText(this.componentSource()).then(
+            () => {
+                this.copied.set(true);
+                setTimeout(() => this.copied.set(false), 1500);
 
-                    console.log('Source code copied to clipboard!');
-                },
-                (err) => {
-                    console.error('Could not copy source code:', err);
-                }
-            );
-        }
+                console.log('Source code copied to clipboard!');
+            },
+            (err) => {
+                console.error('Could not copy source code:', err);
+            }
+        );
     }
 }

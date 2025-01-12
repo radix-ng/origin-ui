@@ -19,9 +19,9 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
                         @defer {
                             @for (item of files; track item) {
                                 <app-demo-component
+                                    class="text-center"
                                     [componentName]="item"
                                     directory="buttons"
-                                    className="text-center"
                                 ></app-demo-component>
                             }
                         }

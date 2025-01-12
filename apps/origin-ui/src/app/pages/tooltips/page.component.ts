@@ -20,9 +20,9 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
                         @defer {
                             @for (item of files; track item) {
                                 <app-demo-component
+                                    class="flex items-center justify-center"
                                     [componentName]="item"
                                     directory="tooltips"
-                                    className="flex items-center justify-center"
                                 />
                             }
                         }

@@ -20,9 +20,9 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
                         @defer {
                             @for (componentName of popoverFiles; track componentName) {
                                 <app-demo-component
+                                    class="flex items-start justify-center"
                                     [directory]="popoverDir"
                                     [componentName]="componentName"
-                                    className="flex items-start justify-center"
                                 ></app-demo-component>
                             }
                         }
