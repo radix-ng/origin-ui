@@ -4,7 +4,7 @@ import { cn } from '@origin-ui/components/utils';
 import { RdxToggleDirective } from '@radix-ng/primitives/toggle';
 import { cva, VariantProps } from 'class-variance-authority';
 
-const toggleVariants = cva(
+export const toggleVariants = cva(
     'inline-flex items-center justify-center rounded-lg text-sm font-medium transition-colors hover:bg-muted outline-offset-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring/70 disabled:pointer-events-none disabled:opacity-50 data-[state=on]:bg-accent data-[state=on]:text-accent-foreground',
     {
         variants: {

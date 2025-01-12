@@ -62,6 +62,9 @@
             "@origin-ui/components/toggle": [
                 "packages/components/toggle/index.ts"
             ],
+            "@origin-ui/components/toggle-group": [
+                "packages/components/toggle-group/index.ts"
+            ],
             "@origin-ui/components/tooltip": [
                 "packages/components/tooltip/index.ts"
             ],
