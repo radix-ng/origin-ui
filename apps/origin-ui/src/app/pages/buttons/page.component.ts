@@ -41,6 +41,8 @@ export default class PageButtonsComponent {
         'button-83',
         'button-91',
         'button-24',
+        'button-107',
+        'button-109',
         'button-110'
     ];
 }
