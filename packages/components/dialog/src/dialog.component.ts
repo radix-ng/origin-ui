@@ -32,10 +32,7 @@ export class OriDialogTriggerDirective {
         };
     });
 
-    #backdropClass =
-        'fixed inset-0 z-[101] bg-black/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0'.split(
-            ' '
-        );
+    #backdropClass = 'fixed inset-0 z-[101] bg-black/80'.split(' ');
 }
 
 @Component({
@@ -69,7 +66,7 @@ export class OriDialogComponent {
     readonly class = input<string>();
     protected readonly computedClass = computed(() =>
         cn(
-            'bg-background data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] fixed left-1/2 top-1/2 z-[101] grid max-h-[calc(100%-4rem)] w-full -translate-x-1/2 -translate-y-1/2 gap-4 overflow-y-auto border p-6 shadow-lg shadow-black/5 duration-200 sm:max-w-[400px] sm:rounded-xl',
+            'bg-background fixed left-1/2 top-1/2 z-[101] grid max-h-[calc(100%-4rem)] w-full -translate-x-1/2 -translate-y-1/2 gap-4 overflow-y-auto border p-6 shadow-lg shadow-black/5  sm:max-w-[400px] sm:rounded-xl',
             this.class()
         )
     );
@@ -137,9 +134,3 @@ export class OriDialogFooter {
         cn('flex flex-col-reverse gap-2 sm:flex-row sm:justify-end sm:gap-3', this.class())
     );
 }
-
-export const OriDialogOverlayClass = (clazz?: string) =>
-    cn(
-        'fixed inset-0 z-[101] bg-black/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0',
-        clazz
-    );
