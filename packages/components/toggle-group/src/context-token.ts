@@ -1,5 +1,5 @@
 import { InjectionToken } from '@angular/core';
-import { OriToggleGroupSize, OriToggleGroupVariant } from '@origin-ui/components/toggle-group';
+import { OriToggleGroupSize, OriToggleGroupVariant } from './toggle-group';
 
 export interface OriToggleGroupContext {
     size: OriToggleGroupSize;
