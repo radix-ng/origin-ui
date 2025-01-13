@@ -19,6 +19,7 @@ import { Component, computed, input, output } from '@angular/core';
             [value]="value()"
             [min]="min()"
             [max]="max()"
+            [maxLength]="maxLength()"
             (input)="handleInput($event)"
             (focus)="onFocus()"
             (blur)="onBlur()"
@@ -33,9 +34,10 @@ export class OriInput {
     readonly disabled = input<boolean | ''>(false);
     readonly required = input<boolean | ''>(false);
     readonly readOnly = input<boolean | ''>(false);
-    readonly value = input<string | null>(null);
+    readonly value = input<string>();
     readonly min = input<number | null>(null);
     readonly max = input<number | null>(null);
+    readonly maxLength = input<number | null>(null);
 
     readonly valueChange = output<string>();
     readonly focusChange = output<boolean>();
