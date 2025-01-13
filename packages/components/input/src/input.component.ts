@@ -16,7 +16,7 @@ import { Component, computed, input, output } from '@angular/core';
             [attr.disabled]="disabled() === true || disabled() === '' ? true : null"
             [attr.required]="required() === true || required() === '' ? true : null"
             [attr.readOnly]="readOnly() === true || readOnly() === '' ? true : null"
-            [value]="value()"
+            [value]="value() ? value() : null"
             [min]="min()"
             [max]="max()"
             [maxLength]="maxLength()"
