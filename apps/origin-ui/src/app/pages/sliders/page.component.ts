@@ -38,6 +38,7 @@ export default class PageSlidersComponent {
         'slider-10',
         'slider-11',
         'slider-20',
-        'slider-22'
+        'slider-22',
+        'slider-265'
     ];
 }
