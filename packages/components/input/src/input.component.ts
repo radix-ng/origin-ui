@@ -1,43 +1,18 @@
-import { Component, computed, input, output } from '@angular/core';
+import { computed, Directive, input, output } from '@angular/core';
 
-@Component({
-    selector: 'ori-input',
-    standalone: true,
+@Directive({
+    selector: '[oriInput]',
     host: {
-        // set to null on host element
-        '[attr.id]': 'null'
-    },
-    template: `
-        <input
-            [id]="id()"
-            [type]="type()"
-            [class]="computedClass()"
-            [attr.placeholder]="placeholder()"
-            [attr.disabled]="disabled() === true || disabled() === '' ? true : null"
-            [attr.required]="required() === true || required() === '' ? true : null"
-            [attr.readOnly]="readOnly() === true || readOnly() === '' ? true : null"
-            [value]="value() ? value() : null"
-            [min]="min()"
-            [max]="max()"
-            [maxLength]="maxLength()"
-            (input)="handleInput($event)"
-            (focus)="onFocus()"
-            (blur)="onBlur()"
-        />
-    `
+        '[class]': 'computedClass()',
+        '(input)': 'handleInput($event)',
+        '(focus)': 'onFocus()',
+        '(blur)': 'onBlur()'
+    }
 })
 export class OriInput {
-    readonly id = input<string>('');
-    readonly type = input<string>('text');
-    readonly placeholder = input<string>('');
-    readonly className = input<string>('');
-    readonly disabled = input<boolean | ''>(false);
-    readonly required = input<boolean | ''>(false);
-    readonly readOnly = input<boolean | ''>(false);
-    readonly value = input<string>();
-    readonly min = input<number | null>(null);
-    readonly max = input<number | null>(null);
-    readonly maxLength = input<number | null>(null);
+    readonly type = input.required<string>();
+
+    readonly class = input<string>('');
 
     readonly valueChange = output<string>();
     readonly focusChange = output<boolean>();
@@ -53,7 +28,7 @@ export class OriInput {
                   ? 'p-0 pr-3 italic text-muted-foreground/70 file:me-3 file:h-full file:border-0 file:border-r file:border-solid file:border-input file:bg-transparent file:px-3 file:text-sm file:font-medium file:not-italic file:text-foreground'
                   : '';
 
-        return `${baseClass} ${typeClass} ${this.className()}`.trim();
+        return `${baseClass} ${typeClass} ${this.class()}`.trim();
     });
 
     handleInput(event: Event) {

@@ -53,11 +53,11 @@ import { CircleAlert, LucideAngularModule } from 'lucide-angular';
                 <form class="space-y-5">
                     <div class="space-y-2">
                         <ori-label class="block" htmlFor="ori-1">Project name</ori-label>
-                        <ori-input
-                            class="flex"
+                        <input
                             id="ori-1"
                             [value]="inputValue()"
                             (valueChange)="handleValueChange($event)"
+                            oriInput
                             type="text"
                             placeholder="Type Origin UI to confirm"
                         />

@@ -8,7 +8,7 @@ import { OriLabel } from '@origin-ui/components/label';
     template: `
         <div class="space-y-2">
             <ori-label [htmlFor]="'input-08'">Disabled input</ori-label>
-            <ori-input class="block" [id]="'input-08'" placeholder="Email" type="email" disabled />
+            <input id="input-08" oriInput placeholder="Email" type="email" disabled />
         </div>
     `
 })

@@ -45,9 +45,10 @@ import { Code, Facebook, LucideAngularModule, Mail, Twitter } from 'lucide-angul
                             </div>
                             <div class="space-y-2">
                                 <div class="relative">
-                                    <ori-input
+                                    <input
                                         class="pe-9"
                                         id="input-53"
+                                        oriInput
                                         type="text"
                                         value="https://originui-ng.com/"
                                         aria-label="Share link"

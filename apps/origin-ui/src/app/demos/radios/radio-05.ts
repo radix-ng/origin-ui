@@ -32,9 +32,10 @@ import { OriRadioGroup, OriRadioGroupItem } from '@origin-ui/components/radio-gr
                     >
                         <div class="pointer-events-none -m-2 overflow-hidden p-2">
                             <div class="pointer-events-auto mt-3">
-                                <ori-input
+                                <input
                                     id="radio-05-additional-info"
                                     [disabled]="selectedValue() !== 'with-expansion'"
+                                    oriInput
                                     type="text"
                                     placeholder="Enter details"
                                     aria-label="Additional Information"

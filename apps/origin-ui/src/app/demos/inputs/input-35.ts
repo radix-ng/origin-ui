@@ -9,12 +9,12 @@ import { createCharacterLimit } from '../../hooks/use-character-limit';
     template: `
         <div class="space-y-2">
             <ori-label [htmlFor]="'input-35'">Input with characters left</ori-label>
-            <ori-input
-                class="block"
+            <input
                 [value]="signals.value()"
                 [maxLength]="maxLength"
                 [id]="'input-35'"
                 (valueChange)="signals.handleChange($event)"
+                oriInput
                 placeholder="Email"
                 type="text"
                 aria-describedby="input-35-description"

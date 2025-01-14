@@ -10,10 +10,10 @@ import { Download, LucideAngularModule } from 'lucide-angular';
         <div class="space-y-2">
             <ori-label [htmlFor]="'input-20'">Input with end icon button</ori-label>
             <div class="flex rounded-lg shadow-sm shadow-black/5">
-                <ori-input
-                    class="contents"
-                    [id]="'input-20'"
-                    className="-me-px flex-1 rounded-e-none shadow-none focus-visible:z-10"
+                <input
+                    class="-me-px flex-1 rounded-e-none shadow-none focus-visible:z-10"
+                    id="input-20"
+                    oriInput
                     placeholder="Email"
                     type="email"
                 />

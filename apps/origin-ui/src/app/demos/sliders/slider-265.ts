@@ -161,10 +161,11 @@ const items = [
                 <div class="space-y-1">
                     <ori-label>Min price</ori-label>
                     <div class="relative">
-                        <ori-input
+                        <input
+                            class="peer w-full ps-6"
                             [value]="signals.inputValues()[0]"
                             (valueChange)="handleInputChange($event, 0)"
-                            className="peer w-full ps-6"
+                            oriInput
                             type="text"
                             inputMode="decimal"
                             aria-label="Enter minimum price"
@@ -179,10 +180,11 @@ const items = [
                 <div class="space-y-1">
                     <ori-label>Max price</ori-label>
                     <div class="relative">
-                        <ori-input
+                        <input
+                            class="peer w-full ps-6"
                             [value]="signals.inputValues()[1]"
                             (valueChange)="handleInputChange($event, 1)"
-                            className="peer w-full ps-6"
+                            oriInput
                             type="text"
                             inputMode="decimal"
                             aria-label="Enter minimum price"

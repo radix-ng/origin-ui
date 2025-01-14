@@ -14,10 +14,10 @@ import { OriLabel } from '@origin-ui/components/label';
                 >
                     https://
                 </span>
-                <ori-input
-                    class="contents"
-                    [id]="'input-14'"
-                    className="-ms-px rounded-s-none shadow-none"
+                <input
+                    class="-ms-px rounded-s-none shadow-none"
+                    id="input-14"
+                    oriInput
                     placeholder="google.com"
                     type="text"
                 />

@@ -11,7 +11,7 @@ import { OriLabel } from '@origin-ui/components/label';
                 Required input
                 <span class="text-destructive">*</span>
             </ori-label>
-            <ori-input class="block" [id]="'input-02'" placeholder="Email" type="email" required />
+            <input id="input-02" oriInput placeholder="Email" type="email" required />
         </div>
     `
 })

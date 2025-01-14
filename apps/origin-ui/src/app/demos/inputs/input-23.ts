@@ -10,10 +10,11 @@ import { Eye, EyeOff, LucideAngularModule } from 'lucide-angular';
         <div class="space-y-2">
             <ori-label [htmlFor]="'input-23'">Show/hide password input</ori-label>
             <div class="relative">
-                <ori-input
-                    class="contents pe-9"
-                    [id]="'input-23'"
+                <input
+                    class="pe-9"
+                    id="input-23"
                     [type]="isVisible ? 'text' : 'password'"
+                    oriInput
                     placeholder="Password"
                 />
                 <button
