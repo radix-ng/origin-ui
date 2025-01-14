@@ -19,7 +19,6 @@ import { Check, Eye, EyeOff, LucideAngularModule, X } from 'lucide-angular';
                     <input
                         class="pe-9"
                         id="input-51"
-                        #inputRef
                         [value]="password()"
                         [type]="isVisible() ? 'text' : 'password'"
                         [attr.aria-invalid]="strengthScore() < 4"
@@ -36,9 +35,9 @@ import { Check, Eye, EyeOff, LucideAngularModule, X } from 'lucide-angular';
                         type="button"
                     >
                         @if (isVisible()) {
-                            <lucide-angular [img]="EyeOff" strokeWidth="2" aria-hidden="true" />
+                            <lucide-angular [img]="EyeOff" size="16" strokeWidth="2" aria-hidden="true" />
                         } @else {
-                            <lucide-angular [img]="Eye" strokeWidth="2" aria-hidden="true" />
+                            <lucide-angular [img]="Eye" size="16" strokeWidth="2" aria-hidden="true" />
                         }
                     </button>
                 </div>
@@ -65,7 +64,7 @@ import { Check, Eye, EyeOff, LucideAngularModule, X } from 'lucide-angular';
 
             <!-- Password requirements list -->
             <ul class="space-y-1.5" aria-label="Password requirements">
-                @for (req of strength(); track req) {
+                @for (req of strength(); track $index) {
                     <li class="flex items-center gap-2">
                         @if (req.met) {
                             <lucide-angular class="text-emerald-500" [img]="Check" size="16" aria-hidden="true" />

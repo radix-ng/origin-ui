@@ -3,6 +3,7 @@ import { computed, Directive, input, output } from '@angular/core';
 @Directive({
     selector: '[oriInput]',
     host: {
+        '[type]': 'type()',
         '[class]': 'computedClass()',
         '(input)': 'handleInput($event)',
         '(focus)': 'onFocus()',
