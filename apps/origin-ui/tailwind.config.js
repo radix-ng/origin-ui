@@ -10,6 +10,9 @@ module.exports = {
         ...createGlobPatternsForDependencies(__dirname)],
     theme: {
         extend: {
+            maxWidth: {
+                '3xl': '51rem'
+            },
             fontFamily: {
                 mono: ['JetBrains Mono', ...defaultTheme.fontFamily.mono],
                 sans: ['Inter Variable', ...defaultTheme.fontFamily.sans]
