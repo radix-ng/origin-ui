@@ -7,7 +7,7 @@ import { OriLabel } from '@origin-ui/components/label';
     imports: [OriInput, OriLabel],
     template: `
         <div class="space-y-2">
-            <ori-label [htmlFor]="'input-14'">Input with start add-on</ori-label>
+            <label oriLabel htmlFor="input-14">Input with start add-on</label>
             <div class="flex rounded-lg shadow-sm shadow-black/5">
                 <span
                     class="border-input bg-background text-muted-foreground -z-10 inline-flex items-center rounded-s-lg border px-3 text-sm"

@@ -7,7 +7,7 @@ import { OriSelectNative } from '@origin-ui/components/select-native';
     imports: [OriSelectNative, OriLabel],
     template: `
         <div class="flex flex-col gap-2">
-            <ori-label [htmlFor]="'select-11'">Select with option groups (native)</ori-label>
+            <label [htmlFor]="'select-11'" oriLabel>Select with option groups (native)</label>
             <ori-select-native [id]="'select-11'">
                 <optgroup label="Frontend">
                     <option value="s1">React</option>

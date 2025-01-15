@@ -8,7 +8,7 @@ import { Download, LucideAngularModule } from 'lucide-angular';
     imports: [OriInput, OriLabel, LucideAngularModule],
     template: `
         <div class="space-y-2">
-            <ori-label [htmlFor]="'input-20'">Input with end icon button</ori-label>
+            <label oriLabel htmlFor="input-20">Input with end icon button</label>
             <div class="flex rounded-lg shadow-sm shadow-black/5">
                 <input
                     class="-me-px flex-1 rounded-e-none shadow-none focus-visible:z-10"

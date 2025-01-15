@@ -12,7 +12,7 @@ import { CircleX, LucideAngularModule } from 'lucide-angular';
     ],
     template: `
         <div class="space-y-2">
-            <ori-label [htmlFor]="'input-24'">Input with clear button</ori-label>
+            <label oriLabel htmlFor="input-24">Input with clear button</label>
             <div class="relative">
                 <input
                     class="pe-9"

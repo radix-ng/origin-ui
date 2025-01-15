@@ -36,25 +36,19 @@ import { ListFilter, LucideAngularModule } from 'lucide-angular';
                             <form class="space-y-3">
                                 <div class="flex items-center gap-2">
                                     <ori-checkbox class="flex" id="popover-filter-01" />
-                                    <ori-label className="font-normal" htmlFor="popover-filter-01">Real Time</ori-label>
+                                    <label class="font-normal" oriLabel htmlFor="popover-filter-01">Real Time</label>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <ori-checkbox id="popover-filter-02" />
-                                    <ori-label htmlFor="popover-filter-02" className="font-normal">
-                                        Top Channels
-                                    </ori-label>
+                                    <label class="font-normal" oriLabel htmlFor="popover-filter-02">Top Channels</label>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <ori-checkbox id="popover-filter-03" />
-                                    <ori-label htmlFor="popover-filter-03" className="font-normal">
-                                        Last Orders
-                                    </ori-label>
+                                    <label class="font-normal" oriLabel htmlFor="popover-filter-03">Last Orders</label>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <ori-checkbox id="popover-filter-04" />
-                                    <ori-label htmlFor="popover-filter-04" className="font-normal">
-                                        Total Spent
-                                    </ori-label>
+                                    <label class="font-normal" oriLabel htmlFor="popover-filter-04">Total Spent</label>
                                 </div>
                                 <div
                                     class="bg-border -mx-3 my-1 h-px"

@@ -9,7 +9,7 @@ import { cn } from '@origin-ui/components/utils';
     imports: [OriSlider, OriLabel, NgClass],
     template: `
         <div class="flex flex-col gap-4">
-            <ori-label>Slider with ticks</ori-label>
+            <label oriLabel>Slider with ticks</label>
             <div>
                 <ori-slider [defaultValue]="[5]" [max]="max" aria-label="Slider with ticks" />
                 <span

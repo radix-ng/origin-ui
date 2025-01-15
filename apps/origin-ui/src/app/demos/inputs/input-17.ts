@@ -8,7 +8,7 @@ import { ChevronDown, LucideAngularModule } from 'lucide-angular';
     imports: [OriInput, OriLabel, LucideAngularModule],
     template: `
         <div class="space-y-2">
-            <ori-label [htmlFor]="'input-17'">Input with start select</ori-label>
+            <label oriLabel htmlFor="input-17">Input with start select</label>
             <div class="flex rounded-lg shadow-sm shadow-black/5">
                 <div class="relative">
                     <select

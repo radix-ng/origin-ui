@@ -22,7 +22,8 @@ module.exports = [
             '**/*.ts'
         ],
         rules: {
-            '@angular-eslint/prefer-standalone': 'off'
+            '@angular-eslint/prefer-standalone': 'off',
+            '@angular-eslint/template/label-has-associated-control': '0'
         }
     }
 ];

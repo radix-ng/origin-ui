@@ -19,7 +19,7 @@ import { defaultConfig, Easing, EasingSvgComponent } from './easing-svg.componen
                         <div class="bg-background/95 top-0 z-10 py-4 backdrop-blur-lg md:sticky">
                             <div class="flex flex-col justify-between gap-4 md:flex-row md:items-center">
                                 <div class="flex flex-col gap-2">
-                                    <ori-label>Duration</ori-label>
+                                    <label oriLabel>Duration</label>
                                     <div class="flex items-center gap-4">
                                         Slider Input
                                         <span class="text-muted-foreground text-sm">ms</span>
@@ -28,12 +28,12 @@ import { defaultConfig, Easing, EasingSvgComponent } from './easing-svg.componen
 
                                 <div class="flex items-center gap-4">
                                     <div class="flex flex-col gap-2">
-                                        <ori-label>Filter</ori-label>
+                                        <label oriLabel>Filter</label>
                                         Select
                                     </div>
 
                                     <div class="flex flex-col gap-2">
-                                        <ori-label>Animation type</ori-label>
+                                        <label oriLabel>Animation type</label>
                                         Select
                                     </div>
                                 </div>

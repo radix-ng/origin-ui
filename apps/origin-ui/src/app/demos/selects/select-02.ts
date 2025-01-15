@@ -7,7 +7,7 @@ import { OriSelectNative } from '@origin-ui/components/select-native';
     imports: [OriSelectNative, OriLabel],
     template: `
         <div class="flex flex-col gap-2">
-            <ori-label [htmlFor]="'select-02'">Select with placeholder (native)</ori-label>
+            <label [htmlFor]="'select-02'" oriLabel>Select with placeholder (native)</label>
             <ori-select-native [id]="'select-02'">
                 <option value="" disabled>Please select a value</option>
                 <option value="s1">1 to 5</option>

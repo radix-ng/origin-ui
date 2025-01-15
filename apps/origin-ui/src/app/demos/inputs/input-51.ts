@@ -14,7 +14,7 @@ import { Check, Eye, EyeOff, LucideAngularModule, X } from 'lucide-angular';
         <div>
             <!--Password input field with toggle visibility button-->
             <div class="space-y-2">
-                <ori-label [htmlFor]="'input-51'">Input with password strength indicator</ori-label>
+                <label oriLabel htmlFor="input-51">Input with password strength indicator</label>
                 <div class="relative">
                     <input
                         class="pe-9"

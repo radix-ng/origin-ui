@@ -17,7 +17,7 @@ import { OriRadioGroup, OriRadioGroupItem } from '@origin-ui/components/radio-gr
                 />
                 <div class="grow">
                     <div class="grid grow gap-2">
-                        <ori-label class="flex" [htmlFor]="'radio-05-with-expansion'">Radio with expansion</ori-label>
+                        <label [htmlFor]="'radio-05-with-expansion'" oriLabel>Radio with expansion</label>
                         <p class="text-muted-foreground text-xs" id="radio-05-with-expansion-description">
                             You can use this radio with a label and a description.
                         </p>
@@ -53,7 +53,7 @@ import { OriRadioGroup, OriRadioGroupItem } from '@origin-ui/components/radio-gr
                     aria-describedby="radio-05-without-expansion-description"
                 />
                 <div class="grid grow gap-2">
-                    <ori-label htmlFor="radio-05-without-expansion">Radio without expansion</ori-label>
+                    <label oriLabel htmlFor="radio-05-without-expansion">Radio without expansion</label>
                     <p class="text-muted-foreground text-xs" id="radio-05-without-expansion-description">
                         You can use this checkbox with a label and a description.
                     </p>

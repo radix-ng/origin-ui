@@ -8,7 +8,7 @@ import { Eye, EyeOff, LucideAngularModule } from 'lucide-angular';
     imports: [OriInput, OriLabel, LucideAngularModule],
     template: `
         <div class="space-y-2">
-            <ori-label [htmlFor]="'input-23'">Show/hide password input</ori-label>
+            <label oriLabel htmlFor="input-23">Show/hide password input</label>
             <div class="relative">
                 <input
                     class="pe-9"

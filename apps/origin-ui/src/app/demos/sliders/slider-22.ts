@@ -7,7 +7,7 @@ import { OriSlider } from '@origin-ui/components/slider';
     imports: [OriSlider, OriLabel],
     template: `
         <div class="flex flex-col gap-4">
-            <ori-label>Vertical slider</ori-label>
+            <label oriLabel>Vertical slider</label>
             <div class="flex h-40 justify-center">
                 <ori-slider [defaultValue]="[5]" [max]="10" [orientation]="'vertical'" aria-label="Vertical slider" />
             </div>

@@ -7,7 +7,7 @@ import { OriSlider } from '@origin-ui/components/slider';
     imports: [OriSlider, OriLabel],
     template: `
         <div class="flex flex-col gap-4">
-            <ori-label>Dual range slider</ori-label>
+            <label oriLabel>Dual range slider</label>
             <ori-slider [defaultValue]="[25, 75]" [step]="10" aria-label="Dual range slider" />
         </div>
     `

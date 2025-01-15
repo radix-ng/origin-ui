@@ -14,7 +14,7 @@ import { OriLabel } from '@origin-ui/components/label';
                 [indeterminate]="checked()"
                 (checkedChange)="onCheckedChange()"
             />
-            <ori-label htmlFor="checkbox-02">Indeterminate checkbox</ori-label>
+            <label oriLabel htmlFor="checkbox-02">Indeterminate checkbox</label>
         </div>
     `
 })

@@ -7,7 +7,7 @@ import { OriSlider } from '@origin-ui/components/slider';
     imports: [OriSlider, OriLabel],
     template: `
         <div class="flex flex-col gap-4">
-            <ori-label>Slider with square thumb</ori-label>
+            <label oriLabel>Slider with square thumb</label>
             <ori-slider
                 class="[&_*_rdx-slider-thumb]:rounded"
                 [defaultValue]="[25]"

@@ -52,7 +52,7 @@ import { CircleAlert, LucideAngularModule } from 'lucide-angular';
                 </div>
                 <form class="space-y-5">
                     <div class="space-y-2">
-                        <ori-label class="block" htmlFor="ori-1">Project name</ori-label>
+                        <label oriLabel htmlFor="ori-1">Project name</label>
                         <input
                             id="ori-1"
                             [value]="inputValue()"

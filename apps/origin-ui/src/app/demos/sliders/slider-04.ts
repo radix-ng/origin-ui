@@ -7,7 +7,7 @@ import { OriSlider } from '@origin-ui/components/slider';
     imports: [OriSlider, OriLabel],
     template: `
         <div class="flex flex-col gap-4">
-            <ori-label>Slider with solid thumb</ori-label>
+            <label oriLabel>Slider with solid thumb</label>
             <ori-slider
                 class="[&_*_rdx-slider-thumb]:bg-primary [&_*_rdx-slider-range]:opacity-70"
                 [defaultValue]="[25]"

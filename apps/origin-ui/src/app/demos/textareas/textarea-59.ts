@@ -7,7 +7,7 @@ import { OriTextarea } from '@origin-ui/components/textarea';
     imports: [OriLabel, OriTextarea],
     template: `
         <div class="space-y-2">
-            <ori-label htmlFor="textarea-59">Simple textarea</ori-label>
+            <label oriLabel htmlFor="textarea-59">Simple textarea</label>
             <textarea id="textarea-59" oriTextarea placeholder="Leave a comment"></textarea>
         </div>
     `

@@ -9,7 +9,7 @@ import { OriLabel } from '@origin-ui/components/label';
     template: `
         <div class="flex items-center gap-2">
             <ori-checkbox class="flex" id="checkbox-04" disabled />
-            <ori-label htmlFor="checkbox-04">Disabled checkbox</ori-label>
+            <label oriLabel htmlFor="checkbox-04">Disabled checkbox</label>
         </div>
     `
 })

@@ -7,7 +7,7 @@ import { OriSelectNative } from '@origin-ui/components/select-native';
     imports: [OriSelectNative, OriLabel],
     template: `
         <div class="[&_svg]:text-destructive/80 flex flex-col gap-2">
-            <ori-label [htmlFor]="'select-06'">Select with error (native)</ori-label>
+            <label [htmlFor]="'select-06'" oriLabel>Select with error (native)</label>
             <ori-select-native
                 [id]="'select-06'"
                 className="border-destructive/80 text-destructive focus-visible:border-destructive/80 focus-visible:ring-destructive/20"

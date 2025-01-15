@@ -9,13 +9,14 @@ import { Check, LucideAngularModule } from 'lucide-angular';
     selector: 'demo-badge-11',
     imports: [LucideAngularModule, OriLabel, OriCheckbox],
     template: `
-        <ori-label
+        <label
             [class]="
                 cn(
                     badgeVariants({ variant: 'default' }),
                     'hover:bg-primary/80 has-[ori-checkbox>[data-state=unchecked]]:bg-muted has-[ori-checkbox>[data-state=unchecked]]:text-muted-foreground has-[:focus-visible]:outline-ring/70 cursor-pointer has-[:focus-visible]:outline has-[:focus-visible]:outline-2'
                 )
             "
+            oriLabel
         >
             <div class="flex items-center gap-1">
                 <ori-checkbox
@@ -32,7 +33,7 @@ import { Check, LucideAngularModule } from 'lucide-angular';
                 />
                 <span class="select-none">Selectable</span>
             </div>
-        </ori-label>
+        </label>
     `
 })
 export default class Badge11Component {

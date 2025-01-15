@@ -7,12 +7,13 @@ import { OriSelectNative } from '@origin-ui/components/select-native';
     imports: [OriSelectNative, OriLabel],
     template: `
         <div class="group relative">
-            <ori-label
+            <label
+                class="bg-background text-foreground absolute start-1 top-0 z-10 block -translate-y-1/2 px-2 text-xs font-medium group-has-[select:disabled]:opacity-50"
                 [htmlFor]="'select-13'"
-                className="absolute start-1 top-0 z-10 block -translate-y-1/2 bg-background px-2 text-xs font-medium text-foreground group-has-[select:disabled]:opacity-50"
+                oriLabel
             >
                 Select with overlapping label (native)
-            </ori-label>
+            </label>
             <ori-select-native [id]="'select-13'">
                 <option value="" disabled>Select framework</option>
                 <option value="s1">React</option>

@@ -7,7 +7,7 @@ import { OriLabel } from '@origin-ui/components/label';
     imports: [OriInput, OriLabel],
     template: `
         <div class="space-y-2">
-            <ori-label [htmlFor]="'input-01'">Simple input</ori-label>
+            <label oriLabel htmlFor="input-01">Simple input</label>
             <input id="input-01" oriInput placeholder="Email" type="email" />
         </div>
     `

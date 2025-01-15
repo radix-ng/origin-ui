@@ -9,7 +9,7 @@ import { LucideAngularModule, Minus, Plus } from 'lucide-angular';
     imports: [OriSlider, OriLabel, OriButton, LucideAngularModule],
     template: `
         <div class="flex flex-col gap-3">
-            <ori-label className="tabular-nums">{{ value()[0] }} credits/mo</ori-label>
+            <label class="tabular-nums" oriLabel>{{ value()[0] }} credits/mo</label>
             <div class="flex items-center gap-4">
                 <div>
                     <ori-button

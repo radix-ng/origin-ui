@@ -18,10 +18,10 @@ import { OriRadioGroup, OriRadioGroupItem } from '@origin-ui/components/radio-gr
                     aria-describedby="radio-08-r1-description"
                 />
                 <div class="grid grow gap-2">
-                    <ori-label class="flex" htmlFor="radio-08-r1">
+                    <label oriLabel htmlFor="radio-08-r1">
                         Label{{ ' ' }}
                         <span class="text-muted-foreground text-xs font-normal leading-[inherit]">(Sublabel)</span>
-                    </ori-label>
+                    </label>
                     <p class="text-muted-foreground text-xs" id="radio-08-r1-description">
                         You can use this card with a label and a description.
                     </p>
@@ -39,10 +39,10 @@ import { OriRadioGroup, OriRadioGroupItem } from '@origin-ui/components/radio-gr
                     aria-describedby="radio-08-r2-description"
                 />
                 <div class="grid grow gap-2">
-                    <ori-label class="flex" htmlFor="radio-08-r2">
+                    <label oriLabel htmlFor="radio-08-r2">
                         Label{{ ' ' }}
                         <span class="text-muted-foreground text-xs font-normal leading-[inherit]">(Sublabel)</span>
-                    </ori-label>
+                    </label>
                     <p class="text-muted-foreground text-xs" id="radio-08-r2-description">
                         You can use this card with a label and a description.
                     </p>

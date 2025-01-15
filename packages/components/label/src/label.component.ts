@@ -1,4 +1,4 @@
-import { Component, computed, input } from '@angular/core';
+import { computed, Directive, input } from '@angular/core';
 import { cn } from '@origin-ui/components/utils';
 import { RdxLabelDirective } from '@radix-ng/primitives/label';
 import { cva } from 'class-variance-authority';
@@ -8,19 +8,15 @@ const labelVariants = cva(
     'text-sm font-medium leading-4 text-foreground peer-disabled:cursor-not-allowed peer-disabled:opacity-70'
 );
 
-@Component({
-    selector: 'ori-label',
-    imports: [RdxLabelDirective],
-    template: `
-        <label [class]="computedClass()" [htmlFor]="htmlFor()" rdxLabel>
-            <ng-content></ng-content>
-        </label>
-    `
+@Directive({
+    selector: '[oriLabel]',
+    hostDirectives: [{ directive: RdxLabelDirective, inputs: ['htmlFor', 'id'] }],
+    host: {
+        '[class]': 'computedClass()'
+    }
 })
 export class OriLabel {
-    readonly className = input<ClassValue>('');
+    readonly class = input<ClassValue>();
 
-    readonly htmlFor = input<string>('');
-
-    protected computedClass = computed(() => cn(labelVariants(), this.className()));
+    protected computedClass = computed(() => cn(labelVariants(), this.class()));
 }

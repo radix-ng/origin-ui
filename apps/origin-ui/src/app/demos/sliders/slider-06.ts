@@ -7,7 +7,7 @@ import { OriSlider } from '@origin-ui/components/slider';
     imports: [OriSlider, OriLabel],
     template: `
         <div class="flex flex-col gap-4">
-            <ori-label>Slider with reference labels</ori-label>
+            <label oriLabel>Slider with reference labels</label>
             <div>
                 <ori-slider [defaultValue]="[15]" [min]="5" [max]="35" aria-label="Slider with reference labels" />
                 <span

@@ -7,10 +7,10 @@ import { OriLabel } from '@origin-ui/components/label';
     imports: [OriInput, OriLabel],
     template: `
         <div class="space-y-2">
-            <ori-label [htmlFor]="'input-02'">
+            <label oriLabel htmlFor="input-02">
                 Required input
                 <span class="text-destructive">*</span>
-            </ori-label>
+            </label>
             <input id="input-02" oriInput placeholder="Email" type="email" required />
         </div>
     `

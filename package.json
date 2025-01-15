@@ -9,6 +9,7 @@
     "scripts": {
         "origin-ui:docs:serve": "nx run origin-ui:serve",
         "origin-ui:docs:build": "nx run origin-ui:build",
+        "----Components-------": "-----------------------------------------------------------------------",
         "components:build": "nx run components:build",
         "----Others-------": "-----------------------------------------------------------------------",
         "prettier": "prettier '**/*.{css,scss,md,mdx,yml,json,js,cjs,mjs,html,ts}' --check",

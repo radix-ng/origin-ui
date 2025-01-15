@@ -14,7 +14,7 @@ import { RdxSelectComponent, RdxSelectContentDirective } from '@radix-ng/primiti
     ],
     template: `
         <div class="space-y-2">
-            <ori-label htmlFor="select-15">Simple select with default value</ori-label>
+            <label oriLabel htmlFor="select-15">Simple select with default value</label>
             <span rdxSelect>
                 <ori-select-trigger id="select-15">
                     <ori-select-value />

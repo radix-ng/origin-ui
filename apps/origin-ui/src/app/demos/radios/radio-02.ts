@@ -10,15 +10,15 @@ import { OriRadioGroup, OriRadioGroupItem } from '@origin-ui/components/radio-gr
         <ori-radio-group [value]="'r1'" [ngStyle]="{ '--primary': '238.7 83.5% 66.7%', '--ring': '238.7 83.5% 66.7%' }">
             <div class="flex items-center gap-2">
                 <ori-radio-group-item [value]="'r1'" [forId]="'radio-02-r1'" />
-                <ori-label [htmlFor]="'radio-02-r1'">Option 1</ori-label>
+                <label [htmlFor]="'radio-02-r1'" oriLabel>Option 1</label>
             </div>
             <div class="flex items-center gap-2">
                 <ori-radio-group-item [value]="'r2'" [forId]="'radio-02-r2'" />
-                <ori-label [htmlFor]="'radio-02-r2'">Option 2</ori-label>
+                <label [htmlFor]="'radio-02-r2'" oriLabel>Option 2</label>
             </div>
             <div class="flex items-center gap-2">
                 <ori-radio-group-item [value]="'r3'" [forId]="'radio-02-r3'" />
-                <ori-label [htmlFor]="'radio-02-r3'">Option 2</ori-label>
+                <label [htmlFor]="'radio-02-r3'" oriLabel>Option 2</label>
             </div>
         </ori-radio-group>
     `

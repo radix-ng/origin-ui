@@ -8,7 +8,7 @@ import { createCharacterLimit } from '../../hooks/use-character-limit';
     imports: [OriInput, OriLabel],
     template: `
         <div class="space-y-2">
-            <ori-label [htmlFor]="'input-35'">Input with characters left</ori-label>
+            <label oriLabel htmlFor="input-35">Input with characters left</label>
             <input
                 [value]="signals.value()"
                 [maxLength]="maxLength"

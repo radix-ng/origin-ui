@@ -8,7 +8,7 @@ import { OriSelectNative } from '@origin-ui/components/select-native';
     imports: [OriSelectNative, OriLabel, NgStyle],
     template: `
         <div class="flex flex-col gap-2" [ngStyle]="{ '--ring': '234 89% 74%' }">
-            <ori-label [htmlFor]="'select-05'">Select with colored border (native)</ori-label>
+            <label [htmlFor]="'select-05'" oriLabel>Select with colored border (native)</label>
             <ori-select-native [id]="'select-05'">
                 <option value="s1">React</option>
                 <option value="s2">Next.js</option>

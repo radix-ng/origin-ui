@@ -7,7 +7,7 @@ import { OriTextarea } from '@origin-ui/components/textarea';
     imports: [OriLabel, OriTextarea],
     template: `
         <div class="space-y-2">
-            <ori-label htmlFor="textarea-77">Autogrowing textarea</ori-label>
+            <label oriLabel htmlFor="textarea-77">Autogrowing textarea</label>
             <textarea
                 class="min-h-[none] resize-none"
                 id="textarea-77"

@@ -2,10 +2,13 @@
     "name": "@origin-ui/components",
     "version": "0.0.1",
     "peerDependencies": {
-        "@angular/common": "^18.2.0",
-        "@angular/core": "^18.2.0",
-        "@radix-ng/primitives": "^0.18.0",
-        "lucide-angular": "^0.464.0"
+        "@angular/common": ">=19.0.0",
+        "@angular/core": ">=19.0.0",
+        "@radix-ng/primitives": ">=0.29.0",
+        "class-variance-authority": "^0.7.1",
+        "clsx": "^2.1.1",
+        "lucide-angular": "^0.464.0",
+        "tailwind-merge": "^2.6.0"
     },
     "sideEffects": false
 }

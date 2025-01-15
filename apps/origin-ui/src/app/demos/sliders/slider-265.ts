@@ -133,7 +133,7 @@ const items = [
     imports: [OriSlider, OriLabel, OriInput, OriButton],
     template: `
         <div class="space-y-4">
-            <ori-label>Price slider</ori-label>
+            <label oriLabel>Price slider</label>
             <!-- /* Histogram bars */ -->
             <div>
                 <div class="flex h-12 w-full items-end px-3" aria-hidden="true">
@@ -159,7 +159,7 @@ const items = [
             <!-- /* Inputs */ -->
             <div class="flex items-center justify-between gap-4">
                 <div class="space-y-1">
-                    <ori-label>Min price</ori-label>
+                    <label oriLabel>Min price</label>
                     <div class="relative">
                         <input
                             class="peer w-full ps-6"
@@ -178,7 +178,7 @@ const items = [
                     </div>
                 </div>
                 <div class="space-y-1">
-                    <ori-label>Max price</ori-label>
+                    <label oriLabel>Max price</label>
                     <div class="relative">
                         <input
                             class="peer w-full ps-6"

@@ -7,7 +7,7 @@ import { OriSlider } from '@origin-ui/components/slider';
     imports: [OriSlider, OriLabel],
     template: `
         <div class="space-y-4">
-            <ori-label>Slider with labels and tooltip</ori-label>
+            <label oriLabel>Slider with labels and tooltip</label>
             <div>
                 <span
                     class="text-muted-foreground mb-3 flex w-full items-center justify-between gap-2 text-xs font-medium"
