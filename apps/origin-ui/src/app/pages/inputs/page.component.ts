@@ -21,6 +21,10 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
                             @for (item of files; track item) {
                                 <app-demo-component [componentName]="item" directory="inputs" />
                             }
+
+                            @for (item of textareaFiles; track item) {
+                                <app-demo-component [componentName]="item" directory="textareas" />
+                            }
                         }
                     </div>
                 </div>
@@ -43,5 +47,11 @@ export default class PageInputsComponent {
         'input-24',
         'input-35',
         'input-51'
+    ];
+
+    textareaFiles = [
+        'textarea-59',
+        'textarea-67',
+        'textarea-77'
     ];
 }

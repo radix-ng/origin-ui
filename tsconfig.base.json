@@ -59,6 +59,9 @@
             "@origin-ui/components/tabs": [
                 "packages/components/tabs/index.ts"
             ],
+            "@origin-ui/components/textarea": [
+                "packages/components/textarea/index.ts"
+            ],
             "@origin-ui/components/toggle": [
                 "packages/components/toggle/index.ts"
             ],
