@@ -38,7 +38,6 @@ type OriButtonVariant = NonNullable<ButtonProps['variant']>;
 
 @Component({
     selector: 'ori-button',
-    standalone: true,
     template: `
         <button [class]="computedClass()" [attr.disabled]="disabled() === true ? true : null">
             <ng-content />

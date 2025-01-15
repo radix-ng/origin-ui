@@ -52,6 +52,7 @@ export default class PageInputsComponent {
     textareaFiles = [
         'textarea-59',
         'textarea-67',
+        'textarea-68',
         'textarea-77'
     ];
 }
