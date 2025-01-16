@@ -35,6 +35,9 @@
             "@origin-ui/components/dialog": [
                 "packages/components/dialog/index.ts"
             ],
+            "@origin-ui/components/dropdown-menu": [
+                "packages/components/dropdown-menu/index.ts"
+            ],
             "@origin-ui/components/input": [
                 "packages/components/input/index.ts"
             ],

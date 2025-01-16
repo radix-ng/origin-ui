@@ -18,6 +18,14 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
                         class="[&>*]:before:bg-border/70 [&>*]:after:bg-border/70 grid max-w-6xl grid-cols-1 overflow-hidden sm:grid-cols-2 lg:grid-cols-3 [&>*]:relative [&>*]:px-1 [&>*]:py-12 [&>*]:before:absolute [&>*]:before:[block-size:100vh] [&>*]:before:[inline-size:1px] [&>*]:before:[inset-block-start:0] [&>*]:before:[inset-inline-start:-1px] [&>*]:after:absolute [&>*]:after:[block-size:1px] [&>*]:after:[inline-size:100vw] [&>*]:after:[inset-block-start:-1px] [&>*]:after:[inset-inline-start:0] sm:[&>*]:px-8 xl:[&>*]:px-12"
                     >
                         @defer {
+                            @for (componentName of dropdownFiles; track componentName) {
+                                <app-demo-component
+                                    class="flex items-start justify-center"
+                                    [directory]="dropdownDir"
+                                    [componentName]="componentName"
+                                ></app-demo-component>
+                            }
+
                             @for (componentName of popoverFiles; track componentName) {
                                 <app-demo-component
                                     class="flex items-start justify-center"
@@ -33,6 +41,12 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
     `
 })
 export default class PageButtonsComponent {
+    dropdownDir = 'dropdowns';
+    dropdownFiles = [
+        'dropdown-01',
+        'dropdown-372'
+    ];
+
     popoverDir = 'popovers';
     popoverFiles = [
         'popover-01',
@@ -41,5 +55,5 @@ export default class PageButtonsComponent {
         'popover-09'
     ];
 
-    totalComponents = this.popoverFiles.length;
+    totalComponents = this.popoverFiles.length + this.dropdownFiles.length;
 }
