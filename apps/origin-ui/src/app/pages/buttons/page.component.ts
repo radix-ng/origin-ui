@@ -38,11 +38,14 @@ export default class PageButtonsComponent {
         'button-03',
         'button-04',
         'button-05',
+        'button-24',
         'button-83',
         'button-91',
-        'button-24',
+        'button-90',
         'button-107',
         'button-109',
-        'button-110'
+        'button-110',
+        'button-114',
+        'button-121'
     ];
 }
