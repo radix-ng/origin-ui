@@ -6,10 +6,10 @@ import { Archive, LucideAngularModule } from 'lucide-angular';
     selector: 'demo-button-04',
     imports: [OriButton, LucideAngularModule],
     template: `
-        <ori-button>
+        <button oriButton>
             <lucide-angular class="icon-wrapper" [img]="ArchiveIcon" size="16" strokeWidth="2" aria-hidden="true" />
             Button
-        </ori-button>
+        </button>
     `,
     styles: `
         ::ng-deep .icon-wrapper svg {

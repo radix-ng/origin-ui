@@ -29,7 +29,7 @@ import { CircleAlert, LucideAngularModule } from 'lucide-angular';
         OriInput
     ],
     template: `
-        <ori-button [oriDialogTrigger]="dialog" variant="outline">Delete project</ori-button>
+        <button [oriDialogTrigger]="dialog" oriButton variant="outline">Delete project</button>
 
         <ng-template #dialog>
             <ori-dialog-content>
@@ -63,12 +63,12 @@ import { CircleAlert, LucideAngularModule } from 'lucide-angular';
                         />
                     </div>
                     <ori-dialog-footer>
-                        <ori-button class="flex flex-1" type="button" variant="outline" rdxDialogClose>
+                        <button class="flex flex-1" oriButton type="button" variant="outline" rdxDialogClose>
                             Cancel
-                        </ori-button>
-                        <ori-button class="flex flex-1" [disabled]="isDisabled()" type="button" rdxDialogClose>
+                        </button>
+                        <button class="flex flex-1" [disabled]="isDisabled()" oriButton type="button" rdxDialogClose>
                             Delete
-                        </ori-button>
+                        </button>
                     </ori-dialog-footer>
                 </form>
             </ori-dialog-content>

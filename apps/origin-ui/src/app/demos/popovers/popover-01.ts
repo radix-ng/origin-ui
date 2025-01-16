@@ -26,9 +26,9 @@ import { ListFilter, LucideAngularModule } from 'lucide-angular';
     template: `
         <div class="flex flex-col gap-4">
             <ng-container rdxPopoverRoot>
-                <ori-button variant="outline" size="icon" rdxPopoverTrigger>
+                <button oriButton variant="outline" size="icon" rdxPopoverTrigger>
                     <lucide-angular [img]="ListFilterIcon" size="16" strokeWidth="2" aria-hidden="true" />
-                </ori-button>
+                </button>
                 <ng-template [side]="RdxPopoverSide.Bottom" [sideOffset]="4" rdxPopoverContent>
                     <ori-popover-content class="w-36 p-3">
                         <div class="space-y-3">
@@ -56,8 +56,8 @@ import { ListFilter, LucideAngularModule } from 'lucide-angular';
                                     aria-orientation="horizontal"
                                 ></div>
                                 <div class="flex justify-between gap-2">
-                                    <ori-button class="h-7" size="sm" variant="outline">Clear</ori-button>
-                                    <ori-button class="h-7" size="sm">Apply</ori-button>
+                                    <button class="h-7" oriButton size="sm" variant="outline">Clear</button>
+                                    <button class="h-7" oriButton size="sm">Apply</button>
                                 </div>
                             </form>
                         </div>

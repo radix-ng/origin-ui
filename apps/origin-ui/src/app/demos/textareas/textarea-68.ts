@@ -10,7 +10,7 @@ import { OriTextarea } from '@origin-ui/components/textarea';
         <div class="space-y-2">
             <label oriLabel htmlFor="textarea-68">Textarea with left button</label>
             <textarea id="textarea-68" oriTextarea placeholder="Leave a comment"></textarea>
-            <ori-button class="flex" variant="outline">Send</ori-button>
+            <button oriButton variant="outline">Send</button>
         </div>
     `
 })

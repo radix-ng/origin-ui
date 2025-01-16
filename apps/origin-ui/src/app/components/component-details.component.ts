@@ -19,14 +19,15 @@ import { Code, LucideAngularModule } from 'lucide-angular';
         LucideAngularModule
     ],
     template: `
-        <ori-button
+        <button
             class="text-muted-foreground/80 hover:text-foreground transition-none hover:bg-transparent disabled:opacity-100 lg:opacity-0 lg:group-focus-within/item:opacity-100 lg:group-hover/item:opacity-100"
             [oriDialogTrigger]="dialog"
+            oriButton
             variant="ghost"
             size="icon"
         >
             <lucide-angular [img]="Code" size="16" strokeWidth="2" aria-hidden="true" />
-        </ori-button>
+        </button>
 
         <ng-template #dialog>
             <ori-dialog-content class="sm:max-w-[600px]">

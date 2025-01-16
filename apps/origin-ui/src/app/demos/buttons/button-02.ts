@@ -5,7 +5,7 @@ import { OriButton } from '@origin-ui/components/button';
     selector: 'demo-button-02',
     imports: [OriButton],
     template: `
-        <ori-button disabled>Button</ori-button>
+        <button oriButton disabled>Button</button>
     `
 })
 export default class Button02Component {}

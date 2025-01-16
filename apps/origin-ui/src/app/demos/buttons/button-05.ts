@@ -6,10 +6,10 @@ import { LucideAngularModule, Trash } from 'lucide-angular';
     selector: 'demo-button-04',
     imports: [OriButton, LucideAngularModule],
     template: `
-        <ori-button variant="destructive">
+        <button oriButton variant="destructive">
             <lucide-angular class="icon-wrapper" [img]="TrashIcon" size="16" strokeWidth="2" aria-hidden="true" />
             Button
-        </ori-button>
+        </button>
     `,
     styles: `
         ::ng-deep .icon-wrapper svg {

@@ -24,24 +24,24 @@ import { Code, Facebook, LucideAngularModule, Mail, Twitter } from 'lucide-angul
     template: `
         <div class="flex flex-col gap-4">
             <ng-container rdxPopoverRoot>
-                <ori-button variant="outline" rdxPopoverTrigger>Share</ori-button>
+                <button oriButton variant="outline" rdxPopoverTrigger>Share</button>
                 <ng-template [side]="RdxPopoverSide.Bottom" [sideOffset]="4" rdxPopoverContent>
                     <ori-popover-content class="w-72">
                         <div class="flex flex-col gap-3 text-center">
                             <div class="text-sm font-medium">Share code</div>
                             <div class="flex flex-wrap justify-center gap-2">
-                                <ori-button size="icon" variant="outline" aria-label="Embed">
+                                <button oriButton size="icon" variant="outline" aria-label="Embed">
                                     <lucide-angular [img]="CodeIcon" size="16" strokeWidth="2" />
-                                </ori-button>
-                                <ori-button size="icon" variant="outline" aria-label="Share on Twitter">
+                                </button>
+                                <button oriButton size="icon" variant="outline" aria-label="Share on Twitter">
                                     <lucide-angular [img]="TwitterIcon" size="16" strokeWidth="2" />
-                                </ori-button>
-                                <ori-button size="icon" variant="outline" aria-label="Share on Facebook">
+                                </button>
+                                <button oriButton size="icon" variant="outline" aria-label="Share on Facebook">
                                     <lucide-angular [img]="FacebookIcon" size="16" strokeWidth="2" />
-                                </ori-button>
-                                <ori-button size="icon" variant="outline" aria-label="Share via email">
+                                </button>
+                                <button oriButton size="icon" variant="outline" aria-label="Share via email">
                                     <lucide-angular [img]="MailIcon" size="16" strokeWidth="2" />
-                                </ori-button>
+                                </button>
                             </div>
                             <div class="space-y-2">
                                 <div class="relative">

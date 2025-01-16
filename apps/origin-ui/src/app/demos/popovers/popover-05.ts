@@ -20,7 +20,7 @@ import {
     template: `
         <div class="flex flex-col gap-4">
             <ng-container rdxPopoverRoot>
-                <ori-button variant="outline" rdxPopoverTrigger>Tooltip-like with steps</ori-button>
+                <button oriButton variant="outline" rdxPopoverTrigger>Tooltip-like with steps</button>
                 <ng-template [side]="RdxPopoverSide.Top" [sideOffset]="4" rdxPopoverContent>
                     <ori-popover-content class="max-w-[280px] py-3 shadow-none">
                         <div class="space-y-3">

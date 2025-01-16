@@ -6,11 +6,12 @@ import { LoaderCircle, LucideAngularModule } from 'lucide-angular';
     selector: 'demo-button-91',
     imports: [OriButton, LucideAngularModule],
     template: `
-        <ori-button
+        <button
             class="group relative disabled:opacity-100"
             [disabled]="isLoading()"
             [attr.data-loading]="isLoading()"
             (click)="handleClick()"
+            oriButton
         >
             <span class="group-data-[loading=true]:text-transparent">Click me</span>
             @if (isLoading()) {
@@ -24,7 +25,7 @@ import { LoaderCircle, LucideAngularModule } from 'lucide-angular';
                     />
                 </div>
             }
-        </ori-button>
+        </button>
     `
 })
 export default class Button91Component {

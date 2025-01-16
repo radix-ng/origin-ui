@@ -18,15 +18,16 @@ import { ChevronDown, ChevronLeft, ChevronRight, ChevronUp, Circle, LucideAngula
     template: `
         <div class="inline-grid w-fit grid-cols-3 gap-1">
             <ng-container [openDelay]="0" oriTooltip>
-                <ori-button
-                    class="col-start-2 flex"
+                <button
+                    class="col-start-2"
+                    oriButton
                     variant="outline"
                     size="icon"
                     rdxTooltipTrigger
                     aria-label="Pan camera up"
                 >
                     <lucide-angular [img]="ChevronUpIcon" size="16" strokeWidth="2" aria-hidden="true" />
-                </ori-button>
+                </button>
 
                 <ng-template [sideOffset]="4" [side]="RdxPositionSide.Top" rdxTooltipContent>
                     <ori-tooltip-content class="px-2 py-1 text-xs">
@@ -41,15 +42,16 @@ import { ChevronDown, ChevronLeft, ChevronRight, ChevronUp, Circle, LucideAngula
             </ng-container>
 
             <ng-container [openDelay]="0" oriTooltip>
-                <ori-button
-                    class="col-start-1 flex"
+                <button
+                    class="col-start-1"
+                    oriButton
                     variant="outline"
                     size="icon"
                     rdxTooltipTrigger
                     aria-label="Pan camera left"
                 >
                     <lucide-angular [img]="ChevronLeftIcon" size="16" strokeWidth="2" aria-hidden="true" />
-                </ori-button>
+                </button>
 
                 <ng-template [sideOffset]="4" [side]="RdxPositionSide.Left" rdxTooltipContent>
                     <ori-tooltip-content class="px-2 py-1 text-xs">
@@ -67,9 +69,9 @@ import { ChevronDown, ChevronLeft, ChevronRight, ChevronUp, Circle, LucideAngula
             </div>
 
             <ng-container [openDelay]="0" oriTooltip>
-                <ori-button class="flex" variant="outline" size="icon" rdxTooltipTrigger aria-label="Pan camera right">
+                <button oriButton variant="outline" size="icon" rdxTooltipTrigger aria-label="Pan camera right">
                     <lucide-angular [img]="ChevronRight" size="16" strokeWidth="2" aria-hidden="true" />
-                </ori-button>
+                </button>
 
                 <ng-template [sideOffset]="4" [side]="RdxPositionSide.Right" rdxTooltipContent>
                     <ori-tooltip-content class="px-2 py-1 text-xs">
@@ -84,15 +86,16 @@ import { ChevronDown, ChevronLeft, ChevronRight, ChevronUp, Circle, LucideAngula
             </ng-container>
 
             <ng-container [openDelay]="0" oriTooltip>
-                <ori-button
-                    class="col-start-2 flex"
+                <button
+                    class="col-start-2"
+                    oriButton
                     variant="outline"
                     size="icon"
                     rdxTooltipTrigger
                     aria-label="Pan camera down"
                 >
                     <lucide-angular [img]="ChevronDown" size="16" strokeWidth="2" aria-hidden="true" />
-                </ori-button>
+                </button>
 
                 <ng-template [sideOffset]="4" [side]="RdxPositionSide.Bottom" rdxTooltipContent>
                     <ori-tooltip-content class="px-2 py-1 text-xs">

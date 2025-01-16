@@ -23,7 +23,7 @@ import { RdxDialogCloseDirective } from '@radix-ng/primitives/dialog';
         OriDialogFooter
     ],
     template: `
-        <ori-button [oriDialogTrigger]="dialog" variant="outline">Terms & Conditions</ori-button>
+        <button [oriDialogTrigger]="dialog" oriButton variant="outline">Terms & Conditions</button>
 
         <ng-template #dialog>
             <ori-dialog-content
@@ -142,8 +142,8 @@ import { RdxDialogCloseDirective } from '@radix-ng/primitives/dialog';
                             Read all terms before accepting.
                         </span>
                     }
-                    <ori-button type="button" variant="outline" rdxDialogClose>Cancel</ori-button>
-                    <ori-button [disabled]="!hasReadToBottom" type="button" rdxDialogClose>I agree</ori-button>
+                    <button oriButton type="button" variant="outline" rdxDialogClose>Cancel</button>
+                    <button [disabled]="!hasReadToBottom" oriButton type="button" rdxDialogClose>I agree</button>
                 </ori-dialog-footer>
             </ori-dialog-content>
         </ng-template>

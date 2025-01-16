@@ -6,7 +6,7 @@ import { LucideAngularModule, X } from 'lucide-angular';
     selector: 'demo-button-83',
     imports: [OriButton, LucideAngularModule],
     template: `
-        <ori-button variant="secondary">
+        <button oriButton variant="secondary">
             <lucide-angular
                 class="-ms-1 me-2 opacity-60"
                 [img]="X"
@@ -16,7 +16,7 @@ import { LucideAngularModule, X } from 'lucide-angular';
                 aria-hidden="true"
             />
             Button
-        </ori-button>
+        </button>
     `
 })
 export default class Button83Component {

@@ -50,7 +50,7 @@ interface TourStep {
                         }
                     }
                 </div>
-                <ori-button variant="outline" rdxPopoverTrigger>Start tour</ori-button>
+                <button oriButton variant="outline" rdxPopoverTrigger>Start tour</button>
                 <ng-template [side]="currentTip() % 2 === 0 ? PopoverSide.Left : PopoverSide.Right" rdxPopoverContent>
                     <ori-popover-content class="max-w-[280px] py-3 shadow-none">
                         <div class="space-y-3">

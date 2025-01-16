@@ -197,9 +197,9 @@ const items = [
                     </div>
                 </div>
             </div>
-            <ori-button class="flex w-full" variant="outline">
+            <button class="flex w-full" oriButton variant="outline">
                 Show {{ countItemsInRange(signals.sliderValue()[0], signals.sliderValue()[1]) }} items
-            </ori-button>
+            </button>
         </div>
     `
 })

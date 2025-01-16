@@ -7,11 +7,12 @@ import { cn } from '@origin-ui/components/utils';
     imports: [OriButton],
     template: `
         <div [class]="cn('dark absolute right-2 top-2', className())">
-            <ori-button
+            <button
                 class="text-muted-foreground hover:text-foreground transition-none hover:bg-transparent disabled:opacity-100"
                 [attr.aria-label]="copied() ? 'Copied' : 'Copy component source'"
                 [disabled]="copied()"
                 (click)="handleCopy()"
+                oriButton
                 variant="ghost"
                 size="icon"
             >
@@ -38,7 +39,7 @@ import { cn } from '@origin-ui/components/utils';
                         />
                     </svg>
                 </div>
-            </ori-button>
+            </button>
         </div>
     `,
     styles: ``

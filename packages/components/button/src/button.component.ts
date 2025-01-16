@@ -1,5 +1,4 @@
-import { BooleanInput } from '@angular/cdk/coercion';
-import { booleanAttribute, Component, computed, input } from '@angular/core';
+import { computed, Directive, input } from '@angular/core';
 import { cn } from '@origin-ui/components/utils';
 import { cva, type VariantProps } from 'class-variance-authority';
 
@@ -36,18 +35,14 @@ type ButtonProps = VariantProps<typeof buttonVariants>;
 type OriButtonSize = NonNullable<ButtonProps['size']>;
 type OriButtonVariant = NonNullable<ButtonProps['variant']>;
 
-@Component({
-    selector: 'ori-button',
-    template: `
-        <button [class]="computedClass()" [attr.disabled]="disabled() === true ? true : null">
-            <ng-content />
-        </button>
-    `
+@Directive({
+    selector: '[oriButton]',
+    host: {
+        '[class]': 'computedClass()'
+    }
 })
 class OriButton {
     readonly class = input<string>();
-
-    readonly disabled = input<boolean, BooleanInput>(false, { transform: booleanAttribute });
 
     readonly variant = input<OriButtonVariant>('default');
 

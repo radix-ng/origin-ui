@@ -12,16 +12,17 @@ import { LucideAngularModule, Minus, Plus } from 'lucide-angular';
             <label class="tabular-nums" oriLabel>{{ value()[0] }} credits/mo</label>
             <div class="flex items-center gap-4">
                 <div>
-                    <ori-button
+                    <button
                         class="size-8"
                         [disabled]="isDecreaseDisabled()"
                         (click)="decreaseValue()"
+                        oriButton
                         variant="outline"
                         size="icon"
                         aria-label="Decrease value"
                     >
                         <lucide-angular [img]="MinusIcon" size="16" strokeWidth="2" aria-hidden="true" />
-                    </ori-button>
+                    </button>
                 </div>
                 <ori-slider
                     class="flex-grow"
@@ -33,16 +34,17 @@ import { LucideAngularModule, Minus, Plus } from 'lucide-angular';
                     aria-label="Dual range slider"
                 />
                 <div>
-                    <ori-button
+                    <button
                         class="size-8"
                         [disabled]="isIncreaseDisabled()"
                         (click)="increaseValue()"
+                        oriButton
                         variant="outline"
                         size="icon"
                         aria-label="Increase value"
                     >
                         <lucide-angular [img]="PlusIcon" size="16" strokeWidth="2" aria-hidden="true" />
-                    </ori-button>
+                    </button>
                 </div>
             </div>
         </div>
