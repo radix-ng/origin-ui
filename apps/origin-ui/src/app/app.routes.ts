@@ -38,6 +38,10 @@ export const appRoutes: Route[] = [
         loadComponent: () => import('./pages/sliders/page.component')
     },
     {
+        path: 'notification',
+        loadComponent: () => import('./pages/notification/page.component')
+    },
+    {
         path: 'tabs',
         loadComponent: () => import('./pages/tabs/page.component')
     },

@@ -59,6 +59,9 @@
             "@origin-ui/components/slider": [
                 "packages/components/slider/index.ts"
             ],
+            "@origin-ui/components/sonner": [
+                "packages/components/sonner/index.ts"
+            ],
             "@origin-ui/components/tabs": [
                 "packages/components/tabs/index.ts"
             ],
