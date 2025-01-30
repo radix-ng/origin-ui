@@ -11,6 +11,8 @@
         "origin-ui:docs:build": "nx run origin-ui:build",
         "----Components-------": "-----------------------------------------------------------------------",
         "components:build": "nx run components:build",
+        "----Release----------": "-----------------------------------------------------------------------",
+        "release:components": "nx release --skip-publish",
         "----Others-------": "-----------------------------------------------------------------------",
         "prettier": "prettier '**/*.{css,scss,md,mdx,yml,json,js,cjs,mjs,html,ts}' --check",
         "prettier:fix": "pnpm run prettier --write"

@@ -89,7 +89,7 @@
             "conventionalCommits": true
         },
         "git": {
-            "commitMessage": "chore(release): publish {version} [skip ci]"
+            "commitMessage": "chore(release): publish {version}"
         },
         "changelog": {
             "workspaceChangelog": {
