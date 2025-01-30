@@ -9,7 +9,7 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
         <main>
             <div class="px-4 sm:px-6">
                 <div class="mx-auto w-full max-w-6xl">
-                    <app-components-page-header title="Dialog">
+                    <app-components-page-header title="Notification">
                         A growing collection of {{ totalComponents }} notification components built with Angular and
                         TailwindCSS.
                     </app-components-page-header>

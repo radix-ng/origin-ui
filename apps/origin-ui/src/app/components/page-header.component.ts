@@ -5,7 +5,7 @@ import { Component, input } from '@angular/core';
     standalone: true,
     template: `
         <div class="mb-16 text-center">
-            <h1 class="text-foreground mb-3 text-3xl font-extrabold tracking-tight md:text-4xl">
+            <h1 class="font-heading text-foreground mb-3 text-4xl/[1.1] font-bold tracking-tight md:text-5xl/[1.1]">
                 {{ title() }}
             </h1>
             <p class="text-muted-foreground">
