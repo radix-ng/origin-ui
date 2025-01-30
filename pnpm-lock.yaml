@@ -62,6 +62,9 @@ importers:
       lucide-angular:
         specifier: ~0.464.0
         version: 0.464.0(@angular/common@19.0.5(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))
+      ngx-sonner:
+        specifier: ^3.0.0
+        version: 3.0.0(@angular/common@19.0.5(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))
       rxjs:
         specifier: ~7.8.0
         version: 7.8.1
@@ -5586,6 +5589,12 @@ packages:
     peerDependenciesMeta:
       tailwindcss:
         optional: true
+
+  ngx-sonner@3.0.0:
+    resolution: {integrity: sha512-mL+VY8VkoOrFS3sFFbiWZGTW5RkMR8FWFvjHc6amMlpdf6iFdoJ9w01jCaGhbUgR/RbAJ7P8mdsbrhvXCLsW9A==}
+    peerDependencies:
+      '@angular/common': '>=19.0.0'
+      '@angular/core': '>=19.0.0'
 
   node-abort-controller@3.1.1:
     resolution: {integrity: sha512-AGK2yQKIjRuqnc6VkX2Xj5d+QW8xZ87pa1UK6yA6ouUyuxfHuMP6umE5QK7UmTeOAymo+Zx1Fxiuw9rVx8taHQ==}
@@ -13834,6 +13843,12 @@ snapshots:
     optionalDependencies:
       rollup: 4.29.1
       tailwindcss: 3.4.17(ts-node@10.9.1(@swc/core@1.5.29(@swc/helpers@0.5.15))(@types/node@18.16.9)(typescript@5.6.3))
+
+  ngx-sonner@3.0.0(@angular/common@19.0.5(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0)):
+    dependencies:
+      '@angular/common': 19.0.5(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1)
+      '@angular/core': 19.0.5(rxjs@7.8.1)(zone.js@0.15.0)
+      tslib: 2.8.1
 
   node-abort-controller@3.1.1: {}
 
