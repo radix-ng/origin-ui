@@ -81,5 +81,27 @@
         "@nx/angular:component": {
             "style": "css"
         }
+    },
+    "release": {
+        "projects": ["packages/*"],
+        "releaseTagPattern": "{version}",
+        "version": {
+            "conventionalCommits": true
+        },
+        "git": {
+            "commitMessage": "chore(release): publish {version} [skip ci]"
+        },
+        "changelog": {
+            "workspaceChangelog": {
+                "createRelease": "github",
+                "renderOptions": {
+                    "authors": true,
+                    "mapAuthorsToGitHubUsernames": true,
+                    "commitReferences": true,
+                    "versionTitleDate": true
+                }
+            },
+            "projectChangelogs": true
+        }
     }
 }
