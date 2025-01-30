@@ -19,6 +19,7 @@
 - [TailwindCSS v3](https://v3.tailwindcss.com/)
 - [Radix Angular](https://radix-ng.com)
 - [Angular CDK](https://material.angular.io/cdk/categories)
+- [Lucide Angular](https://lucide.dev/guide/packages/lucide-angular)
 
 ```bash
   npm install @radix-ng/primitives @angular/cdk
@@ -78,6 +79,27 @@ Import the CSS in your `style.css` file (the following is based on tailwindcss):
         --input: 240 3.7% 15.9%;
         --ring: 240 3.8% 46.1%;
     }
+}
+```
+
+### Angular CDK styles
+Import in your `style.css` file:
+
+```css
+@use '@angular/cdk';
+
+@include cdk.a11y-visually-hidden();
+```
+
+and to `angular.json` `overlay-prebuilt.css`:
+
+```json
+"options": {
+...
+"styles": [
+  "src/global_styles.css",
+  "@angular/cdk/overlay-prebuilt.css"
+],
 }
 ```
 
