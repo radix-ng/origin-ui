@@ -65,6 +65,9 @@
             "@origin-ui/components/sonner": [
                 "packages/components/sonner/index.ts"
             ],
+            "@origin-ui/components/switch": [
+                "packages/components/switch/index.ts"
+            ],
             "@origin-ui/components/tabs": [
                 "packages/components/tabs/index.ts"
             ],

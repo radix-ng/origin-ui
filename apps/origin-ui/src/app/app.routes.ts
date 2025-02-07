@@ -46,6 +46,10 @@ export const appRoutes: Route[] = [
         loadComponent: () => import('./pages/sliders/page.component')
     },
     {
+        path: 'switch',
+        loadComponent: () => import('./pages/switchs/page.component')
+    },
+    {
         path: 'notification',
         loadComponent: () => import('./pages/notification/page.component')
     },
