@@ -68,7 +68,9 @@ export class OriBreadcrumbPageDirective {
     selector: 'li[oriBreadcrumbSeparator]',
     imports: [LucideAngularModule],
     template: `
-        <ng-content #ref />
+        <span #ref>
+            <ng-content />
+        </span>
         @if (ref.children.length === 0) {
             <lucide-angular class="flex" [img]="ChevronRight" strokeWidth="2" size="16" />
         }
