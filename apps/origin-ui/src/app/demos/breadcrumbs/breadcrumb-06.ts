@@ -10,7 +10,7 @@ import {
 import { Home, LucideAngularModule } from 'lucide-angular';
 
 @Component({
-    selector: 'demo-breadcrumb-05',
+    selector: 'demo-breadcrumb-06',
     imports: [
         OriBreadcrumbDirective,
         OriBreadcrumbItemDirective,
@@ -30,13 +30,13 @@ import { Home, LucideAngularModule } from 'lucide-angular';
                     </a>
                 </li>
                 <li oriBreadcrumbSeparator>
-                    <span>/</span>
+                    <span>·</span>
                 </li>
                 <li oriBreadcrumbItem>
                     <a oriBreadcrumbLink href="#">Components</a>
                 </li>
                 <li oriBreadcrumbSeparator>
-                    <span>/</span>
+                    <span>·</span>
                 </li>
                 <li oriBreadcrumbItem>
                     <span oriBreadcrumbPage>Breadcrumb</span>
@@ -45,6 +45,6 @@ import { Home, LucideAngularModule } from 'lucide-angular';
         </nav>
     `
 })
-export default class Breadcrumb05Component {
+export default class Breadcrumb06Component {
     protected readonly Home = Home;
 }

@@ -39,7 +39,9 @@ export default class PageAvatarsComponent {
         'breadcrumb-02',
         'breadcrumb-03',
         'breadcrumb-04',
-        'breadcrumb-05'
+        'breadcrumb-05',
+        'breadcrumb-06',
+        'breadcrumb-07'
     ];
 
     totalComponents = this.files.length;
