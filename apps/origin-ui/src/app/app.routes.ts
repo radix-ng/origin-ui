@@ -18,6 +18,10 @@ export const appRoutes: Route[] = [
         loadComponent: () => import('./pages/buttons/page.component')
     },
     {
+        path: 'breadcrumb',
+        loadComponent: () => import('./pages/breadcrumbs/page.component')
+    },
+    {
         path: 'dialogs',
         loadComponent: () => import('./pages/dialog/page.component')
     },

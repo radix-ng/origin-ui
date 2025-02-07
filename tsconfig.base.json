@@ -26,6 +26,9 @@
             "@origin-ui/components/badge": [
                 "packages/components/badge/index.ts"
             ],
+            "@origin-ui/components/breadcrumb": [
+                "packages/components/breadcrumb/index.ts"
+            ],
             "@origin-ui/components/button": [
                 "packages/components/button/index.ts"
             ],
