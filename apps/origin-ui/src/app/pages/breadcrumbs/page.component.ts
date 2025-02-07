@@ -20,7 +20,7 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
                         @defer {
                             @for (componentName of files; track componentName) {
                                 <app-demo-component
-                                    class=""
+                                    class="flex items-center justify-center"
                                     [directory]="dir"
                                     [componentName]="componentName"
                                 ></app-demo-component>
@@ -35,7 +35,8 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
 export default class PageAvatarsComponent {
     dir = 'breadcrumbs';
     files = [
-        'breadcrumb-01'
+        'breadcrumb-01',
+        'breadcrumb-02'
     ];
 
     totalComponents = this.files.length;
