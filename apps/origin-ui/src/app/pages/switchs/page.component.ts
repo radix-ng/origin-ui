@@ -20,7 +20,7 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
                         @defer {
                             @for (componentName of files; track componentName) {
                                 <app-demo-component
-                                    class="text-center"
+                                    class="flex items-center justify-center"
                                     [directory]="dir"
                                     [componentName]="componentName"
                                 ></app-demo-component>
@@ -43,7 +43,12 @@ export default class PageButtonsComponent {
         'switch-06',
         'switch-07',
         'switch-08',
-        'switch-09'
+        'switch-09',
+        'switch-10',
+        'switch-11',
+        'switch-12',
+        'switch-13',
+        'switch-14'
     ];
 
     totalComponents = this.files.length;
