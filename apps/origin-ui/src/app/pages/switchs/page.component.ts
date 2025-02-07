@@ -40,7 +40,10 @@ export default class PageButtonsComponent {
         'switch-03',
         'switch-04',
         'switch-05',
-        'switch-06'
+        'switch-06',
+        'switch-07',
+        'switch-08',
+        'switch-09'
     ];
 
     totalComponents = this.files.length;
