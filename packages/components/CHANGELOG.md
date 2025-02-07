@@ -1,3 +1,16 @@
+## 0.2.0 (2025-02-07)
+
+### 🚀 Features
+
+- **switch:** added Switch component ([742dc74](https://github.com/radix-ng/origin-ui/commit/742dc74))
+- **breadcrumbs:** added Breadcrumbs component ([9f181a6](https://github.com/radix-ng/origin-ui/commit/9f181a6))
+- sonner examples ([c1010ce](https://github.com/radix-ng/origin-ui/commit/c1010ce))
+- added Sonner ([a03e478](https://github.com/radix-ng/origin-ui/commit/a03e478))
+
+### ❤️ Thank You
+
+- Oleg Pimenov @pimenovoleg
+
 ## 0.1.0 (2025-01-30)
 
 ### 🚀 Features
