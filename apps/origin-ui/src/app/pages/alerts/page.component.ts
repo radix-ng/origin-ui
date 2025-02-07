@@ -37,7 +37,10 @@ export default class PageAvatarsComponent {
     files = [
         'alert-01',
         'alert-02',
-        'alert-03'
+        'alert-03',
+        'alert-04',
+        'alert-05',
+        'alert-06'
     ];
 
     totalComponents = this.files.length;
