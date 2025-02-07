@@ -68,7 +68,7 @@ export class OriBreadcrumbPageDirective {
     selector: 'li[oriBreadcrumbSeparator]',
     imports: [LucideAngularModule],
     template: `
-        <span #ref><ng-content></ng-content></span>
+        <ng-content #ref />
         @if (ref.children.length === 0) {
             <lucide-angular class="flex" [img]="ChevronRight" strokeWidth="2" size="16" />
         }
@@ -89,7 +89,6 @@ export class OriBreadcrumbSeparatorComponent {
 @Component({
     // eslint-disable-next-line @angular-eslint/component-selector
     selector: 'span[oriBreadcrumbEllipsis]',
-
     imports: [LucideAngularModule],
     template: `
         <lucide-angular [img]="MoreHorizontal" />
