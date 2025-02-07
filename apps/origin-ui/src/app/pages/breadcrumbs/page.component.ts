@@ -36,7 +36,9 @@ export default class PageAvatarsComponent {
     dir = 'breadcrumbs';
     files = [
         'breadcrumb-01',
-        'breadcrumb-02'
+        'breadcrumb-02',
+        'breadcrumb-03',
+        'breadcrumb-04'
     ];
 
     totalComponents = this.files.length;
