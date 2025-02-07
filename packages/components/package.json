@@ -1,6 +1,23 @@
 {
     "name": "@origin-ui/components",
     "version": "0.2.0",
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/radix-ng/origin-ui.git",
+        "directory": "packages/components"
+    },
+    "keywords": [
+        "components",
+        "ui",
+        "angular",
+        "radix-ng",
+        "headless",
+        "originui"
+    ],
     "peerDependencies": {
         "@angular/common": ">=19.0.0",
         "@angular/core": ">=19.0.0",
