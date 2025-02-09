@@ -47,6 +47,9 @@
             "@origin-ui/components/label": [
                 "packages/components/label/index.ts"
             ],
+            "@origin-ui/components/pagination": [
+                "packages/components/pagination/index.ts"
+            ],
             "@origin-ui/components/popover": [
                 "packages/components/popover/index.ts"
             ],

@@ -54,6 +54,10 @@ export const appRoutes: Route[] = [
         loadComponent: () => import('./pages/notification/page.component')
     },
     {
+        path: 'pagination',
+        loadComponent: () => import('./pages/paginations/page.component')
+    },
+    {
         path: 'tabs',
         loadComponent: () => import('./pages/tabs/page.component')
     },
