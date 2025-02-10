@@ -4,7 +4,7 @@ import { RdxPaginationListDirective } from '@radix-ng/primitives/pagination';
 import { LucideAngularModule } from 'lucide-angular';
 
 @Component({
-    selector: 'demo-pagination-02',
+    selector: 'demo-pagination-03',
     imports: [
         OriPagination,
         RdxPaginationListDirective,
@@ -40,7 +40,7 @@ import { LucideAngularModule } from 'lucide-angular';
         </div>
     `
 })
-export default class Pagination02Component {
+export default class Pagination03Component {
     readonly currentPage = signal<number>(2);
 
     readonly totalItems = 100;
