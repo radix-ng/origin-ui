@@ -85,9 +85,9 @@ export default class Pagination04Component {
     readonly totalItems = 100;
     readonly itemsPerPage = 10;
 
-    protected readonly String = String;
-
     protected readonly ChevronLeft = ChevronLeft;
     protected readonly ChevronRight = ChevronRight;
+
     protected readonly Number = Number;
+    protected readonly String = String;
 }

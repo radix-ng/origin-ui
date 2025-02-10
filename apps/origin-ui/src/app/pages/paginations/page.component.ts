@@ -37,7 +37,9 @@ export default class PageButtonsComponent {
         'pagination-01',
         'pagination-02',
         'pagination-03',
-        'pagination-04'
+        'pagination-04',
+        'pagination-05',
+        'pagination-06'
     ];
 
     totalComponents = this.files.length;
