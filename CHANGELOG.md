@@ -1,3 +1,17 @@
+## 0.3.0 (2025-02-10)
+
+### 🚀 Features
+
+- **pagination:** added Paginations example ([fc2ce87](https://github.com/radix-ng/origin-ui/commit/fc2ce87))
+
+### 🩹 Fixes
+
+- **input:** cn styles ([47e7a1d](https://github.com/radix-ng/origin-ui/commit/47e7a1d))
+
+### ❤️ Thank You
+
+- Oleg Pimenov @pimenovoleg
+
 ## 0.2.0 (2025-02-07)
 
 ### 🚀 Features
