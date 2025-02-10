@@ -1,5 +1,5 @@
 import { Component, computed, Directive, input } from '@angular/core';
-import { buttonVariants, OriButtonSize } from '@origin-ui/components/button';
+import { buttonVariants, OriButtonSize, OriButtonVariant } from '@origin-ui/components/button';
 import { cn } from '@origin-ui/components/utils';
 import {
     RdxPaginationFirstDirective,
@@ -96,10 +96,12 @@ export class OriPaginationNext {
 
     readonly size = input<OriButtonSize>('default');
 
+    readonly variant = input<OriButtonVariant>('ghost');
+
     protected computedClass = computed(() =>
         cn(
             buttonVariants({
-                variant: 'ghost',
+                variant: this.variant(),
                 size: this.size()
             }),
             this.class()
@@ -119,10 +121,12 @@ export class OriPaginationPrevious {
 
     readonly size = input<OriButtonSize>('default');
 
+    readonly variant = input<OriButtonVariant>('ghost');
+
     protected computedClass = computed(() =>
         cn(
             buttonVariants({
-                variant: 'ghost',
+                variant: this.variant(),
                 size: this.size()
             }),
             this.class()

@@ -20,7 +20,6 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
                         @defer {
                             @for (componentName of files; track componentName) {
                                 <app-demo-component
-                                    class="flex items-start justify-center"
                                     [directory]="dir"
                                     [componentName]="componentName"
                                 ></app-demo-component>
@@ -36,7 +35,8 @@ export default class PageButtonsComponent {
     dir = 'paginations';
     files = [
         'pagination-01',
-        'pagination-02'
+        'pagination-02',
+        'pagination-03'
     ];
 
     totalComponents = this.files.length;
