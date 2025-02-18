@@ -5,6 +5,6 @@
         "types": ["node"]
     },
     "files": ["src/main.ts", "src/main.server.ts", "server.ts"],
-    "include": ["src/**/*.d.ts", "src/app/demos/**/*.ts"],
+    "include": ["src/**/*.d.ts", "src/registry/components/**/*.ts"],
     "exclude": ["jest.config.ts", "src/**/*.test.ts", "src/**/*.spec.ts"]
 }

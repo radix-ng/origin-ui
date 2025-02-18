@@ -1,0 +1,363 @@
+{
+    "$schema": "https://ui.adrianub.dev/schema/registry.json",
+    "name": "origin ui ng",
+    "homepage": "https://www.originui-ng.com",
+    "items": [
+        {
+            "name": "utils",
+            "type": "registry:lib",
+            "files": [
+                {
+                    "path": "registry/lib/utils.ts",
+                    "type": "registry:lib"
+                }
+            ]
+        },
+        {
+            "name": "avatar",
+            "type": "registry:ui",
+            "dependencies": [
+                "@radix-ng/primitives"
+            ],
+            "registryDependencies": [
+                "utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/avatar.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "badge",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/badge.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "breadcrumb",
+            "type": "registry:ui",
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "registryDependencies": [
+                "utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/breadcrumb.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "button",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/button.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "checkbox",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/checkbox.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "dialog",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives",
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/dialog.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "dropdown-menu",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives",
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/dropdown-menu.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "input",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/input.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "label",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/label.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "pagination",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/pagination.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "popover",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/popover.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "radio-group",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives",
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/radio-group.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "select-native",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/select-native.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "select",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives",
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/select.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "slider",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tooltip.json"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives"
+            ]
+        },
+        {
+            "name": "sonner",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "ngx-sonner"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/sonner.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "switch",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/switch.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "tabs",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/tabs.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "textarea",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/textarea.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "toggle-group",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils",
+                "https://www.originui-ng.com/r/toggle.json"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/toggle-group.ts",
+                    "type": "registry:ui"
+                },
+                {
+                    "path": "registry/ui/context-token.ts",
+                    "type": "registry:ui"
+                },
+                {
+                    "path": "registry/ui/context.provider.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "toggle",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/toggle.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "tooltip",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/tooltip.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        }
+    ]
+}
