@@ -39,7 +39,7 @@ export class DemoComponent implements OnInit {
     protected readonly sourceCode = signal('');
 
     async ngOnInit() {
-        const { default: ComponentModule } = await import(`../demos/${this.directory()}/${this.componentName()}.ts`);
+        const { default: ComponentModule } = await import(`../../registry/components/${this.directory()}/${this.componentName()}.ts`);
 
         if (!ComponentModule) {
             console.error('Component not found:', this.componentName());
@@ -49,7 +49,17 @@ export class DemoComponent implements OnInit {
         this.container().createComponent(ComponentModule);
 
         try {
-            this.sourceCode.set(await this.fetchSourceCode());
+            let code = await this.fetchSourceCode();
+
+            code = code.replace(/import\s+.*\s+from\s+['"]~\/registry\/ui.*['"]/g, match => {
+                return match.replace('~/registry/ui', '@origin-ui/components');
+            });
+
+            code = code.replace(/import\s+.*\s+from\s+['"]~\/registry\/lib\/utils.*['"]/g, match => {
+                return match.replace('~/registry/lib/utils', '@origin-ui/components/utils');
+            });
+
+            this.sourceCode.set(code);
         } catch (error) {
             console.error('Error fetching source code:', error);
         }
