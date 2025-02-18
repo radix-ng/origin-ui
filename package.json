@@ -8,7 +8,7 @@
     },
     "scripts": {
         "origin-ui:docs:serve": "nx run origin-ui:serve",
-        "origin-ui:docs:build": "pnpm run registry:copy && nx run origin-ui:build",
+        "origin-ui:docs:build": "pnpm run registry:copy && pnpm run registry:build && nx run origin-ui:build",
         "----Components-------": "-----------------------------------------------------------------------",
         "components:build": "nx run components:build",
         "----Release----------": "-----------------------------------------------------------------------",
@@ -17,7 +17,8 @@
         "prettier": "prettier '**/*.{css,scss,md,mdx,yml,json,js,cjs,mjs,html,ts}' --check",
         "prettier:fix": "pnpm run prettier --write",
         "----Registry----------": "-----------------------------------------------------------------------",
-        "registry:copy": "tsx scripts/copy-components.mts"
+        "registry:copy": "tsx scripts/copy-components.mts",
+        "registry:build": "npx shadcn-ng@latest build --cwd=apps/origin-ui/src --output=../public/r"
     },
     "dependencies": {
         "@angular/animations": "19.1.5",
