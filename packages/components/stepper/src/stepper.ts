@@ -104,9 +104,9 @@ export class OriStepperTrigger {
                 >
                     {{ item.itemContext.step() }}
                 </span>
-                <span>
+                <span class="absolute">
                     <lucide-angular
-                        class="absolute scale-0 opacity-0 transition-all group-data-[state=completed]/step:scale-100 group-data-[state=completed]/step:opacity-100"
+                        class="scale-0 opacity-0 transition-all group-data-[state=completed]/step:scale-100 group-data-[state=completed]/step:opacity-100"
                         [img]="Check"
                         size="16"
                         strokeWidth="2"

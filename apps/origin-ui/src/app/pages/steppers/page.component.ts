@@ -30,6 +30,7 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
 })
 export default class PageSlidersComponent {
     files = [
-        'stepper-01'
+        'stepper-01',
+        'stepper-05'
     ];
 }
