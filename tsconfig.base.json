@@ -65,6 +65,9 @@
             "@origin-ui/components/slider": [
                 "packages/components/slider/index.ts"
             ],
+            "@origin-ui/components/stepper": [
+                "packages/components/stepper/index.ts"
+            ],
             "@origin-ui/components/sonner": [
                 "packages/components/sonner/index.ts"
             ],
