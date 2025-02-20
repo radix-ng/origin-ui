@@ -26,7 +26,7 @@
                         "output": "/demos"
                     }
                 ],
-                "styles": ["apps/origin-ui/src/styles.css", "@angular/cdk/overlay-prebuilt.css"],
+                "styles": ["apps/origin-ui/src/styles.css"],
                 "scripts": [],
                 "server": "apps/origin-ui/src/main.server.ts",
                 "prerender": true,

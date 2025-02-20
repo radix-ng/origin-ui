@@ -86,21 +86,8 @@ Import the CSS in your `style.css` file (the following is based on tailwindcss):
 Import in your `style.css` file:
 
 ```css
-@use '@angular/cdk';
-
-@include cdk.a11y-visually-hidden();
-```
-
-and to `angular.json` `overlay-prebuilt.css`:
-
-```json
-"options": {
-...
-"styles": [
-  "src/global_styles.css",
-  "@angular/cdk/overlay-prebuilt.css"
-],
-}
+@import '@angular/cdk/overlay-prebuilt.css';
+@import '@angular/cdk/a11y-prebuilt.css';
 ```
 
 ## Contributing

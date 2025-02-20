@@ -8,13 +8,15 @@ import {
     RdxStepperSeparatorDirective,
     RdxStepperTriggerDirective
 } from '@radix-ng/primitives/stepper';
+import { Check, LoaderCircle, LucideAngularModule } from 'lucide-angular';
 
 @Directive({
     selector: '[oriStepper]',
     hostDirectives: [
         {
             directive: RdxStepperRootDirective,
-            inputs: ['orientation', 'value', 'dir', 'defaultValue', 'linear']
+            inputs: ['orientation', 'value', 'dir', 'defaultValue', 'linear'],
+            outputs: ['valueChange']
         }
     ],
     host: {
@@ -45,13 +47,17 @@ export class OriStepper {
         }
     ],
     host: {
-        '[class]': 'hostClasses()'
+        '[class]': 'hostClasses()',
+        '[attr.data-loading]': 'isLoading()'
     }
 })
 export class OriStepperItem {
-    readonly stepperItem = inject(RdxStepperItemDirective, { host: true });
+    readonly rdxStepper = inject(RdxStepperRootDirective, { host: true });
+    readonly rdxStepperItem = inject(RdxStepperItemDirective, { host: true });
 
     readonly class = input<string>();
+
+    readonly loading = input<boolean, BooleanInput>(false, { transform: booleanAttribute });
 
     readonly hostClasses = computed(() => {
         return cn(
@@ -59,33 +65,30 @@ export class OriStepperItem {
             this.class()
         );
     });
+
+    readonly isLoading = computed<boolean>(() => {
+        return this.loading() && this.rdxStepperItem.step() === this.rdxStepper.value();
+    });
 }
 
 @Directive({
     selector: '[oriStepperTrigger]',
     hostDirectives: [RdxStepperTriggerDirective],
     host: {
-        '[class]': 'hostClasses()',
-        '(click)': 'onClick()'
+        '[class]': 'hostClasses()'
     }
 })
 export class OriStepperTrigger {
-    private readonly stepper = inject(OriStepperItem);
-
     readonly class = input<string>();
 
     readonly hostClasses = computed(() => {
         return cn('inline-flex items-center gap-3 disabled:pointer-events-none disabled:opacity-50', this.class());
     });
-
-    protected onClick(): void {
-        console.log(this.stepper.stepperItem.step());
-    }
 }
 
 @Component({
     selector: 'ori-stepper-indicator,[oriStepperIndicator]',
-    imports: [RdxStepperIndicatorDirective],
+    imports: [RdxStepperIndicatorDirective, LucideAngularModule],
     template: `
         <div
             #item="rdxStepperIndicator"
@@ -101,11 +104,33 @@ export class OriStepperTrigger {
                 >
                     {{ item.itemContext.step() }}
                 </span>
+                <span>
+                    <lucide-angular
+                        class="absolute scale-0 opacity-0 transition-all group-data-[state=completed]/step:scale-100 group-data-[state=completed]/step:opacity-100"
+                        [img]="Check"
+                        size="16"
+                        strokeWidth="2"
+                        aria-hidden="true"
+                    />
+                </span>
+                @if (oriStepperItem.isLoading()) {
+                    <span class="absolute transition-all">
+                        <lucide-angular
+                            class="animate-spin"
+                            [img]="LoaderCircle"
+                            size="14"
+                            strokeWidth="2"
+                            aria-hidden="true"
+                        />
+                    </span>
+                }
             }
         </div>
     `
 })
 export class OriStepperIndicator {
+    readonly oriStepperItem = inject(OriStepperItem);
+
     readonly asChild = input<boolean, BooleanInput>(false, { transform: booleanAttribute });
 
     readonly class = input<string>();
@@ -116,6 +141,8 @@ export class OriStepperIndicator {
             this.class()
         );
     });
+    protected readonly Check = Check;
+    protected readonly LoaderCircle = LoaderCircle;
 }
 
 @Directive({
