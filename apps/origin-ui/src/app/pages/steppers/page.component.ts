@@ -10,8 +10,8 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
             <div class="px-4 sm:px-6">
                 <div class="mx-auto w-full max-w-6xl">
                     <app-components-page-header title="Stepper">
-                        A growing collection of {{ files.length }} stepper components built with Angular and
-                        TailwindCSS.
+                        A growing collection of {{ files.length + filesVertical.length }} stepper components built with
+                        Angular and TailwindCSS.
                     </app-components-page-header>
 
                     <div class="overflow-hidden">
