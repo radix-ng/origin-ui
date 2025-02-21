@@ -164,3 +164,17 @@ export class OriStepperSeparator {
         );
     });
 }
+
+@Directive({
+    selector: 'h3[oriStepperTitle]',
+    host: {
+        '[class]': 'hostClasses()'
+    }
+})
+export class OriStepperTitle {
+    readonly class = input<string>();
+
+    readonly hostClasses = computed(() => {
+        return cn('text-sm font-medium', this.class());
+    });
+}
