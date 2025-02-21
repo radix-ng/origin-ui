@@ -178,3 +178,17 @@ export class OriStepperTitle {
         return cn('text-sm font-medium', this.class());
     });
 }
+
+@Directive({
+    selector: 'p[oriStepperDescription]',
+    host: {
+        '[class]': 'hostClasses()'
+    }
+})
+export class OriStepperDescription {
+    readonly class = input<string>();
+
+    readonly hostClasses = computed(() => {
+        return cn('text-sm text-muted-foreground', this.class());
+    });
+}

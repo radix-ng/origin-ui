@@ -53,6 +53,8 @@ export default class PageSlidersComponent {
 
     filesVertical = [
         'stepper-14',
-        'stepper-15'
+        'stepper-15',
+        'stepper-16',
+        'stepper-17'
     ];
 }
