@@ -1,4 +1,4 @@
-import { Component, Directive, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Directive, input } from '@angular/core';
 import { cn } from '@origin-ui/components/utils';
 import {
     RdxRadioGroupDirective,
@@ -8,6 +8,7 @@ import {
 } from '@radix-ng/primitives/radio';
 
 @Directive({
+    // eslint-disable-next-line @angular-eslint/directive-selector
     selector: 'ori-radio-group',
     standalone: true,
     hostDirectives: [
@@ -25,6 +26,7 @@ export class OriRadioGroup {}
 
 @Component({
     selector: 'ori-radio-group-item',
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [RdxRadioItemDirective, RdxRadioIndicatorDirective, RdxRadioItemInputDirective],
     host: {
         '[class]': "'flex'"

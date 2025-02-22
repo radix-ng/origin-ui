@@ -25,9 +25,8 @@ export type OriBadgeVariant = NonNullable<BadgeProps['variant']>;
 
 @Directive({
     selector: 'ori-badge, [oriBadge]',
-    standalone: true,
     host: {
-        '[class]': 'computedClass()'
+        '[class]': 'hostClasses()'
     }
 })
 export class OriBadgeComponent {
@@ -35,5 +34,5 @@ export class OriBadgeComponent {
 
     readonly variant = input<OriBadgeVariant>('default');
 
-    protected computedClass = computed(() => cn(badgeVariants({ variant: this.variant(), class: this.class() })));
+    protected hostClasses = computed(() => cn(badgeVariants({ variant: this.variant(), class: this.class() })));
 }

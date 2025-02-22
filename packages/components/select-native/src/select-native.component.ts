@@ -1,10 +1,11 @@
 import { NgClass } from '@angular/common';
-import { Component, input, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input, Input } from '@angular/core';
 import { cn } from '@origin-ui/components/utils';
 import { ChevronDown, LucideAngularModule } from 'lucide-angular';
 
 @Component({
     selector: 'ori-select-native',
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [LucideAngularModule, NgClass],
     styles: `
         :host {

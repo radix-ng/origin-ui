@@ -24,6 +24,7 @@ const variants = cva(
 
 @Component({
     selector: 'ori-checkbox',
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [
         RdxCheckboxDirective,
         RdxCheckboxIndicatorDirective,
@@ -71,8 +72,7 @@ const variants = cva(
                 rdxCheckboxInput
             />
         </button>
-    `,
-    changeDetection: ChangeDetectionStrategy.OnPush
+    `
 })
 export class OriCheckbox {
     readonly id = input<string>();

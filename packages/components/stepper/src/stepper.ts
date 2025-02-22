@@ -1,5 +1,13 @@
 import { BooleanInput } from '@angular/cdk/coercion';
-import { booleanAttribute, Component, computed, Directive, inject, input } from '@angular/core';
+import {
+    booleanAttribute,
+    ChangeDetectionStrategy,
+    Component,
+    computed,
+    Directive,
+    inject,
+    input
+} from '@angular/core';
 import { cn } from '@origin-ui/components/utils';
 import {
     RdxStepperIndicatorDirective,
@@ -88,6 +96,7 @@ export class OriStepperTrigger {
 
 @Component({
     selector: 'ori-stepper-indicator,[oriStepperIndicator]',
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [RdxStepperIndicatorDirective, LucideAngularModule],
     template: `
         <div

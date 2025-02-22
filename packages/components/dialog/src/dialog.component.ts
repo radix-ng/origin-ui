@@ -1,4 +1,14 @@
-import { Component, computed, Directive, effect, inject, input, InputSignal, TemplateRef } from '@angular/core';
+import {
+    ChangeDetectionStrategy,
+    Component,
+    computed,
+    Directive,
+    effect,
+    inject,
+    input,
+    InputSignal,
+    TemplateRef
+} from '@angular/core';
 import { cn } from '@origin-ui/components/utils';
 import {
     RdxDialogCloseDirective,
@@ -37,13 +47,14 @@ export class OriDialogTriggerDirective {
 
 @Component({
     selector: 'ori-dialog-content',
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [
         RdxDialogCloseDirective,
         LucideAngularModule
     ],
     hostDirectives: [RdxDialogContentDirective],
     host: {
-        '[class]': 'computedClass()'
+        '[class]': 'hostClasses()'
     },
     template: `
         <ng-content />
@@ -64,7 +75,7 @@ export class OriDialogTriggerDirective {
 })
 export class OriDialogComponent {
     readonly class = input<string>();
-    protected readonly computedClass = computed(() =>
+    protected readonly hostClasses = computed(() =>
         cn(
             'bg-background fixed left-1/2 top-1/2 z-[101] grid max-h-[calc(100%-4rem)] w-full -translate-x-1/2 -translate-y-1/2 gap-4 overflow-y-auto border p-6 shadow-lg shadow-black/5  sm:max-w-[400px] sm:rounded-xl',
             this.class()
@@ -77,8 +88,9 @@ export class OriDialogComponent {
 
 @Component({
     selector: 'ori-dialog-description',
+    changeDetection: ChangeDetectionStrategy.OnPush,
     host: {
-        '[class]': 'computedClass()'
+        '[class]': 'hostClasses()'
     },
     template: `
         <ng-content />
@@ -86,13 +98,14 @@ export class OriDialogComponent {
 })
 export class OriDialogDescription {
     readonly class = input<string>();
-    protected readonly computedClass = computed(() => cn('text-sm text-muted-foreground', this.class()));
+    protected readonly hostClasses = computed(() => cn('text-sm text-muted-foreground', this.class()));
 }
 
 @Component({
     selector: 'ori-dialog-header',
+    changeDetection: ChangeDetectionStrategy.OnPush,
     host: {
-        '[class]': 'computedClass()'
+        '[class]': 'hostClasses()'
     },
     template: `
         <ng-content />
@@ -100,15 +113,16 @@ export class OriDialogDescription {
 })
 export class OriDialogHeader {
     readonly class = input<string>();
-    protected readonly computedClass = computed(() =>
+    protected readonly hostClasses = computed(() =>
         cn('flex flex-col space-y-1.5 text-center sm:text-left', this.class())
     );
 }
 
 @Component({
     selector: 'ori-dialog-title',
+    changeDetection: ChangeDetectionStrategy.OnPush,
     host: {
-        '[class]': 'computedClass()'
+        '[class]': 'hostClasses()'
     },
     template: `
         <ng-content />
@@ -116,13 +130,14 @@ export class OriDialogHeader {
 })
 export class OriDialogTitle {
     readonly class = input<string>();
-    protected readonly computedClass = computed(() => cn('text-lg font-semibold tracking-tight', this.class()));
+    protected readonly hostClasses = computed(() => cn('text-lg font-semibold tracking-tight', this.class()));
 }
 
 @Component({
     selector: 'ori-dialog-footer',
+    changeDetection: ChangeDetectionStrategy.OnPush,
     host: {
-        '[class]': 'computedClass()'
+        '[class]': 'hostClasses()'
     },
     template: `
         <ng-content />
@@ -130,7 +145,7 @@ export class OriDialogTitle {
 })
 export class OriDialogFooter {
     readonly class = input<string>();
-    protected readonly computedClass = computed(() =>
+    protected readonly hostClasses = computed(() =>
         cn('flex flex-col-reverse gap-2 sm:flex-row sm:justify-end sm:gap-3', this.class())
     );
 }

@@ -4,7 +4,7 @@ import { RdxLabelDirective } from '@radix-ng/primitives/label';
 import { cva } from 'class-variance-authority';
 import { ClassValue } from 'clsx';
 
-const labelVariants = cva(
+export const labelVariants = cva(
     'text-sm font-medium leading-4 text-foreground peer-disabled:cursor-not-allowed peer-disabled:opacity-70'
 );
 

@@ -1,4 +1,4 @@
-import { Component, computed, input, output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input, output } from '@angular/core';
 
 import { cn } from '@origin-ui/components/utils';
 import { RdxToggleDirective } from '@radix-ng/primitives/toggle';
@@ -27,11 +27,12 @@ export const toggleVariants = cva(
 
 type ToggleProps = VariantProps<typeof toggleVariants>;
 
-type OriToggleSize = NonNullable<ToggleProps['size']>;
-type OriToggleVariant = NonNullable<ToggleProps['variant']>;
+export type OriToggleSize = NonNullable<ToggleProps['size']>;
+export type OriToggleVariant = NonNullable<ToggleProps['variant']>;
 
 @Component({
     selector: 'ori-toggle',
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [RdxToggleDirective],
     template: `
         <button
@@ -61,6 +62,6 @@ export class OriToggleComponent {
     );
 
     handlePressedChange(isPressed: boolean): void {
-        this.onPressedChange.emit(isPressed); // Передача события родителю
+        this.onPressedChange.emit(isPressed);
     }
 }
