@@ -51,11 +51,11 @@ export class DemoComponent implements OnInit {
         try {
             let code = await this.fetchSourceCode();
 
-            code = code.replace(/import\s+.*\s+from\s+['"]~\/registry\/ui.*['"]/g, match => {
+            code = code.replace(/import\s+[\s\S]*?\s+from\s+['"]~\/registry\/ui.*['"]/g, match => {
                 return match.replace('~/registry/ui', '@origin-ui/components');
             });
 
-            code = code.replace(/import\s+.*\s+from\s+['"]~\/registry\/lib\/utils.*['"]/g, match => {
+            code = code.replace(/import\s+[\s\S]*?\s+from\s+['"]~\/registry\/lib\/utils.*['"]/g, match => {
                 return match.replace('~/registry/lib/utils', '@origin-ui/components/utils');
             });
 
