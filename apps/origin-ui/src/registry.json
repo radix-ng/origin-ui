@@ -358,6 +358,266 @@
                     "type": "registry:ui"
                 }
             ]
+        },
+        {
+            "name": "alert-01",
+            "type": "registry:component",
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/alerts/alert-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "alert-02",
+            "type": "registry:component",
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/alerts/alert-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "alert-03",
+            "type": "registry:component",
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/alerts/alert-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "alert-04",
+            "type": "registry:component",
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/alerts/alert-04.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "alert-05",
+            "type": "registry:component",
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/alerts/alert-05.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "alert-06",
+            "type": "registry:component",
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/alerts/alert-06.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "avatar-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/avatar.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/avatars/avatar-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "avatar-02",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/avatar.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/avatars/avatar-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "avatar-03",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/avatar.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/avatars/avatar-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "avatar-04",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/avatar.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/avatars/avatar-04.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "avatar-05",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/avatar.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/avatars/avatar-05.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "avatar-06",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/avatar.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/avatars/avatar-06.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "avatar-07",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/avatar.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/avatars/avatar-07.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "avatar-08",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/avatar.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/avatars/avatar-08.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "avatar-09",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/avatar.json",
+                "https://www.originui-ng.com/r/badge.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/avatars/avatar-09.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "badge-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/badge.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/badges/badge-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "badge-02",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/badge.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/badges/badge-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "badge-07",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/badge.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/badges/badge-07.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "badge-11",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/badge.json",
+                "https://www.originui-ng.com/r/checkbox.json",
+                "https://www.originui-ng.com/r/label.json",
+                "utils"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/badges/badge-11.ts",
+                    "type": "registry:component"
+                }
+            ]
         }
     ]
 }
