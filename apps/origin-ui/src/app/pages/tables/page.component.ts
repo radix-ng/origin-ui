@@ -36,6 +36,8 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
 export default class PageSlidersComponent {
     files = [
         'table-01',
-        'table-03'
+        'table-03',
+        'table-09',
+        'table-11'
     ];
 }
