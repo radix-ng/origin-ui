@@ -3,7 +3,6 @@ import {
     OriTable,
     OriTableBody,
     OriTableCell,
-    OriTableFooter,
     OriTableHead,
     OriTableHeader,
     OriTableRow
@@ -19,7 +18,6 @@ import { Check, LucideAngularModule, Monitor, Smartphone, X } from 'lucide-angul
         OriTableHead,
         OriTableBody,
         OriTableCell,
-        OriTableFooter,
         LucideAngularModule
     ],
     template: `

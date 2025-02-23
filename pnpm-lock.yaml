@@ -50,6 +50,9 @@ importers:
       '@radix-ng/primitives':
         specifier: ^0.32.2
         version: 0.32.2(@angular/cdk@19.1.4(@angular/common@19.1.6(@angular/core@19.1.6(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.6(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.6(rxjs@7.8.1)(zone.js@0.15.0))
+      '@tanstack/angular-table':
+        specifier: ^8.21.2
+        version: 8.21.2(@angular/core@19.1.6(rxjs@7.8.1)(zone.js@0.15.0))
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -2780,6 +2783,16 @@ packages:
 
   '@swc/types@0.1.17':
     resolution: {integrity: sha512-V5gRru+aD8YVyCOMAjMpWR1Ui577DD5KSJsHP8RAxopAH22jFz6GZd/qxqjO6MJHQhcsjvjOFXyDhyLQUnMveQ==}
+
+  '@tanstack/angular-table@8.21.2':
+    resolution: {integrity: sha512-04aTY6CCaXbmHST1xj6Qzw4IJtRh0NzmWn0pzWKSPouSPIz4oRirpFdFpHEZ9vzYFaYMXReX+EpWhga1RzhxaA==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      '@angular/core': '>=17'
+
+  '@tanstack/table-core@8.21.2':
+    resolution: {integrity: sha512-uvXk/U4cBiFMxt+p9/G7yUWI/UbHYbyghLCjlpWZ3mLeIZiUBSKcUnw9UnKkdRz7Z/N4UBuFLWQdJCjUe7HjvA==}
+    engines: {node: '>=12'}
 
   '@tootallnate/once@2.0.0':
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
@@ -11108,6 +11121,14 @@ snapshots:
   '@swc/types@0.1.17':
     dependencies:
       '@swc/counter': 0.1.3
+
+  '@tanstack/angular-table@8.21.2(@angular/core@19.1.6(rxjs@7.8.1)(zone.js@0.15.0))':
+    dependencies:
+      '@angular/core': 19.1.6(rxjs@7.8.1)(zone.js@0.15.0)
+      '@tanstack/table-core': 8.21.2
+      tslib: 2.8.1
+
+  '@tanstack/table-core@8.21.2': {}
 
   '@tootallnate/once@2.0.0': {}
 
