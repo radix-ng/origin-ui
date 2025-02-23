@@ -1,25 +1,16 @@
-import { Component, computed, Directive, input } from '@angular/core';
+import { computed, Directive, input } from '@angular/core';
 import { cn } from '@origin-ui/components/utils';
 
-@Component({
-    selector: 'ori-table',
+@Directive({
+    selector: 'table[oriTable]',
     host: {
         '[class]': 'hostClasses()'
-    },
-    template: `
-        <table [class]="tableClasses()" data-slot="table">
-            <ng-content />
-        </table>
-    `
+    }
 })
 export class OriTable {
     readonly class = input<string>();
 
-    readonly tableClass = input<string>();
-
-    protected readonly hostClasses = computed(() => cn('relative w-full overflow-auto', this.class()));
-
-    protected readonly tableClasses = computed(() => cn('w-full caption-bottom text-sm', this.tableClass()));
+    protected readonly hostClasses = computed(() => cn('w-full caption-bottom text-sm', this.class()));
 }
 
 @Directive({

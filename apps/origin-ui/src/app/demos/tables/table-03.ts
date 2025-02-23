@@ -21,8 +21,8 @@ import {
         OriTableFooter
     ],
     template: `
-        <div>
-            <ori-table>
+        <div class="relative w-full overflow-auto">
+            <table oriTable>
                 <thead class="bg-transparent" oriTableHeader>
                     <tr class="hover:bg-transparent" oriTableRow>
                         <th oriTableHead>Name</th>
@@ -51,7 +51,7 @@ import {
                         <td class="text-right" oriTableCell>$2,500.00</td>
                     </tr>
                 </tfoot>
-            </ori-table>
+            </table>
             <p class="text-muted-foreground mt-4 text-center text-sm">Striped table</p>
         </div>
     `

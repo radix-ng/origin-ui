@@ -11,7 +11,7 @@ import { OriTable, OriTableCell, OriTableRow } from '@origin-ui/components/table
     template: `
         <div class="mx-auto max-w-lg">
             <div class="bg-background overflow-hidden rounded-md border">
-                <ori-table>
+                <table oriTable>
                     <tbody>
                         <tr class="*:border-border hover:bg-transparent [&>:not(:last-child)]:border-r" oriTableRow>
                             <td class="bg-muted/50 py-2 font-medium" oriTableCell>Name</td>
@@ -34,7 +34,7 @@ import { OriTable, OriTableCell, OriTableRow } from '@origin-ui/components/table
                             <td class="py-2" oriTableCell>$1,000.00</td>
                         </tr>
                     </tbody>
-                </ori-table>
+                </table>
             </div>
             <p class="text-muted-foreground mt-4 text-center text-sm">Vertical table</p>
         </div>

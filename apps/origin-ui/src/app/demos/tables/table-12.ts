@@ -47,8 +47,8 @@ type Item = {
         OriTableFooter
     ],
     template: `
-        <div>
-            <ori-table>
+        <div class="relative w-full overflow-auto">
+            <table oriTable>
                 <thead oriTableHeader>
                     @for (headerGroup of table.getHeaderGroups(); track headerGroup.id) {
                         <tr class="hover:bg-transparent" oriTableRow>
@@ -97,7 +97,7 @@ type Item = {
                         <td class="text-right" oriTableCell>{{ totalBalance(data()) }}</td>
                     </tr>
                 </tfoot>
-            </ori-table>
+            </table>
             <p class="text-muted-foreground mt-4 text-center text-sm">
                 Basic data table made with {{ ' ' }}
                 <a

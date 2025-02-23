@@ -79,8 +79,18 @@
 }
 
 @layer base {
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--border, currentColor);
+    }
+}
+
+@layer base {
     * {
-        @apply border-border;
+        @apply border-border outline-ring/50;
     }
     body {
         @apply bg-background text-foreground;
