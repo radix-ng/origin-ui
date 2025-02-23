@@ -65,20 +65,20 @@
             "@origin-ui/components/slider": [
                 "packages/components/slider/index.ts"
             ],
-            "@origin-ui/components/stepper": [
-                "packages/components/stepper/index.ts"
-            ],
             "@origin-ui/components/sonner": [
                 "packages/components/sonner/index.ts"
+            ],
+            "@origin-ui/components/stepper": [
+                "packages/components/stepper/index.ts"
             ],
             "@origin-ui/components/switch": [
                 "packages/components/switch/index.ts"
             ],
-            "@origin-ui/components/tabs": [
-                "packages/components/tabs/index.ts"
-            ],
             "@origin-ui/components/table": [
                 "packages/components/table/index.ts"
+            ],
+            "@origin-ui/components/tabs": [
+                "packages/components/tabs/index.ts"
             ],
             "@origin-ui/components/textarea": [
                 "packages/components/textarea/index.ts"
