@@ -758,6 +758,212 @@
                     "type": "registry:component"
                 }
             ]
+        },
+        {
+            "name": "button-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-02",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-03",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-04",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-04.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-05",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-05.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-24",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-24.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-83",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-83.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-90",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-90.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-91",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-91.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-107",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/toggle-group.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-107.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-109",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/toggle-group.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-109.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-110",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/toggle-group.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-110.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-114",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-114.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-121",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-121.ts",
+                    "type": "registry:component"
+                }
+            ]
         }
     ]
 }
