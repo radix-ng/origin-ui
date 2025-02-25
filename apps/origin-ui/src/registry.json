@@ -647,6 +647,117 @@
                     "type": "registry:component"
                 }
             ]
+        },
+        {
+            "name": "breadcrumb-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/breadcrumb.json",
+                "https://www.originui-ng.com/r/dropdown-menu.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/breadcrumbs/breadcrumb-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "breadcrumb-02",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/breadcrumb.json",
+                "https://www.originui-ng.com/r/dropdown-menu.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/breadcrumbs/breadcrumb-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "breadcrumb-03",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/breadcrumb.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/breadcrumbs/breadcrumb-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "breadcrumb-04",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/breadcrumb.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/breadcrumbs/breadcrumb-04.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "breadcrumb-05",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/breadcrumb.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/breadcrumbs/breadcrumb-05.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "breadcrumb-06",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/breadcrumb.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/breadcrumbs/breadcrumb-06.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "breadcrumb-07",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/breadcrumb.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/breadcrumbs/breadcrumb-07.ts",
+                    "type": "registry:component"
+                }
+            ]
         }
     ]
 }
