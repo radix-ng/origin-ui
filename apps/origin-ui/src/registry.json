@@ -1683,6 +1683,171 @@
                     "type": "registry:component"
                 }
             ]
+        },
+        {
+            "name": "slider-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/slider.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/sliders/slider-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "slider-03",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/slider.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/sliders/slider-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "slider-04",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/slider.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/sliders/slider-04.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "slider-05",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/slider.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/sliders/slider-05.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "slider-06",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/slider.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/sliders/slider-06.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "slider-07",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/slider.json",
+                "https://www.originui-ng.com/r/label.json",
+                "utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/sliders/slider-07.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "slider-10",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/slider.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/sliders/slider-10.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "slider-11",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/slider.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/sliders/slider-11.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "slider-20",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/slider.json",
+                "https://www.originui-ng.com/r/label.json",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/sliders/slider-20.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "slider-22",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/slider.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/sliders/slider-22.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "slider-265",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/slider.json",
+                "https://www.originui-ng.com/r/label.json",
+                "https://www.originui-ng.com/r/button.json",
+                "https://www.originui-ng.com/r/input.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/sliders/slider-265.ts",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "registry/lib/use-slider-with-input.ts",
+                    "type": "registry:lib"
+                }
+            ]
         }
     ]
 }
