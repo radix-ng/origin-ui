@@ -1557,6 +1557,132 @@
                     "type": "registry:component"
                 }
             ]
+        },
+        {
+            "name": "select-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/select-native.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/selects/select-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "select-02",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/select-native.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/selects/select-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "select-04",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/select-native.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/selects/select-04.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "select-05",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/select-native.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/selects/select-05.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "select-06",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/select-native.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/selects/select-06.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "select-11",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/select-native.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/selects/select-11.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "select-13",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/select-native.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/selects/select-13.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "select-14",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/select-native.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/selects/select-14.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "select-15",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/select.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/selects/select-15.ts",
+                    "type": "registry:component"
+                }
+            ]
         }
     ]
 }
