@@ -1085,6 +1085,179 @@
                     "type": "registry:component"
                 }
             ]
+        },
+        {
+            "name": "input-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/inputs/input-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "input-02",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/inputs/input-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "input-03",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/inputs/input-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "input-08",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/inputs/input-08.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "input-14",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/inputs/input-14.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "input-17",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/inputs/input-17.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "input-20",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/inputs/input-20.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "input-23",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/inputs/input-23.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "input-24",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/inputs/input-24.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "input-35",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/inputs/input-35.ts",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "registry/lib/use-character-limit.ts",
+                    "type": "registry:lib"
+                }
+            ]
+        },
+        {
+            "name": "input-51",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/inputs/input-51.ts",
+                    "type": "registry:component"
+                }
+            ]
         }
     ]
 }
