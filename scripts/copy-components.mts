@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const componentsDir = path.join(__dirname, '../packages/components');
-const destinationDir = path.join(__dirname, '../apps/origin-ui/src/registry/ui');
+const destinationDir = path.join(__dirname, '../apps/origin-ui/src/registry/default/ui');
 
 const ignoreDirs = ['utils'];
 
@@ -25,11 +25,11 @@ async function copyAndModifyFile(src: string, dest: string) {
     sourceFile.getImportDeclarations().forEach(importDeclaration => {
         const moduleSpecifier = importDeclaration.getModuleSpecifierValue();
         if (moduleSpecifier === '@origin-ui/components/utils') {
-            importDeclaration.setModuleSpecifier('~/registry/lib/utils');
+            importDeclaration.setModuleSpecifier('~/registry/default/lib/utils');
         } else if (moduleSpecifier.startsWith('./')) {
-            importDeclaration.setModuleSpecifier(moduleSpecifier.replace('./', '~/registry/ui/'));
+            importDeclaration.setModuleSpecifier(moduleSpecifier.replace('./', '~/registry/default/ui/'));
         } else if (moduleSpecifier.startsWith('@origin-ui/components')) {
-            importDeclaration.setModuleSpecifier(moduleSpecifier.replace('@origin-ui/components', '~/registry/ui'));
+            importDeclaration.setModuleSpecifier(moduleSpecifier.replace('@origin-ui/components', '~/registry/default/ui'));
         }
     });
 

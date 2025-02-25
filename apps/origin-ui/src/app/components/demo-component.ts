@@ -32,7 +32,7 @@ export class DemoComponent implements OnInit {
     protected readonly sourceCode = signal('');
 
     async ngOnInit() {
-        const { default: ComponentModule } = await import(`../../registry/components/${this.directory()}/${this.componentName()}.ts`);
+        const { default: ComponentModule } = await import(`../../registry/default/components/${this.directory()}/${this.componentName()}.ts`);
 
         if (!ComponentModule) {
             console.error('Component not found:', this.componentName());
