@@ -258,6 +258,22 @@
             ]
         },
         {
+            "name": "stepper",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/stepper.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
             "name": "switch",
             "type": "registry:ui",
             "registryDependencies": [
