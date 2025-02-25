@@ -40,6 +40,7 @@ export default class PageSlidersComponent {
         'table-09',
         'table-11',
         'table-12',
-        'table-14'
+        'table-14',
+        'table-17'
     ];
 }

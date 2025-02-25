@@ -2256,6 +2256,24 @@
             ]
         },
         {
+            "name": "table-17",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/table.json",
+                "utils"
+            ],
+            "dependencies": [
+                "lucide-angular",
+                "@tanstack/angular-table"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tables/table-17.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
             "name": "tab-01",
             "type": "registry:component",
             "registryDependencies": [
