@@ -1848,6 +1848,112 @@
                     "type": "registry:lib"
                 }
             ]
+        },
+        {
+            "name": "stepper-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/stepper.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/steppers/stepper-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "stepper-05",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/stepper.json",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/steppers/stepper-05.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "stepper-07",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/stepper.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/steppers/stepper-07.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "stepper-10",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/stepper.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/steppers/stepper-10.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "stepper-14",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/stepper.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/steppers/stepper-14.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "stepper-15",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/stepper.json",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/steppers/stepper-15.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "stepper-16",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/stepper.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/steppers/stepper-16.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "stepper-17",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/stepper.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/steppers/stepper-17.ts",
+                    "type": "registry:component"
+                }
+            ]
         }
     ]
 }
