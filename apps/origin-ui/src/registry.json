@@ -1020,6 +1020,39 @@
                     "type": "registry:component"
                 }
             ]
+        },
+        {
+            "name": "dialog-04",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/dialog.json",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/dialogs/dialog-04.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "dialog-05",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/dialog.json",
+                "https://www.originui-ng.com/r/button.json",
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/dialogs/dialog-05.ts",
+                    "type": "registry:component"
+                }
+            ]
         }
     ]
 }
