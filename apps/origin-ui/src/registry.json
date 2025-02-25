@@ -2419,6 +2419,65 @@
                     "type": "registry:component"
                 }
             ]
+        },
+        {
+            "name": "tooltip-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tooltip.json",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tooltips/tooltip-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tooltip-02",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tooltip.json",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tooltips/tooltip-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tooltip-03",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tooltip.json",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tooltips/tooltip-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tooltip-07",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tooltip.json",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tooltips/tooltip-07.ts",
+                    "type": "registry:component"
+                }
+            ]
         }
     ]
 }
