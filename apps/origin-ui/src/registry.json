@@ -2254,6 +2254,114 @@
                     "type": "registry:component"
                 }
             ]
+        },
+        {
+            "name": "tab-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tabs.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tabs/tab-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tab-04",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tabs.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tabs/tab-04.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tab-06",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tabs.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tabs/tab-06.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tab-07",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tabs.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tabs/tab-07.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tab-08",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tabs.json",
+                "https://www.originui-ng.com/r/badge.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tabs/tab-08.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tab-17",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tabs.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tabs/tab-17.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tab-18",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tabs.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tabs/tab-18.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tab-19",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tabs.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tabs/tab-19.ts",
+                    "type": "registry:component"
+                }
+            ]
         }
     ]
 }
