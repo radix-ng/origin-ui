@@ -290,6 +290,19 @@
             ]
         },
         {
+            "name": "table",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/table.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
             "name": "tabs",
             "type": "registry:ui",
             "registryDependencies": [
