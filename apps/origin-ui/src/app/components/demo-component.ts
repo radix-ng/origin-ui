@@ -2,23 +2,16 @@ import { HttpClient } from '@angular/common/http';
 import { Component, computed, inject, input, OnInit, signal, viewChild, ViewContainerRef } from '@angular/core';
 import { cn } from '@origin-ui/components/utils';
 import { firstValueFrom } from 'rxjs';
-import { CodeBlockComponent } from './code-block.component';
 import { ComponentDetailsComponent } from './component-details.component';
-import { CopyButtonComponent } from './copy-button.component';
 
 @Component({
     selector: 'app-demo-component',
-    imports: [ComponentDetailsComponent, CodeBlockComponent, CopyButtonComponent],
+    imports: [ComponentDetailsComponent],
     template: `
         <ng-container #container></ng-container>
 
         <div class="absolute right-2 top-2 flex gap-2">
-            <app-component-details>
-                <div class="relative">
-                    <app-code-block [sourceCode]="sourceCode()" />
-                    <app-demo-copy-button [componentSource]="sourceCode()" />
-                </div>
-            </app-component-details>
+            <app-component-details [sourceCode]="sourceCode()" [name]="componentName()!" />
         </div>
     `,
     host: {
@@ -51,13 +44,7 @@ export class DemoComponent implements OnInit {
         try {
             let code = await this.fetchSourceCode();
 
-            code = code.replace(/import\s+[\s\S]*?\s+from\s+['"]~\/registry\/ui.*['"]/g, match => {
-                return match.replace('~/registry/ui', '@origin-ui/components');
-            });
 
-            code = code.replace(/import\s+[\s\S]*?\s+from\s+['"]~\/registry\/lib\/utils.*['"]/g, match => {
-                return match.replace('~/registry/lib/utils', '@origin-ui/components/utils');
-            });
 
             this.sourceCode.set(code);
         } catch (error) {
