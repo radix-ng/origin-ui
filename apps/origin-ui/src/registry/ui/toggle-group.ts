@@ -1,4 +1,4 @@
-import { Component, computed, inject, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, input } from '@angular/core';
 import { toggleVariants } from '~/registry/ui/toggle';
 import { cn } from '~/registry/lib/utils';
 import { RdxToggleGroupDirective, RdxToggleGroupItemDirective } from '@radix-ng/primitives/toggle-group';
@@ -13,10 +13,16 @@ export type OriToggleGroupVariant = NonNullable<ToggleGroupProps['variant']>;
 
 @Component({
     selector: 'ori-toggle-group',
-    hostDirectives: [{ directive: RdxToggleGroupDirective, inputs: ['type', 'value', 'disabled'] }],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    hostDirectives: [
+        {
+            directive: RdxToggleGroupDirective,
+            inputs: ['type', 'value', 'disabled']
+        }
+    ],
     providers: [ORI_TOGGLE_GROUP_CONTEXT_PROVIDER],
     host: {
-        '[class]': 'computedClass()'
+        '[class]': 'hostClasses()'
     },
     template: `
         <ng-content />
@@ -29,14 +35,14 @@ export class OriToggleGroupComponent {
 
     readonly class = input<string>('');
 
-    readonly computedClass = computed(() => cn('flex items-center justify-center gap-1', this.class()));
+    protected readonly hostClasses = computed(() => cn('flex items-center justify-center gap-1', this.class()));
 }
 
 @Component({
     selector: 'ori-toggle-group-item, [oriToggleGroupItem]',
     hostDirectives: [{ directive: RdxToggleGroupItemDirective, inputs: ['value', 'disabled'] }],
     host: {
-        '[class]': 'computedClass()'
+        '[class]': 'hostClasses()'
     },
     template: `
         <ng-content />
@@ -51,7 +57,7 @@ export class OriToggleGroupItemComponent {
 
     readonly class = input<string>('');
 
-    readonly computedClass = computed(() =>
+    protected readonly hostClasses = computed(() =>
         cn(
             toggleVariants({
                 size: this.context.size || this.size(),

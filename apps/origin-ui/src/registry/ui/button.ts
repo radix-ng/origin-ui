@@ -38,7 +38,7 @@ type OriButtonVariant = NonNullable<ButtonProps['variant']>;
 @Directive({
     selector: '[oriButton]',
     host: {
-        '[class]': 'computedClass()'
+        '[class]': 'hostClasses()'
     }
 })
 class OriButton {
@@ -48,7 +48,7 @@ class OriButton {
 
     readonly size = input<OriButtonSize>('default');
 
-    protected computedClass = computed(() =>
+    protected hostClasses = computed(() =>
         cn(buttonVariants({ variant: this.variant(), size: this.size(), class: this.class() }))
     );
 }

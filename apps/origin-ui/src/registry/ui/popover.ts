@@ -1,11 +1,10 @@
-import { Component, computed, Directive, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, Directive, input } from '@angular/core';
 import { cn } from '~/registry/lib/utils';
 import { RdxTooltipTriggerDirective } from '@radix-ng/primitives/tooltip';
 import { cva } from 'class-variance-authority';
 
 @Directive({
     selector: '[oriPopoverTrigger]',
-    standalone: true,
     hostDirectives: [RdxTooltipTriggerDirective]
 })
 export class OriPopoverTriggerDirective {}
@@ -16,9 +15,9 @@ const variants = cva(
 
 @Component({
     selector: 'ori-popover-content, [oriPopoverContent]',
-    standalone: true,
+    changeDetection: ChangeDetectionStrategy.OnPush,
     host: {
-        '[class]': 'computedClass()'
+        '[class]': 'hostClasses()'
     },
     template: `
         <ng-content />
@@ -26,5 +25,6 @@ const variants = cva(
 })
 export class OriPopoverContent {
     readonly class = input<string>();
-    protected computedClass = computed(() => cn(variants({ class: this.class() })));
+
+    protected readonly hostClasses = computed(() => cn(variants({ class: this.class() })));
 }

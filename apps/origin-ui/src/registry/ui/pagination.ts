@@ -1,4 +1,4 @@
-import { Component, computed, Directive, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, Directive, input } from '@angular/core';
 import { buttonVariants, OriButtonSize, OriButtonVariant } from '~/registry/ui/button';
 import { cn } from '~/registry/lib/utils';
 import {
@@ -25,13 +25,13 @@ import { LucideAngularModule, MoreHorizontal } from 'lucide-angular';
     host: {
         role: 'navigation',
         '[attr.aria-label]': '"pagination"',
-        '[class]': 'computedClass()'
+        '[class]': 'hostClasses()'
     }
 })
 export class OriPagination {
     readonly class = input<ClassValue>();
 
-    protected computedClass = computed(() => cn('mx-auto flex w-full justify-center', this.class()));
+    protected hostClasses = computed(() => cn('mx-auto flex w-full justify-center', this.class()));
 }
 
 // as a
@@ -44,7 +44,7 @@ export class OriPagination {
         }
     ],
     host: {
-        '[class]': 'computedClass()'
+        '[class]': 'hostClasses()'
     }
 })
 export class OriPaginationLink {
@@ -54,7 +54,7 @@ export class OriPaginationLink {
 
     readonly active = input<boolean>(false);
 
-    protected computedClass = computed(() =>
+    protected hostClasses = computed(() =>
         cn(
             buttonVariants({
                 variant: this.active() ? 'outline' : 'ghost',
@@ -67,6 +67,7 @@ export class OriPaginationLink {
 
 @Component({
     selector: 'ori-pagination-ellipsis',
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [
         LucideAngularModule
     ],
@@ -88,7 +89,7 @@ export class OriPaginationEllipsis {
     selector: '[oriPaginationNext]',
     hostDirectives: [RdxPaginationNextDirective],
     host: {
-        '[class]': 'computedClass()'
+        '[class]': 'hostClasses()'
     }
 })
 export class OriPaginationNext {
@@ -98,7 +99,7 @@ export class OriPaginationNext {
 
     readonly variant = input<OriButtonVariant>('ghost');
 
-    protected computedClass = computed(() =>
+    protected hostClasses = computed(() =>
         cn(
             buttonVariants({
                 variant: this.variant(),
@@ -113,7 +114,7 @@ export class OriPaginationNext {
     selector: '[oriPaginationPrevious]',
     hostDirectives: [RdxPaginationPrevDirective],
     host: {
-        '[class]': 'computedClass()'
+        '[class]': 'hostClasses()'
     }
 })
 export class OriPaginationPrevious {
@@ -123,7 +124,7 @@ export class OriPaginationPrevious {
 
     readonly variant = input<OriButtonVariant>('ghost');
 
-    protected computedClass = computed(() =>
+    protected hostClasses = computed(() =>
         cn(
             buttonVariants({
                 variant: this.variant(),
@@ -138,7 +139,7 @@ export class OriPaginationPrevious {
     selector: '[oriPaginationFirst]',
     hostDirectives: [RdxPaginationFirstDirective],
     host: {
-        '[class]': 'computedClass()'
+        '[class]': 'hostClasses()'
     }
 })
 export class OriPaginationFirst {
@@ -146,7 +147,7 @@ export class OriPaginationFirst {
 
     readonly size = input<OriButtonSize>('default');
 
-    protected computedClass = computed(() =>
+    protected hostClasses = computed(() =>
         cn(
             buttonVariants({
                 variant: 'ghost',
@@ -161,7 +162,7 @@ export class OriPaginationFirst {
     selector: '[oriPaginationLast]',
     hostDirectives: [RdxPaginationLastDirective],
     host: {
-        '[class]': 'computedClass()'
+        '[class]': 'hostClasses()'
     }
 })
 export class OriPaginationLast {
@@ -169,7 +170,7 @@ export class OriPaginationLast {
 
     readonly size = input<OriButtonSize>('default');
 
-    protected computedClass = computed(() =>
+    protected readonly hostClasses = computed(() =>
         cn(
             buttonVariants({
                 variant: 'ghost',

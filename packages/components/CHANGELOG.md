@@ -1,3 +1,18 @@
+## 0.4.0 (2025-02-23)
+
+### 🚀 Features
+
+- **table:** added TanStack Table example ([f7bd397](https://github.com/radix-ng/origin-ui/commit/f7bd397))
+- **table:** added based table ([9879f38](https://github.com/radix-ng/origin-ui/commit/9879f38))
+- **stepper:** added Stepper with description ([24dba42](https://github.com/radix-ng/origin-ui/commit/24dba42))
+- **stepper:** added Stepper with labels and StepperTitle ([2ec24e7](https://github.com/radix-ng/origin-ui/commit/2ec24e7))
+- **stepper:** added loading Stepper component ([587a642](https://github.com/radix-ng/origin-ui/commit/587a642))
+- **stepper:** added basic Stepper component ([d23cc60](https://github.com/radix-ng/origin-ui/commit/d23cc60))
+
+### ❤️ Thank You
+
+- Oleg Pimenov @pimenovoleg
+
 ## 0.3.0 (2025-02-10)
 
 ### 🚀 Features

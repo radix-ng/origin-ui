@@ -1,5 +1,5 @@
 import { BooleanInput } from '@angular/cdk/coercion';
-import { booleanAttribute, Component, computed, Directive, input } from '@angular/core';
+import { booleanAttribute, ChangeDetectionStrategy, Component, computed, Directive, input } from '@angular/core';
 import { cn } from '@origin-ui/components/utils';
 import {
     RdxDropdownMenuContentDirective,
@@ -152,6 +152,7 @@ export class OriDropdownMenuShortcut {
 @Component({
     // eslint-disable-next-line @angular-eslint/component-selector
     selector: '[oriDropdownMenuSubTrigger]',
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [LucideAngularModule],
     hostDirectives: [
         OriDropdownMenuItem,
@@ -206,6 +207,7 @@ export class OriDropdownMenuRadioGroup {}
 @Component({
     // eslint-disable-next-line @angular-eslint/component-selector
     selector: '[oriDropdownMenuRadioItem]',
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [LucideAngularModule, RdxDropdownMenuItemIndicatorDirective],
     hostDirectives: [
         {
@@ -238,6 +240,7 @@ export class OriDropdownMenuRadioItem {
 @Component({
     // eslint-disable-next-line @angular-eslint/component-selector
     selector: '[oriDropdownMenuCheckboxItem]',
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [RdxDropdownMenuItemIndicatorDirective, LucideAngularModule],
     hostDirectives: [
         {

@@ -1,4 +1,4 @@
-import { Component, computed, Directive, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, Directive, input } from '@angular/core';
 import { cn } from '~/registry/lib/utils';
 import { ChevronRight, LucideAngularModule, MoreHorizontal } from 'lucide-angular';
 
@@ -13,13 +13,13 @@ export class OriBreadcrumbDirective {}
 @Directive({
     selector: 'ol[oriBreadcrumbList]',
     host: {
-        '[class]': 'computedClass()'
+        '[class]': 'hostClasses()'
     }
 })
 export class OriBreadcrumbListDirective {
     readonly class = input<string>();
 
-    protected computedClass = computed(() =>
+    protected hostClasses = computed(() =>
         cn('flex flex-wrap items-center gap-1.5 break-words text-sm text-muted-foreground sm:gap-2.5', this.class())
     );
 }
@@ -27,25 +27,25 @@ export class OriBreadcrumbListDirective {
 @Directive({
     selector: 'li[oriBreadcrumbItem]',
     host: {
-        '[class]': 'computedClass()'
+        '[class]': 'hostClasses()'
     }
 })
 export class OriBreadcrumbItemDirective {
     readonly class = input<string>();
 
-    protected computedClass = computed(() => cn('inline-flex items-center gap-1.5', this.class()));
+    protected hostClasses = computed(() => cn('inline-flex items-center gap-1.5', this.class()));
 }
 
 @Directive({
     selector: '[oriBreadcrumbLink], a[oriBreadcrumbLink]',
     host: {
-        '[class]': 'computedClass()'
+        '[class]': 'hostClasses()'
     }
 })
 export class OriBreadcrumbLinkDirective {
     readonly class = input<string>();
 
-    protected computedClass = computed(() => cn('transition-colors hover:text-foreground', this.class()));
+    protected hostClasses = computed(() => cn('transition-colors hover:text-foreground', this.class()));
 }
 
 @Directive({
@@ -54,18 +54,19 @@ export class OriBreadcrumbLinkDirective {
         role: 'link',
         '[attr.aria-disabled]': 'true',
         '[attr.aria-current]': '"page"',
-        '[class]': 'computedClass()'
+        '[class]': 'hostClasses()'
     }
 })
 export class OriBreadcrumbPageDirective {
     readonly class = input<string>();
 
-    protected computedClass = computed(() => cn('text-foreground', this.class()));
+    protected hostClasses = computed(() => cn('text-foreground', this.class()));
 }
 
 @Component({
     // eslint-disable-next-line @angular-eslint/component-selector
     selector: 'li[oriBreadcrumbSeparator]',
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [LucideAngularModule],
     template: `
         <span #ref>
@@ -78,19 +79,20 @@ export class OriBreadcrumbPageDirective {
     host: {
         role: 'presentation',
         '[attr.aria-hidden]': 'true',
-        '[class]': 'computedClass()'
+        '[class]': 'hostClasses()'
     }
 })
 export class OriBreadcrumbSeparatorComponent {
     readonly class = input<string>();
 
-    protected computedClass = computed(() => cn('[&>svg]:size-3.5', this.class()));
+    protected hostClasses = computed(() => cn('[&>svg]:size-3.5', this.class()));
     protected readonly ChevronRight = ChevronRight;
 }
 
 @Component({
     // eslint-disable-next-line @angular-eslint/component-selector
     selector: 'span[oriBreadcrumbEllipsis]',
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [LucideAngularModule],
     template: `
         <lucide-angular [img]="MoreHorizontal" />
@@ -98,12 +100,12 @@ export class OriBreadcrumbSeparatorComponent {
     host: {
         role: 'presentation',
         '[attr.aria-hidden]': 'true',
-        '[class]': 'computedClass()'
+        '[class]': 'hostClasses()'
     }
 })
 export class OriBreadcrumbEllipsisComponent {
     readonly class = input<string>();
 
-    protected computedClass = computed(() => cn('flex size-5 items-center justify-center', this.class()));
+    protected hostClasses = computed(() => cn('flex size-5 items-center justify-center', this.class()));
     protected readonly MoreHorizontal = MoreHorizontal;
 }

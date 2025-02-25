@@ -1,4 +1,4 @@
-import { Component, computed, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 import { cn } from '~/registry/lib/utils';
 import {
     RdxAvatarFallbackDirective,
@@ -8,22 +8,26 @@ import {
 
 @Component({
     selector: 'ori-avatar',
-    standalone: true,
+    changeDetection: ChangeDetectionStrategy.OnPush,
     hostDirectives: [RdxAvatarRootDirective],
-    host: { '[class]': 'computedClass()' },
+    host: {
+        '[class]': 'hostClasses()'
+    },
     template: `
         <ng-content></ng-content>
     `
 })
 export class OriAvatarComponent {
     readonly class = input<string>();
-    protected computedClass = computed(() =>
+
+    protected readonly hostClasses = computed(() =>
         cn('relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full', this.class())
     );
 }
 
 @Component({
     selector: 'ori-avatar-image',
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [
         RdxAvatarImageDirective
     ],
@@ -33,21 +37,25 @@ export class OriAvatarComponent {
 })
 export class OriAvatarImageComponent {
     readonly src = input.required<string>();
+
     readonly imgAlt = input<string>();
 }
 
 @Component({
     selector: 'ori-avatar-fallback',
-    standalone: true,
+    changeDetection: ChangeDetectionStrategy.OnPush,
     hostDirectives: [RdxAvatarFallbackDirective],
-    host: { '[class]': 'computedClass()' },
+    host: {
+        '[class]': 'hostClasses()'
+    },
     template: `
         <ng-content></ng-content>
     `
 })
 export class OriAvatarFallbackComponent {
     readonly class = input<string>();
-    protected computedClass = computed(() =>
+
+    protected readonly hostClasses = computed(() =>
         cn('flex h-full w-full items-center justify-center rounded-[inherit] bg-secondary text-xs', this.class())
     );
 }

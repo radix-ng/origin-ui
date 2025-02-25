@@ -1,5 +1,6 @@
 import {
     booleanAttribute,
+    ChangeDetectionStrategy,
     Component,
     EventEmitter,
     inject,
@@ -17,6 +18,7 @@ type Orientation = 'horizontal' | 'vertical';
 
 @Component({
     selector: 'ori-slider',
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [RdxSliderModule, RdxTooltipModule, OriTooltipContent, OriTooltip],
     styles: `
         :host {

@@ -1,10 +1,11 @@
-import { Component, computed, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 import { cn } from '~/registry/lib/utils';
 import { RdxSwitchRootDirective, RdxSwitchThumbDirective } from '@radix-ng/primitives/switch';
 
 @Component({
     // eslint-disable-next-line @angular-eslint/component-selector
     selector: 'button[oriSwitch]',
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [RdxSwitchThumbDirective],
     hostDirectives: [
         {
@@ -14,7 +15,7 @@ import { RdxSwitchRootDirective, RdxSwitchThumbDirective } from '@radix-ng/primi
         }
     ],
     host: {
-        '[class]': 'computedClass()'
+        '[class]': 'hostClasses()'
     },
     template: `
         <span
@@ -26,7 +27,7 @@ import { RdxSwitchRootDirective, RdxSwitchThumbDirective } from '@radix-ng/primi
 export class SwitchComponent {
     readonly class = input<string>();
 
-    protected readonly computedClass = computed(() => {
+    protected readonly hostClasses = computed(() => {
         return cn(
             'peer inline-flex h-6 w-10 shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent outline-offset-2 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring/70 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=unchecked]:bg-input',
             this.class()
