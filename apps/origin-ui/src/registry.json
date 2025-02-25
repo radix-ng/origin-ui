@@ -1053,6 +1053,38 @@
                     "type": "registry:component"
                 }
             ]
+        },
+        {
+            "name": "dropdown-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/dropdown-menu.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/dropdowns/dropdown-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "dropdown-372",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/dropdown-menu.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/dropdowns/dropdown-372.ts",
+                    "type": "registry:component"
+                }
+            ]
         }
     ]
 }
