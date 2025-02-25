@@ -1459,6 +1459,104 @@
                     "type": "registry:component"
                 }
             ]
+        },
+        {
+            "name": "radio-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/radio-group.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/radios/radio-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "radio-02",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/radio-group.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/radios/radio-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "radio-03",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/radio-group.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/radios/radio-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "radio-04",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/radio-group.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/radios/radio-04.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "radio-05",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/radio-group.json",
+                "https://www.originui-ng.com/r/label.json",
+                "https://www.originui-ng.com/r/input.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/radios/radio-05.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "radio-08",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/radio-group.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/radios/radio-08.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "radio-13",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/radio-group.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/radios/radio-13.ts",
+                    "type": "registry:component"
+                }
+            ]
         }
     ]
 }
