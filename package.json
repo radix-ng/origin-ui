@@ -8,14 +8,17 @@
     },
     "scripts": {
         "origin-ui:docs:serve": "nx run origin-ui:serve",
-        "origin-ui:docs:build": "nx run origin-ui:build",
+        "origin-ui:docs:build": "pnpm run registry:copy && pnpm run registry:build && nx run origin-ui:build",
         "----Components-------": "-----------------------------------------------------------------------",
         "components:build": "nx run components:build",
         "----Release----------": "-----------------------------------------------------------------------",
         "release:components": "nx release --skip-publish",
         "----Others-------": "-----------------------------------------------------------------------",
         "prettier": "prettier '**/*.{css,scss,md,mdx,yml,json,js,cjs,mjs,html,ts}' --check",
-        "prettier:fix": "pnpm run prettier --write"
+        "prettier:fix": "pnpm run prettier --write",
+        "----Registry----------": "-----------------------------------------------------------------------",
+        "registry:copy": "tsx scripts/copy-components.mts",
+        "registry:build": "npx shadcn-ng@latest build --cwd=apps/origin-ui/src --output=../public/r"
     },
     "dependencies": {
         "@angular/animations": "19.1.6",
@@ -87,8 +90,10 @@
         "shiki": "^1.26.1",
         "tailwindcss": "^3.4.17",
         "ts-jest": "^29.1.0",
+        "ts-morph": "^25.0.1",
         "ts-node": "10.9.1",
         "tslib": "^2.3.0",
+        "tsx": "^4.19.2",
         "typescript": "5.7.3",
         "typescript-eslint": "8.23.0"
     }

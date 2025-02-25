@@ -1,0 +1,2483 @@
+{
+    "$schema": "https://ui.adrianub.dev/schema/registry.json",
+    "name": "origin ui ng",
+    "homepage": "https://www.originui-ng.com",
+    "items": [
+        {
+            "name": "utils",
+            "type": "registry:lib",
+            "files": [
+                {
+                    "path": "registry/lib/utils.ts",
+                    "type": "registry:lib"
+                }
+            ]
+        },
+        {
+            "name": "avatar",
+            "type": "registry:ui",
+            "dependencies": [
+                "@radix-ng/primitives"
+            ],
+            "registryDependencies": [
+                "utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/avatar.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "badge",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/badge.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "breadcrumb",
+            "type": "registry:ui",
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "registryDependencies": [
+                "utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/breadcrumb.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "button",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/button.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "checkbox",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/checkbox.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "dialog",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives",
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/dialog.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "dropdown-menu",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives",
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/dropdown-menu.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "input",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/input.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "label",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/label.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "pagination",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/pagination.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "popover",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/popover.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "radio-group",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives",
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/radio-group.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "select-native",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/select-native.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "select",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives",
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/select.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "slider",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tooltip.json"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives"
+            ]
+        },
+        {
+            "name": "sonner",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "ngx-sonner"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/sonner.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "stepper",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/stepper.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "switch",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/switch.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "table",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/table.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "tabs",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/tabs.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "textarea",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/textarea.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "toggle-group",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils",
+                "https://www.originui-ng.com/r/toggle.json"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/toggle-group.ts",
+                    "type": "registry:ui"
+                },
+                {
+                    "path": "registry/ui/context-token.ts",
+                    "type": "registry:ui"
+                },
+                {
+                    "path": "registry/ui/context.provider.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "toggle",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/toggle.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "tooltip",
+            "type": "registry:ui",
+            "registryDependencies": [
+                "utils"
+            ],
+            "dependencies": [
+                "@radix-ng/primitives"
+            ],
+            "files": [
+                {
+                    "path": "registry/ui/tooltip.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "alert-01",
+            "type": "registry:component",
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/alerts/alert-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "alert-02",
+            "type": "registry:component",
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/alerts/alert-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "alert-03",
+            "type": "registry:component",
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/alerts/alert-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "alert-04",
+            "type": "registry:component",
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/alerts/alert-04.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "alert-05",
+            "type": "registry:component",
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/alerts/alert-05.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "alert-06",
+            "type": "registry:component",
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/alerts/alert-06.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "avatar-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/avatar.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/avatars/avatar-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "avatar-02",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/avatar.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/avatars/avatar-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "avatar-03",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/avatar.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/avatars/avatar-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "avatar-04",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/avatar.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/avatars/avatar-04.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "avatar-05",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/avatar.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/avatars/avatar-05.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "avatar-06",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/avatar.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/avatars/avatar-06.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "avatar-07",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/avatar.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/avatars/avatar-07.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "avatar-08",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/avatar.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/avatars/avatar-08.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "avatar-09",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/avatar.json",
+                "https://www.originui-ng.com/r/badge.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/avatars/avatar-09.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "badge-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/badge.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/badges/badge-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "badge-02",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/badge.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/badges/badge-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "badge-07",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/badge.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/badges/badge-07.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "badge-11",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/badge.json",
+                "https://www.originui-ng.com/r/checkbox.json",
+                "https://www.originui-ng.com/r/label.json",
+                "utils"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/badges/badge-11.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "breadcrumb-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/breadcrumb.json",
+                "https://www.originui-ng.com/r/dropdown-menu.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/breadcrumbs/breadcrumb-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "breadcrumb-02",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/breadcrumb.json",
+                "https://www.originui-ng.com/r/dropdown-menu.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/breadcrumbs/breadcrumb-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "breadcrumb-03",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/breadcrumb.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/breadcrumbs/breadcrumb-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "breadcrumb-04",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/breadcrumb.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/breadcrumbs/breadcrumb-04.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "breadcrumb-05",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/breadcrumb.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/breadcrumbs/breadcrumb-05.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "breadcrumb-06",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/breadcrumb.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/breadcrumbs/breadcrumb-06.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "breadcrumb-07",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/breadcrumb.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/breadcrumbs/breadcrumb-07.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-02",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-03",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-04",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-04.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-05",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-05.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-24",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-24.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-83",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-83.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-90",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-90.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-91",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-91.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-107",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/toggle-group.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-107.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-109",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/toggle-group.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-109.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-110",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/toggle-group.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-110.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-114",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-114.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-121",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/buttons/button-121.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "checkbox-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/checkbox.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/checkboxes/checkbox-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "checkbox-02",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/checkbox.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/checkboxes/checkbox-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "checkbox-03",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/checkbox.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/checkboxes/checkbox-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "checkbox-04",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/checkbox.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/checkboxes/checkbox-04.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "dialog-04",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/dialog.json",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/dialogs/dialog-04.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "dialog-05",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/dialog.json",
+                "https://www.originui-ng.com/r/button.json",
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/dialogs/dialog-05.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "dropdown-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/dropdown-menu.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/dropdowns/dropdown-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "dropdown-372",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/dropdown-menu.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/dropdowns/dropdown-372.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "input-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/inputs/input-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "input-02",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/inputs/input-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "input-03",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/inputs/input-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "input-08",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/inputs/input-08.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "input-14",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/inputs/input-14.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "input-17",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/inputs/input-17.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "input-20",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/inputs/input-20.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "input-23",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/inputs/input-23.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "input-24",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/inputs/input-24.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "input-35",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/inputs/input-35.ts",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "registry/lib/use-character-limit.ts",
+                    "type": "registry:lib"
+                }
+            ]
+        },
+        {
+            "name": "input-51",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/inputs/input-51.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "notification-21",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "ngx-sonner"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/notifications/notification-21.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "notification-22",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "ngx-sonner",
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/notifications/notification-22.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "pagination-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/pagination.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/paginations/pagination-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "pagination-02",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/pagination.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/paginations/pagination-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "pagination-03",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/pagination.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/paginations/pagination-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "pagination-04",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/pagination.json",
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/paginations/pagination-04.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "pagination-05",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/pagination.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/paginations/pagination-05.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "pagination-06",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/pagination.json",
+                "https://www.originui-ng.com/r/button.json",
+                "utils"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/paginations/pagination-06.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "popover-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/popover.json",
+                "https://www.originui-ng.com/r/button.json",
+                "https://www.originui-ng.com/r/checkbox.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/popovers/popover-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "popover-05",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/popover.json",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/popovers/popover-05.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "popover-07",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/popover.json",
+                "https://www.originui-ng.com/r/button.json",
+                "https://www.originui-ng.com/r/input.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/popovers/popover-07.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "popover-09",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/popover.json",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/popovers/popover-09.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "radio-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/radio-group.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/radios/radio-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "radio-02",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/radio-group.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/radios/radio-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "radio-03",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/radio-group.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/radios/radio-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "radio-04",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/radio-group.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/radios/radio-04.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "radio-05",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/radio-group.json",
+                "https://www.originui-ng.com/r/label.json",
+                "https://www.originui-ng.com/r/input.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/radios/radio-05.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "radio-08",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/radio-group.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/radios/radio-08.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "radio-13",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/radio-group.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/radios/radio-13.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "select-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/select-native.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/selects/select-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "select-02",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/select-native.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/selects/select-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "select-04",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/select-native.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/selects/select-04.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "select-05",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/select-native.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/selects/select-05.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "select-06",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/select-native.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/selects/select-06.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "select-11",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/select-native.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/selects/select-11.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "select-13",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/select-native.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/selects/select-13.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "select-14",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/select-native.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/selects/select-14.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "select-15",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/select.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/selects/select-15.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "slider-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/slider.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/sliders/slider-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "slider-03",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/slider.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/sliders/slider-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "slider-04",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/slider.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/sliders/slider-04.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "slider-05",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/slider.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/sliders/slider-05.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "slider-06",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/slider.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/sliders/slider-06.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "slider-07",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/slider.json",
+                "https://www.originui-ng.com/r/label.json",
+                "utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/sliders/slider-07.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "slider-10",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/slider.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/sliders/slider-10.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "slider-11",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/slider.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/sliders/slider-11.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "slider-20",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/slider.json",
+                "https://www.originui-ng.com/r/label.json",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/sliders/slider-20.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "slider-22",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/slider.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/sliders/slider-22.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "slider-265",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/slider.json",
+                "https://www.originui-ng.com/r/label.json",
+                "https://www.originui-ng.com/r/button.json",
+                "https://www.originui-ng.com/r/input.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/sliders/slider-265.ts",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "registry/lib/use-slider-with-input.ts",
+                    "type": "registry:lib"
+                }
+            ]
+        },
+        {
+            "name": "stepper-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/stepper.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/steppers/stepper-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "stepper-05",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/stepper.json",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/steppers/stepper-05.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "stepper-07",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/stepper.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/steppers/stepper-07.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "stepper-10",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/stepper.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/steppers/stepper-10.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "stepper-14",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/stepper.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/steppers/stepper-14.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "stepper-15",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/stepper.json",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/steppers/stepper-15.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "stepper-16",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/stepper.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/steppers/stepper-16.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "stepper-17",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/stepper.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/steppers/stepper-17.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-02",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-03",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-04",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-04.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-05",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-05.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-06",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-06.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-07",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-07.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-08",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-08.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-09",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-09.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-10",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-10.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-11",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-11.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-12",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-12.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-13",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-13.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-14",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-14.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "table-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/table.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tables/table-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "table-03",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/table.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tables/table-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "table-09",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/table.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tables/table-09.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "table-11",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/table.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tables/table-11.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "table-12",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/table.json",
+                "https://www.originui-ng.com/r/badge.json",
+                "https://www.originui-ng.com/r/checkbox.json",
+                "utils"
+            ],
+            "dependencies": [
+                "lucide-angular",
+                "@tanstack/angular-table"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tables/table-12.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "table-14",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/table.json",
+                "utils"
+            ],
+            "dependencies": [
+                "lucide-angular",
+                "@tanstack/angular-table"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tables/table-14.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tab-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tabs.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tabs/tab-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tab-04",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tabs.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tabs/tab-04.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tab-06",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tabs.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tabs/tab-06.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tab-07",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tabs.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tabs/tab-07.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tab-08",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tabs.json",
+                "https://www.originui-ng.com/r/badge.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tabs/tab-08.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tab-17",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tabs.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tabs/tab-17.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tab-18",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tabs.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tabs/tab-18.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tab-19",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tabs.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tabs/tab-19.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "textarea-59",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/textarea.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/textareas/textarea-59.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "textarea-67",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/textarea.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/textareas/textarea-67.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "textarea-68",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/textarea.json",
+                "https://www.originui-ng.com/r/label.json",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/textareas/textarea-68.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "textarea-77",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/textarea.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/textareas/textarea-77.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tooltip-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tooltip.json",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tooltips/tooltip-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tooltip-02",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tooltip.json",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tooltips/tooltip-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tooltip-03",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tooltip.json",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tooltips/tooltip-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tooltip-07",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/tooltip.json",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tooltips/tooltip-07.ts",
+                    "type": "registry:component"
+                }
+            ]
+        }
+    ]
+}

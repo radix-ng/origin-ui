@@ -9,7 +9,7 @@ import {
 
 @Directive({
     selector: 'ori-tabs, [oriTabs]',
-    hostDirectives: [{ directive: RdxTabsRootDirective, inputs: ['defaultValue', 'orientation'] }]
+    hostDirectives: [{ directive: RdxTabsRootDirective, inputs: ['defaultValue', 'orientation'], outputs: ['onValueChange'] }]
 })
 export class OriTabs {}
 

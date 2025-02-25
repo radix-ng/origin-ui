@@ -45,3 +45,6 @@ Thumbs.db
 .nx/workspace-data
 
 .angular
+
+apps/origin-ui/public/r/*
+!apps/origin-ui/public/r/.gitkeep
