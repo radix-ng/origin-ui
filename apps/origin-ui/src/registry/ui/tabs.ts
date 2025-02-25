@@ -11,7 +11,7 @@ import {
     selector: 'ori-tabs, [oriTabs]',
     hostDirectives: [{ directive: RdxTabsRootDirective, inputs: ['defaultValue', 'orientation'], outputs: ['onValueChange'] }]
 })
-export class OriTabs { }
+export class OriTabs {}
 
 @Directive({
     selector: 'ori-tabs-list, [oriTabsList]',
