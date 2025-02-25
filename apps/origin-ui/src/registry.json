@@ -964,6 +964,62 @@
                     "type": "registry:component"
                 }
             ]
+        },
+        {
+            "name": "checkbox-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/checkbox.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/checkboxes/checkbox-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "checkbox-02",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/checkbox.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/checkboxes/checkbox-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "checkbox-03",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/checkbox.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/checkboxes/checkbox-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "checkbox-04",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/checkbox.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/checkboxes/checkbox-04.ts",
+                    "type": "registry:component"
+                }
+            ]
         }
     ]
 }
