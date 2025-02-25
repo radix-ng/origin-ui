@@ -1391,6 +1391,74 @@
                     "type": "registry:component"
                 }
             ]
+        },
+        {
+            "name": "popover-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/popover.json",
+                "https://www.originui-ng.com/r/button.json",
+                "https://www.originui-ng.com/r/checkbox.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/popovers/popover-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "popover-05",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/popover.json",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/popovers/popover-05.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "popover-07",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/popover.json",
+                "https://www.originui-ng.com/r/button.json",
+                "https://www.originui-ng.com/r/input.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/popovers/popover-07.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "popover-09",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/popover.json",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/popovers/popover-09.ts",
+                    "type": "registry:component"
+                }
+            ]
         }
     ]
 }
