@@ -1954,6 +1954,213 @@
                     "type": "registry:component"
                 }
             ]
+        },
+        {
+            "name": "switch-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-02",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-03",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-04",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-04.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-05",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-05.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-06",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-06.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-07",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-07.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-08",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-08.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-09",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-09.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-10",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-10.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-11",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-11.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-12",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-12.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-13",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-13.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch-14",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/switch.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/switchs/switch-14.ts",
+                    "type": "registry:component"
+                }
+            ]
         }
     ]
 }
