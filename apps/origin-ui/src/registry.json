@@ -2161,6 +2161,99 @@
                     "type": "registry:component"
                 }
             ]
+        },
+        {
+            "name": "table-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/table.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tables/table-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "table-03",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/table.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tables/table-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "table-09",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/table.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tables/table-09.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "table-11",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/table.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tables/table-11.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "table-12",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/table.json",
+                "https://www.originui-ng.com/r/badge.json",
+                "https://www.originui-ng.com/r/checkbox.json",
+                "utils"
+            ],
+            "dependencies": [
+                "lucide-angular",
+                "@tanstack/angular-table"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tables/table-12.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "table-14",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/table.json",
+                "utils"
+            ],
+            "dependencies": [
+                "lucide-angular",
+                "@tanstack/angular-table"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/tables/table-14.ts",
+                    "type": "registry:component"
+                }
+            ]
         }
     ]
 }
