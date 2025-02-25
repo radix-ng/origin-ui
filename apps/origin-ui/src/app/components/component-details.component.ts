@@ -1,12 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, computed, input } from '@angular/core';
 import { OriButton } from '@origin-ui/components/button';
 import {
     OriDialogComponent,
     OriDialogDescription,
     OriDialogHeader,
-    OriDialogTriggerDirective
+    OriDialogTriggerDirective,
+    OriDialogTitle
 } from '@origin-ui/components/dialog';
+import { OriTabs, OriTabsContent, OriTabsList, OriTabsTrigger } from '~/registry/ui/tabs';
 import { Code, LucideAngularModule } from 'lucide-angular';
+import { CodeBlockComponent } from './code-block.component';
+import { CopyButtonComponent } from './copy-button.component';
+import { CliCommandsComponent } from './cli-commands.component';
 
 @Component({
     selector: 'app-component-details',
@@ -15,8 +20,16 @@ import { Code, LucideAngularModule } from 'lucide-angular';
         OriDialogHeader,
         OriDialogTriggerDirective,
         OriDialogDescription,
+        OriDialogTitle,
         OriButton,
-        LucideAngularModule
+        LucideAngularModule,
+        CodeBlockComponent,
+        CopyButtonComponent,
+        OriTabs,
+        OriTabsList,
+        OriTabsTrigger,
+        OriTabsContent,
+        CliCommandsComponent
     ],
     template: `
         <button
@@ -31,22 +44,82 @@ import { Code, LucideAngularModule } from 'lucide-angular';
 
         <ng-template #dialog>
             <ori-dialog-content class="sm:max-w-[600px]">
-                <ori-dialog-header>
-                    <!--                    <ori-dialog-title class="text-left">Installation</ori-dialog-title>-->
-                    <ori-dialog-description class="sr-only">
-                        Use the CLI to add components to your project
-                    </ori-dialog-description>
-                </ori-dialog-header>
-                <div class="min-w-0 space-y-5">
-                    <div class="space-y-4">
-                        <p class="text-lg font-semibold tracking-tight">Code</p>
-                        <ng-content />
-                    </div>
-                </div>
+                <ori-tabs class="sm:max-w-[550px]">
+                    <ori-tabs-list class="border-border h-auto rounded-none border-b bg-transparent p-0">
+                        <ori-tabs-trigger value="shadcn-ng" class="data-[state=active]:after:bg-primary relative rounded-none py-2 after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 data-[state=active]:bg-transparent data-[state=active]:shadow-none">shadcn-ng</ori-tabs-trigger>
+                        <ori-tabs-trigger value="package" class="data-[state=active]:after:bg-primary relative rounded-none py-2 after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 data-[state=active]:bg-transparent data-[state=active]:shadow-none">Package</ori-tabs-trigger>
+                    </ori-tabs-list>
+                    <ori-tabs-content value="shadcn-ng">
+                        <ori-dialog-header>
+                            <ori-dialog-title class="text-left">Installation</ori-dialog-title>
+                            <ori-dialog-description class="sr-only">
+                                Use the CLI to add components to your project
+                            </ori-dialog-description>
+                        </ori-dialog-header>
+                        <div class="min-w-0 space-y-5">
+                            <cli-commands [name]="name()" />
+                            <div class="space-y-4">
+                                <p class="text-lg font-semibold tracking-tight">Code</p>
+                                <div class="relative">
+                                    <app-code-block [sourceCode]="sourceCodeWithShadcnNg()" />
+                                    <app-demo-copy-button [componentSource]="sourceCodeWithShadcnNg()" />
+                                </div>
+                            </div>
+                        </div>
+                    </ori-tabs-content>
+
+                    <ori-tabs-content value="package">
+                        <ori-dialog-header>
+                            <!-- <ori-dialog-title class="text-left">Installation</ori-dialog-title> -->
+                            <ori-dialog-description class="sr-only">
+                                Use the CLI to add components to your project
+                            </ori-dialog-description>
+                        </ori-dialog-header>
+                        <div class="min-w-0 space-y-5">
+                            <div class="space-y-4">
+                                <p class="text-lg font-semibold tracking-tight">Code</p>
+                                <div class="relative">
+                                    <app-code-block [sourceCode]="sourceCodeWithPackage()" />
+                                    <app-demo-copy-button [componentSource]="sourceCodeWithPackage()" />
+                                </div>
+                            </div>
+                        </div>
+                    </ori-tabs-content>
+                </ori-tabs>
             </ori-dialog-content>
         </ng-template>
     `
 })
 export class ComponentDetailsComponent {
     protected readonly Code = Code;
+    sourceCode = input.required<string>();
+    name = input.required<string>();
+
+    protected readonly sourceCodeWithPackage = computed(() => {
+        let code = this.sourceCode();
+
+        code = code.replace(/import\s+[\s\S]*?\s+from\s+['"]~\/registry\/ui.*['"]/g, match => {
+            return match.replace('~/registry/ui', '@origin-ui/components');
+        });
+
+        code = code.replace(/import\s+[\s\S]*?\s+from\s+['"]~\/registry\/lib\/utils.*['"]/g, match => {
+            return match.replace('~/registry/lib/utils', '@origin-ui/components/utils');
+        });
+
+        return code;
+    })
+
+    protected readonly sourceCodeWithShadcnNg = computed(() => {
+        let code = this.sourceCode();
+
+        code = code.replace(/import\s+[\s\S]*?\s+from\s+['"]~\/registry\/ui.*['"]/g, match => {
+            return match.replace('~/registry/ui', '~/ui');
+        });
+
+        code = code.replace(/import\s+[\s\S]*?\s+from\s+['"]~\/registry\/lib\/utils.*['"]/g, match => {
+            return match.replace('~/registry/lib/utils', '~/lib/utils');
+        });
+
+        return code;
+    });
 }
