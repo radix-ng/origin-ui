@@ -2362,6 +2362,63 @@
                     "type": "registry:component"
                 }
             ]
+        },
+        {
+            "name": "textarea-59",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/textarea.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/textareas/textarea-59.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "textarea-67",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/textarea.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/textareas/textarea-67.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "textarea-68",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/textarea.json",
+                "https://www.originui-ng.com/r/label.json",
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/textareas/textarea-68.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "textarea-77",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/textarea.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/textareas/textarea-77.ts",
+                    "type": "registry:component"
+                }
+            ]
         }
     ]
 }
