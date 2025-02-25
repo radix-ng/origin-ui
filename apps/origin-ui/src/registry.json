@@ -1291,6 +1291,106 @@
                     "type": "registry:component"
                 }
             ]
+        },
+        {
+            "name": "pagination-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/pagination.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/paginations/pagination-01.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "pagination-02",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/pagination.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/paginations/pagination-02.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "pagination-03",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/pagination.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/paginations/pagination-03.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "pagination-04",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/pagination.json",
+                "https://www.originui-ng.com/r/input.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/paginations/pagination-04.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "pagination-05",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/pagination.json"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/paginations/pagination-05.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "pagination-06",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/pagination.json",
+                "https://www.originui-ng.com/r/button.json",
+                "utils"
+            ],
+            "dependencies": [
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/paginations/pagination-06.ts",
+                    "type": "registry:component"
+                }
+            ]
         }
     ]
 }
