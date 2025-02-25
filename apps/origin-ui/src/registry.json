@@ -1258,6 +1258,39 @@
                     "type": "registry:component"
                 }
             ]
+        },
+        {
+            "name": "notification-21",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "ngx-sonner"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/notifications/notification-21.ts",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "notification-22",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "dependencies": [
+                "ngx-sonner",
+                "lucide-angular"
+            ],
+            "files": [
+                {
+                    "path": "registry/components/notifications/notification-22.ts",
+                    "type": "registry:component"
+                }
+            ]
         }
     ]
 }
