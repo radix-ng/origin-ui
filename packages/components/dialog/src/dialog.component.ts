@@ -113,13 +113,11 @@ export class OriDialogDescription {
 })
 export class OriDialogHeader {
     readonly class = input<string>();
-    protected readonly hostClasses = computed(() =>
-        cn('flex flex-col space-y-1.5 text-center sm:text-left', this.class())
-    );
+    protected readonly hostClasses = computed(() => cn('flex flex-col gap-1 text-center sm:text-left', this.class()));
 }
 
 @Component({
-    selector: 'ori-dialog-title',
+    selector: 'ori-dialog-title, [oriDialogTitle]',
     changeDetection: ChangeDetectionStrategy.OnPush,
     host: {
         '[class]': 'hostClasses()'
@@ -130,7 +128,7 @@ export class OriDialogHeader {
 })
 export class OriDialogTitle {
     readonly class = input<string>();
-    protected readonly hostClasses = computed(() => cn('text-lg font-semibold tracking-tight', this.class()));
+    protected readonly hostClasses = computed(() => cn('text-lg leading-none font-semibold', this.class()));
 }
 
 @Component({
