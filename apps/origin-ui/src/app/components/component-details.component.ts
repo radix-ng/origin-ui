@@ -7,7 +7,7 @@ import {
     OriDialogTriggerDirective,
     OriDialogTitle
 } from '@origin-ui/components/dialog';
-import { OriTabs, OriTabsContent, OriTabsList, OriTabsTrigger } from '~/registry/ui/tabs';
+import { OriTabs, OriTabsContent, OriTabsList, OriTabsTrigger } from '~/registry/default/ui/tabs';
 import { Code, LucideAngularModule } from 'lucide-angular';
 import { CodeBlockComponent } from './code-block.component';
 import { CopyButtonComponent } from './copy-button.component';
@@ -98,28 +98,21 @@ export class ComponentDetailsComponent {
     protected readonly sourceCodeWithPackage = computed(() => {
         let code = this.sourceCode();
 
-        code = code.replace(/import\s+[\s\S]*?\s+from\s+['"]~\/registry\/ui.*['"]/g, match => {
-            return match.replace('~/registry/ui', '@origin-ui/components');
+        code = code.replace(/import\s+[\s\S]*?\s+from\s+['"]~\/registry\/default\/ui.*['"]/g, match => {
+            return match.replace('~/registry/default/ui', '@origin-ui/components');
         });
 
-        code = code.replace(/import\s+[\s\S]*?\s+from\s+['"]~\/registry\/lib\/utils.*['"]/g, match => {
-            return match.replace('~/registry/lib/utils', '@origin-ui/components/utils');
+        code = code.replace(/import\s+[\s\S]*?\s+from\s+['"]~\/registry\/default\/lib\/utils.*['"]/g, match => {
+            return match.replace('~/registry/default/lib/utils', '@origin-ui/components/utils');
         });
 
         return code;
     })
 
     protected readonly sourceCodeWithShadcnNg = computed(() => {
-        let code = this.sourceCode();
-
-        code = code.replace(/import\s+[\s\S]*?\s+from\s+['"]~\/registry\/ui.*['"]/g, match => {
-            return match.replace('~/registry/ui', '~/ui');
-        });
-
-        code = code.replace(/import\s+[\s\S]*?\s+from\s+['"]~\/registry\/lib\/utils.*['"]/g, match => {
-            return match.replace('~/registry/lib/utils', '~/lib/utils');
-        });
-
-        return code;
+        return this.sourceCode()
+            .replace(/~\/registry\/default\/ui/g, "~/components/ui")
+            .replace(/~\/registry\/default\/services/g, "~/services")
+            .replace(/~\/registry\/default\/lib/g, "~/lib");
     });
 }

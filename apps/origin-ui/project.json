@@ -22,7 +22,7 @@
                     },
                     {
                         "glob": "**/*.ts",
-                        "input": "apps/origin-ui/src/registry/components",
+                        "input": "apps/origin-ui/src/registry/default/components",
                         "output": "/demos"
                     }
                 ],

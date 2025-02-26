@@ -1,6 +1,6 @@
 import { Component, computed, input, signal } from '@angular/core';
 
-import { OriTabs, OriTabsContent, OriTabsList, OriTabsTrigger } from '~/registry/ui/tabs'
+import { OriTabs, OriTabsContent, OriTabsList, OriTabsTrigger } from '~/registry/default/ui/tabs'
 import { CopyButtonComponent } from './copy-button.component';
 
 @Component({
