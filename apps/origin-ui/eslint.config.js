@@ -23,7 +23,8 @@ module.exports = [
         ],
         rules: {
             '@angular-eslint/prefer-standalone': 'off',
-            '@angular-eslint/template/label-has-associated-control': '0'
+            '@angular-eslint/component-class-suffix': 'off',
+            '@angular-eslint/template/label-has-associated-control': 'off'
         }
     }
 ];

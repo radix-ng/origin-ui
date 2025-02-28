@@ -5,6 +5,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@custom-variant dark (&:is(.dark *));
+
 /* inter-latin-wght-normal */
 @font-face {
     font-family: 'Inter Variable';
@@ -89,6 +91,7 @@
 }
 
 @layer base {
+
     * {
         @apply border-border outline-ring/50;
     }

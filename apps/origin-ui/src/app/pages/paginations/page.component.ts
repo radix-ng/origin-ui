@@ -31,7 +31,7 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
         </main>
     `
 })
-export default class PageButtonsComponent {
+export default class PagePaginationComponent {
     dir = 'paginations';
     files = [
         'pagination-01',

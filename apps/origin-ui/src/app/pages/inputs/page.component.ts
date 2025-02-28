@@ -9,9 +9,8 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
         <main>
             <div class="px-4 sm:px-6">
                 <div class="mx-auto w-full max-w-6xl">
-                    <app-components-page-header title="Input and Textarea">
-                        A growing collection of {{ files.length }} input and textarea components built with Angular and
-                        TailwindCSS.
+                    <app-components-page-header title="Input">
+                        A growing collection of {{ files.length }} input components built with Angular and TailwindCSS.
                     </app-components-page-header>
 
                     <div
@@ -20,10 +19,6 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
                         @defer {
                             @for (item of files; track item) {
                                 <app-demo-component [componentName]="item" directory="inputs" />
-                            }
-
-                            @for (item of textareaFiles; track item) {
-                                <app-demo-component [componentName]="item" directory="textareas" />
                             }
                         }
                     </div>
@@ -47,12 +42,5 @@ export default class PageInputsComponent {
         'input-24',
         'input-35',
         'input-51'
-    ];
-
-    textareaFiles = [
-        'textarea-59',
-        'textarea-67',
-        'textarea-68',
-        'textarea-77'
     ];
 }

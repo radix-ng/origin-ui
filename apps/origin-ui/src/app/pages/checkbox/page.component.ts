@@ -9,9 +9,9 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
         <main>
             <div class="px-4 sm:px-6">
                 <div class="mx-auto w-full max-w-6xl">
-                    <app-components-page-header title="Checkbox, Radio, and Switch">
-                        A growing collection of {{ totalComponents }} checkbox, radio and switch components built with
-                        Angular and TailwindCSS.
+                    <app-components-page-header title="Checkbox">
+                        A growing collection of {{ totalComponents }} checkbox components built with Angular and
+                        TailwindCSS.
                     </app-components-page-header>
 
                     <div
@@ -22,13 +22,6 @@ import { AppPageHeaderComponent } from '../../components/page-header.component';
                                 <app-demo-component
                                     class="text-center"
                                     [directory]="checkboxDir"
-                                    [componentName]="componentName"
-                                ></app-demo-component>
-                            }
-
-                            @for (componentName of radioFiles; track componentName) {
-                                <app-demo-component
-                                    [directory]="radiosDir"
                                     [componentName]="componentName"
                                 ></app-demo-component>
                             }
@@ -48,16 +41,5 @@ export default class PageButtonsComponent {
         'checkbox-04'
     ];
 
-    radiosDir = 'radios';
-    radioFiles = [
-        'radio-01',
-        'radio-02',
-        'radio-03',
-        'radio-04',
-        'radio-05',
-        'radio-08',
-        'radio-13'
-    ];
-
-    totalComponents = this.checkboxFiles.length + this.radioFiles.length;
+    totalComponents = this.checkboxFiles.length;
 }
