@@ -7,7 +7,7 @@
         "node": "^20.9"
     },
     "scripts": {
-        "origin-ui:docs:serve": "nx run origin-ui:serve",
+        "origin-ui:docs:serve": "nx run origin-ui:serve --no-hmr",
         "origin-ui:docs:build": "pnpm run registry:copy && pnpm run registry:build && nx run origin-ui:build",
         "----Components-------": "-----------------------------------------------------------------------",
         "components:build": "nx run components:build",
@@ -32,8 +32,8 @@
         "@angular/platform-server": "19.2.0",
         "@angular/router": "19.2.0",
         "@angular/ssr": "19.2.0",
-        "@fontsource-variable/inter": "^5.1.0",
-        "@fontsource/jetbrains-mono": "^5.1.1",
+        "@fontsource/inter": "^5.2.0",
+        "@fontsource/jetbrains-mono": "^5.2.0",
         "@radix-ng/primitives": "^0.32.2",
         "@tanstack/angular-table": "^8.21.2",
         "class-variance-authority": "^0.7.1",
@@ -44,7 +44,6 @@
         "rxjs": "~7.8.0",
         "shadcn-ng": "^1.1.0",
         "tailwind-merge": "^3.0.2",
-        "tailwindcss-animate": "^1.0.7",
         "zone.js": "0.15.0"
     },
     "devDependencies": {
@@ -66,6 +65,7 @@
         "@swc-node/register": "~1.9.1",
         "@swc/core": "~1.5.7",
         "@swc/helpers": "~0.5.11",
+        "@tailwindcss/typography": "^0.5.16",
         "@tailwindcss/postcss": "^4.0.9",
         "@types/express": "4.17.14",
         "@types/jest": "^29.5.12",
@@ -91,6 +91,7 @@
         "prettier-plugin-tailwindcss": "^0.6.11",
         "shiki": "^1.29.2",
         "tailwindcss": "^4.0.9",
+        "tailwindcss-animate": "^1.0.7",
         "ts-jest": "^29.1.0",
         "ts-morph": "^25.0.1",
         "ts-node": "10.9.1",

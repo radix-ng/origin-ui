@@ -1,40 +1,26 @@
-@import '@angular/cdk/overlay-prebuilt.css';
-@import '@angular/cdk/a11y-prebuilt.css';
+/*@import '@angular/cdk/overlay-prebuilt.css';*/
+/*@import '@angular/cdk/a11y-prebuilt.css';*/
 
-@import "tailwindcss";
+/*@import url('@fontsource/inter/index.css');*/
+/*@import url('@fontsource/jetbrains-mono/index.css');*/
 
-@plugin "tailwindcss-animate";
+@import url('@angular/cdk/overlay-prebuilt.css');
+
+@reference "tailwindcss";
+
+@plugin '@tailwindcss/typography';
+@plugin 'tailwindcss-animate';
 
 @custom-variant dark (&:is(.dark *));
 
-/* inter-latin-wght-normal */
-@font-face {
-    font-family: 'Inter Variable';
-    font-style: normal;
-    font-display: auto;
-    font-weight: 100 900;
-    src: url(@fontsource-variable/inter/files/inter-latin-wght-normal.woff2)
-    format('woff2-variations');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304,
-    U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF,
-    U+FFFD;
-}
-
-/* jetbrains-mono-latin-400-normal */
-@font-face {
-    font-family: 'JetBrains Mono';
-    font-style: normal;
-    font-display: auto;
-    font-weight: 400;
-    src:
-        url(@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2) format('woff2'),
-        url(@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff) format('woff');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304,
-    U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF,
-    U+FFFD;
-}
-
 :root {
+    --font-sans:
+        Inter, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-mono:
+        'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+        'Courier New', monospace;
+
     --background: oklch(1 0 0); /* --color-white */
     --foreground: oklch(0.141 0.005 285.823); /* --color-zinc-950 */
     --card: oklch(1 0 0); /* --color-white */
