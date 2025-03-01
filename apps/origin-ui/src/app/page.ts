@@ -88,7 +88,7 @@ export class CategoryCard {
                     A collection of copy-and-paste components for quickly build application UIs. It&lsquo;s free,
                     open-source, and ready to drop into your projects.
                 </p>
-                <p class="text-accent-foreground w-fit max-w-prose text-pretty pt-4 text-sm">
+                <p class="text-accent-foreground w-fit max-w-prose pt-4 text-sm text-pretty">
                     This project is not affiliated with the original
                     <a class="underline" href="https://originui.com/" rel="noreferrer">Origin UI</a>
                     .
