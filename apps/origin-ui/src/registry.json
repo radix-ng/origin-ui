@@ -336,7 +336,13 @@
                     "path": "registry/default/components/alerts/alert-01.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": [
+                    "alert"
+                ],
+                "colSpan": 2
+            }
         },
         {
             "name": "alert-02",
@@ -349,7 +355,13 @@
                     "path": "registry/default/components/alerts/alert-02.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": [
+                    "alert"
+                ],
+                "colSpan": 2
+            }
         },
         {
             "name": "alert-03",
@@ -362,7 +374,13 @@
                     "path": "registry/default/components/alerts/alert-03.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": [
+                    "alert"
+                ],
+                "colSpan": 2
+            }
         },
         {
             "name": "alert-04",
@@ -375,7 +393,13 @@
                     "path": "registry/default/components/alerts/alert-04.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": [
+                    "alert"
+                ],
+                "colSpan": 2
+            }
         },
         {
             "name": "alert-05",
@@ -388,7 +412,13 @@
                     "path": "registry/default/components/alerts/alert-05.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": [
+                    "alert"
+                ],
+                "colSpan": 2
+            }
         },
         {
             "name": "alert-06",
@@ -401,7 +431,13 @@
                     "path": "registry/default/components/alerts/alert-06.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": [
+                    "alert"
+                ],
+                "colSpan": 2
+            }
         },
         {
             "name": "avatar-01",
@@ -414,7 +450,13 @@
                     "path": "registry/default/components/avatars/avatar-01.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": [
+                    "avatar"
+                ],
+                "style": 1
+            }
         },
         {
             "name": "avatar-02",
@@ -427,7 +469,13 @@
                     "path": "registry/default/components/avatars/avatar-02.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": [
+                    "avatar"
+                ],
+                "style": 1
+            }
         },
         {
             "name": "avatar-03",
@@ -443,7 +491,13 @@
                     "path": "registry/default/components/avatars/avatar-03.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": [
+                    "avatar"
+                ],
+                "style": 1
+            }
         },
         {
             "name": "avatar-04",
@@ -456,7 +510,13 @@
                     "path": "registry/default/components/avatars/avatar-04.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": [
+                    "avatar"
+                ],
+                "style": 1
+            }
         },
         {
             "name": "avatar-05",
@@ -469,7 +529,13 @@
                     "path": "registry/default/components/avatars/avatar-05.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": [
+                    "avatar"
+                ],
+                "style": 1
+            }
         },
         {
             "name": "avatar-06",
@@ -482,7 +548,13 @@
                     "path": "registry/default/components/avatars/avatar-06.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": [
+                    "avatar"
+                ],
+                "style": 1
+            }
         },
         {
             "name": "avatar-07",
@@ -495,7 +567,13 @@
                     "path": "registry/default/components/avatars/avatar-07.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": [
+                    "avatar"
+                ],
+                "style": 1
+            }
         },
         {
             "name": "avatar-08",
@@ -508,7 +586,13 @@
                     "path": "registry/default/components/avatars/avatar-08.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": [
+                    "avatar"
+                ],
+                "style": 1
+            }
         },
         {
             "name": "avatar-09",
@@ -522,7 +606,13 @@
                     "path": "registry/default/components/avatars/avatar-09.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": [
+                    "avatar"
+                ],
+                "style": 1
+            }
         },
         {
             "name": "badge-01",
@@ -535,7 +625,11 @@
                     "path": "registry/default/components/badges/badge-01.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["badge"],
+                "style": 1
+            }
         },
         {
             "name": "badge-02",
@@ -548,7 +642,11 @@
                     "path": "registry/default/components/badges/badge-02.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["badge"],
+                "style": 1
+            }
         },
         {
             "name": "badge-07",
@@ -564,7 +662,11 @@
                     "path": "registry/default/components/badges/badge-07.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["badge"],
+                "style": 1
+            }
         },
         {
             "name": "badge-11",
@@ -582,7 +684,11 @@
                     "path": "registry/default/components/badges/badge-11.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["badge"],
+                "style": 1
+            }
         },
         {
             "name": "breadcrumb-01",
@@ -596,7 +702,12 @@
                     "path": "registry/default/components/breadcrumbs/breadcrumb-01.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["breadcrumb"],
+                "colSpan": 2,
+                "style": 1
+            }
         },
         {
             "name": "breadcrumb-02",
@@ -613,7 +724,12 @@
                     "path": "registry/default/components/breadcrumbs/breadcrumb-02.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["breadcrumb"],
+                "colSpan": 2,
+                "style": 1
+            }
         },
         {
             "name": "breadcrumb-03",
@@ -629,7 +745,12 @@
                     "path": "registry/default/components/breadcrumbs/breadcrumb-03.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["breadcrumb"],
+                "colSpan": 2,
+                "style": 1
+            }
         },
         {
             "name": "breadcrumb-04",
@@ -645,7 +766,12 @@
                     "path": "registry/default/components/breadcrumbs/breadcrumb-04.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["breadcrumb"],
+                "colSpan": 2,
+                "style": 1
+            }
         },
         {
             "name": "breadcrumb-05",
@@ -661,7 +787,12 @@
                     "path": "registry/default/components/breadcrumbs/breadcrumb-05.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["breadcrumb"],
+                "colSpan": 2,
+                "style": 1
+            }
         },
         {
             "name": "breadcrumb-06",
@@ -677,7 +808,12 @@
                     "path": "registry/default/components/breadcrumbs/breadcrumb-06.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["breadcrumb"],
+                "colSpan": 2,
+                "style": 1
+            }
         },
         {
             "name": "breadcrumb-07",
@@ -693,7 +829,12 @@
                     "path": "registry/default/components/breadcrumbs/breadcrumb-07.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["breadcrumb"],
+                "colSpan": 2,
+                "style": 1
+            }
         },
         {
             "name": "button-01",
@@ -706,7 +847,11 @@
                     "path": "registry/default/components/buttons/button-01.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["button"],
+                "style": 2
+            }
         },
         {
             "name": "button-02",
@@ -719,7 +864,11 @@
                     "path": "registry/default/components/buttons/button-02.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["button"],
+                "style": 2
+            }
         },
         {
             "name": "button-03",
@@ -732,7 +881,11 @@
                     "path": "registry/default/components/buttons/button-03.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["button"],
+                "style": 2
+            }
         },
         {
             "name": "button-04",
@@ -748,7 +901,11 @@
                     "path": "registry/default/components/buttons/button-04.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["button"],
+                "style": 2
+            }
         },
         {
             "name": "button-05",
@@ -764,7 +921,11 @@
                     "path": "registry/default/components/buttons/button-05.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["button"],
+                "style": 2
+            }
         },
         {
             "name": "button-24",
@@ -780,7 +941,11 @@
                     "path": "registry/default/components/buttons/button-24.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["button"],
+                "style": 2
+            }
         },
         {
             "name": "button-83",
@@ -796,7 +961,11 @@
                     "path": "registry/default/components/buttons/button-83.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["button"],
+                "style": 2
+            }
         },
         {
             "name": "button-90",
@@ -812,7 +981,11 @@
                     "path": "registry/default/components/buttons/button-90.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["button"],
+                "style": 2
+            }
         },
         {
             "name": "button-91",
@@ -828,7 +1001,11 @@
                     "path": "registry/default/components/buttons/button-91.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["button"],
+                "style": 2
+            }
         },
         {
             "name": "button-107",
@@ -844,7 +1021,11 @@
                     "path": "registry/default/components/buttons/button-107.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["button"],
+                "style": 2
+            }
         },
         {
             "name": "button-109",
@@ -857,7 +1038,11 @@
                     "path": "registry/default/components/buttons/button-109.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["button"],
+                "style": 2
+            }
         },
         {
             "name": "button-110",
@@ -870,7 +1055,11 @@
                     "path": "registry/default/components/buttons/button-110.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["button"],
+                "style": 2
+            }
         },
         {
             "name": "button-114",
@@ -886,7 +1075,11 @@
                     "path": "registry/default/components/buttons/button-114.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["button"],
+                "style": 2
+            }
         },
         {
             "name": "button-121",
@@ -899,7 +1092,11 @@
                     "path": "registry/default/components/buttons/button-121.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["button"],
+                "style": 2
+            }
         },
         {
             "name": "checkbox-01",
@@ -913,7 +1110,10 @@
                     "path": "registry/default/components/checkboxes/checkbox-01.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["checkbox", "label", "radix"]
+            }
         },
         {
             "name": "checkbox-02",
@@ -927,7 +1127,10 @@
                     "path": "registry/default/components/checkboxes/checkbox-02.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["checkbox", "label", "radix"]
+            }
         },
         {
             "name": "checkbox-03",
@@ -941,7 +1144,10 @@
                     "path": "registry/default/components/checkboxes/checkbox-03.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["checkbox", "label", "radix"]
+            }
         },
         {
             "name": "checkbox-04",
@@ -955,7 +1161,10 @@
                     "path": "registry/default/components/checkboxes/checkbox-04.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["checkbox", "label", "radix"]
+            }
         },
         {
             "name": "dialog-04",
@@ -969,7 +1178,11 @@
                     "path": "registry/default/components/dialogs/dialog-04.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["dialog", "modal", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "dialog-05",
@@ -988,7 +1201,11 @@
                     "path": "registry/default/components/dialogs/dialog-05.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["dialog", "modal", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "dropdown-01",
@@ -1004,7 +1221,11 @@
                     "path": "registry/default/components/dropdowns/dropdown-01.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["dropdown", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "dropdown-372",
@@ -1020,7 +1241,11 @@
                     "path": "registry/default/components/dropdowns/dropdown-372.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["dropdown", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "input-01",
@@ -1034,7 +1259,10 @@
                     "path": "registry/default/components/inputs/input-01.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["input"]
+            }
         },
         {
             "name": "input-02",
@@ -1048,7 +1276,10 @@
                     "path": "registry/default/components/inputs/input-02.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["input"]
+            }
         },
         {
             "name": "input-03",
@@ -1062,7 +1293,10 @@
                     "path": "registry/default/components/inputs/input-03.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["input"]
+            }
         },
         {
             "name": "input-08",
@@ -1076,7 +1310,10 @@
                     "path": "registry/default/components/inputs/input-08.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["input"]
+            }
         },
         {
             "name": "input-14",
@@ -1090,7 +1327,10 @@
                     "path": "registry/default/components/inputs/input-14.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["input"]
+            }
         },
         {
             "name": "input-17",
@@ -1107,7 +1347,10 @@
                     "path": "registry/default/components/inputs/input-17.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["input"]
+            }
         },
         {
             "name": "input-20",
@@ -1124,7 +1367,10 @@
                     "path": "registry/default/components/inputs/input-20.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["input"]
+            }
         },
         {
             "name": "input-23",
@@ -1141,7 +1387,10 @@
                     "path": "registry/default/components/inputs/input-23.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["input"]
+            }
         },
         {
             "name": "input-24",
@@ -1158,7 +1407,10 @@
                     "path": "registry/default/components/inputs/input-24.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["input"]
+            }
         },
         {
             "name": "input-35",
@@ -1176,7 +1428,10 @@
                     "path": "registry/default/lib/use-character-limit.ts",
                     "type": "registry:lib"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["input"]
+            }
         },
         {
             "name": "input-51",
@@ -1193,7 +1448,10 @@
                     "path": "registry/default/components/inputs/input-51.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["input"]
+            }
         },
         {
             "name": "notification-21",
@@ -1209,7 +1467,12 @@
                     "path": "registry/default/components/notifications/notification-21.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["notification"],
+                "colSpan": 2,
+                "style": 1
+            }
         },
         {
             "name": "notification-22",
@@ -1226,7 +1489,12 @@
                     "path": "registry/default/components/notifications/notification-22.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["notification"],
+                "colSpan": 2,
+                "style": 1
+            }
         },
         {
             "name": "pagination-01",
@@ -1242,7 +1510,11 @@
                     "path": "registry/default/components/paginations/pagination-01.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["pagination"],
+                "colSpan": 2
+            }
         },
         {
             "name": "pagination-02",
@@ -1258,7 +1530,11 @@
                     "path": "registry/default/components/paginations/pagination-02.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["pagination"],
+                "colSpan": 2
+            }
         },
         {
             "name": "pagination-03",
@@ -1274,7 +1550,11 @@
                     "path": "registry/default/components/paginations/pagination-03.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["pagination"],
+                "colSpan": 2
+            }
         },
         {
             "name": "pagination-04",
@@ -1292,7 +1572,11 @@
                     "path": "registry/default/components/paginations/pagination-04.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["pagination"],
+                "colSpan": 2
+            }
         },
         {
             "name": "pagination-05",
@@ -1308,7 +1592,11 @@
                     "path": "registry/default/components/paginations/pagination-05.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["pagination"],
+                "colSpan": 2
+            }
         },
         {
             "name": "pagination-06",
@@ -1325,7 +1613,11 @@
                     "path": "registry/default/components/paginations/pagination-06.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["pagination"],
+                "colSpan": 2
+            }
         },
         {
             "name": "popover-01",
@@ -1344,7 +1636,11 @@
                     "path": "registry/default/components/popovers/popover-01.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["popover", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "popover-05",
@@ -1358,7 +1654,11 @@
                     "path": "registry/default/components/popovers/popover-05.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["popover", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "popover-07",
@@ -1376,7 +1676,11 @@
                     "path": "registry/default/components/popovers/popover-07.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["popover", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "popover-09",
@@ -1393,7 +1697,11 @@
                     "path": "registry/default/components/popovers/popover-09.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["popover", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "radio-01",
@@ -1407,7 +1715,10 @@
                     "path": "registry/default/components/radios/radio-01.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["radio", "radix"]
+            }
         },
         {
             "name": "radio-02",
@@ -1421,7 +1732,10 @@
                     "path": "registry/default/components/radios/radio-02.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["radio", "radix"]
+            }
         },
         {
             "name": "radio-03",
@@ -1435,7 +1749,10 @@
                     "path": "registry/default/components/radios/radio-03.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["radio", "radix"]
+            }
         },
         {
             "name": "radio-04",
@@ -1449,7 +1766,10 @@
                     "path": "registry/default/components/radios/radio-04.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["radio", "radix"]
+            }
         },
         {
             "name": "radio-05",
@@ -1464,7 +1784,10 @@
                     "path": "registry/default/components/radios/radio-05.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["radio", "radix"]
+            }
         },
         {
             "name": "radio-08",
@@ -1478,7 +1801,10 @@
                     "path": "registry/default/components/radios/radio-08.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["radio", "radix"]
+            }
         },
         {
             "name": "radio-13",
@@ -1491,7 +1817,10 @@
                     "path": "registry/default/components/radios/radio-13.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["radio", "radix"]
+            }
         },
         {
             "name": "select-01",
@@ -1505,7 +1834,10 @@
                     "path": "registry/default/components/selects/select-01.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["select"]
+            }
         },
         {
             "name": "select-02",
@@ -1519,7 +1851,10 @@
                     "path": "registry/default/components/selects/select-02.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["select"]
+            }
         },
         {
             "name": "select-04",
@@ -1533,7 +1868,10 @@
                     "path": "registry/default/components/selects/select-04.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["select"]
+            }
         },
         {
             "name": "select-05",
@@ -1547,7 +1885,10 @@
                     "path": "registry/default/components/selects/select-05.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["select"]
+            }
         },
         {
             "name": "select-06",
@@ -1561,7 +1902,10 @@
                     "path": "registry/default/components/selects/select-06.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["select"]
+            }
         },
         {
             "name": "select-11",
@@ -1575,7 +1919,10 @@
                     "path": "registry/default/components/selects/select-11.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["select"]
+            }
         },
         {
             "name": "select-13",
@@ -1589,7 +1936,10 @@
                     "path": "registry/default/components/selects/select-13.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["select"]
+            }
         },
         {
             "name": "select-14",
@@ -1603,7 +1953,10 @@
                     "path": "registry/default/components/selects/select-14.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["select"]
+            }
         },
         {
             "name": "select-15",
@@ -1617,7 +1970,10 @@
                     "path": "registry/default/components/selects/select-15.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["select"]
+            }
         },
         {
             "name": "slider-01",
@@ -1631,7 +1987,10 @@
                     "path": "registry/default/components/sliders/slider-01.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["slider", "radix"]
+            }
         },
         {
             "name": "slider-03",
@@ -1645,7 +2004,10 @@
                     "path": "registry/default/components/sliders/slider-03.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["slider", "radix"]
+            }
         },
         {
             "name": "slider-04",
@@ -1659,7 +2021,10 @@
                     "path": "registry/default/components/sliders/slider-04.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["slider", "radix"]
+            }
         },
         {
             "name": "slider-05",
@@ -1673,7 +2038,10 @@
                     "path": "registry/default/components/sliders/slider-05.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["slider", "radix"]
+            }
         },
         {
             "name": "slider-06",
@@ -1687,7 +2055,10 @@
                     "path": "registry/default/components/sliders/slider-06.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["slider", "radix"]
+            }
         },
         {
             "name": "slider-07",
@@ -1701,7 +2072,10 @@
                     "path": "registry/default/components/sliders/slider-07.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["slider", "radix"]
+            }
         },
         {
             "name": "slider-10",
@@ -1715,7 +2089,10 @@
                     "path": "registry/default/components/sliders/slider-10.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["slider", "radix"]
+            }
         },
         {
             "name": "slider-11",
@@ -1729,7 +2106,10 @@
                     "path": "registry/default/components/sliders/slider-11.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["slider", "radix"]
+            }
         },
         {
             "name": "slider-20",
@@ -1747,7 +2127,10 @@
                     "path": "registry/default/components/sliders/slider-20.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["slider", "radix"]
+            }
         },
         {
             "name": "slider-22",
@@ -1761,7 +2144,10 @@
                     "path": "registry/default/components/sliders/slider-22.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["slider", "radix"]
+            }
         },
         {
             "name": "slider-265",
@@ -1781,7 +2167,10 @@
                     "path": "registry/default/lib/use-slider-with-input.ts",
                     "type": "registry:lib"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["slider", "radix"]
+            }
         },
         {
             "name": "stepper-01",
@@ -1794,7 +2183,11 @@
                     "path": "registry/default/components/steppers/stepper-01.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["stepper"],
+                "colSpan": 3
+            }
         },
         {
             "name": "stepper-05",
@@ -1808,7 +2201,11 @@
                     "path": "registry/default/components/steppers/stepper-05.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["stepper"],
+                "colSpan": 3
+            }
         },
         {
             "name": "stepper-07",
@@ -1821,7 +2218,11 @@
                     "path": "registry/default/components/steppers/stepper-07.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["stepper"],
+                "colSpan": 3
+            }
         },
         {
             "name": "stepper-10",
@@ -1834,7 +2235,11 @@
                     "path": "registry/default/components/steppers/stepper-10.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["stepper"],
+                "colSpan": 3
+            }
         },
         {
             "name": "stepper-14",
@@ -1847,7 +2252,11 @@
                     "path": "registry/default/components/steppers/stepper-14.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["stepper", "vertical stepper"],
+                "colSpan": 2
+            }
         },
         {
             "name": "stepper-15",
@@ -1861,7 +2270,11 @@
                     "path": "registry/default/components/steppers/stepper-15.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["stepper", "vertical stepper"],
+                "colSpan": 2
+            }
         },
         {
             "name": "stepper-16",
@@ -1874,7 +2287,11 @@
                     "path": "registry/default/components/steppers/stepper-16.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["stepper", "vertical stepper"],
+                "colSpan": 2
+            }
         },
         {
             "name": "stepper-17",
@@ -1887,7 +2304,11 @@
                     "path": "registry/default/components/steppers/stepper-17.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["stepper", "vertical stepper"],
+                "colSpan": 2
+            }
         },
         {
             "name": "switch-01",
@@ -1901,7 +2322,11 @@
                     "path": "registry/default/components/switchs/switch-01.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["switch", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "switch-02",
@@ -1915,7 +2340,11 @@
                     "path": "registry/default/components/switchs/switch-02.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["switch", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "switch-03",
@@ -1929,7 +2358,11 @@
                     "path": "registry/default/components/switchs/switch-03.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["switch", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "switch-04",
@@ -1943,7 +2376,11 @@
                     "path": "registry/default/components/switchs/switch-04.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["switch", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "switch-05",
@@ -1957,7 +2394,11 @@
                     "path": "registry/default/components/switchs/switch-05.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["switch", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "switch-06",
@@ -1971,7 +2412,11 @@
                     "path": "registry/default/components/switchs/switch-06.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["switch", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "switch-07",
@@ -1988,7 +2433,11 @@
                     "path": "registry/default/components/switchs/switch-07.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["switch", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "switch-08",
@@ -2004,7 +2453,11 @@
                     "path": "registry/default/components/switchs/switch-08.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["switch", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "switch-09",
@@ -2021,7 +2474,11 @@
                     "path": "registry/default/components/switchs/switch-09.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["switch", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "switch-10",
@@ -2038,7 +2495,11 @@
                     "path": "registry/default/components/switchs/switch-10.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["switch", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "switch-11",
@@ -2052,7 +2513,11 @@
                     "path": "registry/default/components/switchs/switch-11.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["switch", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "switch-12",
@@ -2066,7 +2531,11 @@
                     "path": "registry/default/components/switchs/switch-12.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["switch", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "switch-13",
@@ -2080,7 +2549,11 @@
                     "path": "registry/default/components/switchs/switch-13.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["switch", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "switch-14",
@@ -2094,7 +2567,11 @@
                     "path": "registry/default/components/switchs/switch-14.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["switch", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "table-01",
@@ -2107,7 +2584,11 @@
                     "path": "registry/default/components/tables/table-01.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["table"],
+                "colSpan": 3
+            }
         },
         {
             "name": "table-03",
@@ -2120,7 +2601,11 @@
                     "path": "registry/default/components/tables/table-03.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["table"],
+                "colSpan": 3
+            }
         },
         {
             "name": "table-09",
@@ -2133,7 +2618,11 @@
                     "path": "registry/default/components/tables/table-09.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["table"],
+                "colSpan": 3
+            }
         },
         {
             "name": "table-11",
@@ -2149,7 +2638,11 @@
                     "path": "registry/default/components/tables/table-11.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["table"],
+                "colSpan": 3
+            }
         },
         {
             "name": "table-12",
@@ -2168,7 +2661,11 @@
                     "path": "registry/default/components/tables/table-12.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["table"],
+                "colSpan": 3
+            }
         },
         {
             "name": "table-14",
@@ -2185,7 +2682,11 @@
                     "path": "registry/default/components/tables/table-14.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["table"],
+                "colSpan": 3
+            }
         },
         {
             "name": "table-17",
@@ -2202,7 +2703,11 @@
                     "path": "registry/default/components/tables/table-17.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["table"],
+                "colSpan": 3
+            }
         },
         {
             "name": "tab-01",
@@ -2215,7 +2720,12 @@
                     "path": "registry/default/components/tabs/tab-01.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["tabs", "radix"],
+                "colSpan": 2,
+                "style": 2
+            }
         },
         {
             "name": "tab-04",
@@ -2228,7 +2738,12 @@
                     "path": "registry/default/components/tabs/tab-04.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["tabs", "radix"],
+                "colSpan": 2,
+                "style": 2
+            }
         },
         {
             "name": "tab-06",
@@ -2241,7 +2756,12 @@
                     "path": "registry/default/components/tabs/tab-06.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["tabs", "radix"],
+                "colSpan": 2,
+                "style": 2
+            }
         },
         {
             "name": "tab-07",
@@ -2254,7 +2774,12 @@
                     "path": "registry/default/components/tabs/tab-07.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["tabs", "radix"],
+                "colSpan": 2,
+                "style": 2
+            }
         },
         {
             "name": "tab-08",
@@ -2271,7 +2796,12 @@
                     "path": "registry/default/components/tabs/tab-08.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["tabs", "radix"],
+                "colSpan": 2,
+                "style": 2
+            }
         },
         {
             "name": "tab-17",
@@ -2284,7 +2814,12 @@
                     "path": "registry/default/components/tabs/tab-17.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["tabs", "radix"],
+                "colSpan": 2,
+                "style": 2
+            }
         },
         {
             "name": "tab-18",
@@ -2297,7 +2832,12 @@
                     "path": "registry/default/components/tabs/tab-18.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["tabs", "radix"],
+                "colSpan": 2,
+                "style": 2
+            }
         },
         {
             "name": "tab-19",
@@ -2310,7 +2850,12 @@
                     "path": "registry/default/components/tabs/tab-19.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["tabs", "radix"],
+                "colSpan": 2,
+                "style": 2
+            }
         },
         {
             "name": "textarea-59",
@@ -2324,7 +2869,10 @@
                     "path": "registry/default/components/textareas/textarea-59.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["label", "textarea"]
+            }
         },
         {
             "name": "textarea-67",
@@ -2338,7 +2886,10 @@
                     "path": "registry/default/components/textareas/textarea-67.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["label", "textarea"]
+            }
         },
         {
             "name": "textarea-68",
@@ -2353,7 +2904,10 @@
                     "path": "registry/default/components/textareas/textarea-68.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["label", "textarea"]
+            }
         },
         {
             "name": "textarea-77",
@@ -2367,7 +2921,10 @@
                     "path": "registry/default/components/textareas/textarea-77.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["label", "textarea"]
+            }
         },
         {
             "name": "tooltip-01",
@@ -2381,7 +2938,11 @@
                     "path": "registry/default/components/tooltips/tooltip-01.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["tooltip", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "tooltip-02",
@@ -2395,7 +2956,11 @@
                     "path": "registry/default/components/tooltips/tooltip-02.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["tooltip", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "tooltip-03",
@@ -2409,7 +2974,11 @@
                     "path": "registry/default/components/tooltips/tooltip-03.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["tooltip", "radix"],
+                "style": 1
+            }
         },
         {
             "name": "tooltip-07",
@@ -2426,7 +2995,11 @@
                     "path": "registry/default/components/tooltips/tooltip-07.ts",
                     "type": "registry:component"
                 }
-            ]
+            ],
+            "meta": {
+                "tags": ["tooltip", "radix"],
+                "style": 1
+            }
         }
     ]
 }

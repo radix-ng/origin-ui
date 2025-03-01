@@ -42,6 +42,7 @@
         "lucide-angular": "~0.464.0",
         "ngx-sonner": "^3.0.0",
         "rxjs": "~7.8.0",
+        "shadcn-ng": "^1.1.0",
         "tailwind-merge": "^2.6.0",
         "tailwindcss-animate": "^1.0.7",
         "zone.js": "0.15.0"

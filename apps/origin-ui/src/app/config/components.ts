@@ -36,7 +36,8 @@ export const categories: ComponentCategory[] = [
         components: [
             { name: 'badge-01' },
             { name: 'badge-02' },
-            { name: 'badge-03' }]
+            { name: 'badge-07' },
+            { name: 'badge-11' }]
     },
     {
         slug: 'breadcrumb',

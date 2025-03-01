@@ -2,7 +2,7 @@ import { Component, input } from '@angular/core';
 
 import { NgOptimizedImage } from '@angular/common';
 import { Input, computed, signal } from '@angular/core';
-import { categories } from '../config/components';
+import { categories } from './config/components';
 
 @Component({
     selector: 'ori-image-component',
