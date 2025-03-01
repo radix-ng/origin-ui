@@ -1,3 +1,21 @@
+## 0.5.0 (2025-03-01)
+
+### 🚀 Features
+
+- add `registry.json` ([#2](https://github.com/radix-ng/origin-ui/pull/2))
+- updated pages and routers ([af0d469](https://github.com/radix-ng/origin-ui/commit/af0d469))
+- **table:** oriTable is directive and TanStack table example ([a50b52d](https://github.com/radix-ng/origin-ui/commit/a50b52d))
+- **table:** updated example ([ce23daf](https://github.com/radix-ng/origin-ui/commit/ce23daf))
+
+### 🩹 Fixes
+
+- **dialog:** updated css styles ([79d1358](https://github.com/radix-ng/origin-ui/commit/79d1358))
+
+### ❤️ Thank You
+
+- Adrián UB @adrian-ub
+- Oleg Pimenov @pimenovoleg
+
 ## 0.4.0 (2025-02-23)
 
 ### 🚀 Features

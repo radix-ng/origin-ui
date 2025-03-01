@@ -20,9 +20,6 @@
         "baseUrl": ".",
         "allowSyntheticDefaultImports": true,
         "paths": {
-            "~/registry/*": [
-                "apps/origin-ui/src/registry/*"
-            ],
             "@origin-ui/components/avatar": [
                 "packages/components/avatar/index.ts"
             ],
@@ -97,6 +94,9 @@
             ],
             "@origin-ui/components/utils": [
                 "packages/components/utils/index.ts"
+            ],
+            "~/registry/*": [
+                "apps/origin-ui/src/registry/*"
             ]
         }
     },
