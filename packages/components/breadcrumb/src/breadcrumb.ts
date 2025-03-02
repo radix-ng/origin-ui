@@ -20,7 +20,7 @@ export class OriBreadcrumbListDirective {
     readonly class = input<string>();
 
     protected hostClasses = computed(() =>
-        cn('flex flex-wrap items-center gap-1.5 break-words text-sm text-muted-foreground sm:gap-2.5', this.class())
+        cn('text-muted-foreground flex flex-wrap items-center gap-1.5 text-sm break-words sm:gap-2.5', this.class())
     );
 }
 
@@ -60,7 +60,7 @@ export class OriBreadcrumbLinkDirective {
 export class OriBreadcrumbPageDirective {
     readonly class = input<string>();
 
-    protected hostClasses = computed(() => cn('text-foreground', this.class()));
+    protected hostClasses = computed(() => cn('text-foreground font-normal', this.class()));
 }
 
 @Component({
