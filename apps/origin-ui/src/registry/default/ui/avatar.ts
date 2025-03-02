@@ -21,7 +21,7 @@ export class OriAvatarComponent {
     readonly class = input<string>();
 
     protected readonly hostClasses = computed(() =>
-        cn('relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full', this.class())
+        cn('relative flex size-8 shrink-0 overflow-hidden rounded-full', this.class())
     );
 }
 
@@ -32,13 +32,17 @@ export class OriAvatarComponent {
         RdxAvatarImageDirective
     ],
     template: `
-        <img [src]="src()" [alt]="imgAlt()" rdxAvatarImage />
+        <img [src]="src()" [alt]="imgAlt()" [class]="imgClasses()" rdxAvatarImage />
     `
 })
 export class OriAvatarImageComponent {
     readonly src = input.required<string>();
 
     readonly imgAlt = input<string>();
+
+    readonly imgClass = input<string>();
+
+    protected readonly imgClasses = computed(() => cn('aspect-square size-full', this.imgClass()));
 }
 
 @Component({
@@ -56,6 +60,6 @@ export class OriAvatarFallbackComponent {
     readonly class = input<string>();
 
     protected readonly hostClasses = computed(() =>
-        cn('flex h-full w-full items-center justify-center rounded-[inherit] bg-secondary text-xs', this.class())
+        cn('bg-secondary flex size-full items-center justify-center rounded-[inherit] text-xs', this.class())
     );
 }

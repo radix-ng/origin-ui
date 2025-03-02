@@ -9,7 +9,8 @@ import {
 
 @Directive({
     selector: 'ori-tabs, [oriTabs]',
-    hostDirectives: [{ directive: RdxTabsRootDirective, inputs: ['defaultValue', 'orientation'], outputs: ['onValueChange'] }]
+    hostDirectives: [
+        { directive: RdxTabsRootDirective, inputs: ['defaultValue', 'orientation'], outputs: ['onValueChange'] }]
 })
 export class OriTabs {}
 
@@ -24,7 +25,10 @@ export class OriTabsList {
     readonly class = input<string>();
 
     protected hostClasses = computed(() =>
-        cn('inline-flex items-center justify-center rounded-lg bg-muted p-0.5 text-muted-foreground/70', this.class())
+        cn(
+            'bg-muted text-muted-foreground/70 inline-flex w-fit items-center justify-center rounded-md p-0.5',
+            this.class()
+        )
     );
 }
 
@@ -40,7 +44,7 @@ export class OriTabsTrigger {
 
     protected hostClasses = computed(() =>
         cn(
-            'inline-flex cursor-pointer items-center justify-center whitespace-nowrap rounded-md px-3 py-1.5 text-sm font-medium outline-offset-2 transition-all hover:text-muted-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring/70 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-sm data-[state=active]:shadow-black/5',
+            'hover:text-muted-foreground data-[state=active]:bg-background data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 inline-flex items-center justify-center rounded-sm px-3 py-1.5 text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-xs [&_svg]:shrink-0',
             this.class()
         )
     );
@@ -56,10 +60,5 @@ export class OriTabsTrigger {
 export class OriTabsContent {
     readonly class = input<string>();
 
-    protected hostClasses = computed(() =>
-        cn(
-            'mt-2 outline-offset-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring/70',
-            this.class()
-        )
-    );
+    protected hostClasses = computed(() => cn('flex-1 outline-none', this.class()));
 }
