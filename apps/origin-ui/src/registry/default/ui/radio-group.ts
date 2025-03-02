@@ -41,6 +41,8 @@ export class OriRadioGroup {}
             "
             [value]="value()"
             [id]="forId()"
+            [disabled]="disabled()"
+            [required]="required()"
             rdxRadioItem
         >
             <div class="flex items-center justify-center text-current data-[state=unchecked]:hidden" rdxRadioIndicator>
@@ -54,8 +56,14 @@ export class OriRadioGroup {}
 })
 export class OriRadioGroupItem {
     readonly classRadioItem = input<string>();
+
     readonly value = input.required<string>();
 
+    readonly disabled = input<boolean>();
+
+    readonly required = input<boolean>();
+
     readonly forId = input<string>('');
+
     protected readonly cn = cn;
 }
