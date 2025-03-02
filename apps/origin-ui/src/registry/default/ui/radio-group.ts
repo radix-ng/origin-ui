@@ -1,11 +1,12 @@
-import { ChangeDetectionStrategy, Component, Directive, input } from '@angular/core';
-import { cn } from '~/registry/default/lib/utils';
+import { BooleanInput } from '@angular/cdk/coercion';
+import { booleanAttribute, ChangeDetectionStrategy, Component, Directive, input } from '@angular/core';
 import {
     RdxRadioGroupDirective,
     RdxRadioIndicatorDirective,
     RdxRadioItemDirective,
     RdxRadioItemInputDirective
 } from '@radix-ng/primitives/radio';
+import { cn } from '~/registry/default/lib/utils';
 
 @Directive({
     // eslint-disable-next-line @angular-eslint/directive-selector
@@ -14,7 +15,7 @@ import {
     hostDirectives: [
         {
             directive: RdxRadioGroupDirective,
-            inputs: ['value', 'orientation', 'disabled'],
+            inputs: ['value', 'orientation', 'disabled:disabled'],
             outputs: ['onValueChange']
         }
     ],
@@ -22,7 +23,9 @@ import {
         '[class]': "'grid gap-3'"
     }
 })
-export class OriRadioGroup {}
+export class OriRadioGroup {
+    readonly disabled = input<boolean, BooleanInput>(false, { transform: booleanAttribute });
+}
 
 @Component({
     selector: 'ori-radio-group-item',
