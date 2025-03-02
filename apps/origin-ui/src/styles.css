@@ -4,8 +4,6 @@
 @import url('@fontsource/inter/index.css');
 @import url('@fontsource/jetbrains-mono/index.css');
 
-@import '@angular/cdk/overlay-prebuilt.css';
-
 @import 'tailwindcss';
 
 @plugin 'tailwindcss-animate';

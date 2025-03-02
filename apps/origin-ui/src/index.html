@@ -20,9 +20,9 @@
                         theme === 'dark' ||
                         (theme === null && window.matchMedia('(prefers-color-scheme: dark)').matches);
                     if (isDarkMode) {
-                        document.body.classList.add('dark');
+                        document.documentElement.classList.add('dark');
                     } else {
-                        document.body.classList.remove('dark');
+                        document.documentElement.classList.remove('dark');
                     }
                 } catch (e) {
                     console.error('Error initializing theme:', e);
@@ -30,7 +30,7 @@
             })();
         </script>
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-sans antialiased has-not-data-home:before:absolute has-not-data-home:before:inset-x-0 has-not-data-home:before:h-100 has-not-data-home:before:bg-linear-to-b has-not-data-home:before:from-zinc-100 has-data-home:bg-zinc-50 dark:has-not-data-home:before:hidden dark:has-data-home:bg-zinc-950">
         <app-root></app-root>
     </body>
 </html>
