@@ -5,7 +5,7 @@ import { cva } from 'class-variance-authority';
 import { ClassValue } from 'clsx';
 
 export const labelVariants = cva(
-    'text-sm font-medium leading-4 text-foreground peer-disabled:cursor-not-allowed peer-disabled:opacity-70'
+    'text-foreground text-sm leading-4 font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50'
 );
 
 @Directive({

@@ -1,13 +1,15 @@
-import { NgStyle } from '@angular/common';
 import { Component } from '@angular/core';
 import { OriLabel } from '~/registry/default/ui/label';
 import { OriRadioGroup, OriRadioGroupItem } from '~/registry/default/ui/radio-group';
 
 @Component({
     selector: 'demo-radio-02',
-    imports: [OriLabel, OriRadioGroup, OriRadioGroupItem, NgStyle],
+    imports: [OriLabel, OriRadioGroup, OriRadioGroupItem],
     template: `
-        <ori-radio-group [value]="'r1'" [ngStyle]="{ '--primary': '238.7 83.5% 66.7%', '--ring': '238.7 83.5% 66.7%' }">
+        <ori-radio-group
+            class="[--primary:var(--color-indigo-500)] [--ring:var(--color-indigo-300)] in-[.dark]:[--primary:var(--color-indigo-500)] in-[.dark]:[--ring:var(--color-indigo-900)]"
+            [value]="'r1'"
+        >
             <div class="flex items-center gap-2">
                 <ori-radio-group-item [value]="'r1'" [forId]="'radio-02-r1'" />
                 <label [htmlFor]="'radio-02-r1'" oriLabel>Option 1</label>

@@ -19,7 +19,7 @@ import {
         }
     ],
     host: {
-        '[class]': "'grid gap-1'"
+        '[class]': "'grid gap-3'"
     }
 })
 export class OriRadioGroup {}
@@ -35,7 +35,7 @@ export class OriRadioGroup {}
         <button
             [class]="
                 cn(
-                    'border-input focus-visible:outline-ring/70 data-[state=checked]:border-primary data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground aspect-square size-4 rounded-full border shadow-sm shadow-black/5 outline-offset-2 focus-visible:outline focus-visible:outline-2 disabled:cursor-not-allowed disabled:opacity-50',
+                    'border-input data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground data-[state=checked]:border-primary focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive aspect-square size-4 shrink-0 rounded-full border shadow-xs transition-shadow outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50',
                     classRadioItem()
                 )
             "
