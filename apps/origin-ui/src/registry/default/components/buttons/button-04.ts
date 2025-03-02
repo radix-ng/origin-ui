@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { OriButton } from '~/registry/default/ui/button';
 import { Archive, LucideAngularModule } from 'lucide-angular';
+import { OriButton } from '~/registry/default/ui/button';
 
 @Component({
     selector: 'demo-button-04',
@@ -12,6 +12,7 @@ import { Archive, LucideAngularModule } from 'lucide-angular';
         </button>
     `,
     styles: `
+        @reference "tailwindcss";
         ::ng-deep .icon-wrapper svg {
             @apply -ms-1 me-2 opacity-60;
         }

@@ -1,14 +1,13 @@
-/*@import '@angular/cdk/overlay-prebuilt.css';*/
-/*@import '@angular/cdk/a11y-prebuilt.css';*/
+@import '@angular/cdk/overlay-prebuilt.css';
+@import '@angular/cdk/a11y-prebuilt.css';
 
-/*@import url('@fontsource/inter/index.css');*/
-/*@import url('@fontsource/jetbrains-mono/index.css');*/
+@import url('@fontsource/inter/index.css');
+@import url('@fontsource/jetbrains-mono/index.css');
 
-@import url('@angular/cdk/overlay-prebuilt.css');
+@import '@angular/cdk/overlay-prebuilt.css';
 
-@reference "tailwindcss";
+@import 'tailwindcss';
 
-@plugin '@tailwindcss/typography';
 @plugin 'tailwindcss-animate';
 
 @custom-variant dark (&:is(.dark *));
