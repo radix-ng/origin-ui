@@ -41,12 +41,15 @@ importers:
       '@angular/ssr':
         specifier: 19.2.0
         version: 19.2.0(fxvshrfjwbs6kvps3pstnxxwlq)
-      '@fontsource/inter':
-        specifier: ^5.2.0
-        version: 5.2.0
+      '@fontsource-variable/inter':
+        specifier: ^5.2.5
+        version: 5.2.5
+      '@fontsource-variable/outfit':
+        specifier: ^5.2.5
+        version: 5.2.5
       '@fontsource/jetbrains-mono':
-        specifier: ^5.2.0
-        version: 5.2.0
+        specifier: ^5.2.5
+        version: 5.2.5
       '@radix-ng/primitives':
         specifier: ^0.32.2
         version: 0.32.2(@angular/cdk@19.1.4(@angular/common@19.2.0(@angular/core@19.2.0(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.2.0(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.2.0(rxjs@7.8.1)(zone.js@0.15.0))
@@ -1663,11 +1666,14 @@ packages:
     resolution: {integrity: sha512-lB05FkqEdUg2AA0xEbUz0SnkXT1LcCTa438W4IWTUh4hdOnVbQyOJ81OrDXsJk/LSiJHubgGEFoR5EHq1NsH1A==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@fontsource/inter@5.2.0':
-    resolution: {integrity: sha512-DBexeU5YIEGJQWPI193NNdSaFN3xerUfTBD5k8LfdXyqlU8y1SRCqB145lHjoVa4lBK1iAabHudMbtAk5QxTnA==}
+  '@fontsource-variable/inter@5.2.5':
+    resolution: {integrity: sha512-TrWffUAFOnT8zroE9YmGybagoOgM/HjRqMQ8k9R0vVgXlnUh/vnpbGPAS/Caz1KIlOPnPGh6fvJbb7DHbFCncA==}
 
-  '@fontsource/jetbrains-mono@5.2.0':
-    resolution: {integrity: sha512-tEzhMyMbVNIFLqwN3ExIb2ySb2M71oSg5rXRKMFdDyObqg/zr5NNOMQkXBVQbQosBkcUEYGiIHwX819pi8rc4g==}
+  '@fontsource-variable/outfit@5.2.5':
+    resolution: {integrity: sha512-MejrIp6Cbmd3u5AZtsot8kmhZiyQM5CATsdcBB2hktYIrv5CVekRSUmFDXL4FpF7K70IvFp2ZMfImm5VhnVf7Q==}
+
+  '@fontsource/jetbrains-mono@5.2.5':
+    resolution: {integrity: sha512-TPZ9b/uq38RMdrlZZkl0RwN8Ju9JxuqMETrw76pUQFbGtE1QbwQaNsLlnUrACNNBNbd0NZRXiJJSkC8ajPgbew==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -9462,9 +9468,11 @@ snapshots:
       '@eslint/core': 0.10.0
       levn: 0.4.1
 
-  '@fontsource/inter@5.2.0': {}
+  '@fontsource-variable/inter@5.2.5': {}
 
-  '@fontsource/jetbrains-mono@5.2.0': {}
+  '@fontsource-variable/outfit@5.2.5': {}
+
+  '@fontsource/jetbrains-mono@5.2.5': {}
 
   '@humanfs/core@0.19.1': {}
 

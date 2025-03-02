@@ -1,10 +1,8 @@
 @import '@angular/cdk/overlay-prebuilt.css';
 @import '@angular/cdk/a11y-prebuilt.css';
 
-@import url('@fontsource/inter/index.css');
-@import url('@fontsource/jetbrains-mono/index.css');
-
 @import 'tailwindcss';
+@import './fonts.css';
 
 @plugin 'tailwindcss-animate';
 
@@ -17,6 +15,7 @@
     --font-mono:
         'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
         'Courier New', monospace;
+    --font-heading: 'Outfit', 'Inter', ui-sans-serif, system-ui, sans-serif;
 
     --background: oklch(1 0 0); /* --color-white */
     --foreground: oklch(0.141 0.005 285.823); /* --color-zinc-950 */
