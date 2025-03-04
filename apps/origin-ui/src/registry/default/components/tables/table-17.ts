@@ -22,6 +22,7 @@ import {
     injectFlexRenderContext
 } from '@tanstack/angular-table';
 import { ChevronDown, ChevronUp, Info, LucideAngularModule } from 'lucide-angular';
+import { OriBadgeComponent } from '~/registry/default/ui/badge';
 
 type Item = {
     id: string;
@@ -172,6 +173,13 @@ export default class Table17Component implements OnInit {
                  </div>`
         },
         {
+            header: 'Status',
+            accessorKey: 'status',
+            cell: ({ row }) => {
+                return flexRenderComponent(StatusRow);
+            }
+        },
+        {
             header: 'Balance',
             accessorKey: 'balance',
             cell: ({ row }) => {
@@ -253,4 +261,19 @@ export class Expander<T> {
 
     protected readonly ChevronUp = ChevronUp;
     protected readonly ChevronDown = ChevronDown;
+}
+
+@Component({
+    imports: [
+        OriBadgeComponent
+    ],
+    template: `
+        <ori-badge [class]="cn(context.getValue() === 'Inactive' && 'bg-muted-foreground/60 text-primary-foreground')">
+            {{ context.getValue() }}
+        </ori-badge>
+    `
+})
+export class StatusRow<T> {
+    readonly context = injectFlexRenderContext<CellContext<T, unknown>>();
+    protected readonly cn = cn;
 }

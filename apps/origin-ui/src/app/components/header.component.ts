@@ -4,7 +4,7 @@ import { AppThemeToggleComponent } from './theme-toggle.component';
 import { TwitterButton } from './twitter-button';
 
 @Component({
-    selector: 'app-component-header',
+    selector: 'app-header',
     imports: [AppThemeToggleComponent, GithubButtonComponent, TwitterButton],
     template: `
         <header
