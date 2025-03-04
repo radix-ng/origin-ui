@@ -10,7 +10,7 @@ import { OriRadioGroup, OriRadioGroupItem } from '~/registry/default/ui/radio-gr
             <ori-radio-group class="grid grid-cols-3 gap-2" value="r1">
                 @for (item of items; track $index) {
                     <label
-                        class="border-input has-[ori-radio-group-item>[data-state=checked]]:border-ring has-[ori-radio-group-item>[data-state=checked]]:bg-accent has-[:focus-visible]:outline-ring/70 relative flex cursor-pointer flex-col items-center gap-3 rounded-lg border px-2 py-3 text-center shadow-sm shadow-black/5 outline-offset-2 transition-colors has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[ori-radio-group-item>[data-disabled]]:cursor-not-allowed has-[ori-radio-group-item>[data-disabled]]:opacity-50"
+                        class="border-input has-data-[state=checked]:border-ring focus-within:border-ring focus-within:ring-ring/50 relative flex cursor-pointer flex-col items-center gap-3 rounded-md border px-2 py-3 text-center shadow-xs transition-[color,box-shadow] outline-none focus-within:ring-[3px] has-data-disabled:cursor-not-allowed has-data-disabled:opacity-50"
                     >
                         <ori-radio-group-item
                             class="sr-only after:absolute after:inset-0"

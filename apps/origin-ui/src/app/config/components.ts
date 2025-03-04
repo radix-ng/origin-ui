@@ -150,7 +150,9 @@ export const categories: ComponentCategory[] = [
             { name: 'radio-04' },
             { name: 'radio-05' },
             { name: 'radio-08' },
-            { name: 'radio-13' }]
+            { name: 'radio-13' },
+            { name: 'radio-15' },
+            { name: 'radio-16' }]
     },
     {
         slug: 'select',

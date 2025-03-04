@@ -1,11 +1,11 @@
-import { ChangeDetectionStrategy, Component, Directive, input } from '@angular/core';
-import { cn } from '~/registry/default/lib/utils';
+import { ChangeDetectionStrategy, Component, computed, Directive, input } from '@angular/core';
 import {
     RdxRadioGroupDirective,
     RdxRadioIndicatorDirective,
     RdxRadioItemDirective,
     RdxRadioItemInputDirective
 } from '@radix-ng/primitives/radio';
+import { cn } from '~/registry/default/lib/utils';
 
 @Directive({
     // eslint-disable-next-line @angular-eslint/directive-selector
@@ -19,10 +19,14 @@ import {
         }
     ],
     host: {
-        '[class]': "'grid gap-3'"
+        '[class]': 'hostClasses()'
     }
 })
-export class OriRadioGroup {}
+export class OriRadioGroup {
+    readonly class = input<string>();
+
+    readonly hostClasses = computed(() => cn('grid gap-3', this.class()));
+}
 
 @Component({
     selector: 'ori-radio-group-item',

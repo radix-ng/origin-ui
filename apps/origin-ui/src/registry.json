@@ -1840,6 +1840,38 @@
             }
         },
         {
+            "name": "radio-15",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/radio-group.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/default/components/radios/radio-15.ts",
+                    "type": "registry:component"
+                }
+            ],
+            "meta": {
+                "tags": ["radio", "radix"]
+            }
+        },
+        {
+            "name": "radio-16",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/radio-group.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/default/components/radios/radio-16.ts",
+                    "type": "registry:component"
+                }
+            ],
+            "meta": {
+                "tags": ["radio", "radix"]
+            }
+        },
+        {
             "name": "select-01",
             "type": "registry:component",
             "registryDependencies": [
