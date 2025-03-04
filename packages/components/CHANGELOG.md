@@ -1,3 +1,20 @@
+## 0.6.0 (2025-03-04)
+
+### 🚀 Features
+
+- **radio:** updated examples and css styles ([e462547](https://github.com/radix-ng/origin-ui/commit/e462547))
+- updated to tailwind 4 ([#4](https://github.com/radix-ng/origin-ui/pull/4))
+
+### 🩹 Fixes
+
+- checkboxes, label disabled styles ([3820d90](https://github.com/radix-ng/origin-ui/commit/3820d90))
+- **radio:** disabled state ([fe1766a](https://github.com/radix-ng/origin-ui/commit/fe1766a))
+- **radio:** vertical gap and styles ([97128f8](https://github.com/radix-ng/origin-ui/commit/97128f8))
+
+### ❤️ Thank You
+
+- Oleg Pimenov @pimenovoleg
+
 ## 0.5.0 (2025-03-01)
 
 ### 🚀 Features
