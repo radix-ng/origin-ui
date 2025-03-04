@@ -1167,6 +1167,23 @@
             }
         },
         {
+            "name": "checkbox-07",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/checkbox.json",
+                "https://www.originui-ng.com/r/label.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/default/components/checkboxes/checkbox-07.ts",
+                    "type": "registry:component"
+                }
+            ],
+            "meta": {
+                "tags": ["checkbox", "label", "radix"]
+            }
+        },
+        {
             "name": "dialog-04",
             "type": "registry:component",
             "registryDependencies": [

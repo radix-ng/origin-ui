@@ -34,7 +34,10 @@ const variants = cva(
         // set to null on host element
         '[attr.id]': 'null',
         '[attr.data-state]': 'state',
-        class: 'flex'
+        // for peer with label
+        '[disabled]': 'disabled()',
+        '[attr.data-disabled]': 'disabled() ? "true" : undefined',
+        '[class]': 'hostClasses()'
     },
     template: `
         <button
@@ -83,7 +86,12 @@ export class OriCheckbox {
 
     readonly disabled = input<boolean, BooleanInput>(false, { transform: booleanAttribute });
 
+    readonly class = input<string>();
+
+    protected readonly hostClasses = computed(() => cn('flex peer', this.class()));
+
     readonly className = input<string>();
+
     protected computedClass = computed(() => cn(variants({ class: this.className() })));
 
     protected readonly iconName = model('check');

@@ -8,7 +8,7 @@ import { OriLabel } from '~/registry/default/ui/label';
     imports: [OriCheckbox, OriLabel],
     template: `
         <div class="flex items-center gap-2">
-            <ori-checkbox class="flex" id="checkbox-01" />
+            <ori-checkbox id="checkbox-01" />
             <label oriLabel htmlFor="checkbox-01">Simple checkbox</label>
         </div>
     `

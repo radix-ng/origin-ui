@@ -9,10 +9,10 @@ import { OriLabel } from '~/registry/default/ui/label';
     imports: [OriCheckbox, OriLabel, NgStyle],
     template: `
         <div
-            class="flex items-center gap-2"
-            [ngStyle]="{ '--primary': '238.7 83.5% 66.7%', '--ring': '238.7 83.5% 66.7%' }"
+            class="[--primary:var(--color-indigo-500)] [--ring:var(--color-indigo-300)] in-[.dark]:[--primary:var(--color-indigo-500)] in-[.dark]:[--ring:var(--color-indigo-900)]"
+            [class]="'flex items-center gap-2'"
         >
-            <ori-checkbox class="flex" id="checkbox-03" defaultChecked />
+            <ori-checkbox id="checkbox-03" defaultChecked />
             <label oriLabel htmlFor="checkbox-03">Colored checkbox</label>
         </div>
     `
