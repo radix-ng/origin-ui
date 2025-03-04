@@ -20,7 +20,7 @@ import { OriRadioGroup, OriRadioGroupItem } from '~/registry/default/ui/radio-gr
                     >
                         <ori-radio-group-item class="sr-only" [value]="item" />
                         <svg
-                            class="remixicon transition-all group-hover:scale-110"
+                            class="remixicon text-input text-amber-500 transition-all group-hover:scale-110"
                             [class.text-amber-500]="(hoverRating() ?? currentRating()) >= item"
                             [class.text-input]="(hoverRating() ?? currentRating()) < item"
                             viewBox="0 0 24 24"
