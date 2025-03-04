@@ -1,5 +1,5 @@
 import { NgTemplateOutlet } from '@angular/common';
-import { Component, OnInit, signal } from '@angular/core';
+import { Component, input, OnInit, output, signal } from '@angular/core';
 import { OriButton } from '@origin-ui/components/button';
 import {
     OriTable,
@@ -21,7 +21,7 @@ import {
     getExpandedRowModel,
     injectFlexRenderContext
 } from '@tanstack/angular-table';
-import { ChevronDown, ChevronUp, LucideAngularModule } from 'lucide-angular';
+import { ChevronDown, ChevronUp, Info, LucideAngularModule } from 'lucide-angular';
 
 type Item = {
     id: string;
@@ -103,7 +103,9 @@ type Item = {
                                                 <span
                                                     class="me-3 mt-0.5 flex w-7 shrink-0 justify-center"
                                                     aria-hidden="true"
-                                                ></span>
+                                                >
+                                                    <lucide-angular class="opacity-60" [img]="Info" size="16" />
+                                                </span>
                                                 <p class="text-sm">
                                                     {{ row.original.note }}
                                                 </p>
@@ -142,7 +144,14 @@ export default class Table17Component implements OnInit {
             id: 'expander',
             header: () => null,
             cell: ({ row }) => {
-                return row.getCanExpand() ? flexRenderComponent(Expander) : undefined;
+                return flexRenderComponent(Expander, {
+                    inputs: {
+                        expanded: row.getIsExpanded()
+                    },
+                    outputs: {
+                        click: row.getToggleExpandedHandler()
+                    }
+                });
             }
         },
         {
@@ -203,6 +212,7 @@ export default class Table17Component implements OnInit {
     }
 
     protected readonly cn = cn;
+    protected readonly Info = Info;
 }
 
 @Component({
@@ -214,18 +224,18 @@ export default class Table17Component implements OnInit {
     template: `
         <button
             class="text-muted-foreground size-7 shadow-none"
-            [attr.aria-expanded]="context.row.getIsExpanded()"
+            [attr.aria-expanded]="expanded()"
             [attr.aria-label]="
-                context.row.getIsExpanded()
+                expanded()
                     ? 'Collapse details for ' + context.row.original
                     : 'Expand details for ' + context.row.original
             "
-            (click)="context.row.getToggleExpandedHandler()"
+            (click)="click.emit($event)"
             oriButton
             variant="ghost"
             size="icon"
         >
-            @if (context.row.getIsExpanded()) {
+            @if (expanded()) {
                 <lucide-angular class="opacity-60" [img]="ChevronUp" size="16" aria-hidden="true" />
             } @else {
                 <lucide-angular class="opacity-60" [img]="ChevronDown" size="16" aria-hidden="true" />
@@ -235,6 +245,11 @@ export default class Table17Component implements OnInit {
 })
 export class Expander<T> {
     readonly context = injectFlexRenderContext<CellContext<T, unknown>>();
+
+    readonly expanded = input.required<boolean>();
+
+    // eslint-disable-next-line @angular-eslint/no-output-native
+    readonly click = output<MouseEvent>();
 
     protected readonly ChevronUp = ChevronUp;
     protected readonly ChevronDown = ChevronDown;
