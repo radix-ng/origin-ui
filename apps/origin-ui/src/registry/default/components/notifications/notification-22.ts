@@ -1,7 +1,7 @@
-import { Component, output } from '@angular/core';
-import { OriButton } from '~/registry/default/ui/button';
+import { Component, input, output } from '@angular/core';
 import { CircleCheck, LucideAngularModule, X } from 'lucide-angular';
-import { toast } from 'ngx-sonner';
+import { toast, toastState } from 'ngx-sonner';
+import { OriButton } from '~/registry/default/ui/button';
 
 @Component({
     selector: 'demo-notification-22',
@@ -11,8 +11,18 @@ import { toast } from 'ngx-sonner';
     `
 })
 export default class Notification22Component {
+    toastIdCounter = 0;
+
     openSonner() {
-        toast.custom(CustomSonner);
+        toast.custom(CustomSonner, {
+            componentProps: {
+                toastId: `custom-toast-${this.toastIdCounter}`,
+                toast
+            },
+            id: `custom-toast-${this.toastIdCounter}`
+        });
+
+        this.toastIdCounter++;
     }
 }
 
@@ -23,7 +33,7 @@ export default class Notification22Component {
         LucideAngularModule
     ],
     template: `
-        <div class="border-border bg-background w-[var(--width)] rounded-lg border px-4 py-3">
+        <div class="bg-background text-foreground w-full rounded-md border px-4 py-3 shadow-lg sm:w-[var(--width)]">
             <div class="flex gap-2">
                 <div class="flex grow gap-3">
                     <lucide-angular
@@ -35,20 +45,18 @@ export default class Notification22Component {
                     />
                     <div class="flex grow justify-between gap-12">
                         <p class="text-sm">Message sent</p>
-                        <div class="whitespace-nowrap text-sm">
+                        <div class="text-sm whitespace-nowrap">
                             <button class="text-sm font-medium hover:underline">View</button>
                             {{ ' ' }}
                             <span class="text-muted-foreground mx-1">·</span>
                             {{ ' ' }}
-                            <button class="text-sm font-medium hover:underline" (click)="closeToast.emit()">
-                                Undo
-                            </button>
+                            <button class="text-sm font-medium hover:underline" (click)="close()">Undo</button>
                         </div>
                     </div>
                 </div>
                 <button
                     class="group -my-1.5 -me-2 size-8 shrink-0 p-0 hover:bg-transparent"
-                    (click)="closeToast.emit()"
+                    (click)="close()"
                     oriButton
                     variant="ghost"
                     aria-label="Close banner"
@@ -66,8 +74,16 @@ export default class Notification22Component {
     `
 })
 export class CustomSonner {
-    closeToast = output<void>();
+    readonly toast = input.required<typeof toastState>();
+
+    readonly toastId = input.required<string>();
+
+    readonly closeToast = output<void>();
 
     protected readonly CircleCheck = CircleCheck;
     protected readonly X = X;
+
+    close() {
+        this.toast().dismiss(this.toastId());
+    }
 }

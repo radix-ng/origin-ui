@@ -27,12 +27,12 @@ export class OriSonner {
 
     readonly toastOptions = input<ToasterProps['toastOptions']>({
         classes: {
-            toast: 'group toast group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg group-[.toaster]:shadow-black/5',
+            toast: 'group toast group-[.toaster]-not-data-[styled=false]:bg-background group-[.toaster]-not-data-[styled=false]:text-foreground group-[.toaster]-not-data-[styled=false]:border-border group-[.toaster]-not-data-[styled=false]:shadow-lg',
             description: 'group-[.toast]:text-muted-foreground',
             actionButton:
-                'group-[.toast]:data-[button]:h-8 group-[.toast]:data-[button]:rounded-lg group-[.toast]:data-[button]:px-3 group-[.toast]:data-[button]:text-xs group-[.toast]:data-[button]:font-medium',
+                'data-button:group-[.toast]:h-8 data-button:group-[.toast]:rounded-md data-button:group-[.toast]:px-3 data-button:group-[.toast]:text-xs data-button:group-[.toast]:font-medium',
             cancelButton:
-                'group-[.toast]:data-[button]:h-8 group-[.toast]:data-[button]:rounded-lg group-[.toast]:data-[button]:px-3 group-[.toast]:data-[button]:text-xs group-[.toast]:data-[button]:font-medium'
+                'data-button:group-[.toast]:h-8 data-button:group-[.toast]:rounded-md data-button:group-[.toast]:px-3 data-button:group-[.toast]:text-xs data-button:group-[.toast]:font-medium'
         }
     });
 

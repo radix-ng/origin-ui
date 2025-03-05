@@ -1,16 +1,15 @@
 import { ChangeDetectionStrategy, Component, computed, Directive, input } from '@angular/core';
+import { cn } from '~/registry/default/lib/utils';
 import {
     RdxRadioGroupDirective,
     RdxRadioIndicatorDirective,
     RdxRadioItemDirective,
     RdxRadioItemInputDirective
 } from '@radix-ng/primitives/radio';
-import { cn } from '~/registry/default/lib/utils';
 
 @Directive({
     // eslint-disable-next-line @angular-eslint/directive-selector
     selector: 'ori-radio-group',
-    standalone: true,
     hostDirectives: [
         {
             directive: RdxRadioGroupDirective,
