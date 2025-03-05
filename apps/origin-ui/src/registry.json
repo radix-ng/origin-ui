@@ -649,6 +649,74 @@
             }
         },
         {
+            "name": "badge-03",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/badge.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/default/components/badges/badge-03.ts",
+                    "type": "registry:component"
+                }
+            ],
+            "meta": {
+                "tags": ["badge"],
+                "style": 1
+            }
+        },
+        {
+            "name": "badge-04",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/badge.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/default/components/badges/badge-04.ts",
+                    "type": "registry:component"
+                }
+            ],
+            "meta": {
+                "tags": ["badge"],
+                "style": 1
+            }
+        },
+        {
+            "name": "badge-05",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/badge.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/default/components/badges/badge-05.ts",
+                    "type": "registry:component"
+                }
+            ],
+            "meta": {
+                "tags": ["badge"],
+                "style": 1
+            }
+        },
+        {
+            "name": "badge-06",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/badge.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/default/components/badges/badge-06.ts",
+                    "type": "registry:component"
+                }
+            ],
+            "meta": {
+                "tags": ["badge"],
+                "style": 1
+            }
+        },
+        {
             "name": "badge-07",
             "type": "registry:component",
             "registryDependencies": [
@@ -1468,6 +1536,42 @@
             ],
             "meta": {
                 "tags": ["input"]
+            }
+        },
+        {
+            "name": "notification-11",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/default/components/notifications/notification-11.ts",
+                    "type": "registry:component"
+                }
+            ],
+            "meta": {
+                "tags": ["notification"],
+                "colSpan": 2,
+                "style": 1
+            }
+        },
+        {
+            "name": "notification-12",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://www.originui-ng.com/r/button.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/default/components/notifications/notification-12.ts",
+                    "type": "registry:component"
+                }
+            ],
+            "meta": {
+                "tags": ["notification"],
+                "colSpan": 2,
+                "style": 1
             }
         },
         {

@@ -1,43 +1,28 @@
 import { Component } from '@angular/core';
-import { badgeVariants } from '~/registry/default/ui/badge';
-import { OriCheckbox } from '~/registry/default/ui/checkbox';
-import { OriLabel } from '~/registry/default/ui/label';
-import { cn } from '~/registry/default/lib/utils';
 import { Check, LucideAngularModule } from 'lucide-angular';
+import { OriBadgeComponent } from '~/registry/default/ui/badge';
+import { OriCheckbox } from '~/registry/default/ui/checkbox';
 
 @Component({
     selector: 'demo-badge-11',
-    imports: [LucideAngularModule, OriLabel, OriCheckbox],
+    imports: [LucideAngularModule, OriCheckbox, OriBadgeComponent],
     template: `
-        <label
-            [class]="
-                cn(
-                    badgeVariants({ variant: 'default' }),
-                    'hover:bg-primary/80 has-[ori-checkbox>[data-state=unchecked]]:bg-muted has-[ori-checkbox>[data-state=unchecked]]:text-muted-foreground has-[:focus-visible]:outline-ring/70 cursor-pointer has-[:focus-visible]:outline has-[:focus-visible]:outline-2'
-                )
-            "
-            oriLabel
+        <ori-badge
+            class="has-data-[state=unchecked]:bg-muted has-data-[state=unchecked]:text-muted-foreground has-focus-visible:border-ring has-focus-visible:ring-ring/50 relative flex outline-none has-focus-visible:ring-[3px]"
         >
-            <div class="flex items-center gap-1">
-                <ori-checkbox
-                    id="badge-selectable"
-                    className="peer sr-only after:absolute after:inset-0"
-                    defaultChecked
-                />
-                <lucide-angular
-                    class="hidden peer-data-[state=checked]:block"
-                    [img]="CheckIcon"
-                    size="12"
-                    strokeWidth="2"
-                    aria-hidden="true"
-                />
-                <span class="select-none">Selectable</span>
-            </div>
-        </label>
+            <ori-checkbox class="peer sr-only after:absolute after:inset-0" id="badge-selectable" defaultChecked />
+            <lucide-angular
+                class="[&_svg]:hidden peer-data-[state=checked]:[&_svg]:block"
+                [img]="CheckIcon"
+                size="12"
+                aria-hidden="true"
+            />
+            <label class="cursor-pointer select-none after:absolute after:inset-0" for="badge-selectable">
+                Selectable
+            </label>
+        </ori-badge>
     `
 })
-export default class Badge11Component {
+export default class Badge11 {
     protected readonly CheckIcon = Check;
-    protected readonly cn = cn;
-    protected readonly badgeVariants = badgeVariants;
 }
