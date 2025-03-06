@@ -10,17 +10,25 @@ import { categories } from './config/components';
         NgOptimizedImage
     ],
     template: `
-        <img class="w-full dark:hidden" [ngSrc]="lightSrc()" [alt]="altText()" width="268" height="198" />
-        <img
-            class="hidden w-full dark:block"
-            [ngSrc]="darkSrc()"
-            [alt]="altText() + ' dark'"
-            width="268"
-            height="198"
-        />
+        <a
+            class="peer relative inline-flex overflow-hidden rounded-xl border sm:flex dark:border-zinc-700/80"
+            [href]="slug()"
+            tabIndex="-1"
+        >
+            <img class="w-full dark:hidden" [alt]="altText()" [ngSrc]="lightSrc()" width="268" height="198" />
+            <img
+                class="hidden w-full dark:block"
+                [alt]="altText() + ' dark'"
+                [ngSrc]="darkSrc()"
+                width="268"
+                height="198"
+            />
+        </a>
     `
 })
 export class OriImageComponent {
+    readonly slug = input<string>();
+
     private imageBasePathSignal = signal<string>('');
     private altSignal = signal<string>('');
 
@@ -44,13 +52,7 @@ export class OriImageComponent {
     ],
     template: `
         <div class="space-y-3 text-center">
-            <a
-                class="peer inline-flex overflow-hidden rounded-xl border sm:flex dark:border-zinc-700/80"
-                [href]="slug()"
-                tabIndex="-1"
-            >
-                <ori-image-component [imageBasePath]="imageBasePath()" />
-            </a>
+            <ori-image-component [imageBasePath]="imageBasePath()" [slug]="slug()" />
 
             <div class="[&_a]:peer-hover:underline">
                 <h2>
