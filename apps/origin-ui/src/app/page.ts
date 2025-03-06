@@ -11,7 +11,7 @@ import { categories } from './config/components';
     ],
     template: `
         <a
-            class="peer relative inline-flex overflow-hidden rounded-xl border sm:flex dark:border-zinc-700/80"
+            class="peer relative inline-flex w-[65%] overflow-hidden rounded-xl border sm:flex sm:w-auto dark:border-zinc-700/80"
             [href]="slug()"
             tabIndex="-1"
         >
