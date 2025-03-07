@@ -1,3 +1,13 @@
+## 0.6.2 (2025-03-07)
+
+### 🩹 Fixes
+
+- components build ([a64a137](https://github.com/radix-ng/origin-ui/commit/a64a137))
+
+### ❤️ Thank You
+
+- Oleg Pimenov @pimenovoleg
+
 ## 0.6.1 (2025-03-07)
 
 ### 🩹 Fixes
