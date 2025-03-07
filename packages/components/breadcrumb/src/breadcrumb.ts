@@ -95,7 +95,8 @@ export class OriBreadcrumbSeparatorComponent {
     changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [LucideAngularModule],
     template: `
-        <lucide-angular [img]="MoreHorizontal" />
+        <lucide-angular [img]="MoreHorizontal" size="16" />
+        <span class="sr-only">More</span>
     `,
     host: {
         role: 'presentation',

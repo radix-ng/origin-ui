@@ -230,7 +230,8 @@ export const categories: ComponentCategory[] = [
             { name: 'table-11' },
             { name: 'table-12' },
             { name: 'table-14' },
-            { name: 'table-17' }]
+            { name: 'table-17' },
+            { name: 'table-18' }]
     },
     {
         slug: 'tabs',
