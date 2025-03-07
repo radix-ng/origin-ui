@@ -36,3 +36,7 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
       - uses: nrwl/nx-set-shas@v4
+
+      - name: Build Components
+        run: pnpm components:build
+        shell: bash
