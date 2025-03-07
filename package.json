@@ -12,6 +12,7 @@
         "----Components-------": "-----------------------------------------------------------------------",
         "components:build": "nx run components:build",
         "----Release----------": "-----------------------------------------------------------------------",
+        "release:components:dry-run": "nx release --dry-run",
         "release:components": "nx release --skip-publish",
         "----Others-------": "-----------------------------------------------------------------------",
         "prettier": "prettier '**/*.{css,scss,md,mdx,yml,json,js,cjs,mjs,html,ts}' --check",

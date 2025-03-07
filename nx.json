@@ -83,7 +83,7 @@
         }
     },
     "release": {
-        "projects": ["packages/*"],
+        "projects": ["components"],
         "releaseTagPattern": "{version}",
         "version": {
             "conventionalCommits": true

@@ -1,6 +1,5 @@
 import { BooleanInput } from '@angular/cdk/coercion';
 import { booleanAttribute, ChangeDetectionStrategy, Component, computed, Directive, input } from '@angular/core';
-import { cn } from '~/registry/default/lib/utils';
 import {
     RdxDropdownMenuContentDirective,
     RdxDropdownMenuItemCheckboxDirective,
@@ -13,6 +12,7 @@ import {
     RdxDropdownMenuTriggerDirective
 } from '@radix-ng/primitives/dropdown-menu';
 import { Check, ChevronRight, Circle, LucideAngularModule } from 'lucide-angular';
+import { cn } from '~/registry/default/lib/utils';
 
 @Directive({
     selector: '[oriDropdownMenuTrigger]',
@@ -50,7 +50,7 @@ export class OriDropdownMenuContent {
 
     readonly computedClass = computed(() =>
         cn(
-            'z-50 min-w-40 overflow-hidden rounded-lg border border-border bg-popover p-1 text-popover-foreground shadow-lg shadow-black/5 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2',
+            'bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 min-w-40 overflow-hidden rounded-md border p-1 shadow-lg',
             this.class()
         )
     );
@@ -98,7 +98,7 @@ export class OriDropdownMenuItem {
 
     computedClass = computed(() =>
         cn(
-            'relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
+            'focus:bg-accent focus:text-accent-foreground data-[variant=destructive]:text-destructive-foreground data-[variant=destructive]:focus:bg-destructive/10 dark:data-[variant=destructive]:focus:bg-destructive/40 data-[variant=destructive]:focus:text-destructive-foreground data-[variant=destructive]:*:[svg]:!text-destructive-foreground relative flex cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 data-[inset]:pl-8 [&_svg]:pointer-events-none [&_svg]:shrink-0',
             this.inset() && 'pl-8',
             this.class()
         )
@@ -120,7 +120,11 @@ export class OriDropdownMenuLabel {
     });
 
     readonly computedClass = computed(() =>
-        cn('px-2 py-1.5 text-xs font-medium text-muted-foreground', this.inset() && 'pl-8', this.class())
+        cn(
+            'text-muted-foreground px-2 py-1.5 text-xs font-medium data-[inset]:pl-8',
+            this.inset() && 'pl-8',
+            this.class()
+        )
     );
 }
 
@@ -134,7 +138,7 @@ export class OriDropdownMenuLabel {
 export class OriDropdownMenuSeparator {
     readonly class = input<string>();
 
-    readonly computedClass = computed(() => cn('-mx-1 my-1 h-px bg-border', this.class()));
+    readonly computedClass = computed(() => cn('bg-border -mx-1 my-1 h-px', this.class()));
 }
 
 @Directive({
@@ -146,7 +150,12 @@ export class OriDropdownMenuSeparator {
 export class OriDropdownMenuShortcut {
     readonly class = input<string>();
 
-    readonly computedClass = computed(() => cn('ml-auto text-xs tracking-widest opacity-60', this.class()));
+    readonly computedClass = computed(() =>
+        cn(
+            'bg-background text-muted-foreground/70 ms-auto -me-1 inline-flex h-5 max-h-full items-center rounded border px-1 font-[inherit] text-[0.625rem] font-medium',
+            this.class()
+        )
+    );
 }
 
 @Component({
@@ -219,7 +228,7 @@ export class OriDropdownMenuRadioGroup {}
         '[class]': 'computedClass()'
     },
     template: `
-        <span class="absolute left-2 flex h-3.5 w-3.5 items-center justify-center">
+        <span class="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center">
             <lucide-angular class="h-2 w-2 fill-current" [img]="Circle" rdxDropdownMenuItemIndicator />
         </span>
         <ng-content></ng-content>

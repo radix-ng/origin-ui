@@ -12,14 +12,14 @@
                 "{workspaceRoot}/dist/{projectRoot}"
             ],
             "options": {
-                "project": "packages/components/ng-package.json"
+                "project": "{projectRoot}/ng-package.json"
             },
             "configurations": {
                 "production": {
-                    "tsConfig": "packages/components/tsconfig.lib.prod.json"
+                    "tsConfig": "{projectRoot}/tsconfig.lib.prod.json"
                 },
                 "development": {
-                    "tsConfig": "packages/components/tsconfig.lib.json"
+                    "tsConfig": "{projectRoot}/tsconfig.lib.json"
                 }
             },
             "defaultConfiguration": "production"
@@ -35,6 +35,11 @@
         },
         "lint": {
             "executor": "@nx/eslint:lint"
+        },
+        "nx-release-publish": {
+            "options": {
+                "packageRoot": "{workspaceRoot}/dist/{projectRoot}"
+            }
         }
     }
 }
