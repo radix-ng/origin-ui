@@ -1,3 +1,13 @@
+## 0.6.1 (2025-03-07)
+
+### 🩹 Fixes
+
+- **sonner:** close event for custom sonner ([df9825e](https://github.com/radix-ng/origin-ui/commit/df9825e))
+
+### ❤️ Thank You
+
+- Oleg Pimenov @pimenovoleg
+
 ## 0.6.0 (2025-03-04)
 
 ### 🚀 Features
