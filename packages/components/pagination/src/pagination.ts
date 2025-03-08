@@ -180,3 +180,15 @@ export class OriPaginationLast {
         )
     );
 }
+
+@Directive({
+    selector: 'ul[oriPaginationContent]',
+    host: {
+        '[class]': 'hostClasses()'
+    }
+})
+export class OriPaginationContent {
+    readonly class = input<ClassValue>();
+
+    protected readonly hostClasses = computed(() => cn('flex flex-row items-center gap-1', this.class()));
+}

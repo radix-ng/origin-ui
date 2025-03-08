@@ -8,7 +8,6 @@ import {
     OriTableRow
 } from '@origin-ui/components/table';
 import { cn } from '@origin-ui/components/utils';
-import { RdxPaginationListDirective } from '@radix-ng/primitives/pagination';
 import {
     CellContext,
     ColumnDef,
@@ -35,7 +34,7 @@ import {
 import { OriBadgeComponent } from '~/registry/default/ui/badge';
 import { OriButton } from '~/registry/default/ui/button';
 import { OriCheckbox } from '~/registry/default/ui/checkbox';
-import { OriPagination, OriPaginationPrevious } from '~/registry/default/ui/pagination';
+import { OriPagination, OriPaginationContent } from '~/registry/default/ui/pagination';
 
 type Item = {
     id: string;
@@ -62,8 +61,7 @@ type Item = {
         OriTableCell,
         OriTableRow,
         OriPagination,
-        RdxPaginationListDirective,
-        OriPaginationPrevious,
+        OriPaginationContent,
         OriButton
     ],
     template: `
@@ -171,7 +169,7 @@ type Item = {
                     <!--                    /* Pagination buttons */-->
                     <div>
                         <nav oriPagination>
-                            <ul class="flex flex-row items-center gap-1" rdxPaginationList>
+                            <ul oriPaginationContent>
                                 <li>
                                     <button
                                         class="disabled:pointer-events-none disabled:opacity-50"
