@@ -1,6 +1,6 @@
 import { BooleanInput } from '@angular/cdk/coercion';
 import { booleanAttribute, ChangeDetectionStrategy, Component, input, output } from '@angular/core';
-import { cn } from '~/registry/default/lib/utils';
+import { cn } from '@origin-ui/components/utils';
 import { ChevronDown, LucideAngularModule } from 'lucide-angular';
 
 @Component({

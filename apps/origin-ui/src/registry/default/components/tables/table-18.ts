@@ -34,7 +34,9 @@ import {
 import { OriBadgeComponent } from '~/registry/default/ui/badge';
 import { OriButton } from '~/registry/default/ui/button';
 import { OriCheckbox } from '~/registry/default/ui/checkbox';
+import { OriLabel } from '~/registry/default/ui/label';
 import { OriPagination, OriPaginationContent } from '~/registry/default/ui/pagination';
+import { OriSelectNative } from '~/registry/default/ui/select-native';
 
 type Item = {
     id: string;
@@ -62,7 +64,9 @@ type Item = {
         OriTableRow,
         OriPagination,
         OriPaginationContent,
-        OriButton
+        OriButton,
+        OriSelectNative,
+        OriLabel
     ],
     template: `
         <div class="relative w-full overflow-auto">
@@ -153,7 +157,18 @@ type Item = {
                 <!-- /* Pagination */-->
                 <div class="flex items-center justify-between gap-8">
                     <!--                    /* Results per page */-->
-                    <div class="flex items-center gap-3"></div>
+                    <div class="flex items-center gap-3">
+                        <label class="max-sm:sr-only" htmlFor="table-18-select" oriLabel>Rows per page</label>
+                        <ori-select-native
+                            id="table-18-select"
+                            [value]="table.getState().pagination.pageSize.toString()"
+                            (onValueChange)="handlePageSizeChange($event)"
+                        >
+                            @for (pageSize of [5, 10, 25, 50]; track pageSize) {
+                                <option [value]="pageSize">{{ pageSize }}</option>
+                            }
+                        </ori-select-native>
+                    </div>
                     <!--                    /* Page number information */-->
                     <div class="text-muted-foreground flex grow justify-end text-sm whitespace-nowrap">
                         <p class="text-muted-foreground text-sm whitespace-nowrap" aria-live="polite">
@@ -292,7 +307,10 @@ export default class Table18 implements OnInit {
         }
     ];
 
-    readonly pagination = signal<PaginationState>({ pageIndex: 0, pageSize: 5 });
+    readonly pagination = signal<PaginationState>({
+        pageIndex: 0,
+        pageSize: 5
+    });
 
     readonly sorting = signal<SortingState>([
         {
@@ -335,6 +353,11 @@ export default class Table18 implements OnInit {
         );
     }
 
+    handlePageSizeChange(event: Event) {
+        const value = (event.target as HTMLSelectElement).value;
+        this.table.setPageSize(Number(value));
+    }
+
     onHeaderKeyDown(e: any, header: any) {
         // Enhanced keyboard handling for sorting
         if (header.column.getCanSort() && (e.key === 'Enter' || e.key === ' ')) {
@@ -357,6 +380,7 @@ export default class Table18 implements OnInit {
     protected readonly ChevronRight = ChevronRight;
     protected readonly ChevronFirst = ChevronFirst;
     protected readonly ChevronLast = ChevronLast;
+    protected readonly Number = Number;
 }
 
 @Component({

@@ -1,1 +1,1 @@
-export * from './src/select-native.component';
+export * from './src/select-native';
