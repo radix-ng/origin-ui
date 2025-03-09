@@ -1,7 +1,19 @@
-# components
+<h1 align="center">
+Origin UI for Angular
+</h1>
 
-This library was generated with [Nx](https://nx.dev).
+<p>
+A collection of copy-and-paste components for quickly build application UIs.
 
-## Running unit tests
+It&lsquo;s free, open-source, and ready to drop into your projects.
+<p>
 
-Run `nx test components` to execute the unit tests.
+## Installation
+
+```bash
+npm install @origin-ui/components @radix-ng/primitives
+```
+
+## Documentation
+
+For full documentation, visit [originui-ng.com](https://originui-ng.com).
