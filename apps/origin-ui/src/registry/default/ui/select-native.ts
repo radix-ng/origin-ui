@@ -22,9 +22,9 @@ import { ChevronDown, LucideAngularModule } from 'lucide-angular';
             [value]="value()"
             [class]="
                 cn(
-                    'border-input bg-background text-foreground focus-visible:border-ring focus-visible:ring-ring/20 has-[option[disabled]:checked]:text-muted-foreground peer inline-flex w-full cursor-pointer appearance-none items-center rounded-lg border text-sm shadow-sm shadow-black/5 transition-shadow focus-visible:ring-[3px] focus-visible:outline-none disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50',
-                    multiple() ? '[&_option:checked]:bg-accent py-1 [&>*]:px-3 [&>*]:py-1' : 'h-9 ps-3 pe-8',
-                    className
+                    'peer border-input text-foreground focus-visible:border-ring focus-visible:ring-ring/50 has-[option[disabled]:checked]:text-muted-foreground aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex w-full cursor-pointer appearance-none items-center rounded-md border text-sm shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50',
+                    multiple() ? '[&_option:checked]:bg-accent py-1 *:px-3 *:py-1' : 'h-9 ps-3 pe-8',
+                    className()
                 )
             "
             (change)="onValueChange.emit($event)"

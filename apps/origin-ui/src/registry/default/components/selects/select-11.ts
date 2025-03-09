@@ -6,7 +6,7 @@ import { OriSelectNative } from '~/registry/default/ui/select-native';
     selector: 'demo-select-11',
     imports: [OriSelectNative, OriLabel],
     template: `
-        <div class="flex flex-col gap-2">
+        <div class="*:not-first:mt-2">
             <label [htmlFor]="'select-11'" oriLabel>Select with option groups (native)</label>
             <ori-select-native [id]="'select-11'">
                 <optgroup label="Frontend">

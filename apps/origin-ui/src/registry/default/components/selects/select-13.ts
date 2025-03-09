@@ -14,7 +14,7 @@ import { OriSelectNative } from '~/registry/default/ui/select-native';
             >
                 Select with overlapping label (native)
             </label>
-            <ori-select-native [id]="'select-13'">
+            <ori-select-native id="select-13" value="">
                 <option value="" disabled>Select framework</option>
                 <option value="s1">React</option>
                 <option value="s2">Next.js</option>
