@@ -66,13 +66,6 @@ export function useFileUpload(options: FileUploadOptions = {}): [FileUploadState
     const errors = signal<string[]>([]);
     const inputRef = signal<HTMLInputElement | null>(null);
 
-    const formatBytes = (bytes: number, dm = 2): string => {
-        if (bytes === 0) return '0 Bytes';
-        const k = 1024;
-        const i = Math.floor(Math.log(bytes) / Math.log(k));
-        return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + ['Bytes', 'KB', 'MB', 'GB', 'TB'][i];
-    };
-
     const validateFile = (file: File | FileMetadata): string | null => {
         const size = file instanceof File ? file.size : file.size;
         const name = file instanceof File ? file.name : file.name;
@@ -211,3 +204,16 @@ export function useFileUpload(options: FileUploadOptions = {}): [FileUploadState
         }
     ];
 }
+
+// Helper function to format bytes to human-readable format
+export const formatBytes = (bytes: number, decimals = 2): string => {
+    if (bytes === 0) return '0 Bytes';
+
+    const k = 1024;
+    const dm = decimals < 0 ? 0 : decimals;
+    const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+
+    const i = Math.floor(Math.log(bytes) / Math.log(k));
+
+    return Number.parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + sizes[i];
+};
