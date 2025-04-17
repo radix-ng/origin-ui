@@ -3174,6 +3174,21 @@
                 "tags": ["tooltip", "radix"],
                 "style": 1
             }
+        },
+        {
+            "name": "file-upload-01",
+            "type": "registry:component",
+            "registryDependencies": ["https://originui-ng.com/r/button.json"],
+            "files": [
+                {
+                    "path": "registry/default/components/file-uploads/file-upload-01.ts",
+                    "type": "registry:component"
+                }
+            ],
+            "meta": {
+                "tags": ["button", "upload", "user", "avatar", "profile", "image"],
+                "style": 2
+            }
         }
     ]
 }
