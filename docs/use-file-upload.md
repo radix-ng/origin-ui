@@ -43,7 +43,7 @@ import { useFileUpload, FileWithPreview } from '../hooks/use-file-upload';
       [attr.accept]="inputProps.accept"
       [multiple]="inputProps.multiple"
       (change)="inputProps.onChange($event)"
-      [ref]="inputProps.ref"
+      #fileInput
       hidden
     />
 
@@ -62,7 +62,7 @@ import { useFileUpload, FileWithPreview } from '../hooks/use-file-upload';
   `,
 })
 export class UploaderComponent {
-  readonly [state, actions] = useFileUpload({
+  private readonly hookResult = useFileUpload({
     accept: 'image/*',
     multiple: true,
     maxFiles: 5,
@@ -71,12 +71,21 @@ export class UploaderComponent {
     onFilesAdded: added => console.log('Newly added:', added)
   });
 
-  readonly inputProps = actions.getInputProps();
+  readonly state = this.hookResult[0];
+  readonly actions = this.hookResult[1];
 
-  get files()    { return state.files(); }
-  get isDragging() { return state.isDragging(); }
-  get errors()   { return state.errors(); }
-  get multiple() { return actions.getInputProps().multiple; }
+  readonly fileInput = viewChild<ElementRef>('fileInput');
+
+  readonly inputProps = this.actions.getInputProps();
+
+  get files()    { return this.state.files(); }
+  get isDragging() { return this.state.isDragging(); }
+  get errors()   { return this.state.errors(); }
+  get multiple() { return this.actions.getInputProps().multiple; } 
+
+  ngAfterViewInit() {
+    this.actions.getInputProps().ref.set(this.fileInput()?.nativeElement as HTMLInputElement);
+  }
 }
 
 ```

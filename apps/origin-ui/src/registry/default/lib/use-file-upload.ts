@@ -1,20 +1,20 @@
 import { signal, WritableSignal } from '@angular/core';
 
-export interface FileMetadata {
+export type FileMetadata = {
     name: string;
     size: number;
     type: string;
     url: string;
     id: string;
-}
+};
 
-export interface FileWithPreview {
+export type FileWithPreview = {
     file: File | FileMetadata;
     id: string;
     preview?: string;
-}
+};
 
-export interface FileUploadOptions {
+export type FileUploadOptions = {
     maxFiles?: number;
     maxSize?: number;
     accept?: string;
@@ -22,15 +22,15 @@ export interface FileUploadOptions {
     initialFiles?: FileMetadata[];
     onFilesChange?: (files: FileWithPreview[]) => void;
     onFilesAdded?: (addedFiles: FileWithPreview[]) => void;
-}
+};
 
-export interface FileUploadState {
+export type FileUploadState = {
     files: WritableSignal<FileWithPreview[]>;
     isDragging: WritableSignal<boolean>;
     errors: WritableSignal<string[]>;
-}
+};
 
-export interface FileUploadActions {
+export type FileUploadActions = {
     addFiles: (files: FileList | File[]) => void;
     removeFile: (id: string) => void;
     clearFiles: () => void;
@@ -47,7 +47,7 @@ export interface FileUploadActions {
         onChange: (e: Event) => void;
         ref: WritableSignal<HTMLInputElement | null>;
     };
-}
+};
 
 export function useFileUpload(options: FileUploadOptions = {}): [FileUploadState, FileUploadActions] {
     const {
