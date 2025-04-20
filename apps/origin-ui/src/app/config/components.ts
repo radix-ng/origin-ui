@@ -122,6 +122,7 @@ export const categories: ComponentCategory[] = [
         name: 'File Upload',
         components: [
             { name: 'file-upload-01' },
+            { name: 'file-upload-02' },
             { name: 'file-upload-03' }]
     },
     {
