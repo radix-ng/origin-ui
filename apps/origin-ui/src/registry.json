@@ -3211,7 +3211,7 @@
             "registryDependencies": ["https://originui-ng.com/r/button.json"],
             "files": [
                 {
-                    "path": "registry/default/components/file-uploads/file-upload-03ts",
+                    "path": "registry/default/components/file-uploads/file-upload-03.ts",
                     "type": "registry:component"
                 }
             ],
