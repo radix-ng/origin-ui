@@ -32,6 +32,9 @@
             "@origin-ui/components/button": [
                 "packages/components/button/index.ts"
             ],
+            "@origin-ui/components/calendar-rac": [
+                "packages/components/calendar/index.ts"
+            ],
             "@origin-ui/components/checkbox": [
                 "packages/components/checkbox/index.ts"
             ],

@@ -75,6 +75,12 @@ export const categories: ComponentCategory[] = [
             { name: 'button-121' }]
     },
     {
+        slug: 'calendar',
+        name: 'Calendar',
+        components: [
+            { name: 'calendar-01' }]
+    },
+    {
         slug: 'checkbox',
         name: 'Checkbox',
         components: [
