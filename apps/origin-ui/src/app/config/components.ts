@@ -129,7 +129,8 @@ export const categories: ComponentCategory[] = [
         components: [
             { name: 'file-upload-01' },
             { name: 'file-upload-02' },
-            { name: 'file-upload-03' }]
+            { name: 'file-upload-03' },
+            { name: 'file-upload-04' }]
     },
     {
         slug: 'notification',
