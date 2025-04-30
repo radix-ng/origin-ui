@@ -3251,6 +3251,21 @@
             }
         },
         {
+            "name": "file-upload-13",
+            "type": "registry:component",
+            "registryDependencies": ["https://originui-ng.com/r/button.json"],
+            "files": [
+                {
+                    "path": "registry/default/components/file-uploads/file-upload-13.ts",
+                    "type": "registry:component"
+                }
+            ],
+            "meta": {
+                "tags": ["upload", "file", "drag and drop"],
+                "colSpan": 2
+            }
+        },
+        {
             "name": "calendar-01",
             "type": "registry:component",
             "registryDependencies": ["https://originui-ng.com/r/calendar-rac.json"],
