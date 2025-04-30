@@ -3231,8 +3231,8 @@
                 }
             ],
             "meta": {
-                "tags": ["button", "upload", "user", "profile", "image"],
-                "style": 2
+                "tags": ["upload", "file", "drag and drop"],
+                "colSpan": 2
             }
         },
         {
