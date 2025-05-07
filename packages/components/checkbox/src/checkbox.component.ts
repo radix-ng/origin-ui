@@ -12,9 +12,9 @@ import {
 } from '@angular/core';
 import { cn } from '@origin-ui/components/utils';
 import {
-    RdxCheckboxDirective,
     RdxCheckboxIndicatorDirective,
-    RdxCheckboxInputDirective
+    RdxCheckboxInputDirective,
+    RdxCheckboxRootDirective
 } from '@radix-ng/primitives/checkbox';
 import { cva } from 'class-variance-authority';
 
@@ -26,7 +26,7 @@ const variants = cva(
     selector: 'ori-checkbox',
     changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [
-        RdxCheckboxDirective,
+        RdxCheckboxRootDirective,
         RdxCheckboxIndicatorDirective,
         RdxCheckboxInputDirective
     ],
