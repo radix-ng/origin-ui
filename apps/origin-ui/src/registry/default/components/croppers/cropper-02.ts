@@ -24,7 +24,7 @@ import { OriCropper, OriCropperArea, OriCropperDescription, OriCropperImage } fr
                 Cropper with aspect ratio 16:9 ∙{{ ' ' }}
                 <a
                     class="hover:text-foreground underline"
-                    href="https://github.com/origin-space/image-cropper"
+                    href="https://sb-primitives.radix-ng.com/?path=/docs/primitives-cropper--docs"
                     target="_blank"
                 >
                     API

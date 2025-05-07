@@ -23,7 +23,7 @@ import { OriCropper, OriCropperArea, OriCropperDescription, OriCropperImage } fr
                 Basic cropper ∙{{ ' ' }}
                 <a
                     class="hover:text-foreground underline"
-                    href="https://github.com/origin-space/image-cropper"
+                    href="https://sb-primitives.radix-ng.com/?path=/docs/primitives-cropper--docs"
                     target="_blank"
                 >
                     API
