@@ -3279,6 +3279,40 @@
                 "tags": ["calendar", "date"],
                 "style": 1
             }
+        },
+        {
+            "name": "cropper-01",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://originui.com/r/cropper.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/default/components/croppers/cropper-01.ts",
+                    "type": "registry:component"
+                }
+            ],
+            "meta": {
+                "tags": ["image", "crop", "zoom"],
+                "colSpan": 2
+            }
+        },
+        {
+            "name": "cropper-02",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://originui.com/r/cropper.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/default/components/croppers/cropper-02.ts",
+                    "type": "registry:component"
+                }
+            ],
+            "meta": {
+                "tags": ["image", "crop", "zoom"],
+                "colSpan": 2
+            }
         }
     ]
 }

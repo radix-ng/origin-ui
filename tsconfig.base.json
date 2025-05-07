@@ -38,6 +38,9 @@
             "@origin-ui/components/checkbox": [
                 "packages/components/checkbox/index.ts"
             ],
+            "@origin-ui/components/cropper": [
+                "packages/components/cropper/index.ts"
+            ],
             "@origin-ui/components/dialog": [
                 "packages/components/dialog/index.ts"
             ],

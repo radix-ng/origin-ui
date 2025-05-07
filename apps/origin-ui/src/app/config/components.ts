@@ -91,6 +91,13 @@ export const categories: ComponentCategory[] = [
             { name: 'checkbox-07' }]
     },
     {
+        slug: 'cropper',
+        name: 'Cropper',
+        components: [
+            { name: 'cropper-01' },
+            { name: 'cropper-02' }]
+    },
+    {
         slug: 'dialog',
         name: 'Dialog',
         components: [

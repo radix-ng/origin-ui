@@ -10,13 +10,13 @@ import {
     model,
     Output
 } from '@angular/core';
+import { cn } from '~/registry/default/lib/utils';
 import {
     RdxCheckboxIndicatorDirective,
     RdxCheckboxInputDirective,
     RdxCheckboxRootDirective
 } from '@radix-ng/primitives/checkbox';
 import { cva } from 'class-variance-authority';
-import { cn } from '~/registry/default/lib/utils';
 
 const variants = cva(
     'peer size-4 shrink-0 rounded border border-input shadow-sm shadow-black/5 outline-offset-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring/70 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:border-primary data-[state=indeterminate]:border-primary data-[state=checked]:bg-primary data-[state=indeterminate]:bg-primary data-[state=checked]:text-primary-foreground data-[state=indeterminate]:text-primary-foreground'
