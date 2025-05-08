@@ -1,3 +1,20 @@
+## 0.7.0 (2025-05-08)
+
+### 🚀 Features
+
+- **cropper:** added new Cropper ([6ce723a](https://github.com/radix-ng/origin-ui/commit/6ce723a))
+- updated radix-ng to 0.37 ([d25223c](https://github.com/radix-ng/origin-ui/commit/d25223c))
+- new Calendar ([2a8884f](https://github.com/radix-ng/origin-ui/commit/2a8884f))
+- **file-upload:** added example-03 with drag&drop ([00cd49a](https://github.com/radix-ng/origin-ui/commit/00cd49a))
+- **file-upload:** added docs ([f6585ca](https://github.com/radix-ng/origin-ui/commit/f6585ca))
+- **select-native:** added value and onValueChange props ([20c47e8](https://github.com/radix-ng/origin-ui/commit/20c47e8))
+- **pagination:** added oriPaginationContent styles for ul ([4d0c8f6](https://github.com/radix-ng/origin-ui/commit/4d0c8f6))
+- **table:** added table with pagination ([6cd049e](https://github.com/radix-ng/origin-ui/commit/6cd049e))
+
+### ❤️ Thank You
+
+- Oleg Pimenov @pimenovoleg
+
 ## 0.6.2 (2025-03-07)
 
 ### 🩹 Fixes

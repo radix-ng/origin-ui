@@ -1,3 +1,31 @@
+## 0.7.0 (2025-05-08)
+
+### 🚀 Features
+
+- new Calendar ([2a8884f](https://github.com/radix-ng/origin-ui/commit/2a8884f))
+- updated radix-ng to 0.37 ([d25223c](https://github.com/radix-ng/origin-ui/commit/d25223c))
+- **cropper:** added new Cropper ([6ce723a](https://github.com/radix-ng/origin-ui/commit/6ce723a))
+- **cropper:** Cropper with image preview ([ee1f48e](https://github.com/radix-ng/origin-ui/commit/ee1f48e))
+- **cropper:** added Avatar uploader with cropper ([6ff7ec3](https://github.com/radix-ng/origin-ui/commit/6ff7ec3))
+- **file-upload:** added file-upload component and hook ([17b6d90](https://github.com/radix-ng/origin-ui/commit/17b6d90))
+- **file-upload:** added docs ([f6585ca](https://github.com/radix-ng/origin-ui/commit/f6585ca))
+- **file-upload:** added example-03 with drag&drop ([00cd49a](https://github.com/radix-ng/origin-ui/commit/00cd49a))
+- **file-upload:** added example-02 ([20b0f11](https://github.com/radix-ng/origin-ui/commit/20b0f11))
+- **file-upload:** single image uploader w/ max size ([e1f640b](https://github.com/radix-ng/origin-ui/commit/e1f640b))
+- **file-upload:** Single image uploader w/ max size (drop area + button) ([cfdd85b](https://github.com/radix-ng/origin-ui/commit/cfdd85b))
+- **file-upload:** With simulated progress track ([02e70d7](https://github.com/radix-ng/origin-ui/commit/02e70d7))
+- **pagination:** added oriPaginationContent styles for ul ([4d0c8f6](https://github.com/radix-ng/origin-ui/commit/4d0c8f6))
+- **select-native:** added value and onValueChange props ([20c47e8](https://github.com/radix-ng/origin-ui/commit/20c47e8))
+- **table:** added table with pagination ([6cd049e](https://github.com/radix-ng/origin-ui/commit/6cd049e))
+
+### 🩹 Fixes
+
+- example layout for file-upload ([733654f](https://github.com/radix-ng/origin-ui/commit/733654f))
+
+### ❤️ Thank You
+
+- Oleg Pimenov @pimenovoleg
+
 ## 0.6.2 (2025-03-07)
 
 ### 🩹 Fixes
