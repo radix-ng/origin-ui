@@ -3291,7 +3291,7 @@
             ],
             "files": [
                 {
-                    "path": "registry/default/components/coppers/cropper-00.ts",
+                    "path": "registry/default/components/croppers/cropper-00.ts",
                     "type": "registry:component"
                 },
                 {
