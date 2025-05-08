@@ -3313,6 +3313,23 @@
                 "tags": ["image", "crop", "zoom"],
                 "colSpan": 2
             }
+        },
+        {
+            "name": "cropper-10",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://originui.com/r/cropper.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/default/components/croppers/cropper-10.ts",
+                    "type": "registry:component"
+                }
+            ],
+            "meta": {
+                "tags": ["image", "crop", "zoom"],
+                "colSpan": 2
+            }
         }
     ]
 }

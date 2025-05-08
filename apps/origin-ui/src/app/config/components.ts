@@ -95,7 +95,8 @@ export const categories: ComponentCategory[] = [
         name: 'Cropper',
         components: [
             { name: 'cropper-01' },
-            { name: 'cropper-02' }]
+            { name: 'cropper-02' },
+            { name: 'cropper-10' }]
     },
     {
         slug: 'dialog',
