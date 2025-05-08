@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { GithubButtonComponent } from './github-button.component';
+import { LogoDark, LogoWhite } from './logo';
 import { AppThemeToggleComponent } from './theme-toggle.component';
 import { TwitterButton } from './twitter-button';
 
 @Component({
     selector: 'app-header',
-    imports: [AppThemeToggleComponent, GithubButtonComponent, TwitterButton],
+    imports: [AppThemeToggleComponent, GithubButtonComponent, TwitterButton, LogoWhite, LogoDark],
     template: `
         <header
             class="before:bg-[linear-gradient(to_right,--theme(--color-border/.3),--theme(--color-border)_200px,--theme(--color-border)_calc(100%-200px),--theme(--color-border/.3))] relative mb-14 before:absolute before:-inset-x-32 before:bottom-0 before:h-px"
@@ -15,27 +16,15 @@ import { TwitterButton } from './twitter-button';
                 aria-hidden="true"
             ></div>
             <div class="mx-auto flex h-[72px] w-full max-w-6xl items-center justify-between gap-3">
-                <a
-                    class="focus-visible:outline-ring/70 rounded-full outline-offset-2 focus-visible:outline focus-visible:outline-2"
-                    href="/"
-                    aria-label="Home"
-                >
+                <a class="shrink-0" href="/" aria-label="Home">
                     <span class="sr-only">Origin UI</span>
-                    <svg
-                        class="stroke-zinc-800 dark:stroke-zinc-100"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="28"
-                        height="28"
-                        viewBox="0 0 32 32"
-                        aria-hidden="true"
-                    >
-                        <circle cx="16" cy="16" r="12" fill="none" stroke-width="8"></circle>
-                    </svg>
+                    <logo-dark class="hidden dark:block" />
+                    <logo-white class="dark:hidden" />
                 </a>
-                <div class="flex items-center gap-2">
+                <div class="flex items-center gap-1">
                     <app-github-button />
-                    <app-components-theme-toggle />
                     <app-twitter-button />
+                    <app-components-theme-toggle />
                 </div>
             </div>
         </header>

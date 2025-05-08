@@ -1,25 +1,27 @@
 import { Component } from '@angular/core';
-import { OriButton } from '@origin-ui/components/button';
 
 @Component({
     selector: 'app-twitter-button',
-    imports: [
-        OriButton
-    ],
     template: `
         <a
-            class="text-muted-foreground hover:text-foreground rounded-full"
-            oriButton
-            variant="ghost"
+            class="text-muted-foreground hover:text-foreground/80 focus-visible:border-ring focus-visible:ring-ring/50 inline-flex size-9 items-center justify-center rounded outline-none focus-visible:ring-[3px]"
             href="https://x.com/intent/follow?screen_name=pimenovoleg"
             target="_blank"
-            size="icon"
             aria-label="Follow us on X"
+            rel="noopener noreferrer"
         >
-            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="14" height="13">
+            <span class="sr-only">X</span>
+            <svg
+                class="remixicon"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+            >
                 <path
-                    d="M14 12.25H9.68L6.297 7.97l-3.873 4.28H.276L5.295 6.7 0 0h4.43l3.06 3.916L11.025 0h2.147L8.485 5.19 14 12.25Zm-3.727-1.244h1.189L3.783 1.18H2.507l7.766 9.827Z"
-                />
+                    d="M17.6874 3.0625L12.6907 8.77425L8.37045 3.0625H2.11328L9.58961 12.8387L2.50378 20.9375H5.53795L11.0068 14.6886L15.7863 20.9375H21.8885L14.095 10.6342L20.7198 3.0625H17.6874ZM16.6232 19.1225L5.65436 4.78217H7.45745L18.3034 19.1225H16.6232Z"
+                ></path>
             </svg>
         </a>
     `
