@@ -3281,10 +3281,34 @@
             }
         },
         {
+            "name": "cropper-00",
+            "type": "registry:component",
+            "registryDependencies": [
+                "https://originui-ng.com/r/button.json",
+                "https://originui-ng.com/r/cropper.json",
+                "https://originui-ng.com/r/dialog.json",
+                "https://originui-ng.com/r/slider.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/default/components/coppers/cropper-00.ts",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "registry/default/lib/use-file-upload.ts",
+                    "type": "registry:lib"
+                }
+            ],
+            "meta": {
+                "tags": ["upload", "file", "image", "drag and drop", "crop", "dialog", "slider", "zoom"],
+                "colSpan": 3
+            }
+        },
+        {
             "name": "cropper-01",
             "type": "registry:component",
             "registryDependencies": [
-                "https://originui.com/r/cropper.json"
+                "https://originui-ng.com/r/cropper.json"
             ],
             "files": [
                 {
@@ -3301,7 +3325,7 @@
             "name": "cropper-02",
             "type": "registry:component",
             "registryDependencies": [
-                "https://originui.com/r/cropper.json"
+                "https://originui-ng.com/r/cropper.json"
             ],
             "files": [
                 {
@@ -3318,7 +3342,7 @@
             "name": "cropper-10",
             "type": "registry:component",
             "registryDependencies": [
-                "https://originui.com/r/cropper.json"
+                "https://originui-ng.com/r/cropper.json"
             ],
             "files": [
                 {
