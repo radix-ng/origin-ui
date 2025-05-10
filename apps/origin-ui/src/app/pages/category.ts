@@ -3,6 +3,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
 import { RegistryItem } from 'shadcn-ng/registry';
 import { ComponentCardComponent } from '../components/component-card';
+import { Cta } from '../components/cta';
 import { DemoComponent } from '../components/demo-component';
 import { PageGrid } from '../components/page-grid';
 import { PageHeader } from '../components/page-header';
@@ -15,7 +16,8 @@ import { getComponentsByNames } from '../lib/utils';
         PageHeader,
         PageGrid,
         ComponentCardComponent,
-        DemoComponent
+        DemoComponent,
+        Cta
     ],
     template: `
         <main class="grow">
@@ -32,6 +34,7 @@ import { getComponentsByNames } from '../lib/utils';
                     </div>
                 }
             </ori-page-grid>
+            <app-cta />
         </main>
     `
 })

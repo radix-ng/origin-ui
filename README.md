@@ -1,5 +1,7 @@
 # Origin UI Angular
 
+[![Discord Chat](https://img.shields.io/discord/1231525968586346567.svg?color=5865F2&logo=discord&logoColor=FFFFFF)](https://discord.gg/NaJb2XRWX9)
+
 > [!NOTE]
 > This is a fork of the original React implementation [Origin UI](https://originui.com/) project. This project is not affiliated with the original.
 
