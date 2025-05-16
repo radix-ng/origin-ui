@@ -1,7 +1,7 @@
 import { Component, signal } from '@angular/core';
+import { LucideAngularModule, Moon, Sun } from 'lucide-angular';
 import { OriLabel } from '~/registry/default/ui/label';
 import { SwitchComponent } from '~/registry/default/ui/switch';
-import { LucideAngularModule, Moon, Sun } from 'lucide-angular';
 
 @Component({
     selector: 'demo-switch-10',
@@ -17,7 +17,7 @@ import { LucideAngularModule, Moon, Sun } from 'lucide-angular';
                     class="data-[state=unchecked]:bg-input/50 peer absolute inset-0 h-[inherit] w-auto [&_span]:z-10 [&_span]:h-full [&_span]:w-1/2 [&_span]:transition-transform [&_span]:duration-300 [&_span]:[transition-timing-function:cubic-bezier(0.16,1,0.3,1)] data-[state=checked]:[&_span]:translate-x-full rtl:data-[state=checked]:[&_span]:-translate-x-full"
                     [id]="id"
                     [checked]="checked()"
-                    (onCheckedChange)="checked.set($event)"
+                    (onCheckedChange)="checked.set($event!)"
                     oriSwitch
                 ></button>
                 <span
@@ -26,7 +26,7 @@ import { LucideAngularModule, Moon, Sun } from 'lucide-angular';
                     <lucide-angular [img]="Moon" size="16" strokeWidth="2" aria-hidden="true" />
                 </span>
                 <span
-                    class="peer-data-[state=checked]:text-background pointer-events-none relative me-0.5 flex min-w-8 items-center justify-center text-center transition-transform duration-300 [transition-timing-function:cubic-bezier(0.16,1,0.3,1)] peer-data-[state=unchecked]:invisible peer-data-[state=checked]:-translate-x-full rtl:peer-data-[state=checked]:translate-x-full"
+                    class="peer-data-[state=checked]:text-background pointer-events-none relative me-0.5 flex min-w-8 items-center justify-center text-center transition-transform duration-300 [transition-timing-function:cubic-bezier(0.16,1,0.3,1)] peer-data-[state=checked]:-translate-x-full peer-data-[state=unchecked]:invisible rtl:peer-data-[state=checked]:translate-x-full"
                 >
                     <lucide-angular [img]="Sun" size="16" strokeWidth="2" aria-hidden="true" />
                 </span>

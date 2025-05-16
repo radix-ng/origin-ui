@@ -15,7 +15,7 @@ import { SwitchComponent } from '~/registry/default/ui/switch';
                     class="data-[state=unchecked]:bg-input/50 peer absolute inset-0 h-[inherit] w-auto rounded-lg [&_span]:z-10 [&_span]:h-full [&_span]:w-1/2 [&_span]:rounded-md [&_span]:transition-transform [&_span]:duration-300 [&_span]:[transition-timing-function:cubic-bezier(0.16,1,0.3,1)] data-[state=checked]:[&_span]:translate-x-full rtl:data-[state=checked]:[&_span]:-translate-x-full"
                     [id]="id"
                     [checked]="checked()"
-                    (onCheckedChange)="checked.set($event)"
+                    (onCheckedChange)="checked.set($event!)"
                     oriSwitch
                 ></button>
                 <span
@@ -24,7 +24,7 @@ import { SwitchComponent } from '~/registry/default/ui/switch';
                     <span class="text-[10px] font-medium uppercase">Off</span>
                 </span>
                 <span
-                    class="min-w-78flex peer-data-[state=checked]:text-background pointer-events-none relative me-0.5 items-center justify-center px-2 text-center transition-transform duration-300 [transition-timing-function:cubic-bezier(0.16,1,0.3,1)] peer-data-[state=unchecked]:invisible peer-data-[state=checked]:-translate-x-full rtl:peer-data-[state=checked]:translate-x-full"
+                    class="min-w-78flex peer-data-[state=checked]:text-background pointer-events-none relative me-0.5 items-center justify-center px-2 text-center transition-transform duration-300 [transition-timing-function:cubic-bezier(0.16,1,0.3,1)] peer-data-[state=checked]:-translate-x-full peer-data-[state=unchecked]:invisible rtl:peer-data-[state=checked]:translate-x-full"
                 >
                     <span class="text-[10px] font-medium uppercase">On</span>
                 </span>

@@ -6,6 +6,13 @@ export interface ComponentCategory {
 
 export const categories: ComponentCategory[] = [
     {
+        slug: 'accordion',
+        name: 'Accordion',
+        components: [
+            { name: 'accordion-01' }
+        ]
+    },
+    {
         slug: 'alert',
         name: 'Alert',
         components: [

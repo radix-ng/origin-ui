@@ -1,7 +1,7 @@
 import { Component, signal } from '@angular/core';
+import { LucideAngularModule, Moon, Sun } from 'lucide-angular';
 import { OriLabel } from '~/registry/default/ui/label';
 import { SwitchComponent } from '~/registry/default/ui/switch';
-import { LucideAngularModule, Moon, Sun } from 'lucide-angular';
 
 @Component({
     selector: 'demo-switch-07',
@@ -15,7 +15,7 @@ import { LucideAngularModule, Moon, Sun } from 'lucide-angular';
             <button
                 [id]="id"
                 [checked]="checked()"
-                (onCheckedChange)="checked.set($event)"
+                (onCheckedChange)="checked.set($event!)"
                 oriSwitch
                 aria-label="Toggle switch"
             ></button>

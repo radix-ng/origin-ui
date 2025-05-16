@@ -36,7 +36,7 @@
         "@fontsource-variable/inter": "^5.2.5",
         "@fontsource-variable/outfit": "^5.2.5",
         "@fontsource/jetbrains-mono": "^5.2.5",
-        "@radix-ng/primitives": "0.37.0",
+        "@radix-ng/primitives": "0.38.0",
         "@internationalized/date": "^3.8.0",
         "@internationalized/number": "^3.6.1",
         "@tanstack/angular-table": "^8.21.2",

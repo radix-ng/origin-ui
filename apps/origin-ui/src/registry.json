@@ -14,6 +14,19 @@
             ]
         },
         {
+            "name": "accordion",
+            "type": "registry:ui",
+            "dependencies": [
+                "@radix-ng/primitives"
+            ],
+            "files": [
+                {
+                    "path": "registry/default/ui/accordion.ts",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
             "name": "avatar",
             "type": "registry:ui",
             "dependencies": [
@@ -436,6 +449,21 @@
                 "tags": [
                     "alert"
                 ],
+                "colSpan": 2
+            }
+        },
+        {
+            "name": "accordion-01",
+            "type": "registry:component",
+            "registryDependencies": ["https://originui-ng.com/r/accordion.json"],
+            "files": [
+                {
+                    "path": "registry/default/components/accordions/accordion-01.ts",
+                    "type": "registry:component"
+                }
+            ],
+            "meta": {
+                "tags": ["accordion", "radix"],
                 "colSpan": 2
             }
         },
