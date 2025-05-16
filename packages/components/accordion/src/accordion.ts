@@ -12,7 +12,12 @@ import { ChevronDown, LucideAngularModule } from 'lucide-angular';
 
 @Directive({
     selector: '[oriAccordion]',
-    hostDirectives: [RdxAccordionRootDirective]
+    hostDirectives: [
+        {
+            directive: RdxAccordionRootDirective,
+            inputs: ['orientation', 'type', 'value', 'defaultValue', 'collapsible', 'dir', 'disabled']
+        }
+    ]
 })
 export class OriAccordion {}
 
@@ -38,11 +43,10 @@ export class OriAccordionItem {
 
 @Component({
     selector: '[oriAccordionTrigger], ori-accordion-trigger',
-    imports: [RdxAccordionHeaderDirective, LucideAngularModule],
-    hostDirectives: [RdxAccordionTriggerDirective],
+    imports: [RdxAccordionHeaderDirective, LucideAngularModule, RdxAccordionTriggerDirective],
     template: `
         <h3 class="group flex" rdxAccordionHeader>
-            <button [class]="computedClass()">
+            <button [class]="computedClass()" rdxAccordionTrigger>
                 <ng-content></ng-content>
                 <lucide-icon
                     class="pointer-events-none shrink-0 opacity-60 transition-transform duration-200"
