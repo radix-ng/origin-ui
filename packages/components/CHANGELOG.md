@@ -1,3 +1,13 @@
+## 0.8.0 (2025-05-16)
+
+### 🚀 Features
+
+- **accordion:** added Accordion component ([6c84d29](https://github.com/radix-ng/origin-ui/commit/6c84d29))
+
+### ❤️ Thank You
+
+- Oleg Pimenov @pimenovoleg
+
 ## 0.7.0 (2025-05-08)
 
 ### 🚀 Features
