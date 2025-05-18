@@ -468,6 +468,21 @@
             }
         },
         {
+            "name": "accordion-02",
+            "type": "registry:component",
+            "registryDependencies": ["https://originui-ng.com/r/accordion.json"],
+            "files": [
+                {
+                    "path": "registry/default/components/accordions/accordion-02.ts",
+                    "type": "registry:component"
+                }
+            ],
+            "meta": {
+                "tags": ["accordion", "radix"],
+                "colSpan": 2
+            }
+        },
+        {
             "name": "avatar-01",
             "type": "registry:component",
             "registryDependencies": [

@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import {
     OriAccordion,
+    OriAccordionContent,
     OriAccordionItem,
-    OriAccordionTrigger,
-    UbAccordionContent
+    OriAccordionTrigger
 } from '~/registry/default/ui/accordion';
 
 @Component({
@@ -12,13 +12,13 @@ import {
         OriAccordion,
         OriAccordionItem,
         OriAccordionTrigger,
-        UbAccordionContent
+        OriAccordionContent
     ],
     template: `
         <div class="space-y-4">
             <h2 class="text-xl font-bold">W/ chevron</h2>
-            <div class="w-full" oriAccordion orientation="vertical">
-                @for (item of items; track $index) {
+            <div class="w-full" [defaultValue]="'1'" oriAccordion>
+                @for (item of items; track item) {
                     <div class="py-2" [value]="item.id" oriAccordionItem>
                         <ori-accordion-trigger>{{ item.title }}</ori-accordion-trigger>
                         <div oriAccordionContent>

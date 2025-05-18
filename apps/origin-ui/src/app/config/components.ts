@@ -9,7 +9,8 @@ export const categories: ComponentCategory[] = [
         slug: 'accordion',
         name: 'Accordion',
         components: [
-            { name: 'accordion-01' }
+            { name: 'accordion-01' },
+            { name: 'accordion-02' }
         ]
     },
     {

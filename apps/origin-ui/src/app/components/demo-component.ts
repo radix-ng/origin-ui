@@ -7,9 +7,9 @@ import { ComponentDetailsComponent } from './component-details.component';
     selector: 'app-demo-component',
     imports: [ComponentDetailsComponent],
     template: `
-        <ng-container #container></ng-container>
+        <ng-container #container />
 
-        <div class="absolute right-2 top-2 flex gap-2">
+        <div class="absolute top-2 right-2 flex gap-2">
             <app-component-details [sourceCode]="sourceCode()" [name]="componentName()!" />
         </div>
     `

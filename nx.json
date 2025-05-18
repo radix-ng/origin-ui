@@ -21,7 +21,7 @@
     },
     "targetDefaults": {
         "@angular-devkit/build-angular:application": {
-            "cache": true,
+            "cache": false,
             "dependsOn": [
                 "^build"
             ],
