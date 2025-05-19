@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LucideAngularModule, Plus } from 'lucide-angular';
 import {
     OriAccordion,
     OriAccordionContent,
@@ -7,21 +8,26 @@ import {
 } from '~/registry/default/ui/accordion';
 
 @Component({
-    selector: 'accordion-01',
+    selector: 'accordion-03',
     imports: [
         OriAccordion,
         OriAccordionItem,
-        OriAccordionTrigger,
-        OriAccordionContent
+        OriAccordionContent,
+        LucideAngularModule,
+        OriAccordionTrigger
     ],
     template: `
         <div class="space-y-4">
-            <h2 class="text-xl font-bold">W/ chevron</h2>
-            <div class="w-full" defaultValue="3" type="single" collapsible oriAccordion>
-                @for (item of items; track item) {
+            <h2 class="text-xl font-bold">W/ left chevron</h2>
+            <div class="w-full" type="single" oriAccordion collapsible defaultValue="3">
+                @for (item of items; track $index) {
                     <div class="py-2" [value]="item.id" oriAccordionItem>
-                        <ori-accordion-trigger>{{ item.title }}</ori-accordion-trigger>
-                        <div classContent="text-muted-foreground pb-2" oriAccordionContent>
+                        <ori-accordion-trigger
+                            classTrigger="justify-start gap-3 py-2 text-[15px] leading-6 hover:no-underline [&>lucide-icon]:-order-1"
+                        >
+                            {{ item.title }}
+                        </ori-accordion-trigger>
+                        <div classContent="text-muted-foreground ps-7 pb-2" oriAccordionContent>
                             {{ item.content }}
                         </div>
                     </div>
@@ -30,7 +36,7 @@ import {
         </div>
     `
 })
-export default class Accordion01Component {
+export default class Accordion03Component {
     readonly items = [
         {
             id: '1',
@@ -57,4 +63,5 @@ export default class Accordion01Component {
                 'All components follow WAI-ARIA standards, featuring proper ARIA attributes, keyboard navigation, and screen reader support. Regular testing ensures compatibility with NVDA, VoiceOver, and JAWS.'
         }
     ];
+    protected readonly Plus = Plus;
 }

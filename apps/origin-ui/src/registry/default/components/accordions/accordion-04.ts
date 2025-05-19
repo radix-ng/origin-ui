@@ -4,24 +4,24 @@ import { LucideAngularModule, Plus } from 'lucide-angular';
 import { OriAccordion, OriAccordionContent, OriAccordionItem } from '~/registry/default/ui/accordion';
 
 @Component({
-    selector: 'accordion-02',
+    selector: 'accordion-04',
     imports: [
         OriAccordion,
         OriAccordionItem,
-        OriAccordionContent,
+        LucideAngularModule,
         RdxAccordionHeaderDirective,
         RdxAccordionTriggerDirective,
-        LucideAngularModule
+        OriAccordionContent
     ],
     template: `
         <div class="space-y-4">
-            <h2 class="text-xl font-bold">W/ plus-minus</h2>
+            <h2 class="text-xl font-bold">W/ left plus-minus</h2>
             <div class="w-full" type="single" oriAccordion collapsible defaultValue="3">
                 @for (item of items; track $index) {
                     <div class="py-2" [value]="item.id" oriAccordionItem>
                         <h3 class="group flex" rdxAccordionHeader>
                             <button
-                                class="focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-center justify-between gap-4 rounded-md py-2 text-left text-sm text-[15px] leading-6 font-semibold transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&>svg>path:last-child]:origin-center [&>svg>path:last-child]:transition-all [&>svg>path:last-child]:duration-200 [&[data-state=open]>*>svg]:rotate-180 [&[data-state=open]>*>svg>path:last-child]:rotate-90 [&[data-state=open]>*>svg>path:last-child]:opacity-0"
+                                class="focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-center gap-4 rounded-md py-2 text-left text-sm text-[15px] leading-6 font-semibold transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&>lucide-icon]:-order-1 [&>svg>path:last-child]:origin-center [&>svg>path:last-child]:transition-all [&>svg>path:last-child]:duration-200 [&[data-state=open]>*>svg]:rotate-180 [&[data-state=open]>*>svg>path:last-child]:rotate-90 [&[data-state=open]>*>svg>path:last-child]:opacity-0"
                                 rdxAccordionTrigger
                                 type="button"
                             >
@@ -34,7 +34,7 @@ import { OriAccordion, OriAccordionContent, OriAccordionItem } from '~/registry/
                                 />
                             </button>
                         </h3>
-                        <div classContent="text-muted-foreground pb-2" oriAccordionContent>
+                        <div classContent="text-muted-foreground ps-7 pb-2" oriAccordionContent>
                             {{ item.content }}
                         </div>
                     </div>
@@ -43,7 +43,7 @@ import { OriAccordion, OriAccordionContent, OriAccordionItem } from '~/registry/
         </div>
     `
 })
-export default class Accordion02Component {
+export default class Accordion04Component {
     readonly items = [
         {
             id: '1',
