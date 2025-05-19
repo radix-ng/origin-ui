@@ -50,10 +50,18 @@ export class OriAccordionItem {
     imports: [RdxAccordionHeaderDirective, LucideAngularModule, RdxAccordionTriggerDirective],
     template: `
         <h3 class="group flex" rdxAccordionHeader>
-            <button [class]="computedClass()" rdxAccordionTrigger>
+            <button
+                [class]="
+                    cn(
+                        'focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-center justify-between gap-4 rounded-md py-4 text-left text-sm font-semibold transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>*>svg]:rotate-180',
+                        classTrigger()
+                    )
+                "
+                rdxAccordionTrigger
+            >
                 <ng-content />
                 <lucide-icon
-                    class="pointer-events-none shrink-0 opacity-60 transition-transform duration-200"
+                    class="pointer-events-none shrink-0 opacity-80 transition-transform duration-200"
                     [img]="ChevronDown"
                     size="16"
                     aria-hidden="true"
@@ -63,19 +71,14 @@ export class OriAccordionItem {
     `
 })
 export class OriAccordionTrigger {
-    readonly class = input<ClassValue>();
+    readonly classTrigger = input<ClassValue>();
 
-    readonly computedClass = computed(() => {
-        return cn(
-            'focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-center justify-between gap-4 rounded-md py-4 text-left text-sm font-semibold transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>*>svg]:rotate-180',
-            this.class()
-        );
-    });
     protected readonly ChevronDown = ChevronDown;
+    protected readonly cn = cn;
 }
 
 @Component({
-    selector: '[oriAccordionContent], ori-accordion-content',
+    selector: '[oriAccordionContent]',
     hostDirectives: [RdxAccordionContentDirective],
     host: {
         '[class]':
@@ -83,15 +86,13 @@ export class OriAccordionTrigger {
         'data-slot': 'accordion-content'
     },
     template: `
-        <div [class]="computedClass()">
+        <div [class]="cn('pt-0 pb-4', this.classContent())">
             <ng-content />
         </div>
     `
 })
 export class OriAccordionContent {
-    readonly class = input<ClassValue>();
+    readonly classContent = input<ClassValue>();
 
-    readonly computedClass = computed(() => {
-        return cn('pb-4 pt-0', this.class());
-    });
+    protected readonly cn = cn;
 }

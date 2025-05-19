@@ -50,7 +50,15 @@ export class OriAccordionItem {
     imports: [RdxAccordionHeaderDirective, LucideAngularModule, RdxAccordionTriggerDirective],
     template: `
         <h3 class="group flex" rdxAccordionHeader>
-            <button [class]="computedClass()" rdxAccordionTrigger>
+            <button
+                [class]="
+                    cn(
+                        'focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-center justify-between gap-4 rounded-md py-4 text-left text-sm font-semibold transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>*>svg]:rotate-180',
+                        classTrigger()
+                    )
+                "
+                rdxAccordionTrigger
+            >
                 <ng-content />
                 <lucide-icon
                     class="pointer-events-none shrink-0 opacity-80 transition-transform duration-200"
@@ -65,19 +73,6 @@ export class OriAccordionItem {
 export class OriAccordionTrigger {
     readonly classTrigger = input<ClassValue>();
 
-    readonly classIcon = input<ClassValue>();
-
-    readonly computedClass = computed(() => {
-        return cn(
-            'focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-center justify-between gap-4 rounded-md py-4 text-left text-sm font-semibold transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>*>svg]:rotate-180',
-            this.classTrigger()
-        );
-    });
-
-    readonly computedClassIcon = computed(() =>
-        cn('pointer-events-none shrink-0 opacity-60 transition-transform duration-200', this.classIcon())
-    );
-
     protected readonly ChevronDown = ChevronDown;
     protected readonly cn = cn;
 }
@@ -91,7 +86,7 @@ export class OriAccordionTrigger {
         'data-slot': 'accordion-content'
     },
     template: `
-        <div [class]="computedClass()">
+        <div [class]="cn('pt-0 pb-4', this.classContent())">
             <ng-content />
         </div>
     `
@@ -99,7 +94,5 @@ export class OriAccordionTrigger {
 export class OriAccordionContent {
     readonly classContent = input<ClassValue>();
 
-    readonly computedClass = computed(() => {
-        return cn('pb-4 pt-0', this.classContent());
-    });
+    protected readonly cn = cn;
 }
