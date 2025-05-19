@@ -16,12 +16,12 @@ import { OriAccordion, OriAccordionContent, OriAccordionItem } from '~/registry/
     template: `
         <div class="space-y-4">
             <h2 class="text-xl font-bold">W/ plus-minus</h2>
-            <div class="w-full" type="single" oriAccordion value="3">
+            <div class="w-full" type="single" oriAccordion collapsible defaultValue="3">
                 @for (item of items; track $index) {
                     <div class="py-2" [value]="item.id" oriAccordionItem>
                         <h3 class="group flex" rdxAccordionHeader>
                             <button
-                                class="focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-center justify-between gap-4 rounded-md py-4 text-left text-sm font-semibold transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 group-data-[state=open]:[&>*>svg]:rotate-180"
+                                class="focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-center justify-between gap-4 rounded-md py-2 text-left text-sm text-[15px] leading-6 font-semibold transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&>svg>path:last-child]:origin-center [&>svg>path:last-child]:transition-all [&>svg>path:last-child]:duration-200 [&[data-state=open]>*>svg]:rotate-180 [&[data-state=open]>*>svg>path:last-child]:rotate-90 [&[data-state=open]>*>svg>path:last-child]:opacity-0"
                                 rdxAccordionTrigger
                                 type="button"
                             >

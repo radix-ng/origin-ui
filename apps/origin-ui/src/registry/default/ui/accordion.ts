@@ -17,7 +17,10 @@ import { cn } from '~/registry/default/lib/utils';
             directive: RdxAccordionRootDirective,
             inputs: ['orientation', 'type', 'value', 'defaultValue', 'collapsible', 'dir', 'disabled']
         }
-    ]
+    ],
+    host: {
+        'data-slot': 'accordion'
+    }
 })
 export class OriAccordion {}
 
@@ -30,7 +33,8 @@ export class OriAccordion {}
         }
     ],
     host: {
-        '[class]': 'hostClasses()'
+        '[class]': 'hostClasses()',
+        'data-slot': 'accordion-item'
     }
 })
 export class OriAccordionItem {
@@ -45,7 +49,7 @@ export class OriAccordionItem {
     selector: '[oriAccordionTrigger], ori-accordion-trigger',
     imports: [RdxAccordionHeaderDirective, LucideAngularModule, RdxAccordionTriggerDirective],
     template: `
-        <h3 class="flex" rdxAccordionHeader>
+        <h3 class="group flex" rdxAccordionHeader>
             <button [class]="computedClass()" rdxAccordionTrigger>
                 <ng-content />
                 <lucide-icon
@@ -63,7 +67,7 @@ export class OriAccordionTrigger {
 
     readonly computedClass = computed(() => {
         return cn(
-            'focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-center justify-between gap-4 rounded-md py-4 text-left text-sm font-semibold transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180',
+            'focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-center justify-between gap-4 rounded-md py-4 text-left text-sm font-semibold transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>*>svg]:rotate-180',
             this.class()
         );
     });
@@ -75,7 +79,8 @@ export class OriAccordionTrigger {
     hostDirectives: [RdxAccordionContentDirective],
     host: {
         '[class]':
-            '"data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm"'
+            '"data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm"',
+        'data-slot': 'accordion-content'
     },
     template: `
         <div [class]="computedClass()">

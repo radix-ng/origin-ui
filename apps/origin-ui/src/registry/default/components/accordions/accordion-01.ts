@@ -17,11 +17,11 @@ import {
     template: `
         <div class="space-y-4">
             <h2 class="text-xl font-bold">W/ chevron</h2>
-            <div class="w-full" [defaultValue]="'1'" oriAccordion>
+            <div class="w-full" defaultValue="3" type="single" collapsible oriAccordion>
                 @for (item of items; track item) {
                     <div class="py-2" [value]="item.id" oriAccordionItem>
                         <ori-accordion-trigger>{{ item.title }}</ori-accordion-trigger>
-                        <div oriAccordionContent>
+                        <div class="text-muted-foreground pb-2" oriAccordionContent>
                             {{ item.content }}
                         </div>
                     </div>
