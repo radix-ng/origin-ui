@@ -1,3 +1,14 @@
+## 0.9.0 (2025-05-20)
+
+### 🚀 Features
+
+- added Accordion W/ plus-minus ([083832b](https://github.com/radix-ng/origin-ui/commit/083832b))
+- **collapsible:** added examples with Multi-level ([286dea9](https://github.com/radix-ng/origin-ui/commit/286dea9))
+
+### ❤️ Thank You
+
+- Oleg Pimenov @pimenovoleg
+
 ## 0.8.0 (2025-05-16)
 
 ### 🚀 Features
