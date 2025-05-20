@@ -12,8 +12,14 @@ export const categories: ComponentCategory[] = [
             { name: 'accordion-01' },
             { name: 'accordion-02' },
             { name: 'accordion-03' },
-            { name: 'accordion-04' }
-        ]
+            { name: 'accordion-04' },
+            { name: 'accordion-05' },
+            { name: 'accordion-06' },
+            { name: 'accordion-07' },
+            { name: 'accordion-08' },
+            { name: 'accordion-11' },
+            { name: 'accordion-12' },
+            { name: 'accordion-17' }]
     },
     {
         slug: 'alert',

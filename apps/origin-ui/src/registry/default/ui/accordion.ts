@@ -1,4 +1,5 @@
 import { Component, computed, Directive, input } from '@angular/core';
+import { cn } from '~/registry/default/lib/utils';
 import {
     RdxAccordionContentDirective,
     RdxAccordionHeaderDirective,
@@ -8,7 +9,6 @@ import {
 } from '@radix-ng/primitives/accordion';
 import { ClassValue } from 'clsx';
 import { ChevronDown, LucideAngularModule } from 'lucide-angular';
-import { cn } from '~/registry/default/lib/utils';
 
 @Directive({
     selector: '[oriAccordion]',

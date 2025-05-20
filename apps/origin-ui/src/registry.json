@@ -513,6 +513,111 @@
             }
         },
         {
+            "name": "accordion-05",
+            "type": "registry:component",
+            "registryDependencies": ["https://originui-ng.com/r/accordion.json"],
+            "files": [
+                {
+                    "path": "registry/default/components/accordions/accordion-05.ts",
+                    "type": "registry:component"
+                }
+            ],
+            "meta": {
+                "tags": ["accordion", "radix"],
+                "colSpan": 2
+            }
+        },
+        {
+            "name": "accordion-06",
+            "type": "registry:component",
+            "registryDependencies": ["https://originui-ng.com/r/accordion.json"],
+            "files": [
+                {
+                    "path": "registry/default/components/accordions/accordion-06.ts",
+                    "type": "registry:component"
+                }
+            ],
+            "meta": {
+                "tags": ["accordion", "radix"],
+                "colSpan": 2
+            }
+        },
+        {
+            "name": "accordion-07",
+            "type": "registry:component",
+            "registryDependencies": ["https://originui-ng.com/r/accordion.json"],
+            "files": [
+                {
+                    "path": "registry/default/components/accordions/accordion-07.ts",
+                    "type": "registry:component"
+                }
+            ],
+            "meta": {
+                "tags": ["accordion", "radix"],
+                "colSpan": 2
+            }
+        },
+        {
+            "name": "accordion-08",
+            "type": "registry:component",
+            "registryDependencies": ["https://originui-ng.com/r/accordion.json"],
+            "files": [
+                {
+                    "path": "registry/default/components/accordions/accordion-08.ts",
+                    "type": "registry:component"
+                }
+            ],
+            "meta": {
+                "tags": ["accordion", "radix"],
+                "colSpan": 2
+            }
+        },
+        {
+            "name": "accordion-11",
+            "type": "registry:component",
+            "registryDependencies": ["https://originui-ng.com/r/accordion.json"],
+            "files": [
+                {
+                    "path": "registry/default/components/accordions/accordion-11.ts",
+                    "type": "registry:component"
+                }
+            ],
+            "meta": {
+                "tags": ["accordion", "radix"],
+                "colSpan": 2
+            }
+        },
+        {
+            "name": "accordion-12",
+            "type": "registry:component",
+            "registryDependencies": ["https://originui-ng.com/r/accordion.json"],
+            "files": [
+                {
+                    "path": "registry/default/components/accordions/accordion-12.ts",
+                    "type": "registry:component"
+                }
+            ],
+            "meta": {
+                "tags": ["accordion", "radix"],
+                "colSpan": 2
+            }
+        },
+        {
+            "name": "accordion-17",
+            "type": "registry:component",
+            "registryDependencies": ["https://originui-ng.com/r/accordion.json"],
+            "files": [
+                {
+                    "path": "registry/default/components/accordions/accordion-17.ts",
+                    "type": "registry:component"
+                }
+            ],
+            "meta": {
+                "tags": ["accordion", "radix"],
+                "colSpan": 2
+            }
+        },
+        {
             "name": "avatar-01",
             "type": "registry:component",
             "registryDependencies": [
