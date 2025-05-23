@@ -210,7 +210,13 @@
             "name": "slider",
             "type": "registry:ui",
             "registryDependencies": [
-                "https://www.originui-ng.com/r/tooltip.json"
+                "https://www.originui-ng.com/r/slider.json"
+            ],
+            "files": [
+                {
+                    "path": "registry/default/ui/slider.ts",
+                    "type": "registry:ui"
+                }
             ],
             "dependencies": [
                 "@radix-ng/primitives"
