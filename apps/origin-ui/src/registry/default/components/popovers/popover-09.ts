@@ -1,6 +1,4 @@
 import { Component, signal } from '@angular/core';
-import { OriButton } from '~/registry/default/ui/button';
-import { OriPopoverContent } from '~/registry/default/ui/popover';
 import { RdxPositionSide } from '@radix-ng/primitives/core';
 import {
     RdxPopoverAnchorDirective,
@@ -10,6 +8,8 @@ import {
     RdxPopoverTriggerDirective
 } from '@radix-ng/primitives/popover';
 import { Club, Diamond, Heart, LucideAngularModule, Spade } from 'lucide-angular';
+import { OriButton } from '~/registry/default/ui/button';
+import { OriPopoverContent } from '~/registry/default/ui/popover';
 
 interface TourStep {
     icon: any;
@@ -67,7 +67,7 @@ interface TourStep {
                                 </button>
                             </div>
                         </div>
-                        <div class="fill-popover -my-px drop-shadow-[0_1px_0_hsl(var(--border))]" rdxPopoverArrow></div>
+                        <div class="fill-popover -my-px drop-shadow-[0_1px_0_var(--border)]" rdxPopoverArrow></div>
                     </ori-popover-content>
                 </ng-template>
             </ng-container>
