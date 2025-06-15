@@ -24,7 +24,8 @@ module.exports = [
         rules: {
             '@angular-eslint/prefer-standalone': 'off',
             '@angular-eslint/component-class-suffix': 'off',
-            '@angular-eslint/template/label-has-associated-control': 'off'
+            '@angular-eslint/template/label-has-associated-control': 'off',
+            '@angular-eslint/no-output-on-prefix': 'off'
         }
     }
 ];

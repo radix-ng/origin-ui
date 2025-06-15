@@ -1,16 +1,4 @@
 import { Component, OnInit, signal } from '@angular/core';
-import { OriBadgeComponent } from '~/registry/default/ui/badge';
-import { OriCheckbox } from '~/registry/default/ui/checkbox';
-import {
-    OriTable,
-    OriTableBody,
-    OriTableCell,
-    OriTableFooter,
-    OriTableHead,
-    OriTableHeader,
-    OriTableRow
-} from '~/registry/default/ui/table';
-import { cn } from '~/registry/default/lib/utils';
 import {
     CellContext,
     ColumnDef,
@@ -22,6 +10,18 @@ import {
     injectFlexRenderContext
 } from '@tanstack/angular-table';
 import { LucideAngularModule } from 'lucide-angular';
+import { cn } from '~/registry/default/lib/utils';
+import { OriBadgeComponent } from '~/registry/default/ui/badge';
+import { OriCheckbox } from '~/registry/default/ui/checkbox';
+import {
+    OriTable,
+    OriTableBody,
+    OriTableCell,
+    OriTableFooter,
+    OriTableHead,
+    OriTableHeader,
+    OriTableRow
+} from '~/registry/default/ui/table';
 
 type Item = {
     id: string;
@@ -175,7 +175,9 @@ export default class Table12Component implements OnInit {
     }
 
     private async fetchPosts() {
-        const res = await fetch('https://res.cloudinary.com/dlzlfasou/raw/upload/users-01_fertyx.json');
+        const res = await fetch(
+            'https://raw.githubusercontent.com/origin-space/origin-images/refs/heads/main/users-01_fertyx.json'
+        );
         const data = await res.json();
 
         this.data.set(data.slice(0, 5));

@@ -1,14 +1,5 @@
 import { Component, OnInit, signal } from '@angular/core';
 import {
-    OriTable,
-    OriTableBody,
-    OriTableCell,
-    OriTableHead,
-    OriTableHeader,
-    OriTableRow
-} from '~/registry/default/ui/table';
-import { cn } from '~/registry/default/lib/utils';
-import {
     ColumnDef,
     createAngularTable,
     FlexRenderDirective,
@@ -17,6 +8,15 @@ import {
     SortingState
 } from '@tanstack/angular-table';
 import { ChevronDown, ChevronUp, LucideAngularModule } from 'lucide-angular';
+import { cn } from '~/registry/default/lib/utils';
+import {
+    OriTable,
+    OriTableBody,
+    OriTableCell,
+    OriTableHead,
+    OriTableHeader,
+    OriTableRow
+} from '~/registry/default/ui/table';
 
 type Item = {
     id: string;
@@ -53,7 +53,7 @@ type Item = {
                         <tr class="bg-muted/50" oriTableRow>
                             @for (header of headerGroup.headers; track header.id) {
                                 <th
-                                    class="relative h-10 select-none border-t last:[&>.cursor-col-resize]:opacity-0"
+                                    class="relative h-10 border-t select-none last:[&>.cursor-col-resize]:opacity-0"
                                     [attr.aria-sort]="
                                         header.column.getIsSorted() === 'asc'
                                             ? 'ascending'
@@ -70,7 +70,7 @@ type Item = {
                                             [class]="
                                                 cn(
                                                     header.column.getCanSort() &&
-                                                        'flex h-full cursor-pointer select-none items-center justify-between gap-2'
+                                                        'flex h-full cursor-pointer items-center justify-between gap-2 select-none'
                                                 )
                                             "
                                             [attr.tabIndex]="header.column.getCanSort() ? 0 : undefined"
@@ -111,7 +111,7 @@ type Item = {
 
                                     @if (header.column.getCanResize()) {
                                         <div
-                                            class="user-select-none before:bg-border absolute -right-2 top-0 z-10 h-full w-4 cursor-col-resize touch-none justify-center before:absolute before:inset-y-0 before:w-px before:translate-x-px"
+                                            class="user-select-none before:bg-border absolute top-0 -right-2 z-10 h-full w-4 cursor-col-resize touch-none justify-center before:absolute before:inset-y-0 before:w-px before:translate-x-px"
                                             (dblclick)="header.column.resetSize()"
                                             (mousedown)="header.getResizeHandler()($event)"
                                             (touchstart)="header.getResizeHandler()($event)"
@@ -260,7 +260,9 @@ export default class Table14Component implements OnInit {
     }
 
     private async fetchPosts() {
-        const res = await fetch('https://res.cloudinary.com/dlzlfasou/raw/upload/users-01_fertyx.json');
+        const res = await fetch(
+            'https://raw.githubusercontent.com/origin-space/origin-images/refs/heads/main/users-01_fertyx.json'
+        );
         const data = await res.json();
 
         this.data.set(data.slice(0, 5));

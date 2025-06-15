@@ -367,7 +367,9 @@ export default class Table18 implements OnInit {
     }
 
     private async fetchPosts() {
-        const res = await fetch('https://res.cloudinary.com/dlzlfasou/raw/upload/users-01_fertyx.json');
+        const res = await fetch(
+            'https://raw.githubusercontent.com/origin-space/origin-images/refs/heads/main/users-01_fertyx.json'
+        );
         const data = await res.json();
 
         this.data.set([...data, ...data]);
