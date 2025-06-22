@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, Directive, input } from '@angular/core';
+import { cn } from '~/registry/default/lib/utils';
 import { RdxTooltipTriggerDirective } from '@radix-ng/primitives/tooltip';
 import { cva } from 'class-variance-authority';
-import { cn } from '~/registry/default/lib/utils';
 
 @Directive({
     selector: '[oriPopoverTrigger]',

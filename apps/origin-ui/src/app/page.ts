@@ -99,14 +99,12 @@ export class CategoryCard {
 
             <div class="relative my-16">
                 <div class="grid gap-x-6 gap-y-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                    @defer {
-                        @for (category of categories; track category.slug) {
-                            <ori-category-card
-                                [slug]="category.slug"
-                                [name]="category.name"
-                                [componentsCount]="category.components.length"
-                            />
-                        }
+                    @for (category of categories; track category.slug) {
+                        <ori-category-card
+                            [slug]="category.slug"
+                            [name]="category.name"
+                            [componentsCount]="category.components.length"
+                        />
                     }
                 </div>
             </div>
