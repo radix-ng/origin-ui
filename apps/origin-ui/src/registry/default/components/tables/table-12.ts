@@ -10,6 +10,7 @@ import {
     injectFlexRenderContext
 } from '@tanstack/angular-table';
 import { LucideAngularModule } from 'lucide-angular';
+
 import { cn } from '~/registry/default/lib/utils';
 import { OriBadgeComponent } from '~/registry/default/ui/badge';
 import { OriCheckbox } from '~/registry/default/ui/checkbox';
@@ -190,17 +191,24 @@ export default class Table12Component implements OnInit {
     ],
     template: `
         <ori-checkbox
-            [indeterminate]="
-                (!context.table.getIsAllRowsSelected && context.table.getIsAllPageRowsSelected()) ||
-                context.table.getIsSomePageRowsSelected()
-            "
-            (checkedChange)="onCheckedChange($event)"
+            [checked]="checkedState()"
+            (onCheckedChange)="onCheckedChange($event)"
             aria-label="Select all"
         ></ori-checkbox>
     `
 })
 export class CheckboxHeader<T> {
     context = injectFlexRenderContext<HeaderContext<T, unknown>>();
+
+    checkedState() {
+        if (
+            (!this.context.table.getIsAllRowsSelected && this.context.table.getIsAllPageRowsSelected()) ||
+            this.context.table.getIsSomePageRowsSelected()
+        ) {
+            return 'indeterminate';
+        }
+        return this.context.table.getIsAllRowsSelected();
+    }
 
     onCheckedChange(checked: boolean) {
         this.context.table.toggleAllRowsSelected(checked);
@@ -214,7 +222,7 @@ export class CheckboxHeader<T> {
     template: `
         <ori-checkbox
             [checked]="context.row.getIsSelected()"
-            (checkedChange)="onCheckedChange($event)"
+            (onCheckedChange)="onCheckedChange($event)"
             aria-label="Select row"
         ></ori-checkbox>
     `

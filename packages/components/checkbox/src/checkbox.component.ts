@@ -1,17 +1,9 @@
 import { BooleanInput } from '@angular/cdk/coercion';
-import {
-    booleanAttribute,
-    ChangeDetectionStrategy,
-    Component,
-    computed,
-    EventEmitter,
-    Input,
-    input,
-    model,
-    Output
-} from '@angular/core';
+import { booleanAttribute, ChangeDetectionStrategy, Component, computed, input, model } from '@angular/core';
 import { cn } from '@origin-ui/components/utils';
 import {
+    type CheckedState,
+    RdxCheckboxButtonDirective,
     RdxCheckboxIndicatorDirective,
     RdxCheckboxInputDirective,
     RdxCheckboxRootDirective
@@ -19,37 +11,37 @@ import {
 import { cva } from 'class-variance-authority';
 
 const variants = cva(
-    'peer size-4 shrink-0 rounded border border-input shadow-sm shadow-black/5 outline-offset-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring/70 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:border-primary data-[state=indeterminate]:border-primary data-[state=checked]:bg-primary data-[state=indeterminate]:bg-primary data-[state=checked]:text-primary-foreground data-[state=indeterminate]:text-primary-foreground'
+    'peer border-input data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground data-[state=checked]:border-primary focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive size-4 shrink-0 rounded-[4px] border shadow-xs transition-shadow outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-500'
 );
 
 @Component({
     selector: 'ori-checkbox',
     changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [
-        RdxCheckboxRootDirective,
         RdxCheckboxIndicatorDirective,
-        RdxCheckboxInputDirective
+        RdxCheckboxInputDirective,
+        RdxCheckboxButtonDirective
+    ],
+    hostDirectives: [
+        {
+            directive: RdxCheckboxRootDirective,
+            inputs: ['checked', 'disabled'],
+            outputs: ['onCheckedChange']
+        }
     ],
     host: {
         // set to null on host element
         '[attr.id]': 'null',
-        '[attr.data-state]': 'state',
+        '[attr.data-state]': 'state()',
         // for peer with label
         '[disabled]': 'disabled()',
         '[attr.data-disabled]': 'disabled() ? "true" : undefined',
         '[class]': 'hostClasses()'
     },
     template: `
-        <button
-            [class]="computedClass()"
-            [checked]="checked()"
-            [indeterminate]="indeterminate()"
-            [disabled]="disabled()"
-            (checkedChange)="onChange($event)"
-            rdxCheckboxRoot
-        >
-            <span class="flex items-center justify-center text-current" rdxCheckboxIndicator>
-                @if (indeterminate()) {
+        <button [id]="id()" [class]="computedClass()" [disabled]="disabled()" rdxCheckboxButton>
+            <span class="grid place-content-center text-current" rdxCheckboxIndicator>
+                @if (checked() === 'indeterminate') {
                     <svg width="9" height="9" viewBox="0 0 9 9" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
                         <path
                             fillRule="evenodd"
@@ -67,22 +59,14 @@ const variants = cva(
                     </svg>
                 }
             </span>
-            <input
-                class="cdk-visually-hidden"
-                [id]="id()"
-                [value]="checked.asReadonly()"
-                [disabled]="disabled()"
-                rdxCheckboxInput
-            />
         </button>
+        <input rdxCheckboxInput />
     `
 })
 export class OriCheckbox {
     readonly id = input<string>();
 
-    readonly checked = model<boolean>(false);
-
-    readonly indeterminate = model(false);
+    readonly checked = model<CheckedState>(false);
 
     readonly disabled = input<boolean, BooleanInput>(false, { transform: booleanAttribute });
 
@@ -94,25 +78,10 @@ export class OriCheckbox {
 
     protected computedClass = computed(() => cn(variants({ class: this.className() })));
 
-    protected readonly iconName = model('check');
-
-    @Output()
-    checkedChange = new EventEmitter<boolean>();
-
-    @Input({ transform: booleanAttribute })
-    set defaultChecked(value: boolean) {
-        this.checked.set(value);
-    }
-
-    get state(): string {
-        if (this.indeterminate()) {
+    protected state = computed(() => {
+        if (this.checked() === 'indeterminate') {
             return 'indeterminate';
         }
         return this.checked() ? 'checked' : 'unchecked';
-    }
-
-    protected onChange(event: boolean): void {
-        this.checked.set(event);
-        this.checkedChange.emit(event);
-    }
+    });
 }

@@ -48,3 +48,5 @@ Thumbs.db
 
 apps/origin-ui/public/r/*
 !apps/origin-ui/public/r/.gitkeep
+.cursor/rules/nx-rules.mdc
+.github/instructions/nx.instructions.md

@@ -12,8 +12,8 @@ import {
 } from '@angular/core';
 import { toObservable } from '@angular/core/rxjs-interop';
 import { Area } from '@radix-ng/primitives/cropper';
-import { RdxDialogService } from '@radix-ng/primitives/dialog';
-import { RdxDialogRef } from '@radix-ng/primitives/dialog/src/dialog-ref';
+import { RdxDialogRef, RdxDialogService } from '@radix-ng/primitives/dialog';
+
 import { ArrowLeft, CircleUserRound, LucideAngularModule, X, ZoomIn, ZoomOut } from 'lucide-angular';
 import { filter, Subject, takeUntil } from 'rxjs';
 import { useFileUpload } from '~/registry/default/lib/use-file-upload';

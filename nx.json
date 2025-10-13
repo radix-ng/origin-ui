@@ -79,11 +79,65 @@
             "unitTestRunner": "jest"
         },
         "@nx/angular:component": {
-            "style": "css"
+            "style": "css",
+            "type": "component"
+        },
+        "@schematics/angular:component": {
+            "type": "component"
+        },
+        "@nx/angular:directive": {
+            "type": "directive"
+        },
+        "@schematics/angular:directive": {
+            "type": "directive"
+        },
+        "@nx/angular:service": {
+            "type": "service"
+        },
+        "@schematics/angular:service": {
+            "type": "service"
+        },
+        "@nx/angular:scam": {
+            "type": "component"
+        },
+        "@nx/angular:scam-directive": {
+            "type": "directive"
+        },
+        "@nx/angular:guard": {
+            "typeSeparator": "."
+        },
+        "@schematics/angular:guard": {
+            "typeSeparator": "."
+        },
+        "@nx/angular:interceptor": {
+            "typeSeparator": "."
+        },
+        "@schematics/angular:interceptor": {
+            "typeSeparator": "."
+        },
+        "@nx/angular:module": {
+            "typeSeparator": "."
+        },
+        "@schematics/angular:module": {
+            "typeSeparator": "."
+        },
+        "@nx/angular:pipe": {
+            "typeSeparator": "."
+        },
+        "@schematics/angular:pipe": {
+            "typeSeparator": "."
+        },
+        "@nx/angular:resolver": {
+            "typeSeparator": "."
+        },
+        "@schematics/angular:resolver": {
+            "typeSeparator": "."
         }
     },
     "release": {
-        "projects": ["components"],
+        "projects": [
+            "components"
+        ],
         "releaseTagPattern": "{version}",
         "version": {
             "conventionalCommits": true
@@ -96,9 +150,9 @@
                 "createRelease": "github",
                 "renderOptions": {
                     "authors": true,
-                    "mapAuthorsToGitHubUsernames": true,
                     "commitReferences": true,
-                    "versionTitleDate": true
+                    "versionTitleDate": true,
+                    "applyUsernameToAuthors": true
                 }
             },
             "projectChangelogs": true

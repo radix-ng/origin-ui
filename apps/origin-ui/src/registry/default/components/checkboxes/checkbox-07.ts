@@ -8,7 +8,7 @@ import { OriLabel } from '~/registry/default/ui/label';
     imports: [OriCheckbox, OriLabel],
     template: `
         <div class="flex items-center gap-2">
-            <ori-checkbox id="id" />
+            <ori-checkbox id="id" [checked]="true" />
             <label oriLabel htmlFor="id">
                 I agree to the{{ ' ' }}
                 <a class="underline" href="https://originui-ng.com" target="_blank">terms of service</a>

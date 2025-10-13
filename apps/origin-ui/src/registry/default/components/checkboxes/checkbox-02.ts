@@ -8,7 +8,7 @@ import { OriLabel } from '~/registry/default/ui/label';
     imports: [OriCheckbox, OriLabel],
     template: `
         <div class="flex items-center gap-2">
-            <ori-checkbox id="checkbox-02" [indeterminate]="checked()" (checkedChange)="onCheckedChange()" />
+            <ori-checkbox id="checkbox-02" [checked]="'indeterminate'" (checkedChange)="onCheckedChange()" />
             <label oriLabel htmlFor="checkbox-02">Indeterminate checkbox</label>
         </div>
     `

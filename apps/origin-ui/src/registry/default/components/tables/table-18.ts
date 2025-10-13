@@ -391,17 +391,24 @@ export default class Table18 implements OnInit {
     ],
     template: `
         <ori-checkbox
-            [indeterminate]="
-                (!context.table.getIsAllRowsSelected && context.table.getIsAllPageRowsSelected()) ||
-                context.table.getIsSomePageRowsSelected()
-            "
-            (checkedChange)="onCheckedChange($event)"
+            [checked]="checkedState()"
+            (onCheckedChange)="onCheckedChange($event)"
             aria-label="Select all"
         ></ori-checkbox>
     `
 })
 class CheckboxHeader<T> {
     context = injectFlexRenderContext<HeaderContext<T, unknown>>();
+
+    checkedState() {
+        if (
+            (!this.context.table.getIsAllRowsSelected && this.context.table.getIsAllPageRowsSelected()) ||
+            this.context.table.getIsSomePageRowsSelected()
+        ) {
+            return 'indeterminate';
+        }
+        return this.context.table.getIsAllRowsSelected();
+    }
 
     onCheckedChange(checked: boolean) {
         this.context.table.toggleAllRowsSelected(checked);
@@ -415,7 +422,7 @@ class CheckboxHeader<T> {
     template: `
         <ori-checkbox
             [checked]="context.row.getIsSelected()"
-            (checkedChange)="onCheckedChange($event)"
+            (onCheckedChange)="onCheckedChange($event)"
             aria-label="Select row"
         ></ori-checkbox>
     `

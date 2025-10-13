@@ -12,15 +12,14 @@
                 "{workspaceRoot}/dist/{projectRoot}"
             ],
             "options": {
-                "project": "{projectRoot}/ng-package.json"
+                "project": "{projectRoot}/ng-package.json",
+                "tsConfig": "{projectRoot}/tsconfig.lib.json"
             },
             "configurations": {
                 "production": {
                     "tsConfig": "{projectRoot}/tsconfig.lib.prod.json"
                 },
-                "development": {
-                    "tsConfig": "{projectRoot}/tsconfig.lib.json"
-                }
+                "development": {}
             },
             "defaultConfiguration": "production"
         },
@@ -30,7 +29,8 @@
                 "{workspaceRoot}/coverage/{projectRoot}"
             ],
             "options": {
-                "jestConfig": "packages/components/jest.config.ts"
+                "jestConfig": "packages/components/jest.config.ts",
+                "tsConfig": "packages/components/tsconfig.spec.json"
             }
         },
         "lint": {

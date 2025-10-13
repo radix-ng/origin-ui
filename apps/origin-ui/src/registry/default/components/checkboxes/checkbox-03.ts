@@ -11,7 +11,7 @@ import { OriLabel } from '~/registry/default/ui/label';
             class="[--primary:var(--color-indigo-500)] [--ring:var(--color-indigo-300)] in-[.dark]:[--primary:var(--color-indigo-500)] in-[.dark]:[--ring:var(--color-indigo-900)]"
             [class]="'flex items-center gap-2'"
         >
-            <ori-checkbox id="checkbox-03" defaultChecked />
+            <ori-checkbox id="checkbox-03" [checked]="true" />
             <label oriLabel htmlFor="checkbox-03">Colored checkbox</label>
         </div>
     `
