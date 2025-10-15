@@ -23,15 +23,15 @@ import {
 import { ClassValue } from 'clsx';
 
 @Component({
-    selector: 'ori-tooltip-content',
+    selector: 'ori-tooltip-content, [oriTooltipContent]',
     changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [RdxTooltipArrow, RdxTooltipPortal, RdxTooltipPortalPresence, RdxTooltipContent, RdxTooltipContentWrapper],
     host: {
         '[class]': 'hostClasses()'
     },
     template: `
-        <div [container]="tooltipContentRef()" rdxTooltipPortal>
-            <ng-template #tooltipContent rdxTooltipPortalPresence>
+        <ng-template #tooltipContent rdxTooltipPortalPresence>
+            <ng-container [container]="tooltipContentRef()" rdxTooltipPortal>
                 <div
                     [class]="
                         cn(
@@ -53,8 +53,8 @@ import { ClassValue } from 'clsx';
                         ></div>
                     }
                 </div>
-            </ng-template>
-        </div>
+            </ng-container>
+        </ng-template>
     `
 })
 export class OriTooltipContent {
@@ -70,8 +70,7 @@ export class OriTooltipContent {
 
     protected readonly tooltipContentRef = viewChild.required<ElementRef<HTMLElement>>('tooltipContent');
 
-    protected readonly hostClasses = computed(() => cn('hidden', this.class()));
-
+    protected readonly hostClasses = computed(() => cn('contents', this.class()));
     protected readonly cn = cn;
 }
 
